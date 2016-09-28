@@ -1,0 +1,55 @@
+{
+  "rules": {
+    "activities": {
+      ".read": true,
+      ".write": false
+    },
+    "activity-plans": {
+      ".read": true,
+      "$userId": {
+        ".read": true,
+        ".write": "$userId === auth.uid"
+      }
+    },
+    "posts": {
+      ".read": true,
+      "$userId": {
+        ".read": true,
+        ".write": "$userId === auth.uid"
+      }
+    },
+    "food": {
+      ".read": true,
+      ".write": false
+    },
+    "macronutrients": {
+      ".read": true,
+      ".write": false
+    },
+    "meal-plans": {
+      ".read": true,
+      "$userId": {
+        ".read": true,
+        ".write": "$userId === auth.uid"
+      }
+    },
+    "micronutrients": {
+      ".read": true,
+      ".write": false
+    },
+    "profiles": {
+      ".read": true,
+      "$userId": {
+        ".read": true,
+        ".write": "$userId === auth.uid"
+      }
+    },
+    "recipes": {
+      ".read": true,
+      "$userId": {
+        ".read": true,
+        ".write": "$userId === auth.uid"
+      }
+    }
+  }
+}
