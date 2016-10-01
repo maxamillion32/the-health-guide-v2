@@ -13,6 +13,7 @@
     "run:before": "build"
   },
   "dependencies": {
+    "@angular/compiler-cli": "^0.6.3",
     "@ionic/storage": "^1.0.3",
     "angularfire2": "^2.0.0-beta.5",
     "firebase": "^3.4.1",
@@ -22,6 +23,7 @@
   },
   "devDependencies": {
     "@ionic/app-scripts": "^0.0.23",
+    "@types/request": "0.0.30",
     "typescript": "^2.0.3"
   },
   "description": "the-life-guide: An Ionic project",
