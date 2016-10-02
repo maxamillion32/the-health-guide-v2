@@ -27,9 +27,17 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222,
-  favorite:   #69BB7B
+  dark:       #2A323D,
+  favorite:   #69BB7B,
+  bayleaf:    #77A885,
+  royal:      #1E3548,
+  summerSky:  #8EB7DF
 );
+
+// App Material Design Variables
+// --------------------------------------------------
+$menu-md-background:  color($colors, royal);
+$toolbar-background:  color($colors, dark);
 
 
 // App Theme
@@ -49,3 +57,4 @@ $colors: (
 
 $ionicons-font-path: "../assets/fonts";
 @import "ionicons";
+@import "app";

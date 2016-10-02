@@ -22,11 +22,11 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
   public rootPage = HomePage;
   public appPages: PageObj[] = [
-    { title: 'Fitness', icon: 'bicycle', index: 4, component: FitnessPage },
-    { title: 'Food', icon: 'cart', index: 1, component: FoodPage },
-    { title: 'Home', icon: 'home', index: 0, component: HomePage },
-    { title: 'Nutrients', icon: 'nutrition', index: 2, component: NutrientsPage },
-    { title: 'Recipes', icon: 'restaurant', index: 3, component: RecipesPage },
+    { title: 'Home', icon: 'ios-home-outline', index: 0, component: HomePage },
+    { title: 'Fitness', icon: 'ios-speedometer-outline', index: 1, component: FitnessPage },
+    { title: 'Food', icon: 'ios-cart-outline', index: 2, component: FoodPage },
+    { title: 'Nutrients', icon: 'ios-nutrition-outline', index: 3, component: NutrientsPage },
+    { title: 'Recipes', icon: 'ios-book-outline', index: 4, component: RecipesPage }
   ];
 
   constructor(private platform: Platform) {

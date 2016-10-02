@@ -1,11 +1,11 @@
-<ion-menu [content]="content">
+<ion-menu [content]="content" persistent="true" class="sidemenu">
   <ion-content>
-
+    <div class="profile">
+      <img src="assets/img/profile.jpg" alt="User profile image" width="50%" height="50%">
+      <h3 class="profile-name" color="summerSky">Razvan Tomegea</h3>
+    </div>
     <ion-list>
-      <ion-list-header>
-        Navigate
-      </ion-list-header>
-      <button ion-item menuClose *ngFor="let p of appPages" (click)="openPage(p)">
+      <button class="sidemenu-item" ion-item menuClose *ngFor="let p of appPages" (click)="openPage(p)" no-lines>
         <ion-icon item-left [name]="p.icon"></ion-icon>
         {{p.title}}
       </button>
