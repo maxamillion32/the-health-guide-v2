@@ -4,7 +4,7 @@ import { NavController } from 'ionic-angular';
 @Component({
   templateUrl: 'fitness.html'
 })
-export class FitnessPage {
+export class Fitness {
 
   constructor(public navCtrl: NavController) {}
 
