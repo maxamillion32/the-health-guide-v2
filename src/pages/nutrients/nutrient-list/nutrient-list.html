@@ -15,12 +15,12 @@
 </ion-header>
 
 <ion-content [ngSwitch]="nutrientGroup">
-  <ion-list *ngSwitchCase="micronutrients">
+  <ion-list *ngSwitchCase="'micronutrients'">
     <ion-item *ngFor="let micronutrient of micronutrients | async">
       <h3>{{ micronutrient.name }}</h3>
     </ion-item>
   </ion-list>
-  <ion-list *ngSwitchCase="macronutrients">
+  <ion-list *ngSwitchCase="'macronutrients'">
     <ion-item *ngFor="let macronutrient of macronutrients | async">
       <h3>{{ macronutrient.name }}</h3>
     </ion-item>
