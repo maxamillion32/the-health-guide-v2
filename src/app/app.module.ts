@@ -6,14 +6,20 @@ import { NgModule } from '@angular/core';
 import { MyApp } from './app.component';
 
 // Pages
-import { Fitness } from '../pages/fitness/fitness';
-import { FoodList } from '../pages/food/food-list/food-list';
-import { Home } from '../pages/home/home';
-import { NutrientList } from '../pages/nutrients/nutrient-list/nutrient-list';
-import { RecipeList } from '../pages/recipes/recipe-list/recipe-list';
+import { 
+  Fitness,
+  FoodList,
+  Home,
+  NutrientDetails,
+  NutrientList,
+  RecipeList
+} from '../pages';
+
+// Pipes
+import { SearchPipe } from "../pipes";
 
 // Providers
-import { NutritionService } from "../providers/nutrition.service";
+import { NutritionService } from "../providers";
 
 export const firebaseConfig = {
   apiKey: "AIzaSyDCIDGR-i2jR0pyv2PCYot2ATDL0Xyd1-k",
@@ -28,8 +34,10 @@ export const firebaseConfig = {
     Fitness,
     FoodList,
     Home,
+    NutrientDetails,
     NutrientList,
-    RecipeList
+    RecipeList,
+    SearchPipe
   ],
   imports: [
     AngularFireModule.initializeApp(firebaseConfig),
@@ -41,6 +49,7 @@ export const firebaseConfig = {
     Fitness,
     FoodList,
     Home,
+    NutrientDetails,
     NutrientList,
     RecipeList
   ],

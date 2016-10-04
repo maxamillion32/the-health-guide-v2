@@ -1,15 +1,20 @@
-import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { Component, OnInit } from '@angular/core';
+import { NavParams } from 'ionic-angular';
+
+import { Nutrient } from '../../../models';
 
 @Component({
   templateUrl: 'nutrient-details.html'
 })
-export class NutrientDetails {
+export class NutrientDetails implements OnInit {
+  public nutrient: Nutrient;
+  public intakeUnit: string;
 
-  constructor(public navCtrl: NavController) {}
+  constructor(private params: NavParams) {}
 
-  ionViewDidLoad() {
-    console.log('Hello NutrientDetails Page');
+  ngOnInit(): void {
+    this.nutrient = this.params.data.nutrient;
+    this.intakeUnit = (this.nutrient.category === 'Vitamin' || this.nutrient.category === 'Mineral') ? 'mg' : 'g';
   }
 
 }

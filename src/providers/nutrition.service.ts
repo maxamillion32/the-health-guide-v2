@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
-import { Food } from "../models/food.model";
-import { Nutrient } from "../models/nutrient.model";
+import { Food, Nutrient } from "../models";
 
 @Injectable()
 export class NutritionService {

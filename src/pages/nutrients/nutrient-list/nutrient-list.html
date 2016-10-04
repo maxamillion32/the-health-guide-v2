@@ -13,17 +13,26 @@
     </button>
   </ion-toolbar>
 </ion-header>
+<ion-searchbar [(ngModel)]="searchQuery"></ion-searchbar>
 
 <ion-content [ngSwitch]="nutrientGroup">
   <ion-list *ngSwitchCase="'micronutrients'">
-    <ion-item *ngFor="let micronutrient of micronutrients | async">
-      <h3>{{ micronutrient.name }}</h3>
-    </ion-item>
+    <button ion-item detail-push *ngFor="let micronutrient of micronutrients | async" (click)="openNutrientDetails(micronutrient)">
+      <h1>{{ micronutrient.name }}</h1>
+      <p>{{ micronutrient.category }}</p>
+      <ion-note item-right>
+        Details
+      </ion-note>
+    </button>
   </ion-list>
   <ion-list *ngSwitchCase="'macronutrients'">
-    <ion-item *ngFor="let macronutrient of macronutrients | async">
-      <h3>{{ macronutrient.name }}</h3>
-    </ion-item>
+    <button ion-item detail-push *ngFor="let macronutrient of macronutrients | async" (click)="openNutrientDetails(macronutrient)">
+      <h1>{{ macronutrient.name }}</h1>
+      <p>{{ macronutrient.category }}</p>
+      <ion-note item-right>
+        Details
+      </ion-note>
+    </button>
   </ion-list>
 
 </ion-content>
