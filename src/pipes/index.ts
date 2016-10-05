@@ -1,2 +1,2 @@
-export { LimitPipe } from './limit.pipe';
-export { SearchPipe } from './search.pipe';
+export { Limit } from './limit.pipe';
+export { SearchFilter } from './search-filter.pipe';

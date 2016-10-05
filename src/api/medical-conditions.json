@@ -1,0 +1,563 @@
+[
+    {
+        "name": "Abdominal aortic aneurysm",
+        "description": "An abdominal aortic aneurysm is an enlarged area in the lower part of the aorta, the major blood vessel that supplies blood to the body. The aorta, about the thickness of a garden hose, runs from your heart through the center of your chest and abdomen. Because the aorta is the body's main supplier of blood, a ruptured abdominal aortic aneurysm can cause life-threatening bleeding.Depending on the size and the rate at which your abdominal aortic aneurysm is growing, treatment may vary from watchful waiting to emergency surgery. Once an abdominal aortic aneurysm is found, doctors will closely monitor it so that surgery can be planned if it's necessary. Emergency surgery for a ruptured abdominal aortic aneurysm can be risky.",
+        "causes": [
+            "smoking",
+            "atherosclerosis",
+            "high blood pressure",
+            "blood vessel disease in the aorta",
+            "infection in the aorta",
+            "trauma",
+            "male gender",
+            "old age",
+            "white race",
+            "family history of abdominal aortic aneurysm"
+        ],
+        "symptoms": [
+            "back pain",
+            "intense, persistent abdominal pain",
+            "sweatiness",
+            "clamminess",
+            "dizziness (vertigo)",
+            "nausea",
+            "vomiting",
+            "low blood pressure",
+            "fast pulse"
+        ],
+        "remedies": [
+            "manage stress",
+            "pay attention to stimulants",
+            "exercise regularly, but not to intense, so that your blood pressure is not to high",
+            "quit smoking",
+            "have a good sleep",
+            "keep your cholesterol and sodium levels low",
+            "have a healthy diet based on grains, nuts, seeds, fruits, vegetables and legumes"
+        ]
+    },
+    {
+        "name": "Acanthosis nigricans",
+        "description": "Acanthosis nigricans is a skin condition characterized by areas of dark, velvety discoloration in body folds and creases. The affected skin can become thickened. Most often, acanthosis nigricans affects your armpits, groin and neck. The skin changes of acanthosis nigricans (ak-an-THOE-sis NIE-grih-kuns) typically occur in people who are obese or have diabetes. Children who develop the condition are at higher risk of developing type 2 diabetes. Rarely, acanthosis nigricans can be a warning sign of a cancerous tumor in an internal organ, such as the stomach or liver. No specific treatment is available for acanthosis nigricans. Treatment of underlying conditions may restore some of the normal color and texture to affected areas of skin.",
+        "causes": [
+            "insulin resistance",
+            "ovarian cysts",
+            "hypothyroidism",
+            "adrenal gland disease",
+            "drugs and supplements (niacin, birth control pills, prednisone, orticosteroids)",
+            "cancer",
+            "caucasian race",
+            "obesity",
+            "family history of acanthosis nigricans"
+        ],
+        "symptoms": [
+            "thickened, dark, velvet skin (armpits, groin, neck) followed by itching and odor"
+        ],
+        "remedies": [
+            "keep your blood sugar levels stable",
+            "decrease sugar and starch intake and increase fiber intake",
+            "substitute saturated fats with unsaturated fats",
+            "exercise regularly",
+            "have a good sleep"
+        ]
+    },
+    {
+        "name": "Achilles tendinitis",
+        "description": "Achilles tendinitis is an overuse injury of the Achilles (uh-KILL-eez) tendon, the band of tissue that connects calf muscles at the back of the lower leg to your heel bone. Achilles tendinitis most commonly occurs in runners who have suddenly increased the intensity or duration of their runs. It's also common in middle-aged people who play sports, such as tennis or basketball, only on the weekends. Most cases of Achilles tendinitis can be treated with relatively simple, at-home care under your doctor's supervision. Self-care strategies are usually necessary to prevent recurring episodes. More-serious cases of Achilles tendinitis can lead to tendon tears (ruptures) that may require surgical repair.",
+        "causes": [
+            "intense strain on the Achiles tendon",
+            "male gender",
+            "old age",
+            "obesity",
+            "running in worn-out shoes",
+            "running on hilly terrain",
+            "psoriasis",
+            "high blood pressure",
+            "intense running",
+            "drugs and supplements (fluoroquinolones)",
+            "loss of range of motion"
+        ],
+        "symptoms": [
+            "heel pain when walking or running"
+        ],
+        "remedies": [
+            "avoid activities that strain the Achilles tendon for a period of time",
+            "apply ice on the tendon when the pain occurs",
+            "put wraps or compressive elastic bandages to reduce swelling and to keep the tendon fix",
+            "elevate the affected foot above the level of your heart",
+            "always start a new exercise slowly and gradually",
+            "warm up before every strenuous exercise",
+            "buy shoes that provide adequate cushioning for your heel and have a firm arch support to help reduce the tension in the Achilles tendon",
+            "stretch your calf muscles and Achilles tendon in the morning, before exercise and after exercise to maintain flexibility",
+            "alternate high-impact activities, such as running and jumping, with low-impact activities, such as cycling and swimming",
+            "strengthen your calf muscles"
+        ]
+    },
+    {
+        "name": "Achilles tendon rupture",
+        "description": "Achilles (uh-KILL-eez) tendon rupture is an injury that affects the back of your lower leg. It most commonly occurs in people playing recreational sports. The Achilles tendon is a strong fibrous cord that connects the muscles in the back of your calf to your heel bone. If you overstretch your Achilles tendon, it can tear (rupture) completely or just partially. If your Achilles tendon ruptures, you might feel a pop or snap, followed by an immediate sharp pain in the back of your ankle and lower leg that is likely to affect your ability to walk properly. Surgery is often the best option to repair an Achilles tendon rupture. For many people, however, nonsurgical treatment works just as well.",
+        "causes": [
+            "intense jumping",
+            "landing from a jump incorrectly",
+            "falling from a height",
+            "steping into a hole",
+            "intense running",
+            "intense strain on the Achiles tendon",
+            "old age",
+            "male gender",
+            "drugs and supplements (steroids, ciprofloxacin, levofloxacin)",
+            "loss of range of motion"
+        ],
+        "symptoms": [
+            "heel pain when walking or running",
+            "swollen heel",
+            "severe heel pain followed by a popping or snapping sound",
+            "inability to stand on toes",
+            "inability to bend the foot"
+        ],
+        "remedies": [
+            "wear a cast or walking boot with wedges to elevate your heel, which allows your torn tendon to heal",
+            "do exercises that strengthen your leg muscles and Achilles tendons",
+            "in some cases, a surgery is required, but this involves a deep investigation",
+            "always start a new exercise slowly and gradually",
+            "warm up before every strenuous exercise",
+            "buy shoes that provide adequate cushioning for your heel and have a firm arch support to help reduce the tension in the Achilles tendon",
+            "stretch your calf muscles and Achilles tendon in the morning, before exercise and after exercise to maintain flexibility",
+            "alternate high-impact activities, such as running and jumping, with low-impact activities, such as cycling and swimming",
+            "strengthen your calf muscles"
+        ]
+    },
+    {
+        "name": "Gastroesophageal reflux disease (GERD)",
+        "description": "Gastroesophageal reflux disease (GERD) is a chronic digestive disease. GERD occurs when stomach acid or, occasionally, stomach content, flows back into your food pipe (esophagus). The backwash (reflux) irritates the lining of your esophagus and causes GERD. Both acid reflux and heartburn are common digestive conditions that many people experience from time to time. When these signs and symptoms occur at least twice each week or interfere with your daily life, or when your doctor can see damage to your esophagus, you may be diagnosed with GERD. Most people can manage the discomfort of GERD with lifestyle changes and over-the-counter medications. But some people with GERD may need stronger medications, or even surgery, to reduce symptoms",
+        "causes": [
+            "intense stress on the knee",
+            "intense jumping",
+            "suddenly slowing down and changing direction",
+            "pivoting with your foot firmly planted",
+            "landing from a jump incorrectly",
+            "stopping suddenly",
+            "receiving a direct blow to the knee or collision",
+            "falling from a height",
+            "female gender"
+        ],
+        "symptoms": [
+            "burning sensation (chest, throat) followed by sour taste in mouth",
+            "heartburn",
+            "chest pain (angina)",
+            "difficulty swallowing (dysphagia)",
+            "dry cough",
+            "hoarseness",
+            "sore throat",
+            "regurgitation of food or sour liquid (acid reflux)",
+            "sensation of a lump in throat"
+        ],
+        "remedies": [
+            "maintain a healthy weight, because excess pounds put pressure on your abdomen, pushing up your stomach and causing acid to back up into your esophagus",
+            "avoid tight-fitting clothing, because clothes that fit tightly around your waist put pressure on your abdomen and the lower esophageal sphincter",
+            "avoid foods and drinks that trigger heartburn",
+            "eat smaller meals",
+            "don't lie down after a meal",
+            "elevate the head of your bed",
+            "quit smoking"
+        ]
+    },
+    {
+        "name": "ACL injury",
+        "description": "An ACL injury is the tearing of the anterior cruciate (KROO-she-ate) ligament (ACL) — one of the major ligaments in your knee. ACL injuries most commonly occur during sports that involve sudden stops, jumping or changes in direction — such as basketball, soccer, football, tennis, downhill skiing, volleyball and gymnastics. Many people hear or feel a 'pop' in the knee when an ACL injury occurs. Your knee may swell, feel unstable and become too painful to bear weight. Depending on the severity of your ACL injury, treatment may include rest and rehabilitation exercises to help you regain strength and stability or surgery to replace the torn ligament followed by rehabilitation. A proper training program may help reduce the risk of an ACL injury.",
+        "causes": [
+            "frequent acid reflux",
+            "pregnancy",
+            "dry mouth",
+            "asthma",
+            "diabetes",
+            "delayed stomach emptying",
+            "scleroderma",
+            "bulging of top of stomach up into the diaphragm (hiatal hernia)",
+            "obesity",
+            "smoking"
+        ],
+        "symptoms": [
+            "severe knee pain followed by a popping or snapping sound",
+            "knee pain when walking or running",
+            "swollen knee",
+            "loss of range of motion",
+            "instability"
+        ],
+        "remedies": [
+            "rest",
+            "try to ice your knee at least every two hours for 20 minutes at a time",
+            "wrap an elastic bandage or compression wrap around your knee",
+            "lie down with your knee propped up on pillows",
+            "do exercises that strengthen muscles of the legs, hips and lower torso",
+            "improve jumping and landing techniques",
+            "improve techniques for pivoting and cutting"
+        ]
+    },
+    {
+        "name": "Acne",
+        "description": "Acne is a skin condition that occurs when your hair follicles become plugged with oil and dead skin cells. Acne usually appears on your face, neck, chest, back and shoulders. Effective treatments are available, but acne can be persistent. The pimples and bumps heal slowly, and when one begins to go away, others seem to crop up. Acne is most common among teenagers, with a reported prevalence of 70 to 87 percent. Increasingly, younger children are getting acne as well. Depending on its severity, acne can cause emotional distress and scar the skin. The earlier you start treatment, the lower your risk of lasting physical and emotional damage.",
+        "causes": [
+            "excess amount of sebum",
+            "excess dead skin cells",
+            "clogged pores",
+            "bacteria",
+            "puberty",
+            "drugs and supplements (corticosteroids, androgens or lithium)",
+            "food (diary, high-carbohydrate)",
+            "stress",
+            "family history of acne",
+            "friction or pressure on skin",
+            "cosmetics (oily lotions, creams)",
+            "pregnancy"
+        ],
+        "symptoms": [
+            "whiteheads (closed plugged pores)",
+            "blackheads (open plugged pores)",
+            "small, red, tender bumps (papules)",
+            "pimples (pustules)",
+            "large, solid, painful lumps under the skin (nodules)",
+            "painful, pus-filled lumps under the skin (cystic lesions)",
+            "bunps"
+        ],
+        "remedies": [
+            "wash affected areas with a gentle cleanser and use oil-free, water-based skin care products only twice a day; washing removes excess oil and dead skin cells, but too much washing can irritate the skin",
+            "substitute shampoos with basic soap",
+            "use nonoily makeup",
+            "remove makeup before going to bed",
+            "avoid certain products, such as facial scrubs, astringents and masks, because they tend to irritate skin, which can worsen acne",
+            "avoid excessive washing and scrubbing, because it also can irritate skin",
+            "be gentle while shaving affected skin",
+            "avoid oily or greasy cosmetics, sunscreens, hairstyling products or acne concealers",
+            "watch what touches your skin",
+            "wear loosefitting clothing",
+            "shower after strenuous activities",
+            "avoid touching or picking at the affected areas, because you may trigger more acne",
+            "although sunlight can help in drying the skin surface and making the acne look lighter, too much exposure of the skin to the harmful ultra violet rays of the sun does more harm than good",
+            "have a diet rich in fruit and vegetables that contain vitamin A and B-Complex"
+        ]
+    },
+    {
+        "name": "Acoustic neuroma",
+        "description": "Acoustic neuroma is an uncommon, noncancerous (benign) and usually slow-growing tumor that develops on the main nerve leading from your inner ear to your brain. Because branches of this nerve directly influence your balance and hearing, pressure from an acoustic neuroma can cause hearing loss, ringing in your ear and unsteadiness. Also known as vestibular schwannoma, acoustic neuroma usually grows slowly or not at all. However, in a few cases, it may grow rapidly and become large enough to press against the brain and interfere with vital functions. Treatments for acoustic neuroma include regular monitoring, radiation and surgical removal.",
+        "causes": [
+            "malfunctioning gene on chromosome 22",
+            "family history of neurofibromatosis type 2 (NF2)"
+        ],
+        "symptoms": [
+            "hearing loss",
+            "ringing (tinnitus)",
+            "facial numbness",
+            "weakness (asthenia)",
+            "dizziness (vertigo)",
+            "instability"
+        ],
+        "remedies": [
+            "home or natural remedies are not known at the moment for this condition",
+            "if you have a small acoustic neuroma that isn't growing or is growing slowly, you and your doctor may decide to monitor it",
+            "your doctor may recommend stereotactic radiosurgery (ster-e-oh-TAK-tik ray-dee-oh-SUR-jur-e) if you have an acoustic neuroma to stop the growth of a tumor, preserve the facial nerve's function and possibly preserve hearing"
+        ]
+    },
+    {
+        "name": "HIV/AIDS",
+        "description": "Acquired immunodeficiency syndrome (AIDS) is a chronic, potentially life-threatening condition caused by the human immunodeficiency virus (HIV). By damaging your immune system, HIV interferes with your body's ability to fight the organisms that cause disease. HIV is a sexually transmitted infection. It can also be spread by contact with infected blood or from mother to child during pregnancy, childbirth or breast-feeding. Without medication, it may take years before HIV weakens your immune system to the point that you have AIDS. There's no cure for HIV/AIDS, but there are medications that can dramatically slow the progression of the disease. These drugs have reduced AIDS deaths in many developed nations. But HIV continues to decimate populations in Africa, Haiti and parts of Asia.",
+        "causes": [
+            "unprotected oral sex",
+            "unprotected vaginal sex",
+            "unprotected anal sex",
+            "blood transfusion",
+            "sharing needles",
+            "breastfed",
+            "uncircumcised male"
+        ],
+        "symptoms": [
+            "fever",
+            "headache",
+            "muscle aches",
+            "joint pain",
+            "rash",
+            "swollen lymph glands (neck)",
+            "diarheea",
+            "weight loss",
+            "oral yeast infection (thrush)",
+            "shingles (herpes zoster)",
+            "soaking night sweats",
+            "chronic diarrhea",
+            "persistent white spots (tongue, mouth)",
+            "lesions (tongue, mouth)",
+            "persistent fatigue (lethargy)",
+            "bumps",
+            "fatigue (lethargy)",
+            "sore throat"
+        ],
+        "remedies": [
+            "there is no treatment that could cure and eradicate HIV/AIDS, but there are a variety of drugs that can stabilize it. It is best to talk to your personal doctor for them",
+            "have a diet rich in fruit, vegetables, whole grains and lean protein",
+            "avoid unpasteurized dairy products, raw eggs, raw seafood such as oysters, sushi or sashimi and raw meat in general",
+            "strengthen your immune system",
+            "be careful when playing with pets, because some animals may carry parasites that can cause infections in people who are HIV-positive. Cat feces can cause toxoplasmosis, reptiles can carry salmonella, and birds can carry the fungus cryptococcus or histoplasmosis. Wash hands thoroughly after handling pets or emptying the litter box",
+            "acetyl-L-carnitine might help nerve pain linked to HIV, but it may be helpful only if you're already deficient in acetyl-L-carnitine",
+            "whey protein can help some people with HIV gain weight, reduce diarrhea and increase CD4 counts",
+            "use a new condom every time you have sex",
+            "a drug called Truvada can reduce the risk of sexually transmitted HIV infection and it is also used as an HIV treatment along with other medication (Truvada should only be used along with other prevention strategies, such as condom use every time you have sex, as it doesn't protect against other sexually transmitted infections, and it can't provide complete protection against HIV transmission. If you're interested in Truvada, talk with your doctor about the potential risks and benefits of the drug)",
+            "tell your sexual partners if you have HIV",
+            "use clean needles",
+            "get medical care during pregnancy",
+            "have a male circumcision"
+        ]
+    },
+    {
+        "name": "Acromegaly",
+        "description": "Acromegaly is a hormonal disorder that develops when your pituitary gland produces too much growth hormone during adulthood. When this happens, your bones increase in size, including those of your hands, feet and face. Acromegaly usually affects middle-aged adults. In children who are still growing, too much growth hormone can cause a condition called gigantism. These children have exaggerated bone growth and an abnormal increase in height. Because acromegaly is uncommon and physical changes occur gradually, the condition often isn't recognized immediately: sometimes not for years. If not treated promptly, acromegaly can lead to serious illness and even become life-threatening. However, available treatments for acromegaly can reduce your risk of complications and significantly improve your symptoms, including the enlargement of your features.",
+        "causes": [
+            "pituitary gland overproducing growth hormone (GH)",
+            "pituitary gland tumor",
+            "lung tumor",
+            "adrenal glands tumor",
+            "pancreas tumor"
+        ],
+        "symptoms": [
+            "enlarged hands",
+            "enlarged feet",
+            "coarsened, enlarged facial features",
+            "coarse, oily, thickened skin",
+            "excessive sweating and body odor",
+            "sweatiness",
+            "small outgrowths of skin tissue (skin tags)",
+            "muscle weakness",
+            "fatigue (lethargy)",
+            "deepened, husky voice",
+            "enlarged vocal cords",
+            "enlarged sinuses",
+            "severe snoring",
+            "snoring",
+            "impaired vision",
+            "headache",
+            "enlarged tongue",
+            "joint pain",
+            "limited joint mobility",
+            "irregular menstrual cycle in women",
+            "erectile dysfunction in men",
+            "enlarged internal organs",
+            "enlarged chest"
+        ],
+        "remedies": [
+            "home or natural remedies are not known at the moment for this condition",
+            "medical treatment focuses on lowering GH production and reducing the negative effects of the tumor",
+            "surgery may be required"
+        ]
+    },
+    {
+        "name": "Actinic keratosis",
+        "description": "An actinic keratosis (ak-TIN-ik ker-uh-TOE-sis) is a rough, scaly patch on your skin that develops from years of exposure to the sun. It's most commonly found on your face, lips, ears, back of your hands, forearms, scalp or neck. Also known as solar keratosis, an actinic keratosis enlarges slowly and usually causes no signs or symptoms other than a patch or small spot on your skin. These lesions take years to develop, usually first appearing in older adults. A small percentage of actinic keratosis lesions can eventually become skin cancer. You can reduce your risk of actinic keratosis by minimizing your sun exposure and protecting your skin from ultraviolet (UV) rays.",
+        "causes": [
+            "frequent or intense exposure to UV",
+            "living in sunny climate",
+            "pale skin",
+            "family history of actinic keratosis",
+            "family history of skin cancer",
+            "weak immune system",
+            "medical therapies (chemotherapy)",
+            "AIDS",
+            "leukemia",
+            "white race"
+        ],
+        "symptoms": [
+            "rough, dry or scaly patch of skin (face, lips, ears, back of your hands, forearms, scalp or neck) followed by itching or burning",
+            "pink, red, brown or flesh-colored flat to slightly raised patch (face, lips, ears, back of your hands, forearms, scalp or neck)"
+        ],
+        "remedies": [
+            "Cryosurgery (use of extreme cold to destroy the unwanted tissue)",
+            "apply raw, oranic apple cider vinegar to the spots 2-4 times a day using a cotton ball or q-tip",
+            "add 1-3 teaspoons of apple cider vinegar to a tall glass of water once or twice a day",
+            "make a paste with borax and water and apply to the lesions 2-4 times a day using a cotton ball or q-tip",
+            "mix 1/8 teaspoon of ascorbic acid with 1 teaspoon of water and apply to your lesions 2-4 times a day using a cotton ball or q-tip",
+            "apply iodine to your lesions 2-4 times a day using a cotton ball or q-tip",
+            "apply colloidal silver 2-4 times a day"
+        ]
+    },
+    {
+        "name": "Acute coronary syndrome",
+        "description": "Acute coronary syndrome is a term used to describe a range of conditions associated with sudden, reduced blood flow to the heart. One condition under the umbrella of acute coronary syndrome is myocardial infarction (heart attack) — when cell death results in damaged or destroyed heart tissue. Even when acute coronary syndrome causes no cell death, the reduced blood flow alters heart function and indicates a high risk of heart attack. Acute coronary syndrome often causes severe chest pain or discomfort. It is a medical emergency that requires prompt diagnosis and care. Treatment goals include improving blood flow, treating complications and preventing future problems.",
+        "causes": [
+            "fatty deposits (plaques) in and on the walls of coronary arteries",
+            "blood vessel disease in the aorta",
+            "old age",
+            "high blood pressure",
+            "high blood cholesterol",
+            "smoking",
+            "sedentary lifestyle",
+            "unhealthy diet",
+            "obesity",
+            "diabetes"
+        ],
+        "symptoms": [
+            "chest pain (angina) followed by aching, pressure, tightness or burning",
+            "chest pain (angina)",
+            "heartburn",
+            "vomiting",
+            "nausea",
+            "indigestion",
+            "sudden, heavy sweating (diaphoresis)",
+            "sweatiness",
+            "shortness of breath (dyspnea)",
+            "dizziness (vertigo)",
+            "fatigue (lethargy)"
+        ],
+        "remedies": [
+            "quit smoking",
+            "have a healthy diet based on grains, nuts, seeds, fruits, vegetables and legumes",
+            "lower your intake of sugar, trans fat and saturated fat",
+            "exercise regularly",
+            "keep your cholesterol and sodium levels low",
+            "keep a normal blood pressure",
+            "maintain a healthy weight",
+            "manage stress",
+            "drink alcohol in moderation"
+        ]
+    },
+    {
+        "name": "Sweet's syndrome",
+        "description": "Sweet's syndrome is a rare skin condition. Its main signs include fever and painful skin lesions that appear mostly on your arms, neck, head and trunk. The exact cause of Sweet's syndrome isn't known. In some people, it's triggered by an infection, illness or certain medications. Sweet's syndrome can also occur with some types of cancer. The most common treatment for Sweet's syndrome is corticosteroid pills, such as prednisone. Signs and symptoms often disappear just a few days after treatment begins, but recurrence is common.",
+        "causes": [
+            "cancer",
+            "leukemia",
+            "breast cancer",
+            "colon cancer",
+            "female gender",
+            "old age",
+            "pregnancy"
+        ],
+        "symptoms": [
+            "bumps",
+            "small, red, tender bumps (papules)",
+            "fever",
+            "respiratory infection",
+            "rash"
+        ],
+        "remedies": [
+            "Sweet's syndrome not associated with a malignancy may disappear on its own within one to three months"
+        ]
+    },
+    {
+        "name": "Acute kidney failure",
+        "description": "Acute kidney failure occurs when your kidneys suddenly become unable to filter waste products from your blood. When your kidneys lose their filtering ability, dangerous levels of wastes may accumulate, and your blood's chemical makeup may get out of balance. Acute kidney failure — also called acute renal failure or acute kidney injury — develops rapidly over a few hours or a few days. Acute kidney failure is most common in people who are already hospitalized, particularly in critically ill people who need intensive care.  Acute kidney failure can be fatal and requires intensive treatment. However, acute kidney failure may be reversible. If you're otherwise in good health, you may recover normal or nearly normal kidney function.",
+        "causes": [
+            "blood loss",
+            "fluid loss",
+            "heart attack",
+            "heart diseasese",
+            "infection",
+            "liver failure",
+            "drugs and supplements (aspirin, ibuprofen, naproxen)",
+            "severe allergic reaction (anaphylaxis)",
+            "severe burns",
+            "severe dehydration",
+            "blood clots in the veins and arteries in and around the kidneys",
+            "fatty deposits (plaques) in the kidneys",
+            "inflammation of the tiny filters in the kidneys (glomeruli)",
+            "premature destruction of red blood cells (hemolytic uremic syndrome)",
+            "lupus",
+            "plasma cell cancer (multiple myelome)",
+            "scleroderma",
+            "thrombotic thrombocytopenic purpura",
+            "cocaine",
+            "alcohol",
+           "exposure to heavy metals",
+            "inflammation of blood vessels (vasculitis)",
+            "bladder cancer",
+            "blood clots in the urinary tract",
+            "cervical cancer",
+            "colon cancer",
+            "enlarged prostate",
+            "kidney stones",
+            "damage to the nerves that control the bladder",
+            "prostate cancer",
+            "high blood pressure",
+            "high blood cholesterol",
+            "diabetes",
+            "old age",
+            "peripheral artery disease"
+        ],
+        "symptoms": [
+            "decreased urine output",
+            "fluid retention",
+            "swollen legs",
+            "swollen feet",
+            "swollen ankles",
+            "drowsiness (sleepiness)",
+            "shortness of breath (dyspnea)",
+            "fatigue (lethargy)",
+            "confusion",
+            "nausea",
+            "seizures",
+            "coma",
+            "chest pain (angina)"
+        ],
+        "remedies": [
+            "lower your sodium intake",
+            "eat foods the contain phosphorus, potassium and vitamin B12",
+            "drink herbal teas",
+            "have a diets based on raw fruits and vegetables",
+            "drink cranberry juice",
+            "drink parsley or basil juice with honey",
+            "drink aloe vera juice",
+            "eat salads and use extra virgin olive oil and applce cider vinegar"
+        ]
+    },
+    {
+        "name": "Acute lymphocytic leukemia",
+        "description": "Acute lymphocytic leukemia (ALL) is a type of cancer of the blood and bone marrow — the spongy tissue inside bones where blood cells are made. The word 'acute' in acute lymphocytic leukemia comes from the fact that the disease progresses rapidly and creates immature blood cells, rather than mature ones. The word 'lymphocytic' in acute lymphocytic leukemia refers to the white blood cells called lymphocytes, which ALL affects. Acute lymphocytic leukemia is also known as acute lymphoblastic leukemia. Acute lymphocytic leukemia is the most common type of cancer in children, and treatments result in a good chance for a cure. Acute lymphocytic leukemia can also occur in adults, though the chance of a cure is greatly reduced.",
+        "causes": [
+            "medical therapies (chemotherapy)",
+            "cancer",
+            "Down syndrome",
+            "family history of acute lymphocytic leukemia"
+        ],
+        "symptoms": [
+            "bleeding (gums)",
+            "bone pain",
+            "fever",
+            "frequent infections",
+            "frequent or severe nosebleed",
+            "swollen lymph glands (neck, underarm, abdomen, groin)",
+            "pale skin",
+            "shortness of breath (dyspnea)",
+            "weakness (asthenia)",
+            "fatigue (lethargy)"
+        ],
+        "remedies": [
+            "home or natural remedies are not known at the moment for this condition",
+            "symptoms for acute lymphocytic leukemia may be healed with acupuncture, aromatherapy, massage, meditation, relaxation, exercises"
+        ]
+    },
+    {
+        "name": "Acute myelogenous leukemia (AML)",
+        "description": "Acute myelogenous leukemia (AML) is a cancer of the blood and bone marrow — the spongy tissue inside bones where blood cells are made. The word 'acute' in acute myelogenous leukemia denotes the disease's rapid progression. It's called myelogenous (my-uh-LOHJ-uh-nus) leukemia because it affects a group of white blood cells called the myeloid cells, which normally develop into the various types of mature blood cells, such as red blood cells, white blood cells and platelets. Acute myelogenous leukemia is also known as acute myeloid leukemia, acute myeloblastic leukemia, acute granulocytic leukemia and acute nonlymphocytic leukemia.",
+        "causes": [
+            "myelodysplasia",
+            "polycythemia vera",
+            "thrombocythemia",
+            "smoking",
+            "exposure to benzene",
+            "exposure to radiation",
+            "medical therapies (chemotherapy)",
+            "cancer",
+            "old age",
+            "family history of acute myelogenous leukemia"
+        ],
+        "symptoms": [
+            "fever",
+            "bone pain",
+            "fatigue (lethargy)",
+            "shortness of breath (dyspnea)",
+            "pale skin",
+            "frequent infections",
+            "bleeding (gums)",
+            "frequent or severe nosebleed"
+        ],
+        "remedies": [
+            "home or natural remedies are not known at the moment for this condition",
+            "symptoms for acute lymphocytic leukemia may be healed with acupuncture, aromatherapy, massage, meditation, relaxation, exercises"
+        ]
+    }
+]

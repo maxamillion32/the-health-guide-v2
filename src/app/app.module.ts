@@ -16,7 +16,7 @@ import {
 } from '../pages';
 
 // Pipes
-import { SearchPipe } from "../pipes";
+import { Limit, SearchFilter } from "../pipes";
 
 // Providers
 import { NutritionService } from "../providers";
@@ -34,10 +34,11 @@ export const firebaseConfig = {
     Fitness,
     FoodList,
     Home,
+    Limit,
     NutrientDetails,
     NutrientList,
     RecipeList,
-    SearchPipe
+    SearchFilter
   ],
   imports: [
     AngularFireModule.initializeApp(firebaseConfig),

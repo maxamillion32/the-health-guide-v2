@@ -1,23 +1,20 @@
 <ion-header>
   <ion-toolbar>
-    <ion-segment color="light" [(ngModel)]="nutrientGroup">
-      <ion-segment-button value="macronutrients">
-        Macronutrients
-      </ion-segment-button>
-      <ion-segment-button value="micronutrients">
-        Micronutrients
-      </ion-segment-button>
-    </ion-segment>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
+    <ion-searchbar [(ngModel)]="searchQuery"></ion-searchbar>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="setFilterOpts()">
+        <ion-icon name="funnel"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
-<ion-searchbar [(ngModel)]="searchQuery"></ion-searchbar>
 
 <ion-content [ngSwitch]="nutrientGroup">
   <ion-list *ngSwitchCase="'micronutrients'">
-    <button ion-item detail-push *ngFor="let micronutrient of micronutrients | async" (click)="openNutrientDetails(micronutrient)">
+    <button ion-item detail-push *ngFor="let micronutrient of micronutrients | async | searchFilter: searchQuery: searchBy" (click)="openNutrientDetails(micronutrient)">
       <h1>{{ micronutrient.name }}</h1>
       <p>{{ micronutrient.category }}</p>
       <ion-note item-right>
@@ -34,5 +31,17 @@
       </ion-note>
     </button>
   </ion-list>
-
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-segment color="light" [(ngModel)]="nutrientGroup">
+      <ion-segment-button value="macronutrients">
+        Macronutrients
+      </ion-segment-button>
+      <ion-segment-button value="micronutrients">
+        Micronutrients
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-footer>

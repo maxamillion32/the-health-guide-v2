@@ -5,7 +5,7 @@ export class Food {
     macronutrients: any;
     minerals: any;
     vitamins: any;
-    ["amino acids"]: any;
+    ["aminoacids"]: any;
     flavonoids: any;
     sterols: any;
     other: any;

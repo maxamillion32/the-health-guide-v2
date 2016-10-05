@@ -1,0 +1,203 @@
+[
+    {
+        "name": "Sitting",
+        "details": "chair or bed",
+        "met": 1
+    }, {
+        "name": "Bicycling",
+        "details": "<10 mph",
+        "met": 4
+    }, {
+        "name": "Bicycling",
+        "details": "(10-11.9 mph",
+        "met": 6
+    }, {
+        "name": "Bicycling",
+        "details": "(12-13.9 mph",
+        "met": 8
+    }, {
+        "name": "Bicycling",
+        "details": "14-15.9 mph",
+        "met": 10
+    }, {
+        "name": "Bicycling",
+        "details": "16-19.9 mph",
+        "met": 12
+    }, {
+        "name": "Bicycling",
+        "details": ">20 mph",
+        "met": 16
+    }, {
+        "name": "Stationary cycling",
+        "details": "50 watts",
+        "met": 3
+    }, {
+        "name": "Stationary cycling",
+        "details": "100 watts",
+        "met": 5.5
+    }, {
+        "name": "Stationary cycling",
+        "details": "150 watts",
+        "met": 7
+    }, {
+        "name": "Stationary cycling",
+        "details": "200 watts",
+        "met": 10.5
+    }, {
+        "name": "Stationary cycling",
+        "details": "250 watts",
+        "met": 12.5
+    }, {
+        "name": "Calisthenics",
+        "details": "light or moderate intensity",
+        "met": 4.5
+    }, {
+        "name": "Calisthenics",
+        "details": "high intensity",
+        "met": 8
+    }, {
+        "name": "Dancing",
+        "details": "light intensity",
+        "met": 5
+    }, {
+        "name": "Dancing",
+        "details": "moderate intensity",
+        "met": 6
+    }, {
+        "name": "Dancing",
+        "details": "high intensity",
+        "met": 7
+    }, {
+        "name": "Standing",
+        "details": "on feet",
+        "met": 1.2
+    }, {
+        "name": "Running",
+        "details": "5 mph",
+        "met": 8
+    }, {
+        "name": "Running",
+        "details": "5.2 mph",
+        "met": 9
+    }, {
+        "name": "Running",
+        "details": "6 mph",
+        "met": 10
+    }, {
+        "name": "Running",
+        "details": "6.7 mph",
+        "met": 11
+    }, {
+        "name": "Running",
+        "details": "7 mph",
+        "met": 11.5
+    }, {
+        "name": "Running",
+        "details": "7.5 mph",
+        "met": 12.5
+    }, {
+        "name": "Running",
+        "details": "8 mph",
+        "met": 13.5
+    }, {
+        "name": "Running",
+        "details": "8.6 mph",
+        "met": 14
+    }, {
+        "name": "Running",
+        "details": "9 mph",
+        "met": 15
+    }, {
+        "name": "Running",
+        "details": "10 mph",
+        "met": 16
+    }, {
+        "name": "Running",
+        "details": "10.9 mph",
+        "met": 18
+    }, {
+        "name": "Running",
+        "details": "upstairs",
+        "met": 15
+    }, {
+        "name": "Rowing machine",
+        "details": "150 watts",
+        "met": 8.5
+    }, {
+        "name": "Rowing machine",
+        "details": "200 watts",
+        "met": 12
+    }, {
+        "name": "Skiing",
+        "details": "2.5 mph",
+        "met": 7
+    }, {
+        "name": "Skiing",
+        "details": "4-4.9 mph",
+        "met": 8
+    }, {
+        "name": "Skiing",
+        "details": "5-7.9 mph",
+        "met": 9
+    }, {
+        "name": "Skiing",
+        "details": ">8 mph",
+        "met": 14
+    }, {
+        "name": "Skiing",
+        "details": " uphill",
+        "met": 16.5
+    }, {
+        "name": "Skiing",
+        "details": " downhill (light intensity)",
+        "met": 5
+    }, {
+        "name": "Skiing",
+        "details": " downhill (moderate intensity)",
+        "met": 6
+    }, {
+        "name": "Skiing",
+        "details": " downhill (high intensity)",
+        "met": 8
+    }, {
+        "name": "Swimming",
+        "details": "light intensity",
+        "met": 6
+    }, {
+        "name": "Swimming",
+        "details": "Backstroke",
+        "met": 8
+    }, {
+        "name": "Swimming",
+        "details": "Breaststroke",
+        "met": 10
+    }, {
+        "name": "Swimming",
+        "details": "Butterfly",
+        "met": 11
+    }, {
+        "name": "Walking",
+        "details": "2 mph",
+        "met": 2.5
+    }, {
+        "name": "Walking",
+        "details": "2.5 mph",
+        "met": 3
+    }, {
+        "name": "Walking",
+        "details": "3 mph",
+        "met": 3.5
+    }, {
+        "name": "Walking",
+        "details": "3.5-4 mph",
+        "met": 4
+    }, {
+        "name": "Walking",
+        "details": "4.5 mph",
+        "met": 4.5
+    }, {
+        "name": "Walking",
+        "details": "6.5 mph",
+        "met": 6.5
+}
+]

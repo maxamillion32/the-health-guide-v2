@@ -1,0 +1,1343 @@
+[
+    {
+        "name": "Fiber",
+        "category": "Carbohydrate",
+        "description": "<p>Dietary fiber or roughage is the indigestible portion of food derived from plants. There has been made distinction between fiber that occurs naturally in plant foods (dietary fiber) and isolated or synthetic fibers that may be added to foods or used as dietary supplements (functional fiber). However, these distinctions are controversial, and there are other classification systems for dietary fiber.</p><p>Note: When discussing about fiber, human nutrition refers basically to dietary fiber, so we will stick to this particular type, being the only group of fibers we interact with naturally and that brings real health benefits. In order to keep things simple, dietary fiber can be derived in two main components:</p><p>Soluble fiber, which dissolves in water, is readily fermented in the colon into gases and physiologically active byproducts, and can be prebiotic and viscous.</p><p>Insoluble fiber, which does not dissolve in water, is metabolically inert and provides bulking, or it can be prebiotic and metabolically ferment in the large intestine. Bulking fibers absorb water as they move through the digestive system, easing defecation.</p><p>Dietary fiber is a carbohydrate that is incompletely absorbed in humans and in some animals. Like all carbohydrates, when it is metabolized it can produce four Calories (kilocalories) of energy per gram. However, in most circumstances it accounts for less than that because of its limited absorption and digestibility. Dietary fiber consists mainly of cellulose, a large carbohydrate polymer which is indigestible as humans do not have the required enzymes to disassemble it. There are two subcategories: soluble and insoluble fiber. Whole grains, fruits (especially plums, prunes, and figs), and vegetables are good sources of dietary fiber. There are many health benefits of a high-fiber diet. Dietary fiber helps reduce the chance of gastrointestinal problems such as constipation and diarrhea by increasing the weight and size of stool and softening it. Insoluble fiber, found in whole wheat flour, nuts and vegetables, especially stimulates peristalsis – the rhythmic muscular contractions of the intestines, which move digesta along the digestive tract. Soluble fiber, found in oats, peas, beans, and many fruits, dissolves in water in the intestinal tract to produce a gel that slows the movement of food through the intestines. This may help lower blood glucose levels because it can slow the absorption of sugar. Additionally, fiber, perhaps especially that from whole grains, is thought to possibly help lessen insulin spikes, and therefore reduce the risk of type 2 diabetes. The link between increased fiber consumption and a decreased risk of colorectal cancer is still uncertain.</p>",
+        "classification": [
+            {
+                "name": "Dietary fiber",
+                "description": "<ul><li>Lignin - polyphenolic compound with a complex three-dimensional structure that is found in the cell walls of woody plants and seeds</li><li>Cellulose - glucose polymer with β-1,4 glycosidic bonds found in all plant cell walls</li><li>β-Glucans - glucose polymers with a mixture of β-1,4 glycosidic bonds and β-1,3 glycosidic bonds (oats and barley are particularly rich in β-glucans)</li><li>Hemicelluloses - group of polysaccharides (sugar polymers) containing six-carbon sugars (hexoses) and five-carbon sugars (pentoses) that are also found in plant cell walls</li><li>Pectins - viscous polysaccharides that are particularly abundant in fruit and berries</li><li>Gums - viscous polysaccharides often found in seeds</li><li>Inulin and oligofructose - mixture of fructose chains that vary in length and often terminate with a glucose or fructose molecule (occur naturally in plants, such as onions and Jerusalem artichokes)</li><li>Resistant starch - sequestered in plant cell walls and is therefore inaccessible to human digestive enzymes. Resistant starch may also be formed by food processing or by cooling and reheating (bananas and legumes are sources of naturally occurring resistant starch)</li></ul>"
+            },
+            {
+                "name": "Functional fiber",
+                "description": "<p>According to the Institute of Medicine’s definition, functional fiber “consists of isolated, nondigestible carbohydrates that have beneficial physiological effects in humans”. Functional fibers may be nondigestible carbohydrates that have been isolated or extracted from a natural plant or animal source, or they may be manufactured or synthesized. However, designation as a functional fiber by the Institute of Medicine requires the presentation of sufficient evidence of physiological benefit in humans. Fibers identified as potential functional fibers by the Institute of Medicine include:</p><ul><li>Psyllium - viscous mucilage, which is isolated from the husks of psyllium seeds, Plantago ovata or blond psyllium, and it is also known as ispaghula husk</li><li>Chitin - nondigestible carbohydrate extracted from the exoskeletons of crustaceans, such as crabs and lobsters</li><li>Chitosan - nondigestible glucosamine polymer produced from the deacetylation of chitin</li><li>Fructooligosaccharides - short, synthetic fructose chains terminating with a glucose unit that are used as food additives</li><li>Polydextrose and polyols - synthetic polysaccharides used as bulking agents and sugar substitutes in foods</li><li>Resistant dextrins - also called resistant maltodextrins, are indigestible polysaccharides formed when starch is heated and treated with enzymes that are used as food additives</li></ul>"
+            },
+            {
+                "name": "Total fiber",
+                "description": "<p>Total fiber is defined by the Institute of Medicine as “the sum of dietary fiber and functional fiber</p>"
+            }
+        ],
+        "functions": [
+            "Blood Sugar balance",
+            "Bowel health",
+            "Cardiovascular support",
+            "Cholesterol metabolism",
+            "Colon health",
+            "Intestinal pH balance",
+            "Low mortality risk",
+            "Speeds the passage of foods through the digestive system",
+            "Weight control"
+        ],
+        "diseasePrev": [
+            "Breast cancer",
+            "Colon cancer",
+            "Constipation",
+            "Coronary heart disease",
+            "Heart disease",
+            "High blood pressure (hypertension)",
+            "Insulin resistance",
+            "Inflammatory bowel disease",
+            "Irritable bowel syndrome",
+            "Metabolic syndrome",
+            "Peptic ulcer",
+            "Stroke",
+            "Type 2 diabetes"
+        ],
+        "intake": {
+            "male": {
+                "0-6 months": 4,
+                "7-12 months": 10,
+                "1-3 years": 19,
+                "4-8 years": 25,
+                "9-13 years": 31,
+                "14-18 years": 38,
+                "19-50 years": 30,
+                "50-70 years": 30,
+                "70+ years": 30
+            },
+            "female": {
+                "normal": {
+                    "0-6 months": 4,
+                    "7-12 months": 10,
+                    "1-3 years": 19,
+                    "4-8 years": 25,
+                    "9-13 years": 26,
+                    "14-18 years": 26,
+                    "19-50 years": 25,
+                    "50-70 years": 21,
+                    "70+ years": 21
+                },
+                "pregnancy": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 28,
+                    "19-50 years": 28,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                },
+                "lactation": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 29,
+                    "19-50 years": 29,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                }
+            }
+        },
+        "deficiency": "<p>Fiber deficiency in the food raises the risk of:</p><ul><li>Cancer</li><li>Constipation</li><li>Heart disease</li><li>Weight gain</li></ul><p>The symptoms of fiber deficiencies are not clear cut, but conditions related to its deficiency should be watched for in such circumstances.</p>",
+        "toxicity": "<p>Fiber supplements augment your stool bulk, which helps keep your bowels moving regularly. Dietary or supplemental fiber also traps a portion of the cholesterol in your intestines, which may reduce your total blood cholesterol level. Although fruit, vegetables and whole grains are ideal sources of fiber, you may use supplements to increase your fiber intake. When taken as directed, fiber supplements are typically safe. An overdose, however, may cause digestive system problems and symptoms:</p><ul><li>Abdominal pain</li><li>Bloating</li><li>Difficulty swallowing</li><li>Dizziness</li><li>Dry mouth</li><li>Nausea</li><li>Vomiting</li></ul>",
+        "nutrientRelationship": "<p>Increased intake of dietary fiber contributes to the absorption of many nutrients. As a general rule, research studies on fiber intake do not show problematic interactions with other nutrients.</p>",
+        "sources": [
+            null
+        ]
+    },
+    {
+        "name": "Flavonoids",
+        "category": "Phytonutrient",
+        "description": "<p>Flavonoids are one of the largest nutrient families known to scientists, and include over 6,000 already-identified family members. Some of the best-known flavonoids include quercetin, kaempferol, catechins, and anthocyanidins. This nutrient group is most famous for its antioxidant and anti-inflammatory health benefits, as well as its contribution of vibrant color to the foods we eat. In terms of nutrient richness, we get far more flavonoids from plant foods than from animal foods, and in particular, vegetables and fruits can be especially nutrient-rich in this type of phytonutrient.</p>",
+        "functions": [
+            "Antioxidant",
+            "Bowel health",
+            "Cardiovascular support",
+            "Detoxification",
+            "Inflammation control",
+            "Nervous system health"
+        ],
+        "diseasePrev": [
+            "Cardiovascular disease",
+            "Chronic obstructive pulmonary disease (COPD)",
+            "Easy bruising",
+            "Fever",
+            "Hot flashes",
+            "Low immune function",
+            "Osteoarthritis",
+            "Prostatitis",
+            "Rheumatoid arthritis",
+            "Skin damage from sun",
+            "Venous insufficiency"
+        ],
+        "deficiency": "<p>Flavonoid deficiency may determinate specific symptoms and increases the risk the many diseases:</p><ul><li>Easy bruising</li><li>Excessive swelling after injury</li><li>Frequent colds or infections</li></ul>",
+        "toxicity": "<p>While most flavonoids/phenolics are considered safe, flavonoid/phenolic therapy or chemopreventive use needs to be assessed as there have been reports of toxic flavonoid:</p><ul><li>Contact dermatitis</li><li>Drug interactions</li><li>Estrogenic-related concerns (male reproductive health and breast cancer)/li><li>Dizziness</li><li>Hemolytic anemia</li><li>hemolytic anemia</li></ul>",
+        "nutrientRelationship": "<h3>Vitamin C</h3><p>Flavonoids affect the transport of vitamin C around the body, and they also help regulate the function of an enzyme called ascorbate oxidase, which converts vitamin C into a non-vitamin form (monodehydroascorbate).</p>",
+        "sources": [
+            null
+        ]
+    },
+    {
+        "name": "Essential fatty acids",
+        "category": "Lipid",
+        "description": "<p>Most fatty acids are non-essential, meaning the body can produce them as needed, generally from other fatty acids and always by expending energy to do so. However, in humans, at least two fatty acids are essential and must be included in the diet. An appropriate balance of essential fatty acids, omega-3 and omega-6 fatty acids, seems also important for health, although definitive experimental demonstration has been elusive. Both of these 'omega' long-chain polyunsaturated fatty acids are substrates for a class of eicosanoids known as prostaglandins, which have roles throughout the human body. They are hormones, in some respects. An appropriately balanced intake of omega-3 and omega-6 partly determines the relative production of different prostaglandins, which is one reason why a balance between omega-3 and omega-6 is believed important for cardiovascular health. In industrialized societies, people typically consume large amounts of processed vegetable oils, which have reduced amounts of the essential fatty acids along with too much of omega-6 fatty acids relative to omega-3 fatty acids.</p>",
+        "classification": [
+            {
+                "name": "Omega-3 fatty acids",
+                "description": "<p>The omega-3 eicosapentaenoic acid (EPA), which can be made in the human body from the omega-3 essential fatty acid alpha-linolenic acid(ALA), or taken in through marine food sources, serves as a building block for series 3 prostaglandins (e.g., weakly inflammatory PGE3).</p><ul><li>α-Linolenic acid (ALA)</li><li>Stearadonic acid (SDA)</li><li>Eicosatetraienoic acid (ETA)</li><li>Eicosapentaenoic acid (EPA)</li><li>Docosapentaenoic acid (DPA)</li><li>Tetracosapentaenoic acid</li><li>Tetracosahexaenoic acid</li><li>Docosahexaenoic acid</li></ul>",
+                "intake": {
+                    "male": {
+                        "0-6 months": 0.5,
+                        "7-12 months": 0.5,
+                        "1-3 years": 0.7,
+                        "4-8 years": 0.9,
+                        "9-13 years": 1.2,
+                        "14-18 years": 1.6,
+                        "19-50 years": 1.6,
+                        "50-70 years": 1.6,
+                        "70+ years": 1.6
+                    },
+                    "female": {
+                        "normal": {
+                            "0-6 months": 0.5,
+                            "7-12 months": 0.5,
+                            "1-3 years": 0.7,
+                            "4-8 years": 0.9,
+                            "9-13 years": 1,
+                            "14-18 years": 1,
+                            "19-50 years": 1.1,
+                            "50-70 years": 1.1,
+                            "70+ years": 1.1
+                        },
+                        "pregnancy": {
+                            "0-6 months": 0,
+                            "7-12 months": 0,
+                            "1-3 years": 0,
+                            "4-8 years": 0,
+                            "9-13 years": 0,
+                            "14-18 years": 1.4,
+                            "19-50 years": 1.4,
+                            "50-70 years": 0,
+                            "70+ years": 0
+                        },
+                        "lactation": {
+                            "0-6 months": 0,
+                            "7-12 months": 0,
+                            "1-3 years": 0,
+                            "4-8 years": 0,
+                            "9-13 years": 0,
+                            "14-18 years": 1.3,
+                            "19-50 years": 1.3,
+                            "50-70 years": 0,
+                            "70+ years": 0
+                        }
+                    }
+                }
+            },
+            {
+                "name": "Omega-6 fatty acids",
+                "description": "<p>The omega-6 dihomo-gamma-linolenic acid (DGLA) serves as a building block for series 1 prostaglandins (e.g. anti-inflammatory PGE1), whereas arachidonic acid (AA) serves as a building block for series 2 prostaglandins (e.g. pro-inflammatory PGE 2). Both DGLA and AA can be made from the omega-6 linoleic acid (LA) in the human body, or can be taken in directly through food. The conversion rate of omega-6 DGLA to AA largely determines the production of the prostaglandins PGE1 and PGE2.</p><ul><li>Linoleic acid (LA)</li><li>γ-Linolenic acid (GLA)</li><li>Dihomo-γ-linolenic acid (DGLA)</li><li>Arachidonic acid (AA)</li><li>Adrenic acid</li><li>Tetracosatetraenoic acid</li><li>Tetracosapentaienoic acid</li><li>Docosapentaenoic acid (DPA)</li></ul>",
+                "intake": {
+                    "male": {
+                        "0-6 months": 4.4,
+                        "7-12 months": 4.6,
+                        "1-3 years": 7,
+                        "4-8 years": 10,
+                        "9-13 years": 12,
+                        "14-18 years": 16,
+                        "19-50 years": 17,
+                        "50-70 years": 14,
+                        "70+ years": 14
+                    },
+                    "female": {
+                        "normal": {
+                            "0-6 months": 4.4,
+                            "7-12 months": 4.6,
+                            "1-3 years": 7,
+                            "4-8 years": 10,
+                            "9-13 years": 10,
+                            "14-18 years": 11,
+                            "19-50 years": 12,
+                            "50-70 years": 11,
+                            "70+ years": 11
+                        },
+                        "pregnancy": {
+                            "0-6 months": 0,
+                            "7-12 months": 0,
+                            "1-3 years": 0,
+                            "4-8 years": 0,
+                            "9-13 years": 0,
+                            "14-18 years": 13,
+                            "19-50 years": 13,
+                            "50-70 years": 0,
+                            "70+ years": 0
+                        },
+                        "lactation": {
+                            "0-6 months": 0,
+                            "7-12 months": 0,
+                            "1-3 years": 0,
+                            "4-8 years": 0,
+                            "9-13 years": 0,
+                            "14-18 years": 13,
+                            "19-50 years": 13,
+                            "50-70 years": 0,
+                            "70+ years": 0
+                        }
+                    }
+                }
+            }
+        ],
+        "functions": [
+            "Gene expression",
+            "Membrane structure and function",
+            "Nervous system health",
+            "Pregnancy support",
+            "Synthesis of lipid mediators",
+            "Vision"
+        ],
+        "diseasePrev": [
+            "Alzheimer's disease",
+            "Cardiovascular disease",
+            "Cognitive problems",
+            "Depression",
+            "Diabetes",
+            "Excessive bleeding (Hemorrhage)",
+            "Fibrocystic breast disease",
+            "High cholesterol (hypercholesterolemia)",
+            "High blood pressure (hypertension)",
+            "Hot flashes",
+            "Multiple sclerosis",
+            "Parkinson's disease",
+            "PMS"
+        ],
+        "deficiency": "<p>The symptoms of essential fatty acid deficiency include:</p><ul><li>Achy joints</li><li>Attention deficit</li><li>Brittle nails</li><li>Coarse, unruly hair</li><li>Cold intolerance</li><li>Constipation</li><li>Cracked skin on heels</li><li>Eczema</li><li>Excessive thirst</li><li>Frequent urination</li><li>Gastrointestinal problems</li><li>High blood pressure (hypertension)</li><li>Hyperactivity</li><li>Irregular bowel movements</li><li>Irregular bowel movements</li><li>Low concentration</li><li>Low mental energy</li><li>Learning disability</li><li>Lowered immunity</li><li>Low body weight</li><li>Patches of dry skin</li><li>Poor growth</li><li>Poor memory</li><li>Poor wound healing</li><li>Suicidal tendency</li><li>Urticaria</li><li>Weakness</li></ul>",
+        "toxicity": "<p>Excessive omega-3 fatty acid consumption can affect the body's ability to fight microbial pathogens. New studies suggest that excessive omega-3 fatty acid intake increases the risk of advanced prostate cancer and atrial fibrillation. This research, though, apply only on excessive intake of supplements containing omega-3 and not from food.</p>",
+        "nutrientRelationship": "<h3>Vitamin E</h3><p>Fat-soluble antioxidants, such as vitamin E, play an important role in preventing the oxidation of PUFA. Inside the body, results of animal studies and limited data in humans suggest that the amount of vitamin E required to prevent lipid peroxidation increases with the amount of PUFA consumed</p>",
+        "sources": [
+            null
+        ]
+    },
+    {
+        "name": "Protein",
+        "category": "Protein",
+        "description": "<p>Proteins are structural materials in much of the animal body (e.g. muscles, skin, and hair). They also form the enzymes that control chemical reactions throughout the body. Each protein molecule is composed of amino acids. A complete protein source contains all the essential amino acids; an incomplete protein source lacks one or more of the essential amino acids. It is possible with protein combinations of two incomplete protein sources (e.g., rice and beans) to make a complete protein source, and characteristic combinations are the basis of distinct cultural cooking traditions. However, complementary sources of protein do not need to be eaten at the same meal to be used together by the body. Excess amino acids from protein can be converted into glucose and used for fuel through a process called gluconeogenesis. The amino acids remaining after such conversion are discarded.</p>",
+        "functions": [
+            "Cardiovascular support",
+            "Cellular activity",
+            "Detoxification",
+            "Digestive health",
+            "Endocrine functions",
+            "Energy production",
+            "Integrity of body structures",
+            "Gene expression",
+            "Muscle health",
+            "Nervous system health"
+        ],
+        "diseasePrev": [
+            "Anorexia",
+            "Diabetes",
+            "Fatigue",
+            "Malabsorption disorders",
+            "Weakness",
+            "Weight loss"
+        ],
+        "intake": {
+            "male": {
+                "0-6 months": 9.1,
+                "7-12 months": 11,
+                "1-3 years": 13,
+                "4-8 years": 19,
+                "9-13 years": 34,
+                "14-18 years": 52,
+                "19-50 years": 56,
+                "50-70 years": 56,
+                "70+ years": 56
+            },
+            "female": {
+                "normal": {
+                    "0-6 months": 9.1,
+                    "7-12 months": 11,
+                    "1-3 years": 13,
+                    "4-8 years": 19,
+                    "9-13 years": 34,
+                    "14-18 years": 46,
+                    "19-50 years": 46,
+                    "50-70 years": 46,
+                    "70+ years": 46
+                },
+                "pregnancy": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 71,
+                    "19-50 years": 71,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                },
+                "lactation": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 71,
+                    "19-50 years": 71,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                }
+            }
+        },
+        "deficiency": "<p>Protein deficiency and malnutrition can lead to variety of ailments including mental retardation and kwashiorkor. Symptoms of kwashiorkor include apathy, diarrhea, inactivity, failure to grow, flaky skin, fatty liver, and edema of the belly and legs. This edema is explained by the action of lipoxygenase on arachidonic acid to form leukotrienes and the normal functioning of proteins in fluid balance and lipoprotein transport. PEM is fairly common worldwide in both children and adults and accounts for 6 million deaths annually. In the industrialized world, PEM is predominantly seen in hospitals, is associated with disease, or is often found in the elderly.</p>",
+        "toxicity": "<p>When a high dietary protein intake is consumed, there is an increase in urea excretion, which suggests that amino acid oxidation is increased. Excess protein consumption results in protein oxidation and that the protein is excreted. The body is unable to store excess protein. Protein is digested into amino acids, which enter the bloodstream. When food protein intake is periodically high or low, the body tries to keep protein levels at an equilibrium by using the 'labile protein reserve', which serves as a short-term protein store to be used for emergencies or daily variations in protein intake. However, that reserve is not utilized as longer-term storage for future needs. Eating more protein than your body needs can interfere with your health and profile goals in a number of ways, including:</p><ul><li>Dehydration</li><li>Diarrhea</li><li>Hyperinsulinemia</li><li>Hyperaminoacidemia</li><li>Hyperammonemia</li><li>Leaching of important bone minerals</li><li>Nausea</li><li>'Rabbit starvation syndrome'</li><li>Stress on kidneys</li><li>Weight gain</li></ul>",
+        "nutrientRelationship": "<h3>Calcium</h3><p>As your protein intake goes up, so can your urinary loss of calcium. This phenomenon is related to the use of calcium as a buffer when proteins or their amino acids are primarily acidic.</p>",
+        "sources": [
+            null
+        ]
+    },
+    {
+        "name": "Aminoacids",
+        "category": "Protein",
+        "description": "<p>Amino acids are characterized by inclusion of nitrogen and sometimes sulphur (these components are responsible for the distinctive smell of burning protein, such as the keratin in hair). The body requires amino acids to produce new proteins (protein retention) and to replace damaged proteins (maintenance). As there is no protein or amino acid storage provision, amino acids must be present in the diet. Excess amino acids are discarded, typically in the urine. For all animals, some amino acids are essential (an animal cannot produce them internally) and some are non-essential (the animal can produce them from other nitrogen-containing compounds). About twenty amino acids are found in the human body, and about ten of these are essential and, therefore, must be included in the diet. A diet that contains adequate amounts of amino acids (especially those that are essential) is particularly important in some situations: during early development and maturation, pregnancy, lactation, or injury (a burn, for instance).</p>",
+        "classification": [
+            {
+                "name": "Histidine",
+                "description": "Essential",
+                "intake": {
+                    "male": {
+                        "0-6 months": 0.036,
+                        "7-12 months": 0.032,
+                        "1-3 years": 0.021,
+                        "4-8 years": 0.016,
+                        "9-13 years": 0.017,
+                        "14-18 years": 0.015,
+                        "19-50 years": 0.014,
+                        "50-70 years": 0.014,
+                        "70+ years": 0.014
+                    },
+                    "female": {
+                        "normal": {
+                            "0-6 months": 0.036,
+                            "7-12 months": 0.032,
+                            "1-3 years": 0.021,
+                            "4-8 years": 0.016,
+                            "9-13 years": 0.015,
+                            "14-18 years": 0.014,
+                            "19-50 years": 0.014,
+                            "50-70 years": 0.014,
+                            "70+ years": 0.014
+                        },
+                        "pregnancy": {
+                            "0-6 months": 0,
+                            "7-12 months": 0,
+                            "1-3 years": 0,
+                            "4-8 years": 0,
+                            "9-13 years": 0,
+                            "14-18 years": 0.018,
+                            "19-50 years": 0.018,
+                            "50-70 years": 0,
+                            "70+ years": 0
+                        },
+                        "lactation": {
+                            "0-6 months": 0,
+                            "7-12 months": 0,
+                            "1-3 years": 0,
+                            "4-8 years": 0,
+                            "9-13 years": 0,
+                            "14-18 years": 0.019,
+                            "19-50 years": 0.019,
+                            "50-70 years": 0,
+                            "70+ years": 0
+                        }
+                    }
+                }
+            },
+            {
+                "name": "Isoleucine",
+                "description": "Essential",
+                "intake": {
+                    "male": {
+                        "0-6 months": 0.088,
+                        "7-12 months": 0.043,
+                        "1-3 years": 0.028,
+                        "4-8 years": 0.022,
+                        "9-13 years": 0.022,
+                        "14-18 years": 0.021,
+                        "19-50 years": 0.019,
+                        "50-70 years": 0.019,
+                        "70+ years": 0.019
+                    },
+                    "female": {
+                        "normal": {
+                            "0-6 months": 0.088,
+                            "7-12 months": 0.043,
+                            "1-3 years": 0.028,
+                            "4-8 years": 0.022,
+                            "9-13 years": 0.021,
+                            "14-18 years": 0.019,
+                            "19-50 years": 0.019,
+                            "50-70 years": 0.019,
+                            "70+ years": 0.019
+                        },
+                        "pregnancy": {
+                            "0-6 months": 0,
+                            "7-12 months": 0,
+                            "1-3 years": 0,
+                            "4-8 years": 0,
+                            "9-13 years": 0,
+                            "14-18 years": 0.025,
+                            "19-50 years": 0.025,
+                            "50-70 years": 0,
+                            "70+ years": 0
+                        },
+                        "lactation": {
+                            "0-6 months": 0,
+                            "7-12 months": 0,
+                            "1-3 years": 0,
+                            "4-8 years": 0,
+                            "9-13 years": 0,
+                            "14-18 years": 0.030,
+                            "19-50 years": 0.030,
+                            "50-70 years": 0,
+                            "70+ years": 0
+                        }
+                    }
+                }
+            },
+            {
+                "name": "Leucine",
+                "description": "Essential",
+                "intake": {
+                    "male": {
+                        "0-6 months": 0.156,
+                        "7-12 months": 0.093,
+                        "1-3 years": 0.063,
+                        "4-8 years": 0.049,
+                        "9-13 years": 0.049,
+                        "14-18 years": 0.047,
+                        "19-50 years": 0.042,
+                        "50-70 years": 0.042,
+                        "70+ years": 0.042
+                    },
+                    "female": {
+                        "normal": {
+                            "0-6 months": 0.156,
+                            "7-12 months": 0.093,
+                            "1-3 years": 0.063,
+                            "4-8 years": 0.049,
+                            "9-13 years": 0.047,
+                            "14-18 years": 0.044,
+                            "19-50 years": 0.042,
+                            "50-70 years": 0.042,
+                            "70+ years": 0.042
+                        },
+                        "pregnancy": {
+                            "0-6 months": 0,
+                            "7-12 months": 0,
+                            "1-3 years": 0,
+                            "4-8 years": 0,
+                            "9-13 years": 0,
+                            "14-18 years": 0.056,
+                            "19-50 years": 0.056,
+                            "50-70 years": 0,
+                            "70+ years": 0
+                        },
+                        "lactation": {
+                            "0-6 months": 0,
+                            "7-12 months": 0,
+                            "1-3 years": 0,
+                            "4-8 years": 0,
+                            "9-13 years": 0,
+                            "14-18 years": 0.062,
+                            "19-50 years": 0.062,
+                            "50-70 years": 0,
+                            "70+ years": 0
+                        }
+                    }
+                }
+            },
+            {
+                "name": "Lysine",
+                "description": "Essential",
+                "intake": {
+                    "male": {
+                        "0-6 months": 0.107,
+                        "7-12 months": 0.089,
+                        "1-3 years": 0.058,
+                        "4-8 years": 0.046,
+                        "9-13 years": 0.046,
+                        "14-18 years": 0.043,
+                        "19-50 years": 0.038,
+                        "50-70 years": 0.038,
+                        "70+ years": 0.038
+                    },
+                    "female": {
+                        "normal": {
+                            "0-6 months": 0.107,
+                            "7-12 months": 0.089,
+                            "1-3 years": 0.058,
+                            "4-8 years": 0.046,
+                            "9-13 years": 0.043,
+                            "14-18 years": 0.040,
+                            "19-50 years": 0.038,
+                            "50-70 years": 0.038,
+                            "70+ years": 0.038
+                        },
+                        "pregnancy": {
+                            "0-6 months": 0,
+                            "7-12 months": 0,
+                            "1-3 years": 0,
+                            "4-8 years": 0,
+                            "9-13 years": 0,
+                            "14-18 years": 0.051,
+                            "19-50 years": 0.051,
+                            "50-70 years": 0,
+                            "70+ years": 0
+                        },
+                        "lactation": {
+                            "0-6 months": 0,
+                            "7-12 months": 0,
+                            "1-3 years": 0,
+                            "4-8 years": 0,
+                            "9-13 years": 0,
+                            "14-18 years": 0.052,
+                            "19-50 years": 0.052,
+                            "50-70 years": 0,
+                            "70+ years": 0
+                        }
+                    }
+                }
+            },
+            {
+                "name": "Methionine",
+                "description": "Essential",
+                "intake": {
+                    "male": {
+                        "0-6 months": 0.0295,
+                        "7-12 months": 0.0225,
+                        "1-3 years": 0.014,
+                        "4-8 years": 0.011,
+                        "9-13 years": 0.011,
+                        "14-18 years": 0.0105,
+                        "19-50 years": 0.0095,
+                        "50-70 years": 0.0095,
+                        "70+ years": 0.0095
+                    },
+                    "female": {
+                        "normal": {
+                            "0-6 months": 0.0295,
+                            "7-12 months": 0.0225,
+                            "1-3 years": 0.014,
+                            "4-8 years": 0.011,
+                            "9-13 years": 0.0105,
+                            "14-18 years": 0.0095,
+                            "19-50 years": 0.0095,
+                            "50-70 years": 0.0095,
+                            "70+ years": 0.0095
+                        },
+                        "pregnancy": {
+                            "0-6 months": 0,
+                            "7-12 months": 0,
+                            "1-3 years": 0,
+                            "4-8 years": 0,
+                            "9-13 years": 0,
+                            "14-18 years": 0.0125,
+                            "19-50 years": 0.0125,
+                            "50-70 years": 0,
+                            "70+ years": 0
+                        },
+                        "lactation": {
+                            "0-6 months": 0,
+                            "7-12 months": 0,
+                            "1-3 years": 0,
+                            "4-8 years": 0,
+                            "9-13 years": 0,
+                            "14-18 years": 0.013,
+                            "19-50 years": 0.013,
+                            "50-70 years": 0,
+                            "70+ years": 0
+                        }
+                    }
+                }
+            },
+            {
+                "name": "Cysteine",
+                "description": "Conditionally essential",
+                "intake": {
+                    "male": {
+                        "0-6 months": 0.0295,
+                        "7-12 months": 0.0225,
+                        "1-3 years": 0.014,
+                        "4-8 years": 0.011,
+                        "9-13 years": 0.011,
+                        "14-18 years": 0.0105,
+                        "19-50 years": 0.0095,
+                        "50-70 years": 0.0095,
+                        "70+ years": 0.0095
+                    },
+                    "female": {
+                        "normal": {
+                            "0-6 months": 0.025,
+                            "7-12 months": 0.0225,
+                            "1-3 years": 0.014,
+                            "4-8 years": 0.011,
+                            "9-13 years": 0.0105,
+                            "14-18 years": 0.0095,
+                            "19-50 years": 0.0095,
+                            "50-70 years": 0.0095,
+                            "70+ years": 0.0095
+                        },
+                        "pregnancy": {
+                            "0-6 months": 0,
+                            "7-12 months": 0,
+                            "1-3 years": 0,
+                            "4-8 years": 0,
+                            "9-13 years": 0,
+                            "14-18 years": 0.0125,
+                            "19-50 years": 0.0125,
+                            "50-70 years": 0,
+                            "70+ years": 0
+                        },
+                        "lactation": {
+                            "0-6 months": 0,
+                            "7-12 months": 0,
+                            "1-3 years": 0,
+                            "4-8 years": 0,
+                            "9-13 years": 0,
+                            "14-18 years": 0.013,
+                            "19-50 years": 0.013,
+                            "50-70 years": 0,
+                            "70+ years": 0
+                        }
+                    }
+                }
+            },
+            {
+                "name": "Phenylalanine",
+                "description": "Essential",
+                "intake": {
+                    "male": {
+                        "0-6 months": 0.0675,
+                        "7-12 months": 0.042,
+                        "1-3 years": 0.027,
+                        "4-8 years": 0.0205,
+                        "9-13 years": 0.0205,
+                        "14-18 years": 0.019,
+                        "19-50 years": 0.0165,
+                        "50-70 years": 0.0165,
+                        "70+ years": 0.0165
+                    },
+                    "female": {
+                        "normal": {
+                            "0-6 months": 0.0675,
+                            "7-12 months": 0.042,
+                            "1-3 years": 0.027,
+                            "4-8 years": 0.0205,
+                            "9-13 years": 0.019,
+                            "14-18 years": 0.0175,
+                            "19-50 years": 0.0165,
+                            "50-70 years": 0.0165,
+                            "70+ years": 0.0165
+                        },
+                        "pregnancy": {
+                            "0-6 months": 0,
+                            "7-12 months": 0,
+                            "1-3 years": 0,
+                            "4-8 years": 0,
+                            "9-13 years": 0,
+                            "14-18 years": 0.022,
+                            "19-50 years": 0.022,
+                            "50-70 years": 0,
+                            "70+ years": 0
+                        },
+                        "lactation": {
+                            "0-6 months": 0,
+                            "7-12 months": 0,
+                            "1-3 years": 0,
+                            "4-8 years": 0,
+                            "9-13 years": 0,
+                            "14-18 years": 0.0255,
+                            "19-50 years": 0.0255,
+                            "50-70 years": 0,
+                            "70+ years": 0
+                        }
+                    }
+                }
+            },
+            {
+                "name": "Tyrosine",
+                "description": "Conditionally essential",
+                "intake": {
+                    "male": {
+                        "0-6 months": 0.0675,
+                        "7-12 months": 0.042,
+                        "1-3 years": 0.027,
+                        "4-8 years": 0.0205,
+                        "9-13 years": 0.0205,
+                        "14-18 years": 0.019,
+                        "19-50 years": 0.0165,
+                        "50-70 years": 0.0165,
+                        "70+ years": 0.0165
+                    },
+                    "female": {
+                        "normal": {
+                            "0-6 months": 0.0675,
+                            "7-12 months": 0.042,
+                            "1-3 years": 0.027,
+                            "4-8 years": 0.0205,
+                            "9-13 years": 0.019,
+                            "14-18 years": 0.0175,
+                            "19-50 years": 0.0165,
+                            "50-70 years": 0.0165,
+                            "70+ years": 0.0165
+                        },
+                        "pregnancy": {
+                            "0-6 months": 0,
+                            "7-12 months": 0,
+                            "1-3 years": 0,
+                            "4-8 years": 0,
+                            "9-13 years": 0,
+                            "14-18 years": 0.022,
+                            "19-50 years": 0.022,
+                            "50-70 years": 0,
+                            "70+ years": 0
+                        },
+                        "lactation": {
+                            "0-6 months": 0,
+                            "7-12 months": 0,
+                            "1-3 years": 0,
+                            "4-8 years": 0,
+                            "9-13 years": 0,
+                            "14-18 years": 0.0255,
+                            "19-50 years": 0.0255,
+                            "50-70 years": 0,
+                            "70+ years": 0
+                        }
+                    }
+                }
+            },
+            {
+                "name": "Threonine",
+                "description": "Essential",
+                "intake": {
+                    "male": {
+                        "0-6 months": 0.073,
+                        "7-12 months": 0.049,
+                        "1-3 years": 0.032,
+                        "4-8 years": 0.024,
+                        "9-13 years": 0.024,
+                        "14-18 years": 0.022,
+                        "19-50 years": 0.020,
+                        "50-70 years": 0.020,
+                        "70+ years": 0.020
+                    },
+                    "female": {
+                        "normal": {
+                            "0-6 months": 0.073,
+                            "7-12 months": 0.049,
+                            "1-3 years": 0.032,
+                            "4-8 years": 0.024,
+                            "9-13 years": 0.022,
+                            "14-18 years": 0.021,
+                            "19-50 years": 0.020,
+                            "50-70 years": 0.020,
+                            "70+ years": 0.020
+                        },
+                        "pregnancy": {
+                            "0-6 months": 0,
+                            "7-12 months": 0,
+                            "1-3 years": 0,
+                            "4-8 years": 0,
+                            "9-13 years": 0,
+                            "14-18 years": 0.026,
+                            "19-50 years": 0.026,
+                            "50-70 years": 0,
+                            "70+ years": 0
+                        },
+                        "lactation": {
+                            "0-6 months": 0,
+                            "7-12 months": 0,
+                            "1-3 years": 0,
+                            "4-8 years": 0,
+                            "9-13 years": 0,
+                            "14-18 years": 0.030,
+                            "19-50 years": 0.030,
+                            "50-70 years": 0,
+                            "70+ years": 0
+                        }
+                    }
+                }
+            },
+            {
+                "name": "Tryptophan",
+                "description": "Essential",
+                "intake": {
+                    "male": {
+                        "0-6 months": 0.028,
+                        "7-12 months": 0.013,
+                        "1-3 years": 0.008,
+                        "4-8 years": 0.006,
+                        "9-13 years": 0.006,
+                        "14-18 years": 0.006,
+                        "19-50 years": 0.005,
+                        "50-70 years": 0.005,
+                        "70+ years": 0.005
+                    },
+                    "female": {
+                        "normal": {
+                            "0-6 months": 0.028,
+                            "7-12 months": 0.013,
+                            "1-3 years": 0.008,
+                            "4-8 years": 0.006,
+                            "9-13 years": 0.006,
+                            "14-18 years": 0.005,
+                            "19-50 years": 0.005,
+                            "50-70 years": 0.005,
+                            "70+ years": 0.005
+                        },
+                        "pregnancy": {
+                            "0-6 months": 0,
+                            "7-12 months": 0,
+                            "1-3 years": 0,
+                            "4-8 years": 0,
+                            "9-13 years": 0,
+                            "14-18 years": 0.007,
+                            "19-50 years": 0.007,
+                            "50-70 years": 0,
+                            "70+ years": 0
+                        },
+                        "lactation": {
+                            "0-6 months": 0,
+                            "7-12 months": 0,
+                            "1-3 years": 0,
+                            "4-8 years": 0,
+                            "9-13 years": 0,
+                            "14-18 years": 0.009,
+                            "19-50 years": 0.009,
+                            "50-70 years": 0,
+                            "70+ years": 0
+                        }
+                    }
+                }
+            },
+            {
+                "name": "Valine",
+                "description": "Essential",
+                "intake": {
+                    "male": {
+                        "0-6 months": 0.087,
+                        "7-12 months": 0.058,
+                        "1-3 years": 0.037,
+                        "4-8 years": 0.028,
+                        "9-13 years": 0.028,
+                        "14-18 years": 0.027,
+                        "19-50 years": 0.024,
+                        "50-70 years": 0.024,
+                        "70+ years": 0.024
+                    },
+                    "female": {
+                        "normal": {
+                            "0-6 months": 0.087,
+                            "7-12 months": 0.058,
+                            "1-3 years": 0.037,
+                            "4-8 years": 0.028,
+                            "9-13 years": 0.027,
+                            "14-18 years": 0.024,
+                            "19-50 years": 0.024,
+                            "50-70 years": 0.024,
+                            "70+ years": 0.024
+                        },
+                        "pregnancy": {
+                            "0-6 months": 0,
+                            "7-12 months": 0,
+                            "1-3 years": 0,
+                            "4-8 years": 0,
+                            "9-13 years": 0,
+                            "14-18 years": 0.031,
+                            "19-50 years": 0.031,
+                            "50-70 years": 0,
+                            "70+ years": 0
+                        },
+                        "lactation": {
+                            "0-6 months": 0,
+                            "7-12 months": 0,
+                            "1-3 years": 0,
+                            "4-8 years": 0,
+                            "9-13 years": 0,
+                            "14-18 years": 0.035,
+                            "19-50 years": 0.035,
+                            "50-70 years": 0,
+                            "70+ years": 0
+                        }
+                    }
+                }
+            },
+            {
+                "name": "Alanine",
+                "description": "Non-essential"
+            },
+            {
+                "name": "Aspargine",
+                "description": "Non-essential"
+            },
+            {
+                "name": "Aspartic acid",
+                "description": "Non-essential"
+            },
+            {
+                "name": "Glutamic acid",
+                "description": "Non-essential"
+            },
+            {
+                "name": "Serine",
+                "description": "Non-essential"
+            },
+            {
+                "name": "Arginine",
+                "description": "Conditionally essential"
+            },
+            {
+                "name": "Glutamine",
+                "description": "Conditionally essential"
+            },
+            {
+                "name": "Glycine",
+                "description": "Conditionally essential"
+            },
+            {
+                "name": "Proline",
+                "description": "Conditionally essential"
+            }
+        ],
+        "functions": [
+            "Cardiovascular support",
+            "Cellular activity",
+            "Detoxification",
+            "Digestive health",
+            "Endocrine functions",
+            "Energy production",
+            "Integrity of body structures",
+            "Gene expression",
+            "Muscle health",
+            "Nervous system health"
+        ],
+        "diseasePrev": [
+            "Anorexia",
+            "Diabetes",
+            "Fatigue",
+            "Malabsorption disorders",
+            "Weakness",
+            "Weight loss"
+        ],
+        "deficiency": "<p>If one of the nonessential amino acids is less than needed for an individual the utilization of other amino acids will be hindered and thus protein synthesis will be less than what it usually is, even in the presence of adequate total nitrogen intake. Protein deficiency has been shown to affect all of the body's organs and many of its systems, including the brain and brain function of infants and young children; the immune system, thus elevating risk of infection; gut mucosal function and permeability, which affects absorption and vulnerability to systemic disease; and kidney function. The physical signs of protein deficiency include:</p><ul><li>Dull skin</li><li>Edema</li><li>Failure to thrive in infants and children</li><li>Poor musculature</li><li>Thin and fragile hair</li></ul><p>. Biochemical changes reflecting protein deficiency include low serum albumin and low serum transferrin. The amino acids that are essential in the human diet were established in a series of experiments led by William Cumming Rose.</p>",
+        "toxicity": "<p>Excess amino acids are converted to other usable molecules by the liver in a process called deamination. Deamination converts nitrogen from the amino acid into ammonia, which is converted by the liver into urea in the urea cycle. Excretion of urea is performed by the kidneys. When there is excess protein intake, amino acids can be converted to glucose or ketones, in addition to being oxidized for fuel. When excessive amounts of amino acids are taken, catabolism by enzymes in the liver and elsewhere is accelerated. In addition, changes in the free amino acid levels in the brain signal the nervous system centers regulating food consumption, and eating patterns are affected. Excess amino acids are discarded, typically in the urine.</p>",
+        "nutrientRelationship": "<h3>Macronutrients</h3><p>The metabolism of carbohydrates, fatty acids, organic acids, and amino acids is highly overlapping and impossible to separate.</p><h3>Vitamin B-complex</h3><p>The metabolism of methionine, cysteine, tyrosine, phenylalanine, and tryptophan is very closely related to the B-complex vitamins B6, B12, choline, and folate.</p><h3>Vitamin C</h3><p>Vitamin C is needed for amino acid metabolism and to help with the absorption of amino acids.</p>",
+        "sources": [
+            null
+        ]
+    },
+    {
+        "name": "Carbohydrates",
+        "category": "Carbohydrate",
+        "description": "<p>Carbohydrates are made of organic compounds carbon, hydrogen, and oxygen. There are three sizes of carbohydrate and they are distinguished by a classification of two that is, simple carbohydrates (mono saccharides and disaccharides) and complex carbohydrates (polysaccharides). Polysaccharides are the most abundant carbohydrate in the body along with glycogen. The break down of polysaccharides goes as follows: Polysaccharides are digested into monosaccchorides including glucose which goes into the intestinal epithelium and into the bloodstream. The molecules of glucose are taken by glucose transporters and delivered into the cells of the body. While glucose is in the cells it can be oxidized for energy or provide substrates to other metabolic reactions or of course into glycogen for storage.</p><p>Generally, the monosaccharides and disaccharides, which are smaller (lower molecular weight) carbohydrates, are commonly referred to as sugars.While the scientific nomenclature of carbohydrates is complex, the names of the monosaccharides and disaccharides very often end in the suffix '-ose'. For example, grape sugar is the monosaccharide glucose, cane sugar is the disaccharide sucrose, and milk sugar is the disaccharide lactose. Carbohydrates perform numerous roles in living organisms. Polysaccharides serve for the storage of energy (e.g. starch and glycogen) and as structural components (e.g. cellulose in plants and chitin in arthropods). The 5-carbon monosaccharide ribose is an important component of coenzymes (e.g. ATP, FAD and NAD) and the backbone of the genetic molecule known as RNA. The related deoxyribose is a component of DNA. Saccharides and their derivatives include many other important biomolecules that play key roles in the immune system, fertilization, preventing pathogenesis, blood clotting, and development.</p><p>Carbohydrates are a common source of energy in living organisms; however, no carbohydrate is an essential nutrient in humans. Humans are able to obtain all of their energy requirement from protein and fats, though the potential for some negative health effects of extreme carbohydrate restriction remains, as the issue has not been studied extensively so far. However, in the case of dietary fiber, indigestible carbohydrates which are not a source of energy, inadequate intake can lead to significant increases in mortality.",
+        "classification": [
+            {
+                "name": "Monosaccharides (Sugars)",
+                "description": "<ul><li>Fructose</li><li>Galactose</li><li>Glucose</li><li>Xylose</li></ul>"
+            },
+            {
+                "name": "Disaccharides (Sugars)",
+                "description": "<ul><li>Lactose</li><li>Maltose</li><li>Sucrose</li><li>Trehalose</li></ul>"
+            },
+            {
+                "name": "Polyols (Sugars)",
+                "description": "<ul><li>Mannitol</li><li>Sorbitol</li></ul>"
+            },
+            {
+                "name": "Malto-oligosaccharides (Oligosaccharides)",
+                "description": "<ul><li>Maltodextrins</li></ul>"
+            },
+            {
+                "name": "Other oligosaccharides (Oligosaccharides)",
+                "description": "<ul><li>Fructo-oligosaccharides</li><li>Raffinose</li><li>Stachyose</li></ul>"
+            },
+            {
+                "name": "Starch (Polysaccharides)",
+                "description": "<ul><li>Amylopectin</li><li>Amylose</li><li>Modified starches</li></ul>"
+            },
+            {
+                "name": "Non-starch polysaccharides (Polysaccharides)",
+                "description": "<ul><li>Cellulose</li><li>Hemicellulose</li><li>Hydrocolloids</li><li>Pectins</li></ul>"
+            }
+        ],
+        "functions": [
+            "Cell structure",
+            "Insulin secretion",
+            "Primary energy source"
+        ],
+        "diseasePrev": [
+            "Chronic fatigue",
+            "Crohn's disease",
+            "Depression",
+            "Inflammatory bowel disease",
+            "Irritable bowel syndrome",
+            "Ulcerative colitis"
+        ],
+        "intake": {
+            "male": {
+                "0-6 months": 60,
+                "7-12 months": 95,
+                "1-3 years": 130,
+                "4-8 years": 130,
+                "9-13 years": 130,
+                "14-18 years": 130,
+                "19-50 years": 130,
+                "50-70 years": 130,
+                "70+ years": 130
+            },
+            "female": {
+                "normal": {
+                    "0-6 months": 60,
+                    "7-12 months": 95,
+                    "1-3 years": 130,
+                    "4-8 years": 130,
+                    "9-13 years": 130,
+                    "14-18 years": 130,
+                    "19-50 years": 130,
+                    "50-70 years": 130,
+                    "70+ years": 130
+                },
+                "pregnancy": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 175,
+                    "19-50 years": 175,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                },
+                "lactation": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 210,
+                    "19-50 years": 210,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                }
+            }
+        },
+        "deficiency": "<p>When your body does not have enough carbohydrates to produce energy from glucose it begins to burn fat for energy instead. Ketones are acids in the blood that form when fat is used as an energy source. Over time, the accumulation of acidic ketones causes you to lose minerals vital to normal health functions like fluid balance, nerve transmission and muscle contraction. Dangerously high levels of ketones in your bloodstream increases the risk of electrolyte imbalance, dehydration, fatigue and digestive disturbance. In diabetics, this deficiency can lead to ketoacidosis, a life-threatening condition.</p><p>Low-carbohydrate diets are based on restricting your daily carbohydrate intake to induce your body to burn fat for weight loss. You can lose a significant amount of weight on a low-carbohydrate diet when followed faithfully, but you cannot stay on this type of diet for extended periods because you risk carbohydrate deficiency. Symptoms of low carbohydrate intake can include irritable or depressed mood, because glucose is imperative for the production of mood-sustaining brain chemicals, lethargy and lack of energy, headache, and constipation from lack of fiber. Diabetics are at risk for deficiency when insulin levels are not properly managed or if the diet doesn't include enough carbohydrate-containing foods. Fiber deficiency in the food raises the risk of:</p><ul><li>Cancer</li><li>Constipation</li><li>Heart disease</li><li>Weight gain</li></ul>",
+        "toxicity": "<p>Excessive intake of carbohydrates, especially sugars causes many health diseases such as:</p><ul><li>Cavities</li><li>Depression</li><li>Diabetes</li><li>Heart disease</li><li>Obesity</li><li>Osteoporosis</li><li>Slow immune system</li></ul>",
+        "nutrientRelationship": "<p>Carbohydrates are the primary energy source, so they’re needed in all metabolism functions.</p>",
+        "sources": [
+            null
+        ]
+    },
+    {
+        "name": "Fats",
+        "category": "Lipid",
+        "description": "<p>Lipids are a group of naturally occurring molecules that include fats, waxes, sterols, fat-soluble vitamins (such as vitamins A, D, E, and K), monoglycerides, diglycerides, triglycerides, phospholipids, and others. The main biological functions of lipids include storing energy, signaling, and acting as structural components of cell membranes. Lipids have applications in the cosmetic and food industries as well as in nanotechnology. Most of the fat found in food is in the form of triglycerides, cholesterol, and phospholipids. Some dietary fat is necessary to facilitate absorption of fat-soluble vitamins (A, D, E, and K) and carotenoids. Humans and other mammals have a dietary requirement for certain essential fatty acids, such as linoleic acid (an omega-6 fatty acid) and alpha-linolenic acid (an omega-3 fatty acid) because they cannot be synthesized from simple precursors in the diet. A molecule of dietary fat typically consists of several fatty acids (containing long chains of carbon and hydrogen atoms), bonded to a glycerol. They are typically found as triglycerides (three fatty acids attached to one glycerol backbone). Lipids are made of organic molecules carbon, hydrogen, and oxygen. Fats consist of glycerol fatty acids joind by an ester bond.</p><p>Unsaturated fats may be further classified as monounsaturated (one double-bond) or polyunsaturated (many double-bonds). Furthermore, depending on the location of the double-bond in the fatty acid chain, unsaturated fatty acids are classified as omega-3 or omega-6 fatty acids. Trans fats are a type of unsaturated fat with trans-isomer bonds; these are rare in nature and in foods from natural sources; they are typically created in an industrial process called (partial) hydrogenation, because of their rancidity resistance properties. There are nine kilocalories in each gram of fat. Fatty acids such as conjugated linoleic acid, catalpic acid, eleostearic acid and punicic acid, in addition to providing energy, represent potent immune modulatory molecules. Saturated fats (typically from animal sources) have been a staple in many world cultures for millennia. Unsaturated fats (e. g., vegetable oil) are considered healthier, while trans fats are to be avoided. Saturated and some trans fats are typically solid at room temperature (such as butter or lard), while unsaturated fats are typically liquids (such as olive oil or flaxseed oil).</p>",
+        "classification": [
+            {
+                "name": "Triglycerides",
+                "description": "Composed of three fatty acids and one glycerol molecule."
+            },
+            {
+                "name": "Saturated fat",
+                "description": "A saturated fat is a fat in which the fatty acids all have single bonds. They are called saturated, because the second bond is broken up and each half of the bond is attached to (saturated with) a hydrogen atom. Most animal fats are saturated. The fats of plants and fish are generally unsaturated. High intakes of saturated fatty acids lead to:</p><ul><li>Breast cancer</li><li>Cardiovascular disease</li><li>Colorectal cancer</li><li>Diabetes</li><li>Dyslipidemia</li><li>High cholesterol (hypercholesterolemia)</li><li>Ovarian cancer</li><li>Prostate cancer</li><li>Weak bones</li></ul>",
+                "intake": {
+                    "male": {
+                        "0-6 months": 4.4,
+                        "7-12 months": 4.6,
+                        "1-3 years": 7,
+                        "4-8 years": 10,
+                        "9-13 years": 12,
+                        "14-18 years": 16,
+                        "19-50 years": 17,
+                        "50-70 years": 14,
+                        "70+ years": 14
+                    },
+                    "female": {
+                        "normal": {
+                            "0-6 months": 4.4,
+                            "7-12 months": 4.6,
+                            "1-3 years": 7,
+                            "4-8 years": 10,
+                            "9-13 years": 10,
+                            "14-18 years": 11,
+                            "19-50 years": 12,
+                            "50-70 years": 11,
+                            "70+ years": 11
+                        },
+                        "pregnancy": {
+                            "0-6 months": 0,
+                            "7-12 months": 0,
+                            "1-3 years": 0,
+                            "4-8 years": 0,
+                            "9-13 years": 0,
+                            "14-18 years": 13,
+                            "19-50 years": 13,
+                            "50-70 years": 0,
+                            "70+ years": 0
+                        },
+                        "lactation": {
+                            "0-6 months": 0,
+                            "7-12 months": 0,
+                            "1-3 years": 0,
+                            "4-8 years": 0,
+                            "9-13 years": 0,
+                            "14-18 years": 13,
+                            "19-50 years": 13,
+                            "50-70 years": 0,
+                            "70+ years": 0
+                        }
+                    }
+                }
+            },
+            {
+                "name": "Monounsaturated fat",
+                "description": "<p>Fatty acid that has a carbon chain with one unsaturateddouble bond. Insulin resistance is lowered with diets higher in monounsaturated fats (especially oleic acid).</p>",
+                "intake": {
+                    "male": {
+                        "0-6 months": 21.7,
+                        "7-12 months": 20.3,
+                        "1-3 years": 63.3,
+                        "4-8 years": 57.1,
+                        "9-13 years": 52.9,
+                        "14-18 years": 33.4,
+                        "19-50 years": 31.4,
+                        "50-70 years": 23.4,
+                        "70+ years": 23.4
+                    },
+                    "female": {
+                        "normal": {
+                            "0-6 months": 21.7,
+                            "7-12 months": 20.3,
+                            "1-3 years": 63.3,
+                            "4-8 years": 57.1,
+                            "9-13 years": 43.9,
+                            "14-18 years": 43.9,
+                            "19-50 years": 41.9,
+                            "50-70 years": 31.9,
+                            "70+ years": 31.9
+                        },
+                        "pregnancy": {
+                            "0-6 months": 0,
+                            "7-12 months": 0,
+                            "1-3 years": 0,
+                            "4-8 years": 0,
+                            "9-13 years": 0,
+                            "14-18 years": 39.6,
+                            "19-50 years": 39.6,
+                            "50-70 years": 0,
+                            "70+ years": 0
+                        },
+                        "lactation": {
+                            "0-6 months": 0,
+                            "7-12 months": 0,
+                            "1-3 years": 0,
+                            "4-8 years": 0,
+                            "9-13 years": 0,
+                            "14-18 years": 39.7,
+                            "19-50 years": 39.7,
+                            "50-70 years": 0,
+                            "70+ years": 0
+                        }
+                    }
+                }
+            },
+            {
+                "name": "Polyunsaturated fat",
+                "description": "<p>Fatty acid that has a carbon chain with one unsaturateddouble bond.</p><ul><li>Linoleic acid - an essential polyunsaturated fatty acid, its first double bond is at the 6th carbon (Omega 6)</li><li>alpha-Linolenic acid an essential polyunsaturated fatty acid, its first double bond is at the 3th carbon (Omega 3)</li></ul><p>In preliminary research, omega-3 fatty acids in algal oil, fish oil, fish and seafood have been shown to lower the risk of heart attacks. Ongoing research indicates that omega-6 fatty acids in sunflower oil andsafflower oil may also reduce the risk of cardiovascular disease. High levels of docosahexaenoic acid (DHA) are associated with a reduced risk of breast cancer. The DHA obtained through the consumption of polyunsaturated fatty acids is positively associated with cognitive and behavioral performance. In addition DHA is vital for the grey matter structure of the human brain, as well as retinal stimulation and neurotransmission. Consumption of omega-3 fatty acids during pregnancy is critical to fetal development. They are required during the prenatal period for the formation of synapses and cell membranes. These processes are also essential in postnatal human development for injury response of the central nervous system and retinal stimulation.</p>",
+                "intake": {
+                    "male": {
+                        "0-6 months": 4.9,
+                        "7-12 months": 5.1,
+                        "1-3 years": 7.7,
+                        "4-8 years": 10.9,
+                        "9-13 years": 13.1,
+                        "14-18 years": 17.6,
+                        "19-50 years": 18.6,
+                        "50-70 years": 18.6,
+                        "70+ years": 18.6
+                    },
+                    "female": {
+                        "normal": {
+                            "0-6 months": 4.9,
+                            "7-12 months": 5.1,
+                            "1-3 years": 7.7,
+                            "4-8 years": 10.9,
+                            "9-13 years": 13.1,
+                            "14-18 years": 12.1,
+                            "19-50 years": 13.1,
+                            "50-70 years": 13.1,
+                            "70+ years": 13.1
+                        },
+                        "pregnancy": {
+                            "0-6 months": 0,
+                            "7-12 months": 0,
+                            "1-3 years": 0,
+                            "4-8 years": 0,
+                            "9-13 years": 0,
+                            "14-18 years": 14.4,
+                            "19-50 years": 14.4,
+                            "50-70 years": 0,
+                            "70+ years": 0
+                        },
+                        "lactation": {
+                            "0-6 months": 0,
+                            "7-12 months": 0,
+                            "1-3 years": 0,
+                            "4-8 years": 0,
+                            "9-13 years": 0,
+                            "14-18 years": 14.3,
+                            "19-50 years": 14.3,
+                            "50-70 years": 0,
+                            "70+ years": 0
+                        }
+                    }
+                }
+            },
+            {
+                "name": "Trans fat",
+                "description": "<p>Trans fats, or trans-unsaturated fatty acids, trans fatty acids, are a type of unsaturated fats that are uncommon in nature but became commonly produced industrially from vegetable fats for use in margarine, snack food, packaged baked goods and frying fast food. Fats contain long hydrocarbon chains, which can either be unsaturated, i.e. have double bonds, or saturated, i.e. have no double bonds. In nature, unsaturated fatty acids generally have cis as opposed to trans configurations. In food production, liquid cis-unsaturated fats such as vegetable oils are hydrogenated to produce saturated fats, which have more desirable physical properties, e.g. they melt at a desirable temperature (30–40 °C). Partial hydrogenation of the unsaturated fat converts some of the cis double bonds into trans double bonds. Natural trans fats, which include conjugated linoleic acid (CLA) and vaccenic acid, originate in the rumen of these animals. Animal-based fats were once the only trans fats consumed, but by far the largest amount of trans fat consumed today is created by the processed food industry as a side effect of partially hydrogenating unsaturated plant fats (generally vegetable oils). These partially hydrogenated fats have displaced natural solid fats and liquid oils in many areas, the most notable ones being in the fast food, snack food, fried food, and baked goods industries.</p><p>Although trans fats are edible, consumption of trans fats has shown to increase the risk of coronary heart disease in part by raising levels of the lipoprotein LDL (so-called 'bad cholesterol'), lowering levels of the lipoprotein HDL ('good cholesterol'), increasing triglycerides in the bloodstream and promoting systemic inflammation. Long-term intakes of trans fatty acids lead to:</p><ul><li>Aggression</li><li>Alzheimer's disease</li><li>Cancer</li><li>Coronary heart disease</li><li>Depression</li><li>Diabetes</li><li>Diminished memory</li><li>Infertility in women</li><li>Irritability</li><li>Liver dysfunction</li><li>Obesity</li></ul>"
+            },
+            {
+                "name": "Sterols",
+                "description": "<p>Sterols, also known as steroid alcohols, are a subgroup of the steroids and an important class of organic molecules. They occur naturally in plants, animals, and fungi, with the most familiar type of animal sterol being cholesterol. Cholesterol is vital to animal cell membrane structure and function as a precursor to fat-soluble vitamins and steroid hormones. Sterols serve a vital function in the body, are produced by the body, and are not essential nutrients. This structure of a lipid is cholesterol which is a waxy substance that doesn't look like a triglyceride. It doesn't have a glycerol backbone or fatty acids, but because it is impermeable in water, it is a lipid. Sterols and related compounds play essential roles in the physiology of eukaryotic organisms. For example, cholesterol forms part of the cellular membrane in animals, where it affects the cell membrane's fluidity and serves as secondary messenger in developmental signaling. In humans and other animals, corticosteroids, such as cortisol, act as signaling compounds in cellular communication and general metabolism. Sterols are common components of human skin oils.</p><ul><li>Phytosterols - sterols in plants (campesterol, sitosterol, and stigmasterol)</li><li>Zoosterols - sterols in animals (cholesterol)</li><li>Ergosterols - sterols in fungi</li></ul><h3>Cholesterol</h3><p>Cholesterol is a waxy, fat-like substance that’s found in all cells of the body. Your body needs some cholesterol to make hormones, vitamin D, and substances that help you digest foods. Your body makes all the cholesterol it needs. However, cholesterol also is found in some of the foods you eat. Cholesterol travels through your bloodstream in small packages called lipoproteins (lip-o-PRO-teens). These packages are made of fat (lipid) on the inside and proteins on the outside.</p><p>Two kinds of lipoproteins carry cholesterol throughout your body: low-density lipoproteins (LDL) and high-density lipoproteins (HDL). Having healthy levels of both types of lipoproteins is important. LDL cholesterol sometimes is called 'bad' cholesterol. A high LDL level leads to a buildup of cholesterol in your arteries. (Arteries are blood vessels that carry blood from your heart to your body.) HDL cholesterol sometimes is called 'good' cholesterol. This is because it carries cholesterol from other parts of your body back to your liver. Your liver removes the cholesterol from your body.</p><p>Most ingested cholesterol is esterified, and esterified cholesterol is poorly absorbed. The body also compensates for any absorption of additional cholesterol by reducing cholesterol synthesis. For these reasons, cholesterol in food, seven to ten hours after ingestion, has little, if any effect on concentrations of cholesterol in the blood. However, during the first seven hours after ingestion of cholesterol, as absorbed fats are being distributed around the body within extracellular water by the various lipoproteins (which transport all fats in the water outside cells), the concentrations increase. It is also important to recognize, however, that the concentrations measured in the blood plasma of samples vary with the measurement methods utilized. Traditional, simpler, cheaper methods do not reflect (a) in which lipoproteins the various fat molecules are being transported or (b) which cells are ingesting, burning or exporting the fats molecules being measured as totals from samples of blood plasma.</p><p>Cholesterol is recycled in the body. The liver excretes it in a non-esterified form (via bile) into the digestive tract. Typically, about 50% of the excreted cholesterol is reabsorbed by the small bowel back into the bloodstream.</p>"
+            }
+        ],
+        "functions": [
+            "Cell membrane emulsification",
+            "Cell membrane structure",
+            "Energy support",
+            "Insulation (myelin)",
+            "Organ protection",
+            "Temperature regulation"
+        ],
+        "diseasePrev": [
+            "Attention deficit hyperactivity disorder (ADHD)",
+            "Alzheimer's disease",
+            "Breast cancer",
+            "Colon cancer",
+            "Constipation",
+            "Coronary heart disease",
+            "Depression",
+            "High blood pressure (hypertension)",
+            "Insulin resistance"
+        ],
+        "intake": {
+            "male": {
+                "0-6 months": 31,
+                "7-12 months": 30,
+                "1-3 years": 78,
+                "4-8 years": 78,
+                "9-13 years": 78,
+                "14-18 years": 67,
+                "19-50 years": 67,
+                "50-70 years": 56,
+                "70+ years": 56
+            },
+            "female": {
+                "normal": {
+                    "0-6 months": 31,
+                    "7-12 months": 30,
+                    "1-3 years": 78,
+                    "4-8 years": 67,
+                    "9-13 years": 67,
+                    "14-18 years": 67,
+                    "19-50 years": 67,
+                    "50-70 years": 56,
+                    "70+ years": 56
+                },
+                "pregnancy": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 67,
+                    "19-50 years": 67,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                },
+                "lactation": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 67,
+                    "19-50 years": 67,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                }
+            }
+        },
+        "deficiency": "<p>Symptoms of essential fats deficiency include:</p><ul><li>Achy joints</li><li>Attention deficit</li><li>Brittle nails</li><li>Coarse, unruly hair</li><li>Cold intolerance</li><li>Constipation</li><li>Cracked skin on heels</li><li>Eczema</li><li>Excessive thirst</li><li>Frequent urination</li><li>Gastrointestinal problems</li><li>High blood pressure (hypertension)</li><li>Hyperactivity</li><li>Irregular bowel movements</li><li>Irritability</li><li>Low concentration</li><li>Low mental energy</li><li>Learning disability</li><li>Lowered immunity</li><li>Low body weight</li><li>Patches of dry skin</li><li>Poor growth</li><li>Poor memory</li><li>Poor wound healing</li><li>Suicidal tendency</li><li>Urticaria</li><li>Weakness</li></ul>",
+        "toxicity": "Like any other macronutrient, any excess lead to weight gain. Also, excess of specific fats, such as cholesterol, saturate fat and trans fat may cause health problems:</p><ul><li>Atherosclerosis</li><li>Brain injury</li><li>Heart disease</li><li>Increased cancer risk</li><li>Risk of obesity</li></ul>",
+        "nutrientRelationship": "<p></p>",
+        "sources": [
+            null
+        ]
+    }
+]

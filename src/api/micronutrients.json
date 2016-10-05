@@ -1,0 +1,2140 @@
+[
+    {
+        "name": "Vitamin A",
+        "category": "Vitamin",
+        "description": "<p>Vitamin A is a group of unsaturated organic compounds. It has two basic forms: Retinoids and Carotenoids.</p><h3>Retinoids</h3><p>Retinoids bring many specific immune, inflammatory, genetic and reproductive benefits, such as support during pregnancy and childbirth, support for childhood growth, nightvision, red blood cell prodoction and infectious disease resistence.</p>Retinoids are found only in animal based food, but it is possible to be converted from carotenoids, as well. Unoftunately, not every body has this ability.This ability is being compromised by several factors: genetics, digestive problems, bacterial imbalances in the gut, excessive alcohol use, excessive alcohol use, excessive exposure to toxins, imbalanced intake of vitamin A and vitamin D in supplement form and high intake of prescription medications.There are four basic retinoids: retinol, retinal, retinoic acid and retinyl esters.</p><h3>Carotenoids</h3><p>Carotenoids act as antioxidants and have anti-inflamatory functions. They offer protection for our body, but their main focus is on prevention of age-related macular degeneration (eye health).Carotenoids are devided in two groups: Carotenes (alpha-Carotene, beta-Carotene, gamma-Carotene, epsilon-Carotene, zeta-Carotene) and Xanthophylls (astaxanthin, beta-Cryptoxanthin, canthaxanthin, fucoxanthin, lutein, neoxanthin, violaxanthin, zeaxanthin).</p>",
+        "functions": [
+            "Antioxidant",
+            "Bone metabolism",
+            "Cellular health",
+            "Embryonic development and reproduction",
+            "Gene expression",
+            "Hematopoiesis (formation of blood cellular components)",
+            "Immune system",
+            "Skin health",
+            "Vision"
+        ],
+        "diseasePrev": [
+            "Acne",
+            "AIDS",
+            "Age-related macular degenration",
+            "Alcoolism",
+            "Angina pectoris",
+            "Atopic dermatitis",
+            "Asthma",
+            "Cataract",
+            "Cervical cancer",
+            "Cervical dysplasia",
+            "Cystic Fibrosis",
+            "Chlamydial infection",
+            "Diabetes",
+            "Dry eyes",
+            "Heart disease",
+            "Hyperkeratosis",
+            "Infertility",
+            "Inflammatory bowel disease",
+            "Kaposi's sarcoma",
+            "Laryngeal cancer",
+            "Leukoplakia",
+            "Lung cancer",
+            "Lung cancer",
+            "Osteoarthritis",
+            "Otitis media",
+            "Photosensitivity",
+            "Pneumonia",
+            "Poor vision",
+            "Premature birth",
+            "Prostate cancer",
+            "Psoriasis",
+            "Rheumatoid arthritis",
+            "Skin cancer",
+            "Thyroid disorders",
+            "Ulcers",
+            "Vaginitis",
+            "Vaginal candidiasis",
+            "Varicose veins",
+            "Viral infections"
+        ],
+        "intake": {
+            "male": {
+                "0-6 months": 0.4,
+                "7-12 months": 0.5,
+                "1-3 years": 0.3,
+                "4-8 years": 0.4,
+                "9-13 years": 0.6,
+                "14-18 years": 0.9,
+                "19-50 years": 0.9,
+                "50-70 years": 0.9,
+                "70+ years": 0.9
+            },
+            "female": {
+                "normal": {
+                    "0-6 months": 0.4,
+                    "7-12 months": 0.5,
+                    "1-3 years": 0.3,
+                    "4-8 years": 0.4,
+                    "9-13 years": 0.6,
+                    "14-18 years": 0.7,
+                    "19-50 years": 0.7,
+                    "50-70 years": 0.7,
+                    "70+ years": 0.7
+                },
+                "pregnancy": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 0.75,
+                    "19-50 years": 0.77,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                },
+                "lactation": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 1.2,
+                    "19-50 years": 1.3,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                }
+            }
+        },
+        "deficiency": "<p>Vitamin A deficiency can occur as either a primary or a secondary deficiency. Primary vitamin A deficiency occurs among children and adults who do not consume an adequate intake of vitamin A. Secondary vitamin A deficiency is associated with chronic malabsorption of lipids, impaired bile production and release, and chronic exposure to oxidants, such as cigarette smoke, and chronic alcoholism. Due to the unique function of retinal as a visual chromophore, one of the earliest and specific manifestations of vitamin A deficiency is impaired vision, particularly in reduced light (night blindness). Persistent deficiency gives rise to a series of changes, the most devastating of which occur in the eyes. Some other ocular changes are referred to as xerophthalmia. Other changes include impaired immunity (increased risk of ear infections, urinary tract infections, Meningococcal disease), hyperkeratosis (white lumps at hair follicles), keratosis pilaris and squamous metaplasia of the epithelium lining the upper respiratory passages and urinary bladder to a keratinized epithelium. With relations to dentistry, a deficiency in Vitamin A leads to enamel hypoplasia. Adequate supply, but not excess vitamin A, is especially important for pregnant and breastfeeding women for normal fetal development and in breastmilk. Deficiencies cannot be compensated by postnatal supplementation.</p>",
+        "toxicity": "<p>Excessive vitamin A consumption can lead to nausea, irritability, anorexia (reduced appetite), vomiting, blurry vision, headaches, hair loss, muscle and abdominal pain and weakness, drowsiness, and altered mental status. In chronic cases, hair loss, dry skin, drying of the mucous membranes, fever, insomnia, fatigue, weight loss, bone fractures, anemia, and diarrhea can all be evident on top of the symptoms associated with less serious toxicity. Some of these symptoms are also common to acne treatment with Isotretinoin. Chronically high doses of vitamin A, and also pharmaceutical retinoids such as 13-cis retinoic acid, can produce the syndrome of pseudotumor cerebri. This syndrome includes headache, blurring of vision and confusion, associated with increased intracerebral pressure. Symptoms begin to resolve when intake of the offending substance is stopped.</p>",
+        "nutrientRelationship": "<h3>Protein</h3><p>The transport and utilization of vitamin A is dependent upon several vitamin A binding proteins. Because a sufficient dietary intake of protein is required for the manufacture of these binding proteins, inadequate protein intake may result in vitamin A deficiency.</p><h3>Fat</h3><p>Adequate intake of dietary fat is necessary for the absorption and utilization of vitamin A.</p><h3>Zinc</h3><p>Zinc deficiency can also impair absorption, transport, and metabolism of vitamin A because it is essential for the synthesis of the vitamin A transport proteins and as the cofactor in conversion of retinol to retinal. In malnourished populations, common low intakes of vitamin A and zinc increase the severity of vitamin A deficiency and lead physiological signs and symptoms of deficiency.</p><h3>Vitamin D</h3><p>Recent studies suggest that effects of vitamin D deficiency are worsened by high supplemental intake of vitamin A (in retinoid form).</p><h3>Vitamin K</h3><p>Excess retinoid-form vitamin A may interfere with the metabolism of vitamin K, a fat-soluble vitamin necessary for blood clotting</p><h3>Iron</h3><p>Vitamin A deficiency often coexists with iron deficiency and may exacerbate iron deficiency anemia by altering iron metabolism. Vitamin A supplementation has beneficial effects on iron deficiency anemia and improves iron nutritional status among children and pregnant women. The combination of supplemental vitamin A and iron seems to reduce anemia more effectively than either supplemental iron or vitamin A alone.</p>",
+        "sources": [
+            null
+        ]
+    },
+    {
+        "name": "Vitamin C",
+        "category": "Vitamin",
+        "description": "<p>Vitamin C is a potent reducing agent, meaning that it readily donates electrons to recipient molecules. Because of this oxidation-reduction (redox) potential, vitamin C has two important functions: antioxidant and enzyme cofactor. Vitamin C is the primary water-soluble, non-enzymatic antioxidant in plasma and tissues. Even in small amounts vitamin C can protect indispensable molecules in the body, such as proteins, lipids (fats), carbohydrates, and nucleic acids (DNA and RNA), from damage by free radicals and reactive oxygen species (ROS) that are generated during normal metabolism, by active immune cells, and through exposure to toxins and pollutants (for example, certain chemotherapy drugs and cigarette smoke). Vitamin C also participates in redox recycling of other important antioxidants (for example, it regenerates vitamin E from its oxidized ). Vitamin C’s role as a cofactor is also related to its redox potential. By maintaining enzyme-bound metals in their reduced forms, vitamin C assists mixed-function oxidases in the synthesis of several critical biomolecules. Research also suggests that vitamin C is involved in the metabolism of cholesterol to bile acids, which may have implications for blood cholesterol levels and the incidence of gallstones.</p>",
+        "functions": [
+            "Antioxidant",
+            "Collagen synthesis",
+            "Enzymatic reactions"
+        ],
+        "diseasePrev": [
+            "Alzheimer's disease",
+            "Asthma",
+            "Cancer",
+            "Capillary fragility",
+            "Cardiovascular disease",
+            "Cataract",
+            "Common cold",
+            "Gingivitis",
+            "Gout",
+            "High blood pressure (hypertension)",
+            "Musculoskeletal injury",
+            "Rheumatoid arthritis",
+            "Seasonal allergies",
+            "Scurvy"
+        ],
+        "intake": {
+            "male": {
+                "0-6 months": 40,
+                "7-12 months": 50,
+                "1-3 years": 15,
+                "4-8 years": 25,
+                "9-13 years": 45,
+                "14-18 years": 75,
+                "19-50 years": 90,
+                "50-70 years": 90,
+                "70+ years": 90
+            },
+            "female": {
+                "normal": {
+                    "0-6 months": 40,
+                    "7-12 months": 50,
+                    "1-3 years": 15,
+                    "4-8 years": 25,
+                    "9-13 years": 45,
+                    "14-18 years": 65,
+                    "19-50 years": 75,
+                    "50-70 years": 75,
+                    "70+ years": 75
+                },
+                "pregnancy": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 80,
+                    "19-50 years": 85,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                },
+                "lactation": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 115,
+                    "19-50 years": 120,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                }
+            }
+        },
+        "deficiency": "<p>Scurvy is an avitaminosis resulting from lack of vitamin C, since without this vitamin, the synthesized collagen is too unstable to perform its function. Scurvy leads to the formation of brown spots on the skin, spongy gums, and bleeding from all mucous membranes. The spots are most abundant on the thighs and legs, and a person with the ailment looks pale, feels depressed, and is partially immobilized. In advanced scurvy there are open, suppurating wounds and loss of teeth and, eventually, death. The human body can store only a certain amount of vitamin C, and so the body stores are depleted if fresh supplies are not consumed.<p>",
+        "toxicity": "<p>Vitamin C is water-soluble, with dietary excesses not absorbed, and excesses in the blood rapidly excreted in the urine. It exhibits remarkably low toxicity. Relatively large doses of ascorbic acid may cause indigestion, particularly when taken on an empty stomach. However, taking vitamin C in the form of sodium ascorbate and calcium ascorbate may minimize this effect. When taken in large doses, ascorbic acid causes diarrhea in healthy subjects.</p>",
+        "nutrientRelationship": "<h3>Iron</h3><p>Vitamin C can increase the absorption of iron, especially the iron found in plant foods, and may help lower the risk of dietary iron deficiency.<h3>Vitamin E</h3><p>Antioxidants in foods tend to work together in important and synergistic ways to provide protection against free radical damage. The most well-known of these connections is that between vitamin E and vitamin C, due to the fact that vitamin C helps to protect vitamin E in people, such as smokers, who have chronic overproduction of free radicals.</p><h3>Flavonoids</h3><p>Flavonoids are plant based antioxidants that help vitamin C in the protection against free radicals</p>",
+        "sources": [
+            null
+        ]
+    },
+    {
+        "name": "Vitamin D",
+        "category": "Vitamin",
+        "description": "<p>Vitamin D is a group of fat-soluble compounds, the most important of being vitamin D3 (cholecalciferol) and vitamin D2 (ergocalciferol). Cholecalciferol and ergocalciferol can be ingested from the diet and from supplements. Very few foods contain vitamin D; synthesis of vitamin D (specifically cholecalciferol) in the skin is the major natural source of the vitamin. Dermal synthesis of vitamin D from cholesterol is dependent on sun exposure. As vitamin D is synthesized in adequate amounts by most mammals exposed to sunlight, it is not strictly a vitamin, and may be considered a hormone as its synthesis and activity occur in different locations.</p>",
+        "functions": [
+            "Aging",
+            "Metabolsim",
+            "Nutrient absorption"
+        ],
+        "diseasePrev": [
+            "Asthma",
+            "Cancer",
+            "Cardiovascular disease",
+            "Depression",
+            "Diabetes",
+            "Epilepsy",
+            "Loss of balance",
+            "Low immune function",
+            "Osteomalacia",
+            "Osteoporosis",
+            "Rheumatoid arthritis",
+            "Rickets"
+        ],
+        "intake": {
+            "male": {
+                "0-6 months": 0.01,
+                "7-12 months": 0.01,
+                "1-3 years": 0.015,
+                "4-8 years": 0.015,
+                "9-13 years": 0.015,
+                "14-18 years": 0.015,
+                "19-50 years": 0.015,
+                "50-70 years": 0.015,
+                "70+ years": 0.02
+            },
+            "female": {
+                "normal": {
+                    "0-6 months": 0.01,
+                    "7-12 months": 0.01,
+                    "1-3 years": 0.015,
+                    "4-8 years": 0.015,
+                    "9-13 years": 0.015,
+                    "14-18 years": 0.015,
+                    "19-50 years": 0.015,
+                    "50-70 years": 0.015,
+                    "70+ years": 0.02
+                },
+                "pregnancy": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 0.015,
+                    "19-50 years": 0.015,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                },
+                "lactation": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 0.015,
+                    "19-50 years": 0.015,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                }
+            }
+        },
+        "deficiency": "<p>A diet deficient in vitamin D in conjunction with inadequate sun exposure causes osteomalacia (or rickets when it occurs in children), which is a softening of the bones. In the developed world, this is a rare disease. However, vitamin D deficiency has become a worldwide issue in the elderly and remains common in children and adults.</p>",
+        "toxicity": "<p>Vitamin D toxicity is rare. It is caused by supplementing with high doses of vitamin D rather than sunlight. Hypercalcemia is a strong indication of vitamin D toxicity, noted with an increase in urination and thirst. If hypercalcemia is not treated, it results in excess deposits of calcium in soft tissues and organs such as the kidneys, liver, and heart, resulting in pain and organ damage. Pregnant or breastfeeding women should consult a doctor before taking a vitamin D supplement.</p>",
+        "nutrientRelationship": "<h3>Iron</h3><p>Vitamin C can increase the absorption of iron, especially the iron found in plant foods, and may help lower the risk of dietary iron deficiency.<h3>Calcium</h3><p>Vitamin D and calcium are very closely related in activity. Deficiency of either can lead to impaired bone formation. Vitamin D in the absence of adequate calcium could increases the rate of bone loss.</p><h3>Magnesium</h3><p>Vitamin D also increases magnesium absorption. Vitamin D and calcium based supplementation may lead to magnesium deficiency, due to the fact that calcium and magnesium compete with each other for absorption.</p><h3>Vitamin K</h3><p>Vitamin D and vitamin K help keep the rate of bone production and breakdown in balance. Some studies say that low vitamin K levels may lead to bone problems.</p><h3>Iron</h3><p>Vitamin D is responsible for enhancing intestinal absorption of iron.</p><h3>Zinc</h3><p>Vitamin D is responsible for enhancing intestinal absorption of zinc, as well.</p><h3>Phosphate</h3><p>Vitamin D is responsible for enhancing intestinal absorption of Phosphate, as well.</p>",
+        "sources": [
+            null
+        ]
+    },
+    {
+        "name": "Vitamin K",
+        "category": "Vitamin",
+        "description": "<p>Vitamin K is a fat-soluble vitamin. Originally identified for its role in the process of blood clot formation (‘K’ is derived from the German word ‘koagulation’), vitamin K is essential for the functioning of several proteins involved in physiological processes that encompass, but are not limited to, the regulation of blood clotting (coagulation). Naturally occurring forms of vitamin K include a number of vitamers known as vitamin K1 and vitamin K2.</p><h3>Vitamin K1</h3><p>Vitamin K1 or phylloquinone is synthesized by plants and is the predominant form in the diet.</p><h3>Vitamin K2</h3>Vitamin K2 includes a range of vitamin K forms collectively referred to as menaquinones. Most menaquinones are synthesized by human intestinal microbiota and found in fermented foods and in animal products.</p>",
+        "functions": [
+            "Antioxidant",
+            "Blood clotting",
+            "Bone metabolism"
+        ],
+        "diseasePrev": [
+            "Blood clotting disorders",
+            "Cancer",
+            "Celiac disease",
+            "Coronary artery disease",
+            "Cystic fibrosis",
+            "Liver disease",
+            "Osteoporosis",
+            "Ulcerative colitis"
+        ],
+        "intake": {
+            "male": {
+                "0-6 months": 0.002,
+                "7-12 months": 0.0025,
+                "1-3 years": 0.03,
+                "4-8 years": 0.055,
+                "9-13 years": 0.06,
+                "14-18 years": 0.075,
+                "19-50 years": 0.12,
+                "50-70 years": 0.12,
+                "70+ years": 0.12
+            },
+            "female": {
+                "normal": {
+                    "0-6 months": 0.002,
+                    "7-12 months": 0.0025,
+                    "1-3 years": 0.03,
+                    "4-8 years": 0.055,
+                    "9-13 years": 0.06,
+                    "14-18 years": 0.075,
+                    "19-50 years": 0.09,
+                    "50-70 years": 0.09,
+                    "70+ years": 0.09
+                },
+                "pregnancy": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 0.075,
+                    "19-50 years": 0.09,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                },
+                "lactation": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 0.075,
+                    "19-50 years": 0.09,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                }
+            }
+        },
+        "deficiency": "<p>Average diets are usually not lacking in vitamin K, and primary deficiency is rare in healthy adults. Newborn infants are at an increased risk of deficiency. Other populations with an increased prevalence of vitamin K deficiency include those who suffer from liver damage or disease (e.g., alcoholics), cystic fibrosis, or inflammatory bowel diseases, or have recently had abdominal surgeries. Secondary vitamin K deficiency can occur in bulimics, those on stringent diets, and those taking anticoagulants.Vitamin K1 deficiency can result in coagulopathy, a bleeding disorder. Symptoms of K1 deficiency include anemia, bruising, nosebleeds, bleeding gums, blood in the urine, blood in the stool, tarry black stools, and heavy menstrual bleeding in women. Osteoporosis and coronary heart disease are strongly associated with lower levels of K2 (menaquinone). Vitamin K2 deficiency is also related to severe aortic calcification and all-cause mortality.</p>",
+        "toxicity": "<p>Although allergic reaction from supplementation is possible, no known toxicity is associated with high doses of the phylloquinone (vitamin K1) or menaquinone (vitamin K2) forms of vitamin K.</p>",
+        "nutrientRelationship": "<h3>Vitamin E</h3><p>Vitamin E can compete for absorption with vitamin K. But this has only been reported with mega-dose supplementation, not with dietary intake.</p><h3>Vitamin A</h3><p>Vitamin A can compete for absorption with vitamin K and has only been reported with mega-dose supplementation, not with dietary intake, as well.</p><h3>Calcium</h3><p>Vitamin K and Calcium help keep the rate of bone production and breakdown in balance.</p><h3>Magnesium</h3><p>Vitamin K and Magnesium help keep the rate of bone production and breakdown in balance, as well.</p><h3>Vitamin D</h3><p>Vitamin K and vitamin D help keep the rate of bone production and breakdown in balance, as well.</p>",
+        "sources": [
+            null
+        ]
+    },
+    {
+        "name": "Vitamin B6",
+        "category": "Vitamin",
+        "description": "<p>Vitamin B6 refers to a group of chemically very similar compounds which can be interconverted in biological systems. Vitamin B6 is part of thevitamin B group, and its active form, pyridoxal 5'-phosphate (PLP) serves as a coenzyme in many enzyme reactions in amino acid, glucose, and lipid (macronutrients) metabolism.</p>",
+        "functions": [
+            "Amino acid metabolism",
+            "Brain and nervous system health",
+            "Gene expression",
+            "Glucose metabolism",
+            "Liver detoxification",
+            "Lipid metabolism",
+            "Hemoglobin synthesis and function"
+        ],
+        "diseasePrev": [
+            "Anemia",
+            "Asthma",
+            "Attention deficit hyperactivity disorder (ADHD)",
+            "Carpal tunnel syndrome",
+            "Depression",
+            "Fibrocystic breast disease",
+            "Epilepsy",
+            "High homocysteine",
+            "Morning sickness",
+            "Premenstrual syndrome",
+            "Seborrheic dermatitis"
+        ],
+        "intake": {
+            "male": {
+                "0-6 months": 0.1,
+                "7-12 months": 0.3,
+                "1-3 years": 0.5,
+                "4-8 years": 0.6,
+                "9-13 years": 1,
+                "14-18 years": 1.3,
+                "19-50 years": 1.3,
+                "50-70 years": 1.7,
+                "70+ years": 1.7
+            },
+            "female": {
+                "normal": {
+                    "0-6 months": 0.1,
+                    "7-12 months": 0.3,
+                    "1-3 years": 0.5,
+                    "4-8 years": 0.6,
+                    "9-13 years": 1,
+                    "14-18 years": 1.2,
+                    "19-50 years": 1.3,
+                    "50-70 years": 1.5,
+                    "70+ years": 1.5
+                },
+                "pregnancy": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 1.9,
+                    "19-50 years": 1.9,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                },
+                "lactation": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 2,
+                    "19-50 years": 2,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                }
+            }
+        },
+        "deficiency": "<p>A deficiency of vitamin B6 alone is relatively uncommon and often occurs in association with other vitamins of the B complex. The elderly and alcoholics have an increased risk of vitamin B6 deficiency, as well as other micronutrient deficiencies. Evidence exists for decreased levels of vitamin B6 in women with type 1 diabetes and in patients with systemic inflammation, liver disease, rheumatoid arthritis, and those infected with HIV. The classic clinical syndrome for vitamin B6 deficiency is a seborrhoeic dermatitis-like eruption, atrophic glossitis withulceration, angular cheilitis, conjunctivitis, intertrigo, and neurologic symptoms of somnolence, confusion, andneuropathy (due to impaired sphingosin synthesis) and sideroblastic anemia (due to impaired heme synthesis).</p>",
+        "toxicity": "<p>Adverse effects have been documented from vitamin B6 supplements, but never from food sources. The primary symptoms are pain and numbness of the extremities. In severe cases, motor neuropathy may occur with 'slowing of motor conduction velocities, prolonged F wave latencies, and prolonged sensory latencies in both lower extremities', causing difficulty in walking.</p>",
+        "nutrientRelationship": "<h3>Vitamin B-Complex</h3><p>The entire group of B-Complex vitamins is involved in the process of energy production, and deficiency of one can impair the entire process.</p><h3>Magnesium</h3><p>Every reaction in the body that uses vitamin B6 also uses magnesium as a mineral co-factor</p><h3>Protein</h3><p>Diets very high in protein are known to increase risk of vitamin B6 depletion.</p>",
+        "sources": [
+            null
+        ]
+    },
+    {
+        "name": "Vitamin E",
+        "category": "Vitamin",
+        "description": "<p>Vitamin E refers to a group of compounds that include both tocopherols and tocotrienols. Of the many different forms of vitamin E, γ-tocopherol is the most common in diet, when α-tocopherol is the most biologically active form of vitamin E and the second-most common form of vitamin E in the diet. As a fat-soluble antioxidant, it stops the production of reactive oxygen species formed when fat undergoes oxidation.</p>",
+        "functions": [
+            "Antioxidant",
+            "Gene expression",
+            "Neurological functions",
+            "Lipid protection",
+            "Polyunsaturated fat oxidation prevention",
+            "Smooth muscle growth"
+        ],
+        "diseasePrev": [
+            "Alzheimer's disease",
+            "Cancer",
+            "Cataract",
+            "Cold sores",
+            "Diabetes",
+            "Epilepsy",
+            "Fibrocystic breast disease",
+            "Heart attack",
+            "Intermittent claudication",
+            "Low immune function",
+            "Macular degeneration",
+            "Parkinson's disease",
+            "PMS",
+            "Stroke"
+        ],
+        "intake": {
+            "male": {
+                "0-6 months": 4,
+                "7-12 months": 5,
+                "1-3 years": 6,
+                "4-8 years": 7,
+                "9-13 years": 11,
+                "14-18 years": 15,
+                "19-50 years": 15,
+                "50-70 years": 15,
+                "70+ years": 15
+            },
+            "female": {
+                "normal": {
+                    "0-6 months": 4,
+                    "7-12 months": 5,
+                    "1-3 years": 6,
+                    "4-8 years": 7,
+                    "9-13 years": 11,
+                    "14-18 years": 15,
+                    "19-50 years": 15,
+                    "50-70 years": 15,
+                    "70+ years": 15
+                },
+                "pregnancy": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 15,
+                    "19-50 years": 15,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                },
+                "lactation": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 19,
+                    "19-50 years": 19,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                }
+            }
+        },
+        "deficiency": "<p>Vitamin E deficiency can cause:</p><ul><li>Ataxia and Spinocerebellar ataxia</li><li>Myopathies</li><li>Peripheral neuropathy</li><li>Impairment of the immune response</li><li>Red blood cell destruction</li><li>Retinopathy</li><li>Skeletal myopathy</li></ul>",
+        "toxicity": "<p>Vitamin E can act as an anticoagulant, increasing the risk of bleeding problems.</p>",
+        "nutrientRelationship": "<h3>Polyunsaturated fats</h3><p>Diets high in polyunsaturated fats may increase your requirement for vitamin E.</p><h3>Vitamin C</h3><p>Like other dietary antioxidants, vitamin E needs help from multiple nutrients to do its job at maximum efficiency. In particular, vitamin C helps to recycle vitamin E so it can continue to neutralize free radicals over and over again.</p><h3>Vitamin K</h3><p>If vitamin K levels are low, too much vitamin E can lead to problems involving too easy bleeding from injuries and too slow closing of wounds. The amounts of vitamin E necessary to create this effect are large, however, and probably not achievable via diet alone.</p>",
+        "sources": [
+            null
+        ]
+    },
+    {
+        "name": "Vitamin B7",
+        "category": "Vitamin",
+        "description": "<p>Biotin, also known as vitamin H or coenzyme R, is a water-soluble B Complex vitamin (vitamin B7). Biotin plays key roles in fat and sugar metabolism, roles that make deficiency of biotin show up in multiple and unrelated ways. Studies suggest that consumption of raw egg whites can interfere with biotin absorption.</p>",
+        "functions": [
+            "Blood sugar balance",
+            "Branched-chain amino acid catabolism",
+            "Fatty acid synthesis",
+            "Gluconeogenesis",
+            "Pregnancy support",
+            "Skin health"
+        ],
+        "diseasePrev": [
+            "Brittle nails",
+            "Diabetes",
+            "Hair loss",
+            "Seizures",
+            "Skin rash"
+        ],
+        "intake": {
+            "male": {
+                "0-6 months": 0.005,
+                "7-12 months": 0.006,
+                "1-3 years": 0.008,
+                "4-8 years": 0.012,
+                "9-13 years": 0.02,
+                "14-18 years": 0.025,
+                "19-50 years": 0.03,
+                "50-70 years": 0.03,
+                "70+ years": 0.03
+            },
+            "female": {
+                "normal": {
+                    "0-6 months": 0.005,
+                    "7-12 months": 0.006,
+                    "1-3 years": 0.008,
+                    "4-8 years": 0.012,
+                    "9-13 years": 0.02,
+                    "14-18 years": 0.025,
+                    "19-50 years": 0.03,
+                    "50-70 years": 0.03,
+                    "70+ years": 0.03
+                },
+                "pregnancy": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 0.03,
+                    "19-50 years": 0.03,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                },
+                "lactation": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 0.035,
+                    "19-50 years": 0.035,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                }
+            }
+        },
+        "deficiency": "<p>Biotin deficiency can arise due to various inborn genetic errors that affect the activity of biotin-related enzymes. Since endogenous biotin production occurs in the gut, dysbiosis could also upset the metabolic processes that allow the body to generate biotin on its own.</p><p>Deficiency symptoms include:</p><ul><li>Brittle and thin fingernails</li><li>Conjunctivitis</li><li>Dermatitis in the form of a scaly, red rash around the eyes, nose, mouth, and genital area</li><li>Hair loss (alopecia)</li><li>Neurological symptoms in adults, such as depression, lethargy, hallucination, and numbness and tingling of the extremities</li></ul>",
+        "toxicity": "<p>There are no reported cases of adverse effects from receiving high doses of the vitamin, in particular, when used in the treatment of metabolic disorders causing sebhorrheic dermatitis in infants. Excess biotin accumulation can inhibit endogenous sirtuin activity leading to increased inflammation, cellularity, and collagen deposition and may be partly responsible for age related metabolic problems. </p>",
+        "nutrientRelationship": "<h3>Vitamin B-Complex</h3><p>The entire group of B-Complex vitamins is involved in the process of energy production, and deficiency of one can impair the entire process.</p><h3>Pantothenic acid</h3><p>Pantothenic acid and bitotin are absorbed in the same site of the intestine and, theoretically, they should fight for absorption. However, no negative interactions have been found.</p>",
+        "sources": [
+            null
+        ]
+    },
+    {
+        "name": "Calcium",
+        "category": "Mineral",
+        "description": "<p>Calcium is an important component of a healthy diet and a mineral necessary for life. The National Osteoporosis Foundation says, 'Calcium plays an important role in building stronger, denser bones early in life and keeping bones strong and healthy later in life'. Approximately 99 percent of the body's calcium is stored in the bones and teeth. The rest of the calcium in the body has other important uses, such as some exocytosis, especially neurotransmitter release, and muscle contraction. Intracellular calcium overload may lead some kind of cells to oxidative stress and apoptosis, and thus producing several diseases. In the electrical conduction system of the heart, calcium replaces sodium as the mineral that depolarizes the cell, proliferating the action potential. In cardiac muscle, sodium influx commences an action potential, but during potassium efflux, the cardiac myocyte experiences calcium influx, prolonging the action potential and creating a plateau phase of dynamic equilibrium.</p>",
+        "functions": [
+            "Acid/Alkaline Balance",
+            "Bone Health",
+            "Muscle function",
+            "Nervous system health",
+            "Pregnancy and lactation support"
+        ],
+        "diseasePrev": [
+            "Gastroesophageal reflux disease (GERD)",
+            "High blood pressure (hypertension)",
+            "High cholesterol (hyperlipidemia)",
+            "Osteoporosis",
+            "Preeclampsia"
+        ],
+        "intake": {
+            "male": {
+                "0-6 months": 200,
+                "7-12 months": 260,
+                "1-3 years": 700,
+                "4-8 years": 1000,
+                "9-13 years": 1300,
+                "14-18 years": 1300,
+                "19-50 years": 1000,
+                "50-70 years": 1000,
+                "70+ years": 1200
+            },
+            "female": {
+                "normal": {
+                    "0-6 months": 200,
+                    "7-12 months": 260,
+                    "1-3 years": 700,
+                    "4-8 years": 1000,
+                    "9-13 years": 1300,
+                    "14-18 years": 1300,
+                    "19-50 years": 1000,
+                    "50-70 years": 1200,
+                    "70+ years": 1200
+                },
+                "pregnancy": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 1300,
+                    "19-50 years": 1300,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                },
+                "lactation": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 1300,
+                    "19-50 years": 1300,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                }
+            }
+        },
+        "deficiency": "<p>There are two types of calcium deficiency:</p><h3>Dietary calcium deficiency</h3><p>Dietary calcium deficiency is a condition in which there is an inadequate calcium intake, which can lead to depleted calcium stores in the bones, thinning and weakening of the bones, and osteoporosis.</p><h3>Hypocalcemia</h3><p>Hypocalcemia is a low level of calcium in the blood. It can occur from taking medications, such as diuretics; medical treatments; or disease processes, such as renal failure or hypoparathyroidism.</p><p>An insufficient amount of calcium in your diet will generally not cause hypocalcemia. This is because normal amounts of calcium in the blood are so critical to many vital body functions of the nerves, muscles, brain and heart, that your body will pull calcium from the bones as needed to maintain normal blood calcium levels. This enables important processes in the body to continue. However, ongoing dietary calcium deficiency can eventually lead to thinning of the bones and osteoporosis because calcium stores in the bones are not replaced as they are used by the body. Untreated calcium deficiency can lead to serious complications, such as osteoporosis, hypertension (high blood pressure), and cardiac arrhythmias.</p><p>Symptoms of dietary calcium deficiency: <ul><li>Back or neck pain, which can be severe because of spinal bone fractures</li><li>Bone pain or tenderness</li><li>Fracture that occurs with little or no trauma</li><li>Loss of height</li><li>Stooped posture due to kyphosis (abnormal curving of the spine and humpback)</li></ul><p>Symptoms of hypocalcemia:</p><ul><li>Muscle cramps</li><li>Numbness</li><li>Paresthesia (burning or prickling sensations)</li><li>Poor appetite</li><li>Purpura (large bruised areas)</li></ul>",
+        "toxicity": "<p>High calcium intakes or high calcium absorption were previously thought to contribute to the development of kidney stones. However, a high calcium intake has been associated with a lower risk for kidney stones in more recent research. Acute calcium poisoning is rare, and difficult to achieve unless calcium compounds are administered intravenously. Excessive consumption of calcium carbonate antacids/dietary supplements (such as Tums) over a period of weeks or months can cause milk-alkali syndrome, with symptoms ranging from hypercalcemia to potentially fatal renal failure. Oral calcium supplements diminish the absorption of thyroxine when taken within four to six hours of each other. Thus, people taking both calcium and thyroxine run the risk of inadequate thyroid hormone replacement and thence hypothyroidism if they take them simultaneously or near-simultaneously.</p>",
+        "nutrientRelationship": "<h3>Vitamin D</h3><p>Vitamin D is needed to move calcium from our digestive tract up into our body. However, very high dose supplementation with either calcium, vitamin D, or both may result in a balance for these two nutrients that is not optimal.</p><h3>Magnesium</h3><p>MAgnesium competes in intestinal absorption with calcium.</p><h3>Zinc</h3><p>Zinc competes in intestinal absorption with calcium, as well.</p><h3>Iron</h3><p>Iron competes in intestinal absorption with calcium, as well.</p><h3>Sodium</h3><p>Diets high in sodium increase the loss of calcium in the urine.</p><h3>Protein</h3><p>Diets high in protein increase stomach acid production, potentially optimizing intestinal absorption of calcium. Unfortunately, dietary protein also increases the loss of calcium in the urine.</p><h3>Alcool</h3><p>Alcohol leads to modest loss of calcium in the urine, which is marginal for most adults.</p>",
+        "sources": [
+            null
+        ]
+    },
+    {
+        "name": "Chromium",
+        "category": "Mineral",
+        "description": "<p>Chromium is a mineral that humans require in trace amounts, although its mechanisms of action in the body and the amounts needed for optimal health are not well defined. It is found primarily in two forms: trivalent (chromium 3+), which is biologically active and found in food, and hexavalent (chromium 6+), a toxic form that results from industrial pollution. We will discuss only about trivalent (chromium 3). Chromium is known to enhance the action of insulin, a hormone critical to the metabolism and storage of carbohydrate, fat, and protein in the body. Chromium also appears to be directly involved in carbohydrate, fat, and protein metabolism, but more research is needed to determine the full range of its roles in the body.</p>",
+        "functions": [
+            "Blood Sugar Control"
+        ],
+        "diseasePrev": [
+            "Depression",
+            "High cholesterol (hyperlipidemia)",
+            "Metabolic syndrome",
+            "Type 2 diabetes"
+        ],
+        "intake": {
+            "male": {
+                "0-6 months": 0.0002,
+                "7-12 months": 0.0055,
+                "1-3 years": 0.011,
+                "4-8 years": 0.015,
+                "9-13 years": 0.025,
+                "14-18 years": 0.035,
+                "19-50 years": 0.035,
+                "50-70 years": 0.03,
+                "70+ years": 0.03
+            },
+            "female": {
+                "normal": {
+                    "0-6 months": 0.0002,
+                    "7-12 months": 0.0055,
+                    "1-3 years": 0.011,
+                    "4-8 years": 0.015,
+                    "9-13 years": 0.021,
+                    "14-18 years": 0.024,
+                    "19-50 years": 0.025,
+                    "50-70 years": 0.02,
+                    "70+ years": 0.02
+                },
+                "pregnancy": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 0.029,
+                    "19-50 years": 0.03,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                },
+                "lactation": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 0.044,
+                    "19-50 years": 0.045,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                }
+            }
+        },
+        "deficiency": "<p>The symptoms of chromium deficiency caused by long-term total parenteral nutrition are severely impaired glucose tolerance, weight loss, and confusion. Chromium levels may vary with age, with levels going down by up to 40% in older versus younger people. People who eat highly refined diets, especially ones rich in simple sugars, also may be at risk of deficient chromium intake.</p>",
+        "toxicity": "<p>Water-insoluble chromium 3 compounds and chromium metal are not considered a health hazard, while the toxicity and carcinogenic properties of chromium 6+ have been known for a long time. Because of the specific transport mechanisms, only limited amounts of chromium 3 enter the cells. Several in vitro studies indicated that high concentrations of chromium 3 in the cell can lead to DNA damage.</p><p>In the body, chromium 6+ is reduced by several mechanisms to chromium 3 already in the blood before it enters the cells. The chromium 3 is excreted from the body, whereas the chromate ion is transferred into the cell by a transport mechanism, by which also sulfate and phosphate ions enter the cell. The acute toxicity of chromium 6+ is due to its strong oxidational properties. After it reaches the blood stream, it damages the kidneys, the liver and blood cells through oxidation reactions. Hemolysis, renal and liver failure are the results of these damages. Aggressive dialysis can improve the situation.</p><p>Chromium salts (chromates) are also the cause of allergic reactions in some people. Chromates are often used to manufacture, amongst other things, leather products, paints, cement, mortar and anti-corrosives. Contact with products containing chromates can lead to allergic contact dermatitis and irritant dermatitis, resulting in ulceration of the skin, sometimes referred to as ‘chrome ulcers’. This condition is often found in workers that have been exposed to strong chromate solutions in electroplating, tanning and chrome-producing manufacturers.</p>",
+        "nutrientRelationship": "<h3>Vitamin C</h3><p>Vitamin C enhances the absorption of dietary chromium.</p><h3>Iron</h3><p>Chromium and iron can be transported on the same protein (transferrin) in the blood stream. It is plausible that too much of either of these minerals could impair metabolism of the other. But this interaction has never been demonstrated to be a problem in humans.</p>",
+        "sources": [
+            null
+        ]
+    },
+    {
+        "name": "Vitamin B4",
+        "category": "Vitamin",
+        "description": "<p>Choline is a water-soluble nutrient that is usually grouped within the B-Complex vitamins. Choline is the precursor molecule for the neurotransmitter acetylcholine, which is involved in many functions including memory and muscle control. Choline is an essential nutrient, as its role in reducing the risk of neural tube defects, fatty liver disease, and other pathologies has been documented. It is used in the synthesis of components in cell membranes. The 2005 National Health and Nutrition Examination Survey stated that only 2% of postmenopausal women consume the recommended intake for choline.</p>",
+        "functions": [
+            "Inflammation",
+            "Methylation",
+            "Membrane structure",
+            "Nervous system health",
+            "Pregnancy support"
+        ],
+        "diseasePrev": [
+            "Bipolar disorder",
+            "Depression",
+            "Gallstones",
+            "High cholesterol (hyperlipidemia)",
+            "High homocysteine",
+            "Memory loss (cognitive decline)"
+        ],
+        "intake": {
+            "male": {
+                "0-6 months": 125,
+                "7-12 months": 150,
+                "1-3 years": 200,
+                "4-8 years": 250,
+                "9-13 years": 375,
+                "14-18 years": 550,
+                "19-50 years": 550,
+                "50-70 years": 550,
+                "70+ years": 550
+            },
+            "female": {
+                "normal": {
+                    "0-6 months": 125,
+                    "7-12 months": 150,
+                    "1-3 years": 200,
+                    "4-8 years": 250,
+                    "9-13 years": 375,
+                    "14-18 years": 400,
+                    "19-50 years": 425,
+                    "50-70 years": 425,
+                    "70+ years": 425
+                },
+                "pregnancy": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 450,
+                    "19-50 years": 450,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                },
+                "lactation": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 550,
+                    "19-50 years": 550,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                }
+            }
+        },
+        "deficiency": "<p>Choline deficiency may play a role in liver disease, atherosclerosis, and possibly neurological disorders. One sign of choline deficiency is an elevated level of the liver enzyme ALT. It is particularly important for pregnant women to get enough choline, since low choline intake may raise the rate of neural tube defects in infants, and may affect their children's memory. One study found that higher dietary intake of choline shortly before and afterconception was associated with a lower risk of neural tube defects. If low choline intake causes an elevated homocysteine level, it raises the risk for preeclampsia, premature birth, and very low birth weight.</p>",
+        "toxicity": "<p>Consuming too much choline can lead to a number of side effects. You may experience dizziness or lightheadedness in some cases, since very high doses of choline can lower your blood pressure. In addition, choline overdose can cause excessive sweating and salivation as well as a fishy body odor caused by by products of choline metabolism in your body. Choline magnesium trisalicylate, one type of choline-containing supplement, can also lead to diminished liver functioning, though this effect may occur due to compounds in the supplement other than choline.</p>",
+        "nutrientRelationship": "<h3>Vitamin B-Complex</h3><p>The entire group of B-Complex vitamins is involved in the process of energy production, and deficiency of one can impair the entire process.</p><h3>Folate</h3><p>Choline is one of many methyl donors in the body, and as such, it can help fill in when the levels of other important methylators like folate and S-adenosylmethionine get low.</p><h3>Pantothenic acid</h3><p>. Pantothenic acid (also referred to as vitamin B5) is necessary for the production of acetylcholine from choline in nerves.</p>",
+        "sources": [
+            null
+        ]
+    },
+    {
+        "name": "Copper",
+        "category": "Mineral",
+        "description": "<p>Copper is an essential trace element in plants and animals, but not some microorganisms. The human body contains copper at a level of about 1.4 to 2.1 mg per kg of body mass. Copper is absorbed in the gut, then transported to the liver bound to albumin. After processing in the liver, copper is distributed to other tissues in a second phase. Copper transport here involves the protein ceruloplasmin, which carries the majority of copper in blood. Ceruloplasmin also carries copper that is excreted in milk, and is particularly well-absorbed as a copper source. Copper in the body normally undergoes enterohepatic circulation (about 5 mg a day, versus about 1 mg per day absorbed in the diet and excreted from the body), and the body is able to excrete some excess copper, if needed, via bile, which carries some copper out of the liver that is not then reabsorbed by the intestine.</p>",
+        "functions": [
+            "Antioxidant",
+            "Bone development",
+            "Cholesterol balance",
+            "Energy support",
+            "Iron absorption",
+            "Tissue Integrity"
+        ],
+        "diseasePrev": [
+            "Anemia",
+            "Arthritis",
+            "Cardiac arrhythmia",
+            "Fatigue",
+            "High cholesterol (hyperlipidemia)",
+            "Low immune function",
+            "Osteoporosis",
+            "Wounds"
+        ],
+        "intake": {
+            "male": {
+                "0-6 months": 0.2,
+                "7-12 months": 0.22,
+                "1-3 years": 0.34,
+                "4-8 years": 0.4,
+                "9-13 years": 0.7,
+                "14-18 years": 0.89,
+                "19-50 years": 0.9,
+                "50-70 years": 0.9,
+                "70+ years": 0.9
+            },
+            "female": {
+                "normal": {
+                    "0-6 months": 0.2,
+                    "7-12 months": 0.22,
+                    "1-3 years": 0.34,
+                    "4-8 years": 0.4,
+                    "9-13 years": 0.7,
+                    "14-18 years": 0.89,
+                    "19-50 years": 0.9,
+                    "50-70 years": 0.9,
+                    "70+ years": 0.9
+                },
+                "pregnancy": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 1,
+                    "19-50 years": 1,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                },
+                "lactation": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 1.3,
+                    "19-50 years": 1.3,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                }
+            }
+        },
+        "deficiency": "<p>Copper deficiency can produce:</p><ul><li>Anemia-like symptoms</li><li>Bone abnormalities</li><li>Hypopigmentation</li><li>Hyperthyroidism</li><li>Impaired cholesterol metabolism</li><li>Impaired glucose metabolism</li><li>Impaired growth</li><li>Increased incidence of infections</li><li>Osteoporosis</li></ul><p>Conversely, Wilson's disease causes an accumulation of copper in body tissues.</p>",
+        "toxicity": "<p>Chronic copper toxicity does not normally occur in humans because of transport systems that regulate absorption and excretion. Autosomal recessive mutations in copper transport proteins can disable these systems, leading to Wilson's disease with copper accumulation and cirrhosis of the liver in persons who have inherited two defective genes. Elevated copper levels have also been linked  to worsening symptoms of Alzheimer's disease.</p>",
+        "nutrientRelationship": "<h3>Zinc</h3><p>Prolonged supplementation with doses of zinc that go beyond normal dietary intake ranges can interfere with copper absorption and utilization, leading to copper deficiency.</p><h3>Iron</h3><p>Copper contributes to the absorption of iron</p>",
+        "sources": [
+            null
+        ]
+    },
+    {
+        "name": "Vitamin B12",
+        "category": "Vitamin",
+        "description": "<p>Vitamin B12, also called cobalamin, is a water-soluble vitamin that has a key role in the normal functioning of the brain and nervous system, and the formation of red blood cells. It is one of eight B vitamins. It is involved in the metabolism of every cell of the human body, especially affecting DNA synthesis, fatty acid and amino acid metabolism. Neither fungi, plants, nor animals (including humans) are capable of producing vitamin B12. Only bacteria and archaea have the enzymes needed for its synthesis. Some plant foods are a natural source of B12 because of bacterial symbiosis. B12 is the largest and most structurally complicated vitamin and can be produced industrially only through a bacterial fermentation-synthesis. This synthetic B12 is used to fortify foods and sold as a dietary supplement.</p><p>A common synthetic form of the vitamin is cyanocobalamin, produced by chemically modifying bacterial hydroxocobalamin. Because of superior stability and low cost this form is used in many pharmaceuticals and supplements as well as for fortification of foods. In the body it is converted into the human physiological forms methylcobalamin and 5'-deoxyadenosylcobalamin.</p>",
+        "functions": [
+            "Bone health",
+            "Bone development",
+            "Brain function",
+            "Cardiovascular support",
+            "DNA synthesis",
+            "Energy support",
+            "Nervous system health",
+            "Tissue Integrity"
+        ],
+        "diseasePrev": [
+            "Alzheimer's disease",
+            "Asthma",
+            "Atrophic gastritis",
+            "Depression",
+            "Fatigue",
+            "Kidney disease",
+            "Macular degeneration",
+            "Memory loss",
+            "Migraine",
+            "Multiple sclerosis",
+            "Neuropathy",
+            "Pernicious anemia",
+            "Shingles",
+            "Tinnitus"
+        ],
+        "intake": {
+            "male": {
+                "0-6 months": 0.0004,
+                "7-12 months": 0.0005,
+                "1-3 years": 0.0009,
+                "4-8 years": 0.0012,
+                "9-13 years": 0.0018,
+                "14-18 years": 0.0024,
+                "19-50 years": 0.0024,
+                "50-70 years": 0.0024,
+                "70+ years": 0.0024
+            },
+            "female": {
+                "normal": {
+                    "0-6 months": 0.0004,
+                    "7-12 months": 0.0005,
+                    "1-3 years": 0.0009,
+                    "4-8 years": 0.0012,
+                    "9-13 years": 0.0018,
+                    "14-18 years": 0.0024,
+                    "19-50 years": 0.0024,
+                    "50-70 years": 0.0024,
+                    "70+ years": 0.0024
+                },
+                "pregnancy": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 0.0026,
+                    "19-50 years": 0.0026,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                },
+                "lactation": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 0.0028,
+                    "19-50 years": 0.0028,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                }
+            }
+        },
+        "deficiency": "<p>Vitamin B12 deficiency can potentially cause severe and irreversible damage, especially to the brain and nervous system. At levels only slightly lower than normal, a range of symptoms such as fatigue, depression, and poor memory may be experienced. Vitamin B12 deficiency can also cause symptoms of mania and psychosis. Vitamin B12 deficiency is most commonly caused by low intakes, but can also result from malabsorption, certain intestinal disorders, low presence of binding proteins, and use of certain medications. Vitamin B12 is rare from plant sources, so vegetarians are most likely to suffer from vitamin B12 deficiency. Infants are at a higher risk of vitamin B12 deficiency if they were born to vegetarian mothers. The elderly who have diets with limited meat or animal products are vulnerable populations as well. Vitamin B12 deficiency can manifest itself as anemia. In some cases, deficiency can cause permanent neurological damage. Recent studies show depression is associated with vitamin B12 deficiency; sufficient vitamin B12 levels are independently associated with a decreased risk of depression and better cognitive performance adjusted for confounders.</p>",
+        "toxicity": "<p>The oral use of cyanocobalamin may lead to skin problems or immunological reactions such as itching and anaphylactic shock. Possible side effects of cyanocobalamin injection include several allergic reactions such as:</p><ul><li>Diarrhea</li><li>Difficulty breathing</li><li>Dizziness</li><li>Extreme thirst</li><li>Headache</li><li>Hives</li><li>Itching</li><li>Leg pain</li><li>Rash</li><li>Redness of the face</li><li>Swelling of the arms, hands, feet, ankles or lower legs</li></ul><p>In the treatment of megaloblastic anemia with concurrent vitamin B12 deficiency using B12 vitamers (including cyanocobalamin), there is a possibility that patients could develop hypokalemia due to increased erythropoiesis (red blood cell production) and consequent cellular uptake of potassium upon anemia resolution. When treated with vitamin B12, patients with Leber's disease may suffer serious optic atrophy, possibly leading to blindness.</p>",
+        "nutrientRelationship": "<h3>Vitamin B-Complex</h3><p>The entire group of B-Complex vitamins is involved in the process of energy production, and deficiency of one can impair the entire process.</p>",
+        "sources": [
+            null
+        ]
+    },
+    {
+        "name": "Flouride",
+        "category": "Mineral",
+        "description": "<p>Fluoride occurs naturally in the body as calcium fluoride. Calcium fluoride is mostly found in the bones and teeth. During the development of the baby and permanent teeth, fluoride combines with calcium and phosphorus to form fluorapatite, making teeth resistant to cavities and decay.</p>",
+        "functions": [
+            "Bone health",
+            "Tooth health"
+        ],
+        "diseasePrev": [
+            "Osteoporosis",
+            "Tooth decay"
+        ],
+        "intake": {
+            "male": {
+                "0-6 months": 0.001,
+                "7-12 months": 0.5,
+                "1-3 years": 0.7,
+                "4-8 years": 1,
+                "9-13 years": 2,
+                "14-18 years": 3,
+                "19-50 years": 3,
+                "50-70 years": 3,
+                "70+ years": 3
+            },
+            "female": {
+                "normal": {
+                    "0-6 months": 0.001,
+                    "7-12 months": 0.5,
+                    "1-3 years": 0.7,
+                    "4-8 years": 1,
+                    "9-13 years": 2,
+                    "14-18 years": 3,
+                    "19-50 years": 3,
+                    "50-70 years": 3,
+                    "70+ years": 3
+                },
+                "pregnancy": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 3,
+                    "19-50 years": 3,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                },
+                "lactation": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 3,
+                    "19-50 years": 3,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                }
+            }
+        },
+        "deficiency": "<p>Fluoride deficiency is rare, resulting in dental caries as the main issue. Inadequate fluoride intake may also be associated with lower bone density.</p>",
+        "toxicity": "<p>Soluble fluoride salts, of which sodium fluoride is the most common, are toxic, and have resulted in both accidental and self-inflicted deaths from acute poisoning.The mechanism of toxicity involves the combination of the fluoride anion with the calcium ions in the blood to form insoluble calcium fluoride, resulting in hypocalcemia; calcium is indispensable for the function of the nervous system, and the condition can be fatal. In the higher doses used to treat osteoporosis, sodium fluoride can cause pain in the legs and incomplete stress fractures when the doses are too high; it also irritates the stomach, sometimes so severely as to cause ulcers. Slow-release and enteric-coated versions of sodium fluoride do not have gastric side effects in any significant way, and have milder and less frequent complications in the bones. In the lower doses used for water fluoridation, the only clear adverse effect is dental fluorosis, which can alter the appearance of children's teeth during tooth development; this is mostly mild and is unlikely to represent any real effect on aesthetic appearance or on public health.  Fluoride was known to enhance the measurement of bone mineral density at the lumbar spine, but it was not effective for vertebral fractures and provoked more non vertebral fractures. In areas that have naturally occurring high levels of fluoride in groundwater which is used for drinking water, both dental and skeletal fluorosis can be prevalent and severe.</p><p>A popular urban myth claims that the Nazis used fluoride in concentration camps, but there is no historical evidence to prove this claim.</p>",
+        "nutrientRelationship": "<h3>Calcium</h3><p>Calcium combines well with fluoride in order to form fluorapatite to enhance tooth and bone health.</p><h3>Phosphorus</h3><p>Phosphorus combines well with fluoride in order to form fluorapatite to enhance tooth and bone health, as well.</p>",
+        "sources": [
+            null
+        ]
+    },
+    {
+        "name": "Vitamin B9",
+        "category": "Vitamin",
+        "description": "<p>Folic acid or folate is a B vitamin. It is also referred to as vitamin M, vitamin B9, vitamin Bc (or folacin), pteroyl-L-glutamic acid, and pteroyl-L-glutamate.Folic acid is synthetically produced, and used in fortified foods and supplements on the theory that it is converted into folate. However, folic acid is a synthetic oxidized form, not significantly found in fresh natural foods. To be used it must be converted to tetrahydrofolate (tetrahydrofolic acid) by dihydrofolate reductase (DHFR). Increasing evidence suggests that this process may be slow in humans. Vitamin B9 is essential for numerous bodily functions. Humans cannot synthesize folates de novo; therefore, folic acid has to be supplied through the diet to meet their daily requirements. The human body needs folate to synthesize DNA, repair DNA, and methylate DNA as well as to act as a cofactor in certain biological reactions. It is especially important in aiding rapid cell division and growth, such as in infancy and pregnancy. Children and adults both require folate to produce healthy red blood cells and prevent anemia.</p>",
+        "functions": [
+            "Brain health",
+            "Cardiovascular support",
+            "Cell division",
+            "Cell growth",
+            "DNA synthesis",
+            "Fertility",
+            "Nervous system health",
+            "Pregnancy support",
+            "Red blood cell production"
+        ],
+        "diseasePrev": [
+            "Anemia",
+            "Birth defects",
+            "Cancer",
+            "Cognitive decline",
+            "Depression",
+            "Heart disease",
+            "High blood pressure (hypertension)",
+            "Malaria",
+            "Osteoporosis",
+            "Psoriasis",
+            "Stroke",
+            "Ulcerative colitis"
+        ],
+        "intake": {
+            "male": {
+                "0-6 months": 0.065,
+                "7-12 months": 0.08,
+                "1-3 years": 0.15,
+                "4-8 years": 0.2,
+                "9-13 years": 0.3,
+                "14-18 years": 0.4,
+                "19-50 years": 0.4,
+                "50-70 years": 0.4,
+                "70+ years": 0.4
+            },
+            "female": {
+                "normal": {
+                    "0-6 months": 0.065,
+                    "7-12 months": 0.08,
+                    "1-3 years": 0.15,
+                    "4-8 years": 0.2,
+                    "9-13 years": 0.3,
+                    "14-18 years": 0.4,
+                    "19-50 years": 0.4,
+                    "50-70 years": 0.4,
+                    "70+ years": 0.4
+                },
+                "pregnancy": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 0.6,
+                    "19-50 years": 0.6,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                },
+                "lactation": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 0.5,
+                    "19-50 years": 0.5,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                }
+            }
+        },
+        "deficiency": "<p>A lack of dietary folates can lead to folate deficiency. A complete lack of dietary folate takes months before deficiency develops as normal individuals have about 500–20,000 micrograms ( µg) of folate in body stores. This deficiency can result in many health problems, the most notable one being neural tube defects in developing embryos, a relatively rare birth defect affecting 300,000 (0.2%) births globally each year. Common symptoms of folate deficiency include:</p><ul><li>Behavioral disorders</li><li>Diarrhea</li><li>Forgetfulness or other cognitive deficits</li><li>Headaches</li><li>Heart palpitations</li><li>Irritability</li><li>Macrocytic anemia with weakness or shortness of breath</li><li>Mental confusion</li><li>Mental depression</li><li>Nerve damage with weakness and limb numbness (peripheral neuropathy)</li><li>Peptic or mouth ulcers</li><li>Pregnancy complications</li><li>Sore or swollen tongue</li></ul><p>Low levels of folate can also lead to homocysteine accumulation. Low levels of folate have been associated with specific cancers. However, it is not clear whether consuming recommended (or higher) amounts of folic acid, from foods or in supplements, can lower cancer risk in some people</p>",
+        "toxicity": "<p>The risk of toxicity from folic acid is low, because folate is a water-soluble vitamin and is regularly removed from the body through urine. One potential issue associated with high dosages of folic acid is that it has a masking effect on the diagnosis of pernicious anaemia (vitamin B12 deficiency), and a variety of concerns of potential negative impacts on health.</p>",
+        "nutrientRelationship": "<h3>Vitamin B-Complex</h3><p>The entire group of B-Complex vitamins is involved in the process of energy production, and deficiency of one can impair the entire process.</p>",
+        "sources": [
+            null
+        ]
+    },
+    {
+        "name": "Iodine",
+        "category": "Mineral",
+        "description": "<p>Iodine is an essential trace element for life, the heaviest element commonly needed by living organisms. Only tungsten, a component of a few bacterial enzymes, has a higher atomic number and atomic weight.Thyroxines are iodine-containing hormones that justify the widespread use of iodized salt.</p><p>Iodine's main role in animal biology is as a constituent of the thyroid hormones thyroxine (T4) and triiodothyronine (T3). These are made from addition condensation products of the amino acid tyrosine, and are stored prior to release in an iodine-containing protein called thyroglobulin.</p><p>The thyroid gland actively absorbs iodide from the blood to make and release these hormones into the blood, actions that are regulated by a second hormone TSH from the pituitary. Thyroid hormones are phylogenetically very old molecules that are synthesized by most multicellular organisms, and that even have some effect on unicellular organisms.</p><p>Thyroid hormones play a basic role in biology, acting on gene transcription to regulate the basal metabolic rat. Total deficiency of thyroid hormones can reduce basal metabolic rate up to 50%. Excessive production of thyroid hormones can increase the basal metabolic rate by 100%. T4 acts largely as a precursor to T3, which is (with minor exceptions) the biologically active hormone. In amphibian metamorphosisiodine and thyroid hormones exert a well-studied experimental collections of apoptosis on the cells of gills, tail, and fins of tadpoles.</p><p>Iodine accounts for 65% of the molecular weight of T4 and 59% of the T3. Fifteen to 20 mg of iodine is concentrated in thyroid tissue and hormones, but 70% of the body's iodine is distributed in other tissues, including mammary glands, eyes, gastric mucosa, fetal thymus, cerebro-spinal fluid and choroid plexus, arterial walls, the cervix, and salivary glands. In the cells of these tissues, iodide enters directly by sodium-iodide symporter (NIS). Its role in mammary tissue is related to fetal and neonatal development, but its role in the other tissues is partially unknown.</p>",
+        "functions": [
+            "Thyroid hormone production"
+        ],
+        "diseasePrev": [
+            "Fibrocystic breast disease",
+            "Goiter",
+            "Hypothyroidism",
+            "Skin infection"
+        ],
+        "intake": {
+            "male": {
+                "0-6 months": 0.11,
+                "7-12 months": 0.13,
+                "1-3 years": 0.09,
+                "4-8 years": 0.09,
+                "9-13 years": 0.12,
+                "14-18 years": 0.15,
+                "19-50 years": 0.15,
+                "50-70 years": 0.15,
+                "70+ years": 0.15
+            },
+            "female": {
+                "normal": {
+                    "0-6 months": 0.11,
+                    "7-12 months": 0.13,
+                    "1-3 years": 0.09,
+                    "4-8 years": 0.09,
+                    "9-13 years": 0.12,
+                    "14-18 years": 0.15,
+                    "19-50 years": 0.15,
+                    "50-70 years": 0.15,
+                    "70+ years": 0.15
+                },
+                "pregnancy": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 0.22,
+                    "19-50 years": 0.29,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                },
+                "lactation": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 0.5,
+                    "19-50 years": 0.5,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                }
+            }
+        },
+        "deficiency": "<p>In an estimated two-thirds of households on Earth, table salt is iodized. However, this still leaves an estimated two billion people iodine-deficient. Iodine is required for the essential thyroxin hormones produced by and concentrated in the thyroid gland. In areas where there is little iodine in the diet, typically remote inland areas and semi-arid equatorial climates where no marine foods are eaten, iodine deficiency gives rise to hypothyroidism, symptoms of which are extreme fatigue, goiter, mental slowing, depression, weight gain, and low basal body temperatures.</p><p>Iodine deficiency is the leading cause of preventable intellectual disability, a result that occurs primarily when babies or small children are rendered hypothyroidic by a lack of the element. Other possible health effects being investigated as being related to iodine deficiency include:</p><h3>Breast cancer</h3><p>The breast strongly and actively concentrates iodine into breast-milk for the benefit of the developing infant, and may develop a goiter-like hyperplasia, sometimes manifesting as fibrocystic breast disease, when iodine levels are low.</p><h3>Stomach cancer</h3><p>Some researchers have found an epidemiologic correlation between iodine deficiency, iodine-deficient goitre and gastric cancer. A decrease of the incidence of death rate from stomach cancer after implementation of the effective iodine-prophylaxis has been reported, as well.</p><h3>Autism</h3><p>Although there is not a definitive answer for the cause of autism in children, research has shown that mothers with low levels of iodine are more likely to have an autistic child.</p>",
+        "toxicity": "<p>Elemental iodine (I2) is toxic if taken orally. Excess iodine can be more cytotoxic in the presence of selenium deficiency. Iodine supplementation in selenium-deficient populations is, theoretically speaking, problematic, partly for this reason. Its toxicity derives from its oxidizing properties, which make it able to denaturate proteins (including enzymes).</p><p>Elemental iodine is also a skin irritant, and direct contact with skin can cause damage, so solid iodine crystals should be handled with care. Solutions with high elemental iodine concentration such as tincture of iodine and Lugol's solution are capable of causing tissue damage if their use for cleaning and antisepsis is prolonged; similarly, cases have been reported where liquid Povidone-iodine (Betadine) trapped against the skin resulted in chemical burns.</p><p>People can be exposed to iodine in the workplace by breathing it in, swallowing it, skin contact, and eye contact. Some people develop a hypersensitivity to iodine-containing products and foods. Applications of tincture of iodine or Betadine can cause rashes, sometimes severe. Parenteral use of iodine-based contrast agents (see above) can cause reactions ranging from a mild rash to fatal anaphylaxis. Such reactions have led to the misconception (widely held, even among physicians) that some people are allergic to iodine itself; even allergies to iodine-rich seafood have been so construed. In fact, there has never been a confirmed report of a true iodine allergy, and an allergy to elemental iodine or simple iodide salts is theoretically impossible. Patients with various food allergies (shellfish, egg, milk, etc.) as well as asthma are more likely to suffer reactions to iodine-containing contrast media; so as with all medications, the potential severity of reactions to medical iodine-containing products should prompt questions about a patient's allergy history before they are administered.</p>",
+        "nutrientRelationship": "<h3>Selenium</h3><p>A family of selenium-dependent enzymes called deiodinases converts T4 to T3 (the active hormone) by removing an iodine atom from the outer tyrosine ring. These enzymes also convert T4 to reverse T3 (rT3) by removing an inner ring iodine atom, and convert T3 to 3,3'-diiodothyronine (T2) also by removing an inner ring atom.</p><h3>Iron</h3><p>It is thought that lack of iron makes the thyroid dysfunction seen in iodine deficiency worse. It is not known exactly why, but it is known to be a worldwide health problem</p>",
+        "sources": [
+            null
+        ]
+    },
+    {
+        "name": "Iron",
+        "category": "Mineral",
+        "description": "<p>Iron plays an important role in biology, forming complexes with molecular oxygen in hemoglobin and myoglobin; these two compounds are common oxygen transport proteins in vertebrates. Iron is also the metal at the active site of many important redox enzymes dealing with cellular respiration and oxidation and reduction in plants and animals. A human male of average height has about 4 grams of iron in his body, a female about 3.5 grams. These 3-4 grams are distributed throughout the body in hemoglobin, tissues, muscles, bone marrow, blood proteins, enzymes, ferritin, hemosiderin, and transport in plasma.</p>",
+        "functions": [
+            "Energy production",
+            "Oxygen transport",
+            "Pregnancy support"
+        ],
+        "diseasePrev": [
+            "Anemia",
+            "Attention deficit hyperactivity disorder (ADHD)",
+            "Excessive menstrual flow (menorrhagia)",
+            "Fatigue"
+        ],
+        "intake": {
+            "male": {
+                "0-6 months": 0.27,
+                "7-12 months": 11,
+                "1-3 years": 7,
+                "4-8 years": 10,
+                "9-13 years": 8,
+                "14-18 years": 11,
+                "19-50 years": 8,
+                "50-70 years": 8,
+                "70+ years": 8
+            },
+            "female": {
+                "normal": {
+                    "0-6 months": 0.27,
+                    "7-12 months": 11,
+                    "1-3 years": 7,
+                    "4-8 years": 10,
+                    "9-13 years": 8,
+                    "14-18 years": 15,
+                    "19-50 years": 18,
+                    "50-70 years": 8,
+                    "70+ years": 8
+                },
+                "pregnancy": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 27,
+                    "19-50 years": 27,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                },
+                "lactation": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 27,
+                    "19-50 years": 9,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                }
+            }
+        },
+        "deficiency": "<p>The condition for iron deficiency is known as Anemia. Iron deficiency ranges from depleted iron stores without functional or health impairment to iron deficiency with anemia, which affects the functioning of several organ systems. Iron deficiency is a concern because iron deficiency can delay normal infant motor function (normal activity and movement) or mental function (normal thinking and processing skills). Iron deficiency anemia during pregnancy can increase risk for small or early (preterm) babies. Small or early babies are more likely to have health problems or die in the first year of life than infants who are born full term and are not small. Iron deficiency can cause fatigue that impairs the ability to do physical work in adults. Iron deficiency may also affect memory or other mental function in teens. Signs of iron deficiency anemia include:</p><ul><li>Decreased immune function, which increases susceptibility to infection</li><li>Decreased work and school performance</li><li>Decreased work and school performance</li><li>Feeling tired and weak</li><li>Glossitis (an inflamed tongue)</li><li>Slow cognitive and social development during childhood</li></ul>",
+        "toxicity": "<p>Large amounts of ingested iron can cause excessive levels of iron in the blood. High blood levels of free ferrous iron react with peroxides to produce free radicals, which are highly reactive and can damage DNA, proteins, lipids, and other cellular components. Thus, iron toxicity occurs when there is free iron in the cell, which generally occurs when iron levels exceed the capacity of transferrin to bind the iron. Damage to the cells of the gastrointestinal tract can also prevent them from regulating iron absorption leading to further increases in blood levels. Iron typically damages cells in the heart, liver and elsewhere, which can cause significant adverse effects, including coma, metabolic acidosis, shock, liver failure,coagulopathy, adult respiratory distress syndrome, long-term organ damage, and even death. Overconsumption of iron, often the result of children eating large quantities of ferrous sulfate tablets intended for adult consumption, is one of the most common toxicological causes of death in children under six.</p>",
+        "nutrientRelationship": "<h3>Vitamin C</h3><p>Consuming vitamin C together with iron-containing meals can increase or optimize iron absorption. If vitamin C deficiency is severe, it may be necessary to address this issue before iron stores can be restored to normal. Note that the effect of vitamin C on iron absorption is much stronger on iron from plant foods than on animal foods.</p><h3>Vitamin A</h3><p>Advanced deficiency of vitamin A can impair the ability to use iron to make red blood cells.</p><h3>Copper</h3><p>Copper is necessary to mobilize iron from storage for use in blood cells and other areas. Because of this, deficiency of copper may play a role in anemia. Legumes like soybeans and lentils are simultaneously high in iron and copper.</p><h3>Calcium</h3><p>It is believed that calcium and iron compete for absorption, but researchers have been unable to demonstrate that this is a common problem in human nutrition.</p><h3>Phytic acid</h3><p>Phytic acid found in many whole grains and some of the polyphenols found in black tea. In general, consumption of foods like whole grains and black tea does not appear to cause iron-related problems for healthy persons who are not at special medical risk for iron deficiency. But in certain medical situations, such as iron deficiency anemia or iron storage disease, these interactions might have a significant impact and foods with iron-binding components might need to be avoided</p>",
+        "sources": [
+            null
+        ]
+    },
+    {
+        "name": "Magnesium",
+        "category": "Mineral",
+        "description": "<p>Magnesium is the eleventh most abundant element by mass in the human body, and the ions are essential to all cells. Magnesium ions interact with polyphosphate compounds such as ATP, DNA, and RNA. Hundreds of enzymes require magnesium ions to function. Magnesium compounds are used medicinally as common laxatives, antacids (e.g. milk of magnesia), and to stabilize abnormal nerve excitation or blood vessel spasm in such conditions as eclampsia. Magnesium ions are sour to the taste, and in low concentrations they help impart a natural tartness to fresh mineral waters.</p>",
+        "functions": [
+            "Blood sugar control",
+            "Bone development",
+            "Energy production",
+            "Inflammation control",
+            "Nervous system health"
+        ],
+        "diseasePrev": [
+            "Anxiety",
+            "Asthma",
+            "Chronic fatigue",
+            "Cardiac arrhythmia",
+            "Congestive heart failure",
+            "COPD (emphysema)",
+            "Coronary artery disease",
+            "Depression",
+            "Diabetes",
+            "Fatty liver disease (NASH)",
+            "High blood pressure (hypertension)",
+            "Mitral valve prolapse",
+            "Muscle cramping",
+            "Osteoporosis"
+        ],
+        "intake": {
+            "male": {
+                "0-6 months": 30,
+                "7-12 months": 75,
+                "1-3 years": 80,
+                "4-8 years": 130,
+                "9-13 years": 240,
+                "14-18 years": 360,
+                "19-50 years": 400,
+                "50-70 years": 400,
+                "70+ years": 400
+            },
+            "female": {
+                "normal": {
+                    "0-6 months": 30,
+                    "7-12 months": 75,
+                    "1-3 years": 80,
+                    "4-8 years": 130,
+                    "9-13 years": 240,
+                    "14-18 years": 360,
+                    "19-50 years": 310,
+                    "50-70 years": 320,
+                    "70+ years": 320
+                },
+                "pregnancy": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 400,
+                    "19-50 years": 350,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                },
+                "lactation": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 360,
+                    "19-50 years": 310,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                }
+            }
+        },
+        "deficiency": "<p>Magnesium deficiency (hypomagnesemia) is common and it is found in 2.5–15% of the general population. The primary cause of deficiency is decreased dietary intake. Other causes are increased renal or gastrointestinal loss, an increased intracellular shift, and proton-pump inhibitor antacid therapy. Most are asymptomatic, but symptoms referable to neuromuscular, cardiovascular, and metabolic dysfunction may occur. Alcoholism is often associated with magnesium deficiency. Chronically low serum magnesium levels are associated with metabolic syndrome, diabetes mellitus type 2, fasciculation, and hypertension.</p>",
+        "toxicity": "<p>Overdose from dietary sources alone is unlikely because excess magnesium in the blood is promptly filtered by the kidneys. Overdose with magnesium tablets is possible in the presence of impaired renal function. There is a single case report of hypermagnesemia in a woman with normal renal function using high doses of magnesium salts for catharsis. The most common symptoms of overdose are nausea, vomiting, and diarrhea; other symptoms include hypotension, confusion, slowed heart andrespiratory rate, deficiencies of other minerals, coma, cardiac arrhythmia, and death from cardiac arrest.</p>",
+        "nutrientRelationship": "<h3>Phosphate</h3><p>The important interaction between phosphate and magnesium ions makes magnesium essential to the basic nucleic acid chemistry of all cells of all known living organisms. More than 300 enzymes require magnesium ions for their catalytic action, including all enzymes using or synthesizing ATP and those that use other nucleotides to synthesize DNA and RNA. The ATP molecule is normally found in a chelate with a magnesium ion.</p><h3>Phosphorus</h3><p>Magnesium and phosphorus have a complex relationship with respect to absorption in the intestine. How much of each of these nutrients goes into the blood stream versus being lost in the stool is variable by relative amount, hormonal balance, and even time of day. In general, more magnesium tends to reduce phosphorus absorption.</p><h3>Calcium</h3><p>Studies suggest that absorption of magnesium from our intestine depends not only on the amount of magnesium that is present but also on the amount of calcium that is present, because the cells lining our intestine have a single spot (called the CaSR receptor) for absorbing these minerals. In practical terms, these circumstances suggest that our diet needs to be balanced in terms of magnesium, calcium, and the ratio of these two minerals.</p>",
+        "sources": [
+            null
+        ]
+    },
+    {
+        "name": "Manganese",
+        "category": "Mineral",
+        "description": "<p>Manganese is an important metal for human health, being absolutely necessary for development, metabolism, and the antioxidant system. Nevertheless, excessive exposure or intake may lead to a condition known as manganism, a neurodegenerative disorder that causes dopaminergic neuronal death and parkinsonian- like symptoms. The classes of enzymes that have manganese cofactors are very broad, and include oxidoreductases, transferases,hydrolases, lyases, isomerases, ligases, lectins, and integrins. The reverse transcriptases of many retroviruses (though not lentiviruses such as HIV) contain manganese. The best-known manganese-containing polypeptides may bearginase, the diphtheria toxin, and Mn-containing superoxide dismutase (Mn-SOD). Mn-SOD is the type of SOD present in eukaryotic mitochondria, and also in most bacteria (this fact is in keeping with the bacterial-origin theory of mitochondria). The Mn-SOD enzyme is probably one of the most ancient, for nearly all organisms living in the presence of oxygen use it to deal with the toxic effects of superoxide (O-2), formed from the 1-electron reduction of dioxygen.</p>",
+        "functions": [
+            "Antioxidant",
+            "Blood sugar control",
+            "Bone development",
+            "Skin health"
+        ],
+        "diseasePrev": [
+            "Asthma",
+            "Dermatitis",
+            "Diabetes",
+            "Epilepsy",
+            "Hypothyroidism",
+            "Osteoporosis",
+            "Tardive dyskinesia",
+            "High blood pressure (hypertension)",
+            "Mitral valve prolapse",
+            "Muscle cramping",
+            "Osteoporosis"
+        ],
+        "intake": {
+            "male": {
+                "0-6 months": 0.003,
+                "7-12 months": 0.6,
+                "1-3 years": 1.2,
+                "4-8 years": 1.5,
+                "9-13 years": 1.9,
+                "14-18 years": 2.2,
+                "19-50 years": 2.3,
+                "50-70 years": 2.3,
+                "70+ years": 2.3
+            },
+            "female": {
+                "normal": {
+                    "0-6 months": 0.003,
+                    "7-12 months": 0.6,
+                    "1-3 years": 1.2,
+                    "4-8 years": 1.5,
+                    "9-13 years": 1.6,
+                    "14-18 years": 1.6,
+                    "19-50 years": 1.8,
+                    "50-70 years": 1.8,
+                    "70+ years": 1.8
+                },
+                "pregnancy": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 2,
+                    "19-50 years": 2,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                },
+                "lactation": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 2.6,
+                    "19-50 years": 2.6,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                }
+            }
+        },
+        "deficiency": "<p>A deficiency of manganese causes skeletal deformities in animals and inhibits the production of collagen in wound healing. Also, low levels of manganese may lead to:</p><ul><li>Altered carbohydrate and fat metabolism</li><li>Anemia</li><li>Bone demineralization and malformation</li><li>Convulsions, blindness or paralysis in infants</li><li>Decreased serum cholesterol levels</li><li>Dizziness</li><li>Elevated blood calcium, phosphorus and alkaline phosphatase levels</li><li>Hearing loss</li><li>Impaired glucose tolerance</li><li>Infertility</li><li>Nausea or vomiting</li><li>Seizures</li><li>Skeletal abnormalities</li><li>Skin rash</li><li>Stunted growth</li><li>Weak hair and nails</li><li>Weakness</li></ul>",
+        "toxicity": "<p>Manganese compounds are less toxic than those of other widespread metals, such as nickel and copper. Manganese poisoning has been linked to impaired motor skills and cognitive disorders.The strong oxidative effect leads to necrosis of the mucous membrane. For example, the esophagus is affected if the permanganate is swallowed. Only a limited amount is absorbed by the intestines, but this small amount shows severe effects on the kidneys and on the liver.Higher levels of exposure to manganese in drinking water are associated with increased intellectual impairment and reduced intelligence quotients in school-age children.</p><p>Fuels containing manganese tend to form manganese carbides, which damage exhaust valves. Many racing competitions specifically ban manganese compounds in racing fuel (cart, minibike). Manganese overexposure is most frequently associated with manganism, a rare neurological disorder associated with excessive manganese ingestion or inhalation. Manganism is a biphasic disorder. In its early stages, an intoxicated person may experience depression, mood swings, compulsive behaviors, and psychosis. Early neurological symptoms give way to late-stage manganism, which resembles Parkinson's disease. Symptoms include weakness, monotone and slowed speech, an expressionless face, tremor, forward-leaning gait, inability to walk backwards without falling, rigidity, and general problems with dexterity, gait and balance. Unlike Parkinson's disease, manganism is not associated with loss of smell and patients are typically unresponsive to treatment with L-DOPA. Symptoms of late-stage manganism become more severe over time even if the source of exposure is removed and brain manganese levels return to normal.</p>",
+        "nutrientRelationship": "<h3>Iron</h3><p>High dietary intake of iron may inhbit proper absorption of manganese.</p><h3>Calcium</h3><p>High dietary intake of calcium may inhbit proper absorption of manganese, as well.</p><h3>Magnesium</h3><p>High dietary intake of magnesium may inhbit proper absorption of manganese, as well.</p>",
+        "sources": [
+            null
+        ]
+    },
+    {
+        "name": "Molybdenum",
+        "category": "Mineral",
+        "description": "<p>Molybdenum is a commonly unknown mineral, but enzymes containing Molybdenum are the most common catalysts used by some bacteria to break the chemical bond in atmospheric molecular nitrogen, allowing biological nitrogen fixation. At least 50 enzymes that contain molybdenum are now known in bacteria and animals, although only bacterial and cyanobacterial enzymes are involved in nitrogen fixation. These nitrogenases contain molybdenum in a different form from the other molybdenum-containing enzymes, which all contain fully oxidized molybdenum incorporated into a molybdenum cofactor. Owing to the diverse functions of the various molybdenum cofactor enzymes, molybdenum is a required element for life in all higher eukaryote organisms, though it is not required by all bacteria. Most molybdenum compounds have low solubility in water, but the molybdate ion is soluble and forms when molybdenum-containing minerals are in contact with oxygen and water. Once oxygen made by early life appeared in seawater, it helped dissolve molybdenum into soluble molybdate from minerals on the sea bottom, making it available for the first time to nitrogen-fixing bacteria, and allowing them to provide more fixed usable nitrogen compounds for higher forms of life. In 2013, it was suggested possible that boron and molybdenum catalyzed the production of RNA on Mars with life being transported to Earth via a meteorite around 3 billion years ago. Though molybdenum forms compounds with various organic molecules, including carbohydrates and amino acids, it is transported throughout the human body as molybdate.</p>",
+        "functions": [
+            "Antioxidant",
+            "Nervous system health",
+            "Optimal sulfur balance"
+        ],
+        "diseasePrev": [
+            "Asthma",
+            "Cardiovascular disease",
+            "Metabolic syndrome",
+            "Poor detoxification",
+            "Sulfite sensitivity"
+        ],
+        "intake": {
+            "male": {
+                "0-6 months": 0.002,
+                "7-12 months": 0.003,
+                "1-3 years": 0.017,
+                "4-8 years": 0.022,
+                "9-13 years": 0.034,
+                "14-18 years": 0.043,
+                "19-50 years": 0.045,
+                "50-70 years": 0.045,
+                "70+ years": 0.045
+            },
+            "female": {
+                "normal": {
+                    "0-6 months": 0.002,
+                    "7-12 months": 0.003,
+                    "1-3 years": 0.017,
+                    "4-8 years": 0.022,
+                    "9-13 years": 0.034,
+                    "14-18 years": 0.043,
+                    "19-50 years": 0.045,
+                    "50-70 years": 0.045,
+                    "70+ years": 0.045
+                },
+                "pregnancy": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 0.05,
+                    "19-50 years": 0.05,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                },
+                "lactation": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 0.05,
+                    "19-50 years": 0.05,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                }
+            }
+        },
+        "deficiency": "<p>The amount of molybdenum required is relatively small, and molybdenum deficiency usually does not occur in natural settings. However, it can occur in individuals receiving parenteral nutrition.</p>",
+        "toxicity": "<p>Molybdenum dusts and fumes, which can be generated by mining or metalworking, can be toxic, especially if ingested (including dust trapped in the sinuses and later swallowed). Low levels of prolonged exposure can cause irritation to the eyes and skin. Direct inhalation or ingestion of molybdenum and its oxides should be avoided. Symptoms include fatigue, headaches and joint pains. At levels of 5000 mg/m3, molybdenum is immediately dangerous to life and health.</p>",
+        "nutrientRelationship": "<h3>Copper</h3><p>It is thought that too high levels of molybdenum lead to impaired copper absorption.</p><h3>Iron</h3><p>All of the enzymes that use molybdenum require iron as they are being assembled. Additionally, the sulfite oxidase enzymes use iron in the form of heme (the same iron-containing protein found in red blood cells) along with molybdenum in their detoxification activity.</p><h3>Tungsten</h3><p>Exposure to the environmental toxin tungsten could potentially interfere with molybdenum metabolism. This is because tungsten can replace molybdenum in its role as an enzyme cofactor.</p>",
+        "sources": [
+            null
+        ]
+    },
+    {
+        "name": "Vitamin B3",
+        "category": "Vitamin",
+        "description": "<p>Niacin is a water-soluble vitamin, which is also known as nicotinic acid or vitamin B3 and it is a compound of the vitamin B complex group. Nicotinamide is the derivative of niacin and used by the body to form the coenzymes nicotinamide adenine dinucleotide (NAD) and nicotinamide adenine dinucleotide phosphate (NADP).</p>",
+        "functions": [
+            "Antioxidant",
+            "Energy production"
+        ],
+        "diseasePrev": [
+            "Acne vulgaris",
+            "High cholesterol (hyperlipidemia)",
+            "Osteoarthritis",
+            "Pellagra",
+            "Reynaud's disease",
+            "Schizophrenia",
+            "Type 1 diabetes"
+        ],
+        "intake": {
+            "male": {
+                "0-6 months": 2,
+                "7-12 months": 4,
+                "1-3 years": 6,
+                "4-8 years": 8,
+                "9-13 years": 12,
+                "14-18 years": 16,
+                "19-50 years": 16,
+                "50-70 years": 16,
+                "70+ years": 16
+            },
+            "female": {
+                "normal": {
+                    "0-6 months": 2,
+                    "7-12 months": 4,
+                    "1-3 years": 6,
+                    "4-8 years": 8,
+                    "9-13 years": 12,
+                    "14-18 years": 14,
+                    "19-50 years": 14,
+                    "50-70 years": 14,
+                    "70+ years": 14
+                },
+                "pregnancy": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 18,
+                    "19-50 years": 18,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                },
+                "lactation": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 16,
+                    "19-50 years": 16,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                }
+            }
+        },
+        "deficiency": "<p>Insufficient niacin in the diet can cause:</p><ul><li>Anemia</li><li>Headaches</li><li>Nausea</li><li>Skin and mouth lesions</li><li>Tiredness</li></ul><p>The lack of niacin may also be observed in pandemic deficiency disease, which is caused by a lack of five crucial vitamins (niacin, vitamin C, thiamin, vitamin D, and vitamin A) and is usually found in areas of widespread poverty and malnutrition.</p>",
+        "toxicity": "<p>The most common adverse effects are:</p><ul><li>Abdominal pain</li><li>Diarrhea</li><li>Dyspepsia</li><li>Flushing (warmth, redness, itching and/or tingling)</li><li>Headache</li><li>Nausea</li><li>Pain</li><li>Pruritus</li><li>Rash</li><li>Rhinitis</li><li>Toxicity</li><li>Vomiting</li></ul><p>These can be minimized by initiating therapy at low dosages, increasing dosage gradually, and avoiding administration on an empty stomach. High doses of niacin often temporarily reduce blood pressure as a result of acute vasodilation. Longer term, high-dose niacin use may persistently lower blood pressure in individuals with hypertension, but more research is needed to determine the extent of this effect.</p>",
+        "nutrientRelationship": "<h3>Vitamin B-Complex</h3><p>The entire group of B-Complex vitamins is involved in the process of energy production, and deficiency of one can impair the entire process.</p><h3>Tryptophan</h3><p>Niacin can be synthesized in the body from the amino acid tryptophan. So theoretically, it might be possible for a person to get all of the niacin they need from the tryptophan found in protein-rich foods, even if those foods contained no niacin. However, many protein-rich foods (like animal foods) are also rich in niacin, so that there would be no practical need to take the tryptophan in these foods and convert it into niacin. Vitamin B6 is needed for conversion of tryptophan into niacin, and researchers aren't clear how relative deficiencies in B6 might affect the conversion process.</p>",
+        "sources": [
+            null
+        ]
+    },
+    {
+        "name": "Vitamin B5",
+        "category": "Vitamin",
+        "description": "<p>Pantothenic acid, also called pantothenate or vitamin B5 (a B vitamin), is a water-soluble vitamin. Pantothenic acid is an essential nutrient. Animals require pantothenic acid to synthesize coenzyme-A (CoA), as well as to synthesize and metabolize proteins, carbohydrates, and fats. Coenzyme A is essential to many biochemical reactions that sustain life.</p>",
+        "functions": [
+            "Energy production",
+            "Macronutrient metabolism"
+        ],
+        "diseasePrev": [
+            "Acne vulgaris",
+            "Chronic fatigue",
+            "Diabetes-related foot ulcers",
+            "High cholesterol (hyperlipidemia)"
+        ],
+        "intake": {
+            "male": {
+                "0-6 months": 1.7,
+                "7-12 months": 1.8,
+                "1-3 years": 2,
+                "4-8 years": 3,
+                "9-13 years": 4,
+                "14-18 years": 5,
+                "19-50 years": 5,
+                "50-70 years": 5,
+                "70+ years": 5
+            },
+            "female": {
+                "normal": {
+                    "0-6 months": 1.7,
+                    "7-12 months": 1.8,
+                    "1-3 years": 2,
+                    "4-8 years": 3,
+                    "9-13 years": 4,
+                    "14-18 years": 5,
+                    "19-50 years": 5,
+                    "50-70 years": 5,
+                    "70+ years": 5
+                },
+                "pregnancy": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 6,
+                    "19-50 years": 6,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                },
+                "lactation": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 7,
+                    "19-50 years": 7,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                }
+            }
+        },
+        "deficiency": "<p>Pantothenic acid deficiency is exceptionally rare and has not been thoroughly studied. In the few cases where deficiency has been seen (victims of starvation and limited volunteer trials), nearly all symptoms can be reversed with the return of pantothenic acid. Symptoms of deficiency are similar to other vitamin B deficiencies. There is impaired energy production, due to low CoA levels, which could cause symptoms of irritability, fatigue, and apathy. Acetylcholine synthesis is also impaired; therefore, neurological symptoms can also appear in deficiency; they include numbness, paresthesia, and muscle cramps. Deficiency in pantothenic acid can also cause hypoglycemia, or an increased sensitivity to insulin. Insulin receptors are acylated with palmitic acid when they do not want to bind with insulin. Therefore, more insulin will bind to receptors when acylation decreases, causing hypoglycemia. Additional symptoms could include restlessness, malaise, sleep disturbances, nausea, vomiting, and abdominal cramps. In a few rare circumstances, more serious (but reversible) conditions have been seen, such as adrenal insufficiency and hepatic encephalopathy.</p>",
+        "toxicity": "<p>Toxicity of pantothenic acid is unlikely. Large doses of the vitamin, when ingested, have no reported side effects and massive doses may only yield mild intestinal distress, and diarrhea at worst. It has been suggested, however, that high doses of pantothenic acid might worsen panic attacks in those with panic disorder by prolonging the duration until adrenal exhaustion. There are also no adverse reactions known following parenteral (injected) or topical (skin) applications of the vitamin.</p>",
+        "nutrientRelationship": "<h3>Vitamin B-Complex</h3><p>The entire group of B-Complex vitamins is involved in the process of energy production, and deficiency of one can impair the entire process.</p><h3>Biotin</h3><p>Large doses of pantothenic acid have the potential to compete with biotin for intestinal and cellular uptake by the human sodium-dependent multivitamin transporter.</p>",
+        "sources": [
+            null
+        ]
+    },
+    {
+        "name": "Phosphorus",
+        "category": "Mineral",
+        "description": "<p>Phosphorus is essential for life. Phosphates are a component of DNA, RNA, ATP, and the phospholipids, which form all cell membranes. Demonstrating the link between phosphorus and life, elemental phosphorus was first isolated from human urine, and bone ash was an important early phosphate source. Phosphate minerals are fossils. Low phosphate levels are an important limit to growth in some aquatic systems.</p>",
+        "functions": [
+            "Acid-base homeostasis",
+            "Cell function",
+            "Energy production",
+            "Macronutrient metabolism"
+        ],
+        "diseasePrev": [
+            "Cardiovascular disease",
+            "Kidney disease",
+            "Osteoporosis"
+        ],
+        "intake": {
+            "male": {
+                "0-6 months": 100,
+                "7-12 months": 275,
+                "1-3 years": 460,
+                "4-8 years": 500,
+                "9-13 years": 1250,
+                "14-18 years": 1250,
+                "19-50 years": 700,
+                "50-70 years": 700,
+                "70+ years": 700
+            },
+            "female": {
+                "normal": {
+                    "0-6 months": 100,
+                    "7-12 months": 275,
+                    "1-3 years": 460,
+                    "4-8 years": 500,
+                    "9-13 years": 1250,
+                    "14-18 years": 1250,
+                    "19-50 years": 700,
+                    "50-70 years": 700,
+                    "70+ years": 700
+                },
+                "pregnancy": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 1250,
+                    "19-50 years": 700,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                },
+                "lactation": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 1250,
+                    "19-50 years": 700,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                }
+            }
+        },
+        "deficiency": "<p>Dietary phosphorus deficiency is uncommon and often only observed in cases of near-total starvation or in rare inherited disorders involving renal phosphorus wasting. Symptoms include:</p><ul><li>Bone fragility</li><li>Loss of appetite</li><li>Muscle weakness</li><li>Numbness in the extremities</li><li>Rickets in children</li></ul>",
+        "toxicity": "<p>Too much phosphate can lead to diarrhea and calcification (hardening) of organs and soft tissue. Organic compounds of phosphorus form a wide class of materials, many are required for life, but some are extremely toxic. Fluorophosphate esters are among the most potent neurotoxins known. A wide range of organophosphorus compounds are used for their toxicity to certain organisms as pesticides (herbicides, insecticides, fungicides, etc.) and weaponised as nerve agents. Most inorganic phosphates are relatively nontoxic and essential nutrients. The white phosphorus allotrope presents a significant hazard because it ignites in air and produces phosphoric acid residue. Chronic white phosphorus poisoning leads to necrosis of the jaw called 'phossy jaw'. Ingestion of white phosphorus may cause a medical condition known as 'Smoking Stool Syndrome'. People can be exposed to phosphorus in the workplace by breathing it in, swallowing it, skin contact, and eye contact.</p>",
+        "nutrientRelationship": "<h3>Calcium</h3><p>The relationship between calcium and phosphorus is complex and important. The same hormones and kidney compensatory measures that regulate calcium levels also tend to affect phosphorus nutrition. Also, large amounts of dietary calcium can impair absorption of dietary phosphorus.</p><h3>Iron</h3><p>Iron absorption is being impaired by excessive amounts of phosphate.</p><h3>Magnesium</h3><p>Magnesium absorption is being impaired by excessive amounts of phosphate, as well.</p><h3>Zinc</h3><p>Zinc absorption is being impaired by excessive amounts of phosphate, as well.</p>",
+        "sources": [
+            null
+        ]
+    },
+    {
+        "name": "Potassium",
+        "category": "Mineral",
+        "description": "<p>Potassium is the eighth or ninth most common element by mass (0.2%) in the human body, so that a 60 kg adult contains a total of about 120 g of potassium. The body has about as much potassium as sulfur and chlorine, and only calcium and phosphorus are more abundant. Potassium is an essential dietary mineral and electrolyte. The term electrolyte refers to a substance that dissociates into ions (charged particles) in solution, making it capable of conducting electricity. Normal body function depends on tight regulation of potassium concentrations both inside and outside of cells. Potassium ions are necessary for the function of all living cells. Potassium ion shifts across nerve cell membranes are necessary for normal nerve transmission; potassium depletion or excess can result in numerous abnormalities, including an abnormal heart rhythm and various electrocardiographic (ECG) abnormalities. Fresh fruits and vegetables are good dietary sources of potassium. The body responds to the influx of dietary potassium, which raises serum potassium levels, with a shift of potassium from outside to inside cells, and an increase in potassium excretion by the kidney.</p>",
+        "functions": [
+            "Acid-base homeostasis",
+            "Electrolyte balance",
+            "Fluid balance",
+            "Gastrointestinal motility",
+            "Glucose metabolism",
+            "Mineralocorticoid action",
+            "Hormone secretion",
+            "Insulin metabolism",
+            "Kidney health",
+            "Normal blood pressure",
+            "Vascular tone"
+        ],
+        "diseasePrev": [
+            "Diarrhea",
+            "Fatigue",
+            "High blood pressure (hypertension)",
+            "Kidney stones",
+            "Stroke",
+            "Vomiting"
+        ],
+        "intake": {
+            "male": {
+                "0-6 months": 400,
+                "7-12 months": 700,
+                "1-3 years": 3000,
+                "4-8 years": 3800,
+                "9-13 years": 4500,
+                "14-18 years": 4700,
+                "19-50 years": 4700,
+                "50-70 years": 4700,
+                "70+ years": 4700
+            },
+            "female": {
+                "normal": {
+                    "0-6 months": 400,
+                    "7-12 months": 700,
+                    "1-3 years": 3000,
+                    "4-8 years": 3800,
+                    "9-13 years": 4500,
+                    "14-18 years": 4700,
+                    "19-50 years": 4700,
+                    "50-70 years": 4700,
+                    "70+ years": 4700
+                },
+                "pregnancy": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 4700,
+                    "19-50 years": 4700,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                },
+                "lactation": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 5100,
+                    "19-50 years": 5100,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                }
+            }
+        },
+        "deficiency": "<p>An abnormally low plasma potassium concentration is referred to as hypokalemia. Hypokalemia is most commonly a result of excessive loss of potassium, e.g., from prolonged vomiting, the use of some diuretics, some forms of kidney disease, or metabolic disturbances. The symptoms of hypokalemia are related to alterations in membrane potential and cellularmetabolism. They include:</p><ul><li>Abdominal pain</li><li>Abnormal heart rhythms (cardiac arrhythmias)</li><li>Bloating</li><li>Constipation</li><li>Fatigue</li><li>Intestinal paralysis</li><li>Muscle weakness and cramps</li><li>Muscular paralysis</li></ul>",
+        "toxicity": "<p>Potassium depletion or excess can result in numerous abnormalities, including an abnormal heart rhythm and various electrocardiographic (ECG) abnormalities. The body responds to the influx of dietary potassium, which raises serum potassium levels, with a shift of potassium from outside to inside cells, and an increase in potassium excretion by the kidney.</p>",
+        "nutrientRelationship": "<h3>Calcium</h3><p>Research suggests that a diet rich in potassium may help to prevent loss of calcium in the urine.</p><h3>Sodium</h3><p>Potassium has the power to help remove sodium from the body. A higher potassium intake causes the excretion of more sodium through urine, which can help lower high blood pressure.</p>",
+        "sources": [
+            null
+        ]
+    },
+    {
+        "name": "Vitamin B2",
+        "category": "Vitamin",
+        "description": "<p>Riboflavin (vitamin B2) is part of the vitamin B group. It is the central component of the cofactors FAD and FMN and as such required for a variety of flavoprotein enzyme reactions including activation of other vitamins. It was formerly known as vitamin G. Riboflavin functions as a coenzyme, meaning that it is required for enzymes (proteins) to perform normal physiological actions. Specifically, the active forms or riboflavin Flavin mononucleotide (FMN) and flavin adenine dinucleotide (FAD) function as cofactors for a variety of flavoproteine enzyme reactions.</p>",
+        "functions": [
+            "Antioxidant",
+            "Energy production",
+            "Iron metabolism"
+        ],
+        "diseasePrev": [
+            "Anemia",
+            "Cataract",
+            "Congestive heart failure",
+            "High blood pressure (hypertension)",
+            "Migraine headache",
+            "Parkinson's disease"
+        ],
+        "intake": {
+            "male": {
+                "0-6 months": 0.3,
+                "7-12 months": 0.4,
+                "1-3 years": 0.5,
+                "4-8 years": 0.6,
+                "9-13 years": 0.9,
+                "14-18 years": 1.3,
+                "19-50 years": 1.3,
+                "50-70 years": 1.3,
+                "70+ years": 1.3
+            },
+            "female": {
+                "normal": {
+                    "0-6 months": 0.3,
+                    "7-12 months": 0.4,
+                    "1-3 years": 0.5,
+                    "4-8 years": 0.6,
+                    "9-13 years": 0.9,
+                    "14-18 years": 1,
+                    "19-50 years": 1.1,
+                    "50-70 years": 1.1,
+                    "70+ years": 1.1
+                },
+                "pregnancy": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 1.4,
+                    "19-50 years": 1.4,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                },
+                "lactation": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 1.6,
+                    "19-50 years": 1.6,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                }
+            }
+        },
+        "deficiency": "<p>Mild deficiencies can exceed 50% of the population in third world countries and in refugee situations. Riboflavin deficiency (also called ariboflavinosis) results in:</p><ul><li>Chapped and fissured lips (cheilosis)</li><li>Inflammation of the corners of the mouth (angular stomatitis)</li><li>Itchy, watery and bloodshot eyes</li><li>Light sensitivity</li><li>Oily scaly skin rashes on the scrotum, vulva, philtrum of the lip, or the nasolabial folds</li><li>Painful red tongue</li><li>Sore throat</li><li>Stomatitis</li></ul><p>Due to interference with iron absorption, even mild to moderate riboflavin deficiency results in an anemia with normal cell size and normal hemoglobin content (i.e. normochromic normocytic anemia). This is distinct from anemia caused by deficiency of folic acid (B9) or cyanocobalamin (B12), which causes anemia with large blood cells (megaloblastic anemia).[9] Deficiency of riboflavin during pregnancy can result in birth defects including congenital heart defects[10] and limb deformities. The stomatitis symptoms are similar to those seen in pellagra, which is caused by niacin (B3) deficiency. Therefore, riboflavin deficiency is sometimes called 'pellagra sine pellagra' (pellagra without pellagra), because it causes stomatitis but not widespread peripheral skin lesions characteristic of niacin deficiency.</p>",
+        "toxicity": "<p>In humans, there is no evidence for riboflavin toxicity produced by excessive intakes, in part because it has lower water solubility than other B vitamins, because absorption becomes less efficient as doses increase, and because what excess is absorbed is excreted via the kidneys into urine.</p>",
+        "nutrientRelationship": "<h3>Vitamin B-Complex</h3><p>The entire group of B-Complex vitamins is involved in the process of energy production, and deficiency of one can impair the entire process.</p><h3>Iron</h3><p>Vitamin B2 is involved in iron metabolism.</p><h3>Vitamin B6</h3><p>Vitamin B2 is necessary to convert vitamin B6 to its active form. Hence, deficiency of vitamin B2 could potentially reduce your ability to use vitamin B6, even when there is plenty in your diet.</p>",
+        "sources": [
+            null
+        ]
+    },
+    {
+        "name": "Selenium",
+        "category": "Mineral",
+        "description": "<p>Selenium is a component of the unusual amino acids selenocysteine and selenomethionine. In humans, selenium is a trace element nutrient that functions as cofactor for reduction of antioxidant enzymes, such as glutathione peroxidases and certain forms of thioredoxin reductase found in animals and some plants. The glutathione peroxidase family of enzymes (GSH-Px) catalyze certain reactions that remove reactive oxygen species such as hydrogen peroxide and organic hydroperoxides. Selenium also plays a role in the functioning of the thyroid gland and in every cell that uses thyroid hormone, by participating as a cofactor for the three of the four known types of thyroid hormone deiodinases, which activate and then deactivate various thyroid hormones and their metabolites. Selenium may inhibit Hashimoto's disease, in which the body's own thyroid cells are attacked as alien. Increased dietary selenium intakes reduce the effects of mercury toxicity that inhibits selenoenzyme secretion that are required to prevent and reverse oxidative damage in brain and endocrine tissues.</p>",
+        "functions": [
+            "Antioxidant",
+            "Thyroid function",
+            "Iron metabolism"
+        ],
+        "diseasePrev": [
+            "Cancer",
+            "Cardiovascular disease",
+            "Depression",
+            "Hypothyroidism",
+            "Infertility",
+            "Low immune function"
+        ],
+        "intake": {
+            "male": {
+                "0-6 months": 0.015,
+                "7-12 months": 0.02,
+                "1-3 years": 0.02,
+                "4-8 years": 0.03,
+                "9-13 years": 0.04,
+                "14-18 years": 0.055,
+                "19-50 years": 0.055,
+                "50-70 years": 0.055,
+                "70+ years": 0.055
+            },
+            "female": {
+                "normal": {
+                    "0-6 months": 0.015,
+                    "7-12 months": 0.02,
+                    "1-3 years": 0.02,
+                    "4-8 years": 0.03,
+                    "9-13 years": 0.04,
+                    "14-18 years": 0.055,
+                    "19-50 years": 0.055,
+                    "50-70 years": 0.055,
+                    "70+ years": 0.055
+                },
+                "pregnancy": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 0.06,
+                    "19-50 years": 0.06,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                },
+                "lactation": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 0.07,
+                    "19-50 years": 0.07,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                }
+            }
+        },
+        "deficiency": "<p>Selenium deficiency is rare in healthy, well-nourished individuals. It can occur in patients with severely compromised intestinal function, those undergoing total parenteral nutrition, and in those of advanced age (over 90). Also, people dependent on food grown from selenium-deficient soil are at risk. Although New Zealand has low levels of selenium in its soil, adverse health effects have not been detected. Selenium deficiency as defined by low (<60% of normal) selenoenzyme activity levels in brain and endocrine tissues occurs only when a low selenium status is linked with an additional stress, such as high exposures to mercury or as a result of increased oxidant stress due to vitamin E deficiency.</p>",
+        "toxicity": "<p>Although selenium is an essential trace element, it is toxic if taken in excess. Signs and symptoms of selenosis include:</p><ul><li>Cirrhosis of the liver</li><li>Death</li><li>Fatigue</li><li>Garlic odor on the breath</li><li>Gastrointestinal disorders</li><li>Hair loss</li><li>Irritability</li><li>Neurological damage</li><li>Pulmonary edema</li><li>Sloughing of nails</li></ul><p>Elemental selenium and most metallic selenides have relatively low toxicities because of their low bioavailability. By contrast, selenates and selenites are very toxic, having an oxidant mode of action similar to that of arsenic trioxide. The chronic toxic dose of selenite for humans is about 2400 to 3000 micrograms of selenium per day for a long time. Hydrogen selenide is an extremely toxic, corrosive gas. Selenium also occurs in organic compounds, such as dimethylselenide, selenomethionine, selenocysteine and methylselenocysteine, all of which have high bioavailability and are toxic in large doses. Selenium pollution to waterways also occurs from leaching of selenium from coal flue ash, mining and metal smelting, crude oil processing and landfill. The resulting high selenium levels in waterways have been found to have caused certain congenital disorders in oviparous species such as wetland birds, and fish. Elevated dietary methylmercury levels can enhance the negative effects of selenium toxicity in oviparous species.</p>",
+        "nutrientRelationship": "<h3>Zinc</h3><p>The importance of selenium to biological systems, and specifically to the cellular redox (pro-oxidant/antioxidant) balance, is derived from its presence as selenocysteine in the catalytic site of selenoproteins. Other minerals that are critical components of antioxidant enzymes include copper (as superoxide dismutase), zinc (as superoxide dismutase), and iron (as catalase). It seems that a high dose of Se supplements might disturb the Zn:Cu ratio which, in turn, leads to Zn reduction.</p><h3>Vitamin C</h3><p>Selenium acts in synergy with the antioxidant vitamin vitamin C (ascorbic acid) by regenerating it from its oxidized form.</p><h3>Vitamin E</h3><p>Also, selenium acts in synergy with the antioxidant vitamin vitamin E (α-tocopherol) by regenerating it from its oxidized form and, as a result, promoting maximal antioxidant protection.</p><h3>Iodine</h3><p>A deficiency of both selenium and iodine can make thyroid disorders more severe than a deficiency of iodine alone.</p>",
+        "sources": [
+            null
+        ]
+    },
+    {
+        "name": "Sodium",
+        "category": "Mineral",
+        "description": "<p>Sodium is an essential mineral that regulates blood volume, blood pressure, osmotic equilibrium and pH. Salt (sodium chloride) is essential for life. The tight regulation of the body's sodium and chloride concentrations is so important that multiple mechanisms work in concert to control them. Sodium chloride is the principal source of sodium in the diet, and is used as seasoning and preservative. Sodium is important in neuron function, and in osmoregulation between cells and the extracellular fluid. Unusually low or high sodium levels in humans are recognized in medicine as hyponatremia and hypernatremia. These conditions may be caused by genetic factors, ageing, or prolonged vomiting or diarrhea.</p>",
+        "functions": [
+            "Membrane potential",
+            "Normal blood pressure",
+            "Normal blood volume",
+            "Nutrient absorption",
+            "Nutrient transport"
+        ],
+        "diseasePrev": [
+            "Hyponatremia"
+        ],
+        "intake": {
+            "male": {
+                "0-6 months": 120,
+                "7-12 months": 370,
+                "1-3 years": 1000,
+                "4-8 years": 1200,
+                "9-13 years": 1500,
+                "14-18 years": 1500,
+                "19-50 years": 1500,
+                "50-70 years": 1300,
+                "70+ years": 1200
+            },
+            "female": {
+                "normal": {
+                    "0-6 months": 120,
+                    "7-12 months": 370,
+                    "1-3 years": 1000,
+                    "4-8 years": 1200,
+                    "9-13 years": 1500,
+                    "14-18 years": 1500,
+                    "19-50 years": 1500,
+                    "50-70 years": 1300,
+                    "70+ years": 1200
+                },
+                "pregnancy": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 1500,
+                    "19-50 years": 1500,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                },
+                "lactation": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 1500,
+                    "19-50 years": 1500,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                }
+            }
+        },
+        "deficiency": "<p>Sodium deficiency causes hyponatremia. Too little sodium in the diet alone is very rarely the cause of hyponatremia, although it can promote hyponatremia indirectly and has been associated with MDMA-induced hyponatremia. Sodium loss can lead to a state of low blood volume, which signals the release of anti-diuretic hormone (ADH). Many conditions including congestive heart failure, liver failure, kidney failure and pneumonia are commonly associated with a low sodium concentration in the blood. This state can also be caused by overhydration from drinking too much water because of excess thirst (polydipsia). Exercise-associated hyponatremia (EAH) is common in marathon runners and participants of other endurance events. Signs and symptoms of hyponatremia include:</p><ul><li>Confusion</li><li>Decreased consciousness or coma</li><li>Fatigue</li><li>Headache</li><li>Irritability</li><li>Lethargy</li><li>Loss of appetite</li><li>Muscle weakness</li><li>Nausea and vomiting</li><li>Seizures</li><li>Short-term memory loss</li><li>Spasms or cramps</li></ul>",
+        "toxicity": "<p>High sodium levels causes hypernatremia. Clinical manifestations of hypernatremia include:</p><ul><li>Coma</li><li>Edema</li><li>Irritability</li><li>Lethargy</li><li>Neuromuscular excitability</li><li>Seizures</li><li>Weakness</li></ul><p>Long term high sodium intake may cause:</p><ul><li>Cardiovascular disease</li><li>Gastric cancer</li><li>High blood pressure (hypertension)</li><li>Kidney stones</li><li>Osteoporosis</li></ul><p>Elemental selenium and most metallic selenides have relatively low toxicities because of their low bioavailability. By contrast, selenates and selenites are very toxic, having an oxidant mode of action similar to that of arsenic trioxide. The chronic toxic dose of selenite for humans is about 2400 to 3000 micrograms of selenium per day for a long time. Hydrogen selenide is an extremely toxic, corrosive gas. Selenium also occurs in organic compounds, such as dimethylselenide, selenomethionine, selenocysteine and methylselenocysteine, all of which have high bioavailability and are toxic in large doses. Selenium pollution to waterways also occurs from leaching of selenium from coal flue ash, mining and metal smelting, crude oil processing and landfill. The resulting high selenium levels in waterways have been found to have caused certain congenital disorders in oviparous species such as wetland birds, and fish. Elevated dietary methylmercury levels can enhance the negative effects of selenium toxicity in oviparous species.</p>",
+        "nutrientRelationship": "<h3>Chloride</h3><p>As mentioned, sodium in combination with chloride forms the table salt.</p><h3>Potassium</h3><p>High intake of sodium may decrease the intake of potassium.</p><h3>Calcium</h3><p>Research suggest that high intake of sodium causes calcium excretion through urine.</p>",
+        "sources": [
+            null
+        ]
+    },
+    {
+        "name": "Vitamin B1",
+        "category": "Vitamin",
+        "description": "<p>Thiamine, thiamin or vitamin B1  is a vitamin of the B complex group. All living organisms use thiamine, but it is synthesized only in bacteria, fungi, and plants. Animals must obtain it from their diet, and thus, for humans, it is an essential nutrient. Thiamin pyrophosphate (TPP), the active form of thiamin, is involved in several enzymefunctions associated with the metabolism of carbohydrates, branched-chain amino acids, and fatty acids.</p>",
+        "functions": [
+            "Energy production",
+            "Nervous system health",
+            "Normal blood pressure",
+            "Normal blood volume"
+        ],
+        "diseasePrev": [
+            "AIDS",
+            "Alcoholism",
+            "Alzheimer's disease",
+            "Beriberi",
+            "Cancer",
+            "Cataracts",
+            "Congestive heart failure",
+            "Diabetes",
+            "Liver failure",
+            "Pulmonary hypertension",
+            "Wernicke's encephalopathy"
+        ],
+        "intake": {
+            "male": {
+                "0-6 months": 0.2,
+                "7-12 months": 0.3,
+                "1-3 years": 0.5,
+                "4-8 years": 0.6,
+                "9-13 years": 0.9,
+                "14-18 years": 1.2,
+                "19-50 years": 1.2,
+                "50-70 years": 1.2,
+                "70+ years": 1.2
+            },
+            "female": {
+                "normal": {
+                    "0-6 months": 0.2,
+                    "7-12 months": 0.3,
+                    "1-3 years": 0.5,
+                    "4-8 years": 0.6,
+                    "9-13 years": 0.9,
+                    "14-18 years": 1,
+                    "19-50 years": 1.1,
+                    "50-70 years": 1.1,
+                    "70+ years": 1.1
+                },
+                "pregnancy": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 1.1,
+                    "19-50 years": 1.1,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                },
+                "lactation": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 1.4,
+                    "19-50 years": 1.4,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                }
+            }
+        },
+        "deficiency": "<p>Thiamine derivatives and thiamine-dependent enzymes are present in all cells of the body, thus a thiamine deficiency would seem to adversely affect all of the organ systems. However, the nervous system is particularly sensitive to thiamine deficiency, because of its dependence on oxidative metabolism. Thiamine deficiency commonly presents subacutely and can lead to metabolic coma and death. A lack of thiamine can be caused by malnutrition, a diet high in thiaminase-rich foods (raw freshwater fish, raw shellfish, ferns) and/or foods high in anti-thiamine factors (tea, coffee, betel nuts) and by grossly impaired nutritional status associated with chronic diseases, such as alcoholism, gastrointestinal diseases, HIV-AIDS, and persistent vomiting. It is thought that many people with diabetes have a deficiency of thiamine and that this may be linked to some of the complications that can occur.",
+        "toxicity": "<p>Overdosing on thiamine is rare but can cause severe symptoms. Mild symptoms of an overdose include:</p><ul><li>Convulsions</li><li>Headache</li><li>Irregular heart beat</li><li>Low blood pressure</li><li>Weakness</li></ul>",
+        "nutrientRelationship": "<h3>Vitamin B-Complex</h3><p>The entire group of B-Complex vitamins is involved in the process of energy production, and deficiency of one can impair the entire process.</p>",
+        "sources": [
+            null
+        ]
+    },
+    {
+        "name": "Zinc",
+        "category": "Mineral",
+        "description": "<p>Zinc is an essential trace element for humans and other animals, for plants and for microorganisms. Zinc is found in nearly 100 specific enzymes (other sources say 300), serves as structural ions in transcription factors and is stored and transferred in metallothioneins. It is 'typically the second most abundant transition metal in organisms' after iron and it is the only metal which appears in all enzyme classes.</p><p>In humans, zinc plays 'ubiquitous biological roles'. It interacts with 'a wide range of organic ligands' and has roles in the metabolism of RNA and DNA, signal transduction, and gene expression. It also regulates apoptosis. In the brain, zinc is stored in specific synaptic vesicles by glutamatergic neurons and can 'modulate brain excitability'. It plays a key role in synaptic plasticity and so in learning. However, it has been called 'the brain's dark horse' because it also can be a neurotoxin, suggesting zinc homeostasis plays a critical role in normal functioning of the brain and central nervous system. Zinc is perceived by the public today as being of 'exceptional biologic and public health importance', especially regarding prenatal and postnatal development.</p>",
+        "functions": [
+            "Immune system",
+            "Male reproductive health",
+            "Sensory organs",
+            "Skin health"
+        ],
+        "diseasePrev": [
+            "Acne vulgaris",
+            "AIDS",
+            "Canker sores",
+            "Common cold",
+            "Depression",
+            "Depression",
+            "Down syndrome",
+            "Infertility",
+            "Liver disease",
+            "Macular degeneration",
+            "Ulcer"
+        ],
+        "intake": {
+            "male": {
+                "0-6 months": 2.5,
+                "7-12 months": 2.5,
+                "1-3 years": 2.5,
+                "4-8 years": 4,
+                "9-13 years": 7,
+                "14-18 years": 8.5,
+                "19-50 years": 9.4,
+                "50-70 years": 9.4,
+                "70+ years": 9.4
+            },
+            "female": {
+                "normal": {
+                    "0-6 months": 2.5,
+                    "7-12 months": 2.5,
+                    "1-3 years": 2.5,
+                    "4-8 years": 4,
+                    "9-13 years": 7,
+                    "14-18 years": 7.3,
+                    "19-50 years": 6.8,
+                    "50-70 years": 6.8,
+                    "70+ years": 6.8
+                },
+                "pregnancy": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 10.5,
+                    "19-50 years": 9.5,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                },
+                "lactation": {
+                    "0-6 months": 0,
+                    "7-12 months": 0,
+                    "1-3 years": 0,
+                    "4-8 years": 0,
+                    "9-13 years": 0,
+                    "14-18 years": 10.9,
+                    "19-50 years": 10.4,
+                    "50-70 years": 0,
+                    "70+ years": 0
+                }
+            }
+        },
+        "deficiency": "<p>Zinc deficiency affects about two billion people in the developing world and is associated with many diseases. In children it causes growth retardation, delayed sexual maturation, infection susceptibility, and diarrhea. Zinc deficiency is usually due to insufficient dietary intake, but can be associated with malabsorption, acrodermatitis enteropathica, chronic liver disease, chronic renal disease, sickle cell disease, diabetes, malignancy, and other chronic illnesses. Groups at risk for zinc deficiency include the elderly, children in developing countries, and those with renal insufficiency. Signs and symptoms of zinc deficiency include:</p><ul><li>Alopecia</li><li>Altered cognition</li><li>Defects in carbohydrate utilization</li><li>Depressed growth</li><li>Diarrhea</li><li>Eye and skin lesions</li><li>Impaired appetite</li><li>Impaired host defense properties</li><li>Impotence and delayed sexual maturation</li><li>Low immunity</li><li>Reproductive teratogenesis</li></ul>",
+        "toxicity": "<p>Although zinc is an essential requirement for good health, excess zinc can be harmful. Excessive absorption of zinc suppresses copper and iron absorption. The free zinc ion is a powerful Lewis acid up to the point of being corrosive. Stomach acid contains hydrochloric acid, in which metallic zinc dissolves readily to give corrosive zinc chloride. </p>",
+        "nutrientRelationship": "<h3>Copper</h3><p>Too much zinc in the diet or from dietary supplements can impair copper This interaction can occur in two ways. First, copper and zinc may directly compete for absorption from our gastrointestinal tract. Second, diets high in zinc may lead to overproduction of a protein called metallothionein, a protein that binds both copper and zinc.</p><h3>Phytate</h3><p>Phytate can inhibit absorption of dietary zinc.</p>",
+        "sources": [
+            null
+        ]
+    }
+]

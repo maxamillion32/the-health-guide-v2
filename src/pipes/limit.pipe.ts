@@ -1,13 +1,17 @@
 import { Injectable, Pipe } from '@angular/core';
 
 @Pipe({
-  name: 'limit-pipe'
+  name: 'limit'
 })
 @Injectable()
-export class LimitPipe {
-
-  transform(value, args) {
-    value = value + '';
-    return value.toLowerCase();
-  }
+export class Limit {
+  transform(value: any[], exponent: number): any {
+       if (value) {
+           return value.filter((item, index) => {
+               if (index < exponent) {
+                   return item;
+               }
+           });
+       }
+    }
 }
