@@ -6,7 +6,7 @@ import { NgModule } from '@angular/core';
 import { MyApp } from './app.component';
 
 // Pages
-import { 
+import {
   Fitness,
   FoodList,
   Home,
@@ -22,10 +22,11 @@ import { Limit, SearchFilter } from "../pipes";
 import { NutritionService } from "../providers";
 
 export const firebaseConfig = {
-  apiKey: "AIzaSyDCIDGR-i2jR0pyv2PCYot2ATDL0Xyd1-k",
-  authDomain: "life-guiderta.firebaseapp.com",
-  databaseURL: "https://life-guiderta.firebaseio.com",
-  storageBucket: "life-guiderta.appspot.com"
+  apiKey: "AIzaSyBXdSjoVfk1KbbtmAUEq7ktnnI70ojg4y8",
+  authDomain: "the-health-guide.firebaseapp.com",
+  databaseURL: "https://the-health-guide.firebaseio.com",
+  storageBucket: "the-health-guide.appspot.com",
+  messagingSenderId: "283336744173"
 };
 
 @NgModule({

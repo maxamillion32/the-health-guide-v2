@@ -27,6 +27,10 @@ export class NutrientList implements OnInit {
     this.navCtrl.push(NutrientDetails, { nutrient });
   }
 
+  public resetSearch(): void {
+    this.searchQuery = "";
+  }
+
   public setFilterOpts(): void {
     let filterAlert = this.alertCtrl.create({
       title: "Nutrient search filter",

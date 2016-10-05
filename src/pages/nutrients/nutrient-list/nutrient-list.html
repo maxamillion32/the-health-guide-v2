@@ -23,7 +23,7 @@
     </button>
   </ion-list>
   <ion-list *ngSwitchCase="'macronutrients'">
-    <button ion-item detail-push *ngFor="let macronutrient of macronutrients | async" (click)="openNutrientDetails(macronutrient)">
+    <button ion-item detail-push *ngFor="let macronutrient of macronutrients | async | searchFilter: searchQuery: searchBy" (click)="openNutrientDetails(macronutrient)">
       <h1>{{ macronutrient.name }}</h1>
       <p>{{ macronutrient.category }}</p>
       <ion-note item-right>
@@ -35,7 +35,7 @@
 
 <ion-footer>
   <ion-toolbar>
-    <ion-segment color="light" [(ngModel)]="nutrientGroup">
+    <ion-segment color="light" [(ngModel)]="nutrientGroup" (ionChange)="resetSearch()">
       <ion-segment-button value="macronutrients">
         Macronutrients
       </ion-segment-button>

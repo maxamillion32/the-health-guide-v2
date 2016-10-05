@@ -1,0 +1,1060 @@
+{
+  "W1KRANpnCcb7zyI7xRgn3UjDxCP2" : {
+    "-KO9MtR9j0aPORK8-VxX" : {
+      "activities" : [ {
+        "details" : "high intensity",
+        "energy" : 621,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      }, {
+        "details" : "3.5-4 mph",
+        "energy" : 621,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 120
+      } ],
+      "date" : "2016-08-02",
+      "totalDuration" : 180,
+      "totalEnergy" : 1242
+    },
+    "-KODcOM850B-qCm7YhVr" : {
+      "activities" : [ {
+        "details" : "high intensity",
+        "energy" : 466,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 45
+      }, {
+        "details" : "3.5-4 mph",
+        "energy" : 621,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 120
+      } ],
+      "date" : "2016-08-03",
+      "totalDuration" : 165,
+      "totalEnergy" : 1087
+    },
+    "-KOIeNfGaQ5cIUpTcqDu" : {
+      "activities" : [ {
+        "details" : "high intensity",
+        "energy" : 621,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      }, {
+        "details" : "3.5-4 mph",
+        "energy" : 621,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 120
+      } ],
+      "date" : "2016-08-04",
+      "totalDuration" : 180,
+      "totalEnergy" : 1242
+    },
+    "-KONmo4ifBQPzJlwSzJ-" : {
+      "activities" : [ {
+        "details" : "high intensity",
+        "energy" : 621,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      }, {
+        "details" : "3.5-4 mph",
+        "energy" : 621,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 120
+      } ],
+      "date" : "2016-08-05",
+      "totalDuration" : 180,
+      "totalEnergy" : 1242
+    },
+    "-KOSxHXp2k092pdcGz7Y" : {
+      "activities" : [ {
+        "details" : "3.5-4 mph",
+        "energy" : 932,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 180
+      } ],
+      "date" : "2016-08-06",
+      "totalDuration" : 180,
+      "totalEnergy" : 932
+    },
+    "-KOY3ZPRCIy9whpsk7Bi" : {
+      "activities" : [ {
+        "details" : "8 mph",
+        "energy" : 611,
+        "met" : 13.5,
+        "name" : "Running",
+        "time" : 35
+      }, {
+        "details" : "3.5-4 mph",
+        "energy" : 932,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 180
+      } ],
+      "date" : "2016-08-07",
+      "totalDuration" : 215,
+      "totalEnergy" : 1543
+    },
+    "-KOcBdN0RkF9abJDc8Fw" : {
+      "activities" : [ {
+        "details" : "3.5-4 mph",
+        "energy" : 621,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 120
+      }, {
+        "details" : "high intensity",
+        "energy" : 621,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      } ],
+      "date" : "2016-08-08",
+      "totalDuration" : 180,
+      "totalEnergy" : 1242
+    },
+    "-KOhArUcrQ6EU7NHOaEO" : {
+      "activities" : [ {
+        "details" : "high intensity",
+        "energy" : 621,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      }, {
+        "details" : "3.5-4 mph",
+        "energy" : 466,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 90
+      } ],
+      "date" : "2016-08-09",
+      "totalDuration" : 150,
+      "totalEnergy" : 1087
+    },
+    "-KOmMXyOi5bNAB0KwiYn" : {
+      "activities" : [ {
+        "details" : "3.5-4 mph",
+        "energy" : 621,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 120
+      }, {
+        "details" : "high intensity",
+        "energy" : 466,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 45
+      } ],
+      "date" : "2016-08-10",
+      "totalDuration" : 165,
+      "totalEnergy" : 1087
+    },
+    "-KOreiNBSJViFfg-TGL7" : {
+      "activities" : [ {
+        "details" : "3.5-4 mph",
+        "energy" : 699,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 135
+      }, {
+        "details" : "high intensity",
+        "energy" : 621,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      } ],
+      "date" : "2016-08-11",
+      "totalDuration" : 195,
+      "totalEnergy" : 1320
+    },
+    "-KOwmade8phpM_0nagon" : {
+      "activities" : [ {
+        "details" : "high intensity",
+        "energy" : 621,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      }, {
+        "details" : "3.5-4 mph",
+        "energy" : 673,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 130
+      } ],
+      "date" : "2016-08-12",
+      "totalDuration" : 190,
+      "totalEnergy" : 1294
+    },
+    "-KP0qqt05_lTqlV9zVQB" : {
+      "activities" : [ {
+        "details" : "3.5-4 mph",
+        "energy" : 1554,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 300
+      } ],
+      "date" : "2016-08-13",
+      "totalDuration" : 300,
+      "totalEnergy" : 1554
+    },
+    "-KP654kTFpc9wBjQA1Nf" : {
+      "activities" : [ {
+        "details" : "8 mph",
+        "energy" : 786,
+        "met" : 13.5,
+        "name" : "Running",
+        "time" : 45
+      }, {
+        "details" : "3.5-4 mph",
+        "energy" : 543,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 105
+      } ],
+      "date" : "2016-08-14",
+      "totalDuration" : 150,
+      "totalEnergy" : 1329
+    },
+    "-KPBPAz4g3q4ccXU9C9-" : {
+      "activities" : [ {
+        "details" : "3.5-4 mph",
+        "energy" : 932,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 180
+      }, {
+        "details" : "high intensity",
+        "energy" : 621,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      } ],
+      "date" : "2016-08-15",
+      "totalDuration" : 240,
+      "totalEnergy" : 1553
+    },
+    "-KPGRGHRzs76lLaMyJlJ" : {
+      "activities" : [ {
+        "details" : "3.5-4 mph",
+        "energy" : 621,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 120
+      }, {
+        "details" : "high intensity",
+        "energy" : 621,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      } ],
+      "date" : "2016-08-16",
+      "totalDuration" : 180,
+      "totalEnergy" : 1242
+    },
+    "-KPLXLzYJWz0y_ZovDYJ" : {
+      "activities" : [ {
+        "details" : "high intensity",
+        "energy" : 466,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 45
+      }, {
+        "details" : "3.5-4 mph",
+        "energy" : 621,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 120
+      } ],
+      "date" : "2016-08-17",
+      "totalDuration" : 165,
+      "totalEnergy" : 1087
+    },
+    "-KPQ_mYdqDw_DKp2_n_t" : {
+      "activities" : [ {
+        "details" : "3.5-4 mph",
+        "energy" : 621,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 120
+      }, {
+        "details" : "high intensity",
+        "energy" : 621,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      } ],
+      "date" : "2016-08-18",
+      "totalDuration" : 180,
+      "totalEnergy" : 1242
+    },
+    "-KPVqtZ4GNYK5xKtbn0C" : {
+      "activities" : [ {
+        "details" : "3.5-4 mph",
+        "energy" : 932,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 180
+      }, {
+        "details" : "high intensity",
+        "energy" : 621,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      } ],
+      "date" : "2016-08-19",
+      "totalDuration" : 240,
+      "totalEnergy" : 1553
+    },
+    "-KPa5oHxXbHQpv3NDd77" : {
+      "activities" : [ {
+        "details" : "3.5-4 mph",
+        "energy" : 1243,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 240
+      } ],
+      "date" : "2016-08-20",
+      "totalDuration" : 240,
+      "totalEnergy" : 1243
+    },
+    "-KPgP9_jfIBQa9jvT8fQ" : {
+      "activities" : [ {
+        "details" : "8 mph",
+        "energy" : 661,
+        "met" : 13.5,
+        "name" : "Running",
+        "time" : 40
+      }, {
+        "details" : "3.5-4 mph",
+        "energy" : 784,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 160
+      } ],
+      "date" : "2016-08-21",
+      "totalDuration" : 200,
+      "totalEnergy" : 1445
+    },
+    "-KPkNbqz9i_l9uQew9Uy" : {
+      "activities" : [ {
+        "details" : "3.5-4 mph",
+        "energy" : 613,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 120
+      }, {
+        "details" : "high intensity",
+        "energy" : 613,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      } ],
+      "date" : "2016-08-22",
+      "totalDuration" : 180,
+      "totalEnergy" : 1226
+    },
+    "-KPpcHMcR0FYJlwUEUAR" : {
+      "activities" : [ {
+        "details" : "3.5-4 mph",
+        "energy" : 613,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 120
+      }, {
+        "details" : "high intensity",
+        "energy" : 613,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      } ],
+      "date" : "2016-08-23",
+      "totalDuration" : 180,
+      "totalEnergy" : 1226
+    },
+    "-KPubwyxqW1N1fn86ira" : {
+      "activities" : [ {
+        "details" : "high intensity",
+        "energy" : 459,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 45
+      }, {
+        "details" : "3.5-4 mph",
+        "energy" : 613,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 120
+      } ],
+      "date" : "2016-08-24",
+      "totalDuration" : 165,
+      "totalEnergy" : 1072
+    },
+    "-KPzcgSAmtKknKkTHYOP" : {
+      "activities" : [ {
+        "details" : "3.5-4 mph",
+        "energy" : 613,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 120
+      }, {
+        "details" : "high intensity",
+        "energy" : 613,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      } ],
+      "date" : "2016-08-25",
+      "totalDuration" : 180,
+      "totalEnergy" : 1226
+    },
+    "-KQ3oJAh52eXATzPuwu5" : {
+      "activities" : [ {
+        "details" : "3.5-4 mph",
+        "energy" : 613,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 120
+      }, {
+        "details" : "high intensity",
+        "energy" : 613,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      } ],
+      "date" : "2016-08-26",
+      "totalDuration" : 180,
+      "totalEnergy" : 1226
+    },
+    "-KQ92QhAbe1dhqlKH44r" : {
+      "activities" : [ {
+        "details" : "3.5-4 mph",
+        "energy" : 1226,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 240
+      } ],
+      "date" : "2016-08-27",
+      "totalDuration" : 240,
+      "totalEnergy" : 1226
+    },
+    "-KQEKOoWH23XT3t71b-N" : {
+      "activities" : [ {
+        "details" : "8 mph",
+        "energy" : 689,
+        "met" : 13.5,
+        "name" : "Running",
+        "time" : 40
+      }, {
+        "details" : "3.5-4 mph",
+        "energy" : 613,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 120
+      } ],
+      "date" : "2016-08-28",
+      "totalDuration" : 160,
+      "totalEnergy" : 1302
+    },
+    "-KQJQ0v3yMIMYCr69mge" : {
+      "activities" : [ {
+        "details" : "3.5-4 mph",
+        "energy" : 613,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 120
+      }, {
+        "details" : "high intensity",
+        "energy" : 613,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      } ],
+      "date" : "2016-08-29",
+      "totalDuration" : 180,
+      "totalEnergy" : 1226
+    },
+    "-KQOTOk_lzbdczcuuIys" : {
+      "activities" : [ {
+        "details" : "3.5-4 mph",
+        "energy" : 613,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 120
+      }, {
+        "details" : "high intensity",
+        "energy" : 613,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      } ],
+      "date" : "2016-08-30",
+      "totalDuration" : 180,
+      "totalEnergy" : 1226
+    },
+    "-KQd-BymvzONsbeW2fwR" : {
+      "activities" : [ {
+        "details" : "high intensity",
+        "energy" : 613,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      }, {
+        "details" : "3.5-4 mph",
+        "energy" : 204,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 40
+      } ],
+      "date" : "2016-09-01",
+      "totalDuration" : 100,
+      "totalEnergy" : 817
+    },
+    "-KQd66MvNZdogpGDN5Er" : {
+      "activities" : [ {
+        "details" : "3.5-4 mph",
+        "energy" : 613,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 120
+      }, {
+        "details" : "high intensity",
+        "energy" : 613,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      } ],
+      "date" : "2016-09-02",
+      "totalDuration" : 180,
+      "totalEnergy" : 1226
+    },
+    "-KQnQlDpQzfarwE_K004" : {
+      "activities" : [ {
+        "details" : "3.5-4 mph",
+        "energy" : 766,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 150
+      }, {
+        "details" : "high intensity",
+        "energy" : 613,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      } ],
+      "date" : "2016-09-04",
+      "totalDuration" : 210,
+      "totalEnergy" : 1379
+    },
+    "-KQsVjgCDDsLQYL5miX6" : {
+      "activities" : [ {
+        "details" : "3.5-4 mph",
+        "energy" : 630,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 120
+      }, {
+        "details" : "high intensity",
+        "energy" : 630,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      } ],
+      "date" : "2016-09-05",
+      "totalDuration" : 180,
+      "totalEnergy" : 1260
+    },
+    "-KQxZV5PPeMIo2V0YQhD" : {
+      "activities" : [ {
+        "details" : "high intensity",
+        "energy" : 630,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      }, {
+        "details" : "3.5-4 mph",
+        "energy" : 630,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 120
+      } ],
+      "date" : "2016-09-06",
+      "totalDuration" : 180,
+      "totalEnergy" : 1260
+    },
+    "-KR1hS43ODtV9sNCHTVs" : {
+      "activities" : [ {
+        "details" : "high intensity",
+        "energy" : 630,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      }, {
+        "details" : "3.5-4 mph",
+        "energy" : 630,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 120
+      } ],
+      "date" : "2016-09-07",
+      "totalDuration" : 180,
+      "totalEnergy" : 1260
+    },
+    "-KR6vWA247c2EiQghhZz" : {
+      "activities" : [ {
+        "details" : "3.5-4 mph",
+        "energy" : 630,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 120
+      }, {
+        "details" : "high intensity",
+        "energy" : 630,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      } ],
+      "date" : "2016-09-08",
+      "totalDuration" : 180,
+      "totalEnergy" : 1260
+    },
+    "-KRBsi5MaRQlgPaPGjn3" : {
+      "activities" : [ {
+        "details" : "3.5-4 mph",
+        "energy" : 630,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 120
+      }, {
+        "details" : "high intensity",
+        "energy" : 630,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      } ],
+      "date" : "2016-09-09",
+      "totalDuration" : 180,
+      "totalEnergy" : 1260
+    },
+    "-KRRASzY_f5hFSsTpmhM" : {
+      "activities" : [ {
+        "details" : "3.5-4 mph",
+        "energy" : 472,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 90
+      }, {
+        "details" : "high intensity",
+        "energy" : 630,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      } ],
+      "date" : "2016-09-12",
+      "totalDuration" : 150,
+      "totalEnergy" : 1102
+    },
+    "-KRWMqpM4yumFAQHD4cy" : {
+      "activities" : [ {
+        "details" : "3.5-4 mph",
+        "energy" : 525,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 100
+      }, {
+        "details" : "high intensity",
+        "energy" : 630,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      } ],
+      "date" : "2016-09-13",
+      "totalDuration" : 160,
+      "totalEnergy" : 1155
+    },
+    "-KRflY0OdyotNK9H1OHw" : {
+      "activities" : [ {
+        "details" : "3.5-4 mph",
+        "energy" : 472,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 90
+      }, {
+        "details" : "high intensity",
+        "energy" : 630,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      } ],
+      "date" : "2016-09-15",
+      "totalDuration" : 150,
+      "totalEnergy" : 1102
+    },
+    "-KRkqGlHi3XPLepMzVtg" : {
+      "activities" : [ {
+        "details" : "3.5-4 mph",
+        "energy" : 525,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 100
+      }, {
+        "details" : "high intensity",
+        "energy" : 630,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      } ],
+      "date" : "2016-09-16",
+      "totalDuration" : 160,
+      "totalEnergy" : 1155
+    },
+    "-KRq5lPfBW3P7NK1dxYc" : {
+      "activities" : [ {
+        "details" : "high intensity",
+        "energy" : 613,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      }, {
+        "details" : "3.5-4 mph",
+        "energy" : 613,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 120
+      } ],
+      "date" : "2016-09-17",
+      "totalDuration" : 180,
+      "totalEnergy" : 1226
+    },
+    "-KRyMIK3kFJ3ugeEhMQf" : {
+      "activities" : [ {
+        "details" : "3.5-4 mph",
+        "energy" : 408,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 80
+      }, {
+        "details" : "high intensity",
+        "energy" : 613,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      } ],
+      "date" : "2016-09-18",
+      "totalDuration" : 140,
+      "totalEnergy" : 1021
+    },
+    "-KS-S1r3EyXTZ6FP5kw9" : {
+      "activities" : [ {
+        "details" : "high intensity",
+        "energy" : 613,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      }, {
+        "details" : "3.5-4 mph",
+        "energy" : 459,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 90
+      } ],
+      "date" : "2016-09-19",
+      "totalDuration" : 150,
+      "totalEnergy" : 1072
+    },
+    "-KS4gTOaXwvMgG53hOux" : {
+      "activities" : [ {
+        "details" : "light or moderate intensity",
+        "energy" : 431,
+        "met" : 4.5,
+        "name" : "Calisthenics",
+        "time" : 75
+      }, {
+        "details" : "3.5-4 mph",
+        "energy" : 357,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 70
+      } ],
+      "date" : "2016-09-20",
+      "totalDuration" : 145,
+      "totalEnergy" : 788
+    },
+    "-KS9z0vY3ZHCXbx98NJv" : {
+      "activities" : [ {
+        "details" : "light or moderate intensity",
+        "energy" : 431,
+        "met" : 4.5,
+        "name" : "Calisthenics",
+        "time" : 75
+      }, {
+        "details" : "3.5-4 mph",
+        "energy" : 459,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 90
+      } ],
+      "date" : "2016-09-21",
+      "totalDuration" : 165,
+      "totalEnergy" : 890
+    },
+    "-KSElZO3Di8QherYv61Q" : {
+      "activities" : [ {
+        "details" : "light or moderate intensity",
+        "energy" : 431,
+        "met" : 4.5,
+        "name" : "Calisthenics",
+        "time" : 75
+      }, {
+        "details" : "3.5-4 mph",
+        "energy" : 511,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 100
+      } ],
+      "date" : "2016-09-22",
+      "totalDuration" : 175,
+      "totalEnergy" : 942
+    },
+    "-KSJzP9mCa3VqvLrpQp6" : {
+      "activities" : [ {
+        "details" : "light or moderate intensity",
+        "energy" : 431,
+        "met" : 4.5,
+        "name" : "Calisthenics",
+        "time" : 75
+      }, {
+        "details" : "3.5-4 mph",
+        "energy" : 638,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 125
+      } ],
+      "date" : "2016-09-23",
+      "totalDuration" : 200,
+      "totalEnergy" : 1069
+    },
+    "-KSPGRXgL8EqcweHtxa0" : {
+      "activities" : [ {
+        "details" : "3.5-4 mph",
+        "energy" : 766,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 150
+      }, {
+        "details" : "high intensity",
+        "energy" : 613,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      } ],
+      "date" : "2016-09-24",
+      "totalDuration" : 210,
+      "totalEnergy" : 1379
+    },
+    "-KSUJFVICnGHFai5sOn0" : {
+      "activities" : [ {
+        "details" : "3.5-4 mph",
+        "energy" : 919,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 180
+      }, {
+        "details" : "light or moderate intensity",
+        "energy" : 344,
+        "met" : 4.5,
+        "name" : "Calisthenics",
+        "time" : 60
+      } ],
+      "date" : "2016-09-25",
+      "totalDuration" : 240,
+      "totalEnergy" : 1263
+    },
+    "-KSZbF8XCfVcZoQiNBPs" : {
+      "activities" : [ {
+        "details" : "3.5-4 mph",
+        "energy" : 715,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 140
+      }, {
+        "details" : "light or moderate intensity",
+        "energy" : 344,
+        "met" : 4.5,
+        "name" : "Calisthenics",
+        "time" : 60
+      } ],
+      "date" : "2016-09-26",
+      "totalDuration" : 200,
+      "totalEnergy" : 1059
+    },
+    "-KSdX_WzZRDk6swFCpAc" : {
+      "activities" : [ {
+        "details" : "3.5-4 mph",
+        "energy" : 511,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 100
+      }, {
+        "details" : "high intensity",
+        "energy" : 613,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      } ],
+      "date" : "2016-09-27",
+      "totalDuration" : 160,
+      "totalEnergy" : 1124
+    },
+    "-KSijBtHlE1I_piNoxAr" : {
+      "activities" : [ {
+        "details" : "3.5-4 mph",
+        "energy" : 511,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 100
+      }, {
+        "details" : "high intensity",
+        "energy" : 613,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      } ],
+      "date" : "2016-09-28",
+      "totalDuration" : 160,
+      "totalEnergy" : 1124
+    },
+    "-KSo3IzKnutijqfII2tJ" : {
+      "activities" : [ {
+        "details" : "3.5-4 mph",
+        "energy" : 511,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 100
+      }, {
+        "details" : "high intensity",
+        "energy" : 613,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      } ],
+      "date" : "2016-09-29",
+      "totalDuration" : 160,
+      "totalEnergy" : 1124
+    },
+    "-KSt6g7WujTuIxux_9RV" : {
+      "activities" : [ {
+        "details" : "high intensity",
+        "energy" : 613,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      }, {
+        "details" : "3.5-4 mph",
+        "energy" : 766,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 150
+      } ],
+      "date" : "2016-09-30",
+      "totalDuration" : 210,
+      "totalEnergy" : 1379
+    },
+    "-KSyGHVhO51vS_cIwwyJ" : {
+      "activities" : [ {
+        "details" : "high intensity",
+        "energy" : 613,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      }, {
+        "details" : "3.5-4 mph",
+        "energy" : 766,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 150
+      } ],
+      "date" : "2016-10-01",
+      "totalDuration" : 210,
+      "totalEnergy" : 1379
+    },
+    "-KT0FJDx5VV8BtwcuIoL" : {
+      "activities" : [ {
+        "details" : "high intensity",
+        "energy" : 613,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      }, {
+        "details" : "3.5-4 mph",
+        "energy" : 511,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 100
+      } ],
+      "date" : "2016-10-03",
+      "totalDuration" : 160,
+      "totalEnergy" : 1124
+    },
+    "-KT2CTwCsNpsaeF-6rHI" : {
+      "activities" : [ {
+        "details" : "3.5-4 mph",
+        "energy" : 766,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 150
+      }, {
+        "details" : "high intensity",
+        "energy" : 613,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      } ],
+      "date" : "2016-10-02",
+      "totalDuration" : 210,
+      "totalEnergy" : 1379
+    },
+    "-KTCKovwRE0jeZBuzr-Q" : {
+      "activities" : [ {
+        "details" : "3.5-4 mph",
+        "energy" : 664,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 130
+      }, {
+        "details" : "high intensity",
+        "energy" : 613,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      } ],
+      "date" : "2016-10-04",
+      "totalDuration" : 190,
+      "totalEnergy" : 1277
+    },
+    "-KTHciISGO1STa9Zrdf5" : {
+      "activities" : [ {
+        "details" : "high intensity",
+        "energy" : 613,
+        "met" : 8,
+        "name" : "Calisthenics",
+        "time" : 60
+      }, {
+        "details" : "3.5-4 mph",
+        "energy" : 766,
+        "met" : 4,
+        "name" : "Walking",
+        "time" : 150
+      } ],
+      "date" : "2016-10-05",
+      "totalDuration" : 210,
+      "totalEnergy" : 1379
+    }
+  }
+}
