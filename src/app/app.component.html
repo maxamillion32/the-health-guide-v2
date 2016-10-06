@@ -1,8 +1,8 @@
 <ion-menu [content]="content" persistent="true" class="sidemenu">
   <ion-content>
     <div class="profile">
-      <img src="assets/img/profile.jpg" alt="User profile image" width="50%" height="50%">
-      <h3 class="profile-name" color="summerSky">Razvan Tomegea</h3>
+      <img [src]="avatarUrl" alt="User profile image" width="50%" height="50%">
+      <h3 class="profile-name" color="summerSky">{{ username }}</h3>
     </div>
     <ion-list>
       <button class="sidemenu-item" ion-item menuClose *ngFor="let p of appPages" (click)="openPage(p)" no-lines>

@@ -1,35 +1,38 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from 'ionic-native';
+import { AngularFire } from "angularfire2";
 
-import { Fitness } from '../pages/fitness/fitness';
-import { FoodList } from '../pages/food/food-list/food-list';
-import { Home } from '../pages/home/home';
-import { NutrientList } from '../pages/nutrients/nutrient-list/nutrient-list';
-import { RecipeList } from '../pages/recipes/recipe-list/recipe-list';
+// Pages
+import {
+  Auth,
+  Fitness,
+  FoodList,
+  Home,
+  NutrientList,
+  RecipeList
+} from '../pages';
 
-export interface PageObj {
-  title: string;
-  component: any;
-  icon: string;
-  index?: number;
-}
+// Models
+import { Page } from '../models';
 
 @Component({
   templateUrl: 'app.component.html',
 })
-export class MyApp {
+export class MyApp implements OnInit {
   @ViewChild(Nav) nav: Nav;
-  public rootPage = Home;
-  public appPages: PageObj[] = [
+  public avatarUrl: string;
+  public appPages: Page[] = [
     { title: 'Home', icon: 'ios-home-outline', index: 0, component: Home },
     { title: 'Fitness', icon: 'ios-speedometer-outline', index: 1, component: Fitness },
     { title: 'Food', icon: 'ios-cart-outline', index: 2, component: FoodList },
     { title: 'Nutrients', icon: 'ios-nutrition-outline', index: 3, component: NutrientList },
     { title: 'Recipes', icon: 'ios-book-outline', index: 4, component: RecipeList }
   ];
+  public rootPage = Auth;
+  public username: string;
 
-  constructor(private platform: Platform) {
+  constructor(private platform: Platform, public af: AngularFire) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
@@ -44,5 +47,12 @@ export class MyApp {
     } else {
       this.nav.setRoot(page.component);
     }
+  }
+
+  ngOnInit(): void {
+    this.af.auth.subscribe(auth => {
+      this.username = auth.auth.providerData[0].displayName;
+      this.avatarUrl = auth.auth.providerData[0].photoURL;
+    })
   }
 }

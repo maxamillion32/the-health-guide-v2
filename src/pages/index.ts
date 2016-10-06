@@ -1,3 +1,4 @@
+export { Auth } from './auth/auth';
 export { Fitness } from './fitness/fitness';
 export { FoodList } from './food/food-list/food-list';
 export { Home } from './home/home';

@@ -1,12 +1,14 @@
-import { AngularFireModule } from 'angularfire2';
-import { IonicApp, IonicModule } from 'ionic-angular';
 import { NgModule } from '@angular/core';
+import { FormsModule }   from '@angular/forms';
+import { IonicApp, IonicModule } from 'ionic-angular';
+import { AngularFireModule, AuthProviders, AuthMethods } from 'angularfire2';
 
 // Root component
 import { MyApp } from './app.component';
 
 // Pages
 import {
+  Auth,
   Fitness,
   FoodList,
   Home,
@@ -29,8 +31,14 @@ export const firebaseConfig = {
   messagingSenderId: "283336744173"
 };
 
+const firebaseAuthConfig = {
+  provider: AuthProviders.Password,
+  method: AuthMethods.Password
+}
+
 @NgModule({
   declarations: [
+    Auth,
     MyApp,
     Fitness,
     FoodList,
@@ -42,11 +50,13 @@ export const firebaseConfig = {
     SearchFilter
   ],
   imports: [
-    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireModule.initializeApp(firebaseConfig, firebaseAuthConfig),
+    FormsModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
+    Auth,
     MyApp,
     Fitness,
     FoodList,

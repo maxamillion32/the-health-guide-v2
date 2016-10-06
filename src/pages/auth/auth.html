@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <button ion-button icon-left block (click)="fbLogin()">
+    <ion-icon name="logo-facebook"></ion-icon>
+    Log in via Facebook
+  </button>
+
+  <button color="danger" ion-button icon-left block (click)="googleLogin()">
+    <ion-icon name="logo-google"></ion-icon>
+    Log in via Google
+  </button>
+
+  <button color="aqua" ion-button icon-left block (click)="twitterLogin()">
+    <ion-icon name="logo-twitter"></ion-icon>
+    Log in via Twitter
+  </button>
+
+  <button color="dark" ion-button icon-left block (click)="githubLogin()">
+    <ion-icon name="logo-github"></ion-icon>
+    Log in via Github
+  </button>
+
+  <form #loginForm="ngForm" (ngSubmit)="passLogin(loginForm.value)">
+    <ion-item>
+      <ion-label floating>Email</ion-label>
+      <ion-input type="email" ngControl="email" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="Password" ngControl="password" required></ion-input>
+    </ion-item>
+    <button color="secondary" ion-button block type="submit" [disabled]="loginForm.form.invalid">Log in</button>
+  </form>
+</ion-content>

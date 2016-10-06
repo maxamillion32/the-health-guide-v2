@@ -2,17 +2,19 @@ import { Food } from "./food.model";
 import { Nutrient } from './nutrient.model';
 
 export class Recipe {
-    name: string;
-    category: string;
-    dietary: string;
-    chef: string;
-    ingredients: Food[];
-    prepTime: number;
-    cookMethod: string;
-    cookTime: number;
-    cookTemperature: number;
-    nutrients: Nutrient[];
-    servings: number;
-    steps?: string[];
-    quantity?: number;
+    constructor (
+        public name: string = '',
+        public category: string = '',
+        public dietary: string = '',
+        public chef: string = '',
+        public ingredients: Food[] = [],
+        public prepTime: number = 0,
+        public cookMethod: string = '',
+        public cookTime: number = 0,
+        public cookTemperature: number = 0,
+        public nutrients: Nutrient,
+        public servings: number = 1,
+        public steps: string[] = [''],
+        public quantity: number = 0
+    ) {}
 }
