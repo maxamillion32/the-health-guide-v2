@@ -10,6 +10,6 @@ export class Home implements OnInit {
   constructor(private navCtrl: NavController, public af: AngularFire) { }
 
   ngOnInit(): void {
-    this.af.auth.subscribe(auth => console.log(auth.auth.providerData[0]));
+    console.log("Welcome home");
   }
 }

@@ -14,6 +14,7 @@ import {
   Home,
   NutrientDetails,
   NutrientList,
+  RecipeDetails,
   RecipeList
 } from '../pages';
 
@@ -21,7 +22,7 @@ import {
 import { Limit, SearchFilter } from "../pipes";
 
 // Providers
-import { NutritionService } from "../providers";
+import { NutritionService, RecipeService } from "../providers";
 
 export const firebaseConfig = {
   apiKey: "AIzaSyBXdSjoVfk1KbbtmAUEq7ktnnI70ojg4y8",
@@ -46,6 +47,7 @@ const firebaseAuthConfig = {
     Limit,
     NutrientDetails,
     NutrientList,
+    RecipeDetails,
     RecipeList,
     SearchFilter
   ],
@@ -63,8 +65,9 @@ const firebaseAuthConfig = {
     Home,
     NutrientDetails,
     NutrientList,
+    RecipeDetails,
     RecipeList
   ],
-  providers: [NutritionService]
+  providers: [NutritionService, RecipeService]
 })
 export class AppModule { }

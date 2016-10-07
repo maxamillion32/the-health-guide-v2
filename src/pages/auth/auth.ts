@@ -14,7 +14,7 @@ export class Auth implements OnInit {
 
   constructor(private alertCtrl: AlertController, private loadCtrl: LoadingController, private navCtrl: NavController, public af: AngularFire) { }
 
-   private showError(message: any) {
+  private showError(message: any) {
     let alert = this.alertCtrl.create({
       title: 'Log in failed!',
       subTitle: message,
@@ -106,7 +106,11 @@ export class Auth implements OnInit {
   }
 
   ngOnInit() {
-    this.af.auth.subscribe(auth => console.log(auth));
+    this.af.auth.subscribe(auth => {
+      if (auth.uid) {
+        this.navCtrl.setRoot(Home);
+      }
+    });
   }
 
 }

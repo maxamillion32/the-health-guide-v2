@@ -32,12 +32,17 @@ export class MyApp implements OnInit {
   public rootPage = Auth;
   public username: string;
 
-  constructor(private platform: Platform, public af: AngularFire) {
+  constructor(private af: AngularFire, private platform: Platform) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       StatusBar.styleDefault();
     });
+  }
+
+  public logout(): void {
+    this.af.auth.logout();
+    this.nav.setRoot(Auth);
   }
 
   public openPage(page): void {

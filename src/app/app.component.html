@@ -9,6 +9,10 @@
         <ion-icon item-left [name]="p.icon"></ion-icon>
         {{p.title}}
       </button>
+      <button class="sidemenu-item" ion-item menuClose no-lines (click)="logout()">
+        <ion-icon name="exit" item-left></ion-icon>
+        Log out
+      </button>
     </ion-list>
   </ion-content>
 
