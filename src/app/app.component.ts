@@ -41,13 +41,15 @@ export class MyApp implements OnInit {
   }
 
   public logout(): void {
+    this.nav.setRoot(Auth, {
+      logout: true
+    });
     this.af.auth.logout();
-    this.nav.setRoot(Auth);
   }
 
   public openPage(page): void {
     if (page.index) {
-      this.nav.setRoot(page.component, {tabIndex: page.index});
+      this.nav.setRoot(page.component, { tabIndex: page.index });
 
     } else {
       this.nav.setRoot(page.component);
@@ -56,8 +58,10 @@ export class MyApp implements OnInit {
 
   ngOnInit(): void {
     this.af.auth.subscribe(auth => {
-      this.username = auth.auth.providerData[0].displayName;
-      this.avatarUrl = auth.auth.providerData[0].photoURL;
+      if (auth) {
+        this.username = auth.auth.providerData[0].displayName;
+        this.avatarUrl = auth.auth.providerData[0].photoURL;
+      }
     })
   }
 }

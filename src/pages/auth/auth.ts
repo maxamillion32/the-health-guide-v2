@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { AlertController, LoadingController, NavController } from 'ionic-angular';
+import { Component, AfterViewInit } from '@angular/core';
+import { AlertController, NavController, NavParams } from 'ionic-angular';
 import { AngularFire, AuthProviders, AuthMethods } from 'angularfire2';
 
 // Pages
@@ -8,11 +8,15 @@ import { Home } from "../home/home";
 @Component({
   templateUrl: 'auth.html'
 })
-export class Auth implements OnInit {
+export class Auth implements AfterViewInit {
   public usrEmail: string;
   public usrPassword: string;
 
-  constructor(private alertCtrl: AlertController, private loadCtrl: LoadingController, private navCtrl: NavController, public af: AngularFire) { }
+  constructor(
+    private alertCtrl: AlertController,
+    private navCtrl: NavController,
+    private params: NavParams,
+    public af: AngularFire) { }
 
   private showError(message: any) {
     let alert = this.alertCtrl.create({
@@ -24,93 +28,65 @@ export class Auth implements OnInit {
   }
 
   public fbLogin(): void {
-    let loader = this.loadCtrl.create({
-      content: "Please wait...",
-      dismissOnPageChange: true
-    });
-    loader.present();
     this.af.auth.login({
       provider: AuthProviders.Facebook,
-      method: AuthMethods.Popup
+      method: AuthMethods.Redirect
     }).then(authData => {
-      this.navCtrl.setRoot(Home);
+      setTimeout(() => this.navCtrl.setRoot(Home), 1000);
     }).catch(error => {
-      loader.dismiss();
       this.showError(error);
     });
   }
 
   public githubLogin(): void {
-    let loader = this.loadCtrl.create({
-      content: "Please wait...",
-      dismissOnPageChange: true
-    });
-    loader.present();
     this.af.auth.login({
       provider: AuthProviders.Github,
-      method: AuthMethods.Popup
+      method: AuthMethods.Redirect
     }).then(authData => {
-      this.navCtrl.setRoot(Home);
+      setTimeout(() => this.navCtrl.setRoot(Home), 1000);
     }).catch(error => {
-      loader.dismiss();
       this.showError(error);
     });
   }
 
   public googleLogin(): void {
-    let loader = this.loadCtrl.create({
-      content: "Please wait...",
-      dismissOnPageChange: true
-    });
-    loader.present();
     this.af.auth.login({
       provider: AuthProviders.Google,
-      method: AuthMethods.Popup
+      method: AuthMethods.Redirect
     }).then(authData => {
-      this.navCtrl.setRoot(Home);
+      setTimeout(() => this.navCtrl.setRoot(Home), 1000);
     }).catch(error => {
-      loader.dismiss();
       this.showError(error);
     });
   }
 
   public passLogin(usrCredentials: any): void {
-    let loader = this.loadCtrl.create({
-      content: "Please wait...",
-      dismissOnPageChange: true
-    });
-    loader.present();
     this.af.auth.login(usrCredentials).then(authData => {
-      this.navCtrl.setRoot(Home);
+      setTimeout(() => this.navCtrl.setRoot(Home), 1000);
     }).catch(error => {
-      loader.dismiss();
       this.showError(error);
     });
   }
 
   public twitterLogin(): void {
-    let loader = this.loadCtrl.create({
-      content: "Please wait...",
-      dismissOnPageChange: true
-    });
-    loader.present();
     this.af.auth.login({
       provider: AuthProviders.Twitter,
-      method: AuthMethods.Popup
+      method: AuthMethods.Redirect
     }).then(authData => {
-      this.navCtrl.setRoot(Home);
+      setTimeout(() => this.navCtrl.setRoot(Home), 1000);
     }).catch(error => {
-      loader.dismiss();
       this.showError(error);
     });
   }
 
-  ngOnInit() {
-    this.af.auth.subscribe(auth => {
-      if (auth.uid) {
-        this.navCtrl.setRoot(Home);
-      }
-    });
+  ngAfterViewInit() {
+    if (!this.params.get('logout')) {
+      this.af.auth.subscribe(auth => {
+        if (auth && auth.uid) {
+          setTimeout(() => this.navCtrl.setRoot(Home), 1000);
+        }
+      });
+    }
   }
 
 }
