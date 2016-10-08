@@ -1,0 +1,646 @@
+<ion-card>
+  <ion-card-header>
+    Nutrition values
+  </ion-card-header>
+  <ion-card-content>
+    <ion-list>
+      <ion-item>
+        Energy
+        <ion-note item-right [ngClass]="{bad: percentage && (nutritionData.energy > 100),
+            good: percentage && (nutritionData.energy == 100)}">
+          {{ nutritionData.energy.toFixed(0) }} {{ percentage ? '%' : 'kcal'}}
+        </ion-note>
+      </ion-item>
+
+      <ion-list-header>Macronutrients</ion-list-header>
+      <ion-item>
+        Water
+        <ion-note item-right [ngClass]="{bad: percentage && (nutritionData.macronutrients.Water > 100), 
+                good: percentage && (nutritionData.macronutrients.Water == 100)}">
+          {{ nutritionData.macronutrients.Water.toFixed(0) }} {{ percentage ? '%' : 'ml'}}
+        </ion-note>
+      </ion-item>
+
+      <ion-item>
+        Protein
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.macronutrients.Protein > 100, 
+                good: percentage && (nutritionData.macronutrients.Protein == 100)}">
+          {{ nutritionData.macronutrients.Protein.toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Carbohydrates
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.macronutrients.Carbohydrates > 100, 
+                good: percentage && (nutritionData.macronutrients.Carbohydrates == 100)}">
+          {{ nutritionData.macronutrients.Carbohydrates.toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Sugars
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.macronutrients.Sugars > 100, 
+                good: percentage && (nutritionData.macronutrients.Sugars == 100)}">
+          {{ nutritionData.macronutrients.Sugars.toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Glucose
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.macronutrients.Glucose > 100, 
+                good: percentage && (nutritionData.macronutrients.Glucose == 100)}">
+          {{ nutritionData.macronutrients.Glucose.toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Galactose
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.macronutrients.Galactose > 100, 
+                good: percentage && (nutritionData.macronutrients.Galactose == 100)}">
+          {{ nutritionData.macronutrients.Galactose.toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Lactose
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.macronutrients.Lactose > 100, 
+                good: percentage && (nutritionData.macronutrients.Lactose == 100)}">
+          {{ nutritionData.macronutrients.Lactose.toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Maltose
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.macronutrients.Maltose > 100, 
+                good: percentage && (nutritionData.macronutrients.Maltose == 100)}">
+          {{ nutritionData.macronutrients.Maltose.toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Sucrose
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.macronutrients.Sucrose > 100, 
+                good: percentage && (nutritionData.macronutrients.Sucrose == 100)}">
+          {{ nutritionData.macronutrients.Sucrose.toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Starch
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.macronutrients.Starch > 100, 
+                good: percentage && (nutritionData.macronutrients.Starch == 100)}">
+          {{ nutritionData.macronutrients.Starch.toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Fiber
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.macronutrients.Fiber > 100, 
+                good: percentage && (nutritionData.macronutrients.Fiber == 100)}">
+          {{ nutritionData.macronutrients.Fiber.toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Fats
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.macronutrients.Fats > 100, 
+                good: percentage && (nutritionData.macronutrients.Fats == 100)}">
+          {{ nutritionData.macronutrients.Fats.toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Saturated fat
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.macronutrients['Saturated fat'] > 100, 
+                good: percentage && (nutritionData.macronutrients['Saturated fat'] == 100)}">
+          {{ nutritionData.macronutrients['Saturated fat'].toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Monounsaturated fat
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.macronutrients['Monounsaturated fat'] > 100, 
+                good: percentage && (nutritionData.macronutrients['Monounsaturated fat'] == 100)}">
+          {{ nutritionData.macronutrients['Monounsaturated fat'].toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Polyunsaturated fat
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.macronutrients['Polyunsaturated fat'] > 100, 
+                good: percentage && (nutritionData.macronutrients['Polyunsaturated fat'] == 100)}">
+          {{ nutritionData.macronutrients['Polyunsaturated fat'].toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Trans fat
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.macronutrients['Trans fat'] > 100, 
+                good: percentage && (nutritionData.macronutrients['Trans fat'] == 100)}">
+          {{ nutritionData.macronutrients['Trans fat'].toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-list-header>Minerals</ion-list-header>
+      <ion-item>
+        Calcium
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.minerals.Calcium > 100, 
+                good: percentage && (nutritionData.minerals.Calcium == 100)}">
+          {{ nutritionData.minerals.Calcium.toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+
+      <ion-item>
+        Copper
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.minerals.Copper > 100, 
+                good: percentage && (nutritionData.minerals.Copper == 100)}">
+          {{ nutritionData.minerals.Copper.toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Flouride
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.minerals.Flouride > 100, 
+                good: percentage && (nutritionData.minerals.Flouride == 100)}">
+          {{ nutritionData.minerals.Flouride.toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+
+      <ion-item>
+        Iron
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.minerals.Iron > 100, 
+                good: percentage && (nutritionData.minerals.Iron == 100)}">
+          {{ nutritionData.minerals.Iron.toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Magnesium
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.minerals.Magnesium > 100, 
+                good: percentage && (nutritionData.minerals.Magnesium == 100)}">
+          {{ nutritionData.minerals.Magnesium.toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+
+      <ion-item>
+        Manganese
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.minerals.Manganese > 100, 
+                good: percentage && (nutritionData.minerals.Manganese == 100)}">
+          {{ nutritionData.minerals.Manganese.toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Phosphorus
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.minerals.Phosphorus > 100, 
+                good: percentage && (nutritionData.minerals.Phosphorus == 100)}">
+          {{ nutritionData.minerals.Phosphorus.toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+
+      <ion-item>
+        Potassium
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.minerals.Potassium > 100, 
+                good: percentage && (nutritionData.minerals.Potassium == 100)}">
+          {{ nutritionData.minerals.Potassium.toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Selenium
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.minerals.Selenium > 100, 
+                good: percentage && (nutritionData.minerals.Selenium == 100)}">
+          {{ nutritionData.minerals.Selenium.toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Sodium
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.minerals.Sodium > 100, 
+                good: percentage && (nutritionData.minerals.Sodium == 100)}">
+          {{ nutritionData.minerals.Sodium.toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+
+      <ion-item>
+        Zinc
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.minerals.Zinc > 100, 
+                good: percentage && (nutritionData.minerals.Zinc == 100)}">
+          {{ nutritionData.minerals.Zinc.toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-list-header>Vitamins</ion-list-header>
+      <ion-item>
+        Vitamin A
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.vitamins['Vitamin A'] > 100, 
+                good: percentage && (nutritionData.vitamins['Vitamin A'] == 100)}">
+          {{ nutritionData.vitamins['Vitamin A'].toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        alpha-Carotene
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.vitamins['alpha-Carotene'] > 100, 
+                good: percentage && (nutritionData.vitamins['alpha-Carotene'] == 100)}">
+          {{ nutritionData.vitamins['alpha-Carotene'].toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        beta-Carotene
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.vitamins['beta-Carotene'] > 100, 
+                good: percentage && (nutritionData.vitamins['beta-Carotene'] == 100)}">
+          {{ nutritionData.vitamins['beta-Carotene'].toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Retinol
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.vitamins['Retinol'] > 100, 
+                good: percentage && (nutritionData.vitamins['Retinol'] == 100)}">
+          {{ nutritionData.vitamins['Retinol'].toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Vitamin B1
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.vitamins['Vitamin B1'] > 100, 
+                good: percentage && (nutritionData.vitamins['Vitamin B1'] == 100)}">
+          {{ nutritionData.vitamins['Vitamin B1'].toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Vitamin B2
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.vitamins['Vitamin B2'] > 100, 
+                good: percentage && (nutritionData.vitamins['Vitamin B2'] == 100)}">
+          {{ nutritionData.vitamins['Vitamin B2'].toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Vitamin B3
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.vitamins['Vitamin B3'] > 100, 
+                good: percentage && (nutritionData.vitamins['Vitamin B3'] == 100)}">
+          {{ nutritionData.vitamins['Vitamin B3'].toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Vitamin B5
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.vitamins['Vitamin B5'] > 100, 
+                good: percentage && (nutritionData.vitamins['Vitamin B5'] == 100)}">
+          {{ nutritionData.vitamins['Vitamin B5'].toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Vitamin B6
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.vitamins['Vitamin B6'] > 100, 
+                good: percentage && (nutritionData.vitamins['Vitamin B6'] == 100)}">
+          {{ nutritionData.vitamins['Vitamin B6'].toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Vitamin B9
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.vitamins['Vitamin B9'] > 100, 
+                good: percentage && (nutritionData.vitamins['Vitamin B9'] == 100)}">
+          {{ nutritionData.vitamins['Vitamin B9'].toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Folic acid
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.vitamins['Folic acid'] > 100, 
+                good: percentage && (nutritionData.vitamins['Folic acid'] == 100)}">
+          {{ nutritionData.vitamins['Folic acid'].toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        vitamin B12
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.vitamins['Vitamin B12'] > 100, 
+                good: percentage && (nutritionData.vitamins['Vitamin B12'] == 100)}">
+          {{ nutritionData.vitamins['Vitamin B12'].toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Choline
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.vitamins['Choline'] > 100, 
+                good: percentage && (nutritionData.vitamins['Choline'] == 100)}">
+          {{ nutritionData.vitamins['Choline'].toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Betaine
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.vitamins['Betaine'] > 100, 
+                good: percentage && (nutritionData.vitamins['Betaine'] == 100)}">
+          {{ nutritionData.vitamins['Betaine'].toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Vitamin D2
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.vitamins['Vitamin D2']> 100, 
+                good: percentage && (nutritionData.vitamins['Vitamin D2'] == 100)}">
+          {{ nutritionData.vitamins['Vitamin D2'].toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Vitamin D3
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.vitamins['Vitamin D3'] > 100, 
+                good: percentage && (nutritionData.vitamins['Vitamin D3'] == 100)}">
+          {{ nutritionData.vitamins['Vitamin D3'].toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Vitamin E
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.vitamins['Vitamin E'] > 100, 
+                good: percentage && (nutritionData.vitamins['Vitamin E'] == 100)}">
+          {{ nutritionData.vitamins['Vitamin E'].toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Vitamin K
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.vitamins['Vitamin K'] > 100, 
+                good: percentage && (nutritionData.vitamins['Vitamin K'] == 100)}">
+          {{ nutritionData.vitamins['Vitamin K'].toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Astaxanthin
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.vitamins['Astaxanthin'] > 100, 
+                good: percentage && (nutritionData.vitamins['Astaxanthin'] == 100)}">
+          {{ nutritionData.vitamins['Astaxanthin'].toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Canthaxanthin
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.vitamins['Canthaxanthin'] > 100, 
+                good: percentage && (nutritionData.vitamins['Canthaxanthin'] == 100)}">
+          {{ nutritionData.vitamins['Canthaxanthin'].toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Coenzyme Q10
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.vitamins['Coenzyme Q10'] > 100, 
+                good: percentage && (nutritionData.vitamins['Coenzyme Q10'] == 100)}">
+          {{ nutritionData.vitamins['Coenzyme Q10'].toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        beta-Cryptoxanthin
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.vitamins['beta-Cryptoxanthin'] > 100, 
+                good: percentage && (nutritionData.vitamins['beta-Cryptoxanthin'] == 100)}">
+          {{ nutritionData.vitamins['beta-Cryptoxanthin'].toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        alpha-Lipoic acid
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.vitamins['alpha-Lipoic acid'] > 100, 
+                good: percentage && (nutritionData.vitamins['alpha-Lipoic acid'] == 100)}">
+          {{ nutritionData.vitamins['alpha-Lipoic acid'].toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Lutein
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.vitamins['Lutein'] > 100, 
+                good: percentage && (nutritionData.vitamins['Lutein'] == 100)}">
+          {{ nutritionData.vitamins['Lutein'].toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Lycopene
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.vitamins['Lycopene'] > 100, 
+                good: percentage && (nutritionData.vitamins['Lycopene'] == 100)}">
+          {{ nutritionData.vitamins['Lycopene'].toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Zeaxanthin
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.vitamins['Zeaxanthin'] > 100, 
+                good: percentage && (nutritionData.vitamins['Zeaxanthin'] == 100)}">
+          {{ nutritionData.vitamins['Zeaxanthin'].toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-list-header>Amino acids</ion-list-header>
+      <ion-item>
+        Alanine
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.macronutrients.Carbohydrates > 100, 
+                good: percentage && (nutritionData.macronutrients.Carbohydrates == 100)}">
+          {{ nutritionData['amino acids']['Alanine'].toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Arginine
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.macronutrients.Carbohydrates > 100, 
+                good: percentage && (nutritionData.macronutrients.Carbohydrates == 100)}">
+          {{ nutritionData['amino acids']['Arginine'].toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Aspargine
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData['amino acids']['Asparagine'] > 100, 
+                good: percentage && (nutritionData['amino acids']['Asparagine'] == 100)}">
+          {{ nutritionData['amino acids']['Asparagine'].toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Aspartic acid
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData['amino acids']['Aspartic acid'] > 100, 
+                good: percentage && (nutritionData['amino acids']['Aspartic acid'] == 100)}">
+          {{ nutritionData['amino acids']['Aspartic acid'].toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Cysteine
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData['amino acids']['Cysteine'] > 100, 
+                good: percentage && (nutritionData['amino acids']['Cysteine'] == 100)}">
+          {{ nutritionData['amino acids']['Cysteine'].toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Glutamine
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData['amino acids']['Glutamine'] > 100, 
+                good: percentage && (nutritionData['amino acids']['Glutamine'] == 100)}">
+          {{ nutritionData['amino acids']['Glutamine'].toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Glutamic acid
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData['amino acids']['Glutamic acid'] > 100, 
+                good: percentage && (nutritionData['amino acids']['Glutamic acid'] == 100)}">
+          {{ nutritionData['amino acids']['Glutamic acid'].toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Glycine
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData['amino acids']['Glycine'] > 100, 
+                good: percentage && (nutritionData['amino acids']['Glycine'] == 100)}">
+          {{ nutritionData['amino acids']['Glycine'].toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Histidine
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData['amino acids']['Histidine'] > 100, 
+                good: percentage && (nutritionData['amino acids']['Histidine'] == 100)}">
+          {{ nutritionData['amino acids']['Histidine'].toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Isoleucine
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData['amino acids']['Isoleucine'] > 100, 
+                good: percentage && (nutritionData['amino acids']['Isoleucine'] == 100)}">
+          {{ nutritionData['amino acids']['Isoleucine'].toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Leucine
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData['amino acids']['Leucine'] > 100, 
+                good: percentage && (nutritionData['amino acids']['Leucine'] == 100)}">
+          {{ nutritionData['amino acids']['Leucine'].toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Lysine
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData['amino acids']['Lysine'] > 100, 
+                good: percentage && (nutritionData['amino acids']['Lysine'] == 100)}">
+          {{ nutritionData['amino acids']['Lysine'].toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Methionine
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData['amino acids']['Methionine'] > 100, 
+                good: percentage && (nutritionData['amino acids']['Methionine'] == 100)}">
+          {{ nutritionData['amino acids']['Methionine'].toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Phenylalanine
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData['amino acids']['Phenylalanine'] > 100, 
+                good: percentage && (nutritionData['amino acids']['Phenylalanine'] == 100)}">
+          {{ nutritionData['amino acids']['Phenylalanine'].toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Proline
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData['amino acids']['Proline'] > 100, 
+                good: percentage && (nutritionData['amino acids']['Proline'] == 100)}">
+          {{ nutritionData['amino acids']['Proline'].toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Serine
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData['amino acids']['Serine'] > 100, 
+                good: percentage && (nutritionData['amino acids']['Serine'] == 100)}">
+          {{ nutritionData['amino acids']['Serine'].toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Threonine
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData['amino acids']['Threonine'] > 100, 
+                good: percentage && (nutritionData['amino acids']['Threonine'] == 100)}">
+          {{ nutritionData['amino acids']['Threonine'].toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Tryptophan
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData['amino acids']['Tryptophan'] > 100, 
+                good: percentage && (nutritionData['amino acids']['Tryptophan'] == 100)}">
+          {{ nutritionData['amino acids']['Tryptophan'].toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Tyrosine
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData['amino acids']['Tyrosine'] > 100, 
+                good: percentage && (nutritionData['amino acids']['Tyrosine'] == 100)}">
+          {{ nutritionData['amino acids']['Tyrosine'].toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Valine
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData['amino acids']['Valine'] > 100, 
+                good: percentage && (nutritionData['amino acids']['Valine'] == 100)}">
+          {{ nutritionData['amino acids']['Valine'].toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-list-header>Flavonoids</ion-list-header>
+      <ion-item>
+        Anthocyanidins
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.flavonoids['Anthocyanidins'] > 100, 
+                good: percentage && (nutritionData.flavonoids['Anthocyanidins'] == 100)}">
+          {{ nutritionData.flavonoids['Anthocyanidins'].toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Catechins
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.flavonoids['Catechins'] > 100, 
+                good: percentage && (nutritionData.flavonoids['Catechins'] == 100)}">
+          {{ nutritionData.flavonoids['Catechins'].toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Flavones
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.flavonoids['Flavones'] > 100, 
+                good: percentage && (nutritionData.flavonoids['Flavones'] == 100)}">
+          {{ nutritionData.flavonoids['Flavones'].toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Isoflavones
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.flavonoids['Isoflavones'] > 100, 
+                good: percentage && (nutritionData.flavonoids['Isoflavones'] == 100)}">
+          {{ nutritionData.flavonoids['Isoflavones'].toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Flavanones
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.flavonoids['Flavanones'] > 100, 
+                good: percentage && (nutritionData.flavonoids['Flavanones'] == 100)}">
+          {{ nutritionData.flavonoids['Flavanones'].toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Flavonols
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.flavonoids['Flavonols'] > 100, 
+                good: percentage && (nutritionData.flavonoids['Flavonols'] == 100)}">
+          {{ nutritionData.flavonoids['Flavonols'].toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-list-header>Sterols</ion-list-header>
+      <ion-item>
+        Campesterol
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.sterols['Campesterol'] > 100, 
+                good: percentage && (nutritionData.sterols['Campesterol'] == 100)}">
+          {{ nutritionData.sterols['Campesterol'].toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Cholesterol
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.sterols['Cholesterol'] > 100, 
+                good: percentage && (nutritionData.sterols['Cholesterol'] == 100)}">
+          {{ nutritionData.sterols['Cholesterol'].toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Phytosterols
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.sterols['Phytosterols'] > 100, 
+                good: percentage && (nutritionData.sterols['Phytosterols'] == 100)}">
+          {{ nutritionData.sterols['Phytosterols'].toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        beta-Sitosterol
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.sterols['beta-Sitosterol'] > 100, 
+                good: percentage && (nutritionData.sterols['beta-Sitosterol'] == 100)}">
+          {{ nutritionData.sterols['beta-Sitosterol'].toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Stigmasterol
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.sterols['Stigmasterol'] > 100, 
+                good: percentage && (nutritionData.sterols['Stigmasterol'] == 100)}">
+          {{ nutritionData.sterols['Stigmasterol'].toFixed(3) }} {{ percentage ? '%' : 'mg' }}
+        </ion-note>
+      </ion-item>
+      <ion-list-header>Other nutrients</ion-list-header>
+      <ion-item>
+        Alcohol
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.other['Alcohol'] > 100, 
+                good: percentage && (nutritionData.other['Alcohol'] == 100)}">
+          {{ nutritionData.other['Alcohol'].toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Caffeine
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.other['Caffeine'] > 100, 
+                good: percentage && (nutritionData.other['Caffeine'] == 100)}">
+          {{ nutritionData.other['Caffeine'].toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Melatonin
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.other['Melatonin'] > 100, 
+                good: percentage && (nutritionData.other['Melatonin'] == 100)}">
+          {{ nutritionData.other['Melatonin'].toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Theobromine
+        <ion-note item-right [ngClass]="{bad: percentage && nutritionData.other['Theobromine'] > 100, 
+                good: percentage && (nutritionData.other['Theobromine'] == 100)}">
+          {{ nutritionData.other['Theobromine'].toFixed(2) }} {{ percentage ? '%' : 'g' }}
+        </ion-note>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
+</ion-card>

@@ -6,6 +6,9 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 // Models
 import { Recipe } from '../../../models';
 
+// Pages
+import { RecipeDetails } from '../recipe-details/recipe-details';
+
 // Providers
 import { RecipeService } from '../../../providers';
 
@@ -13,7 +16,7 @@ import { RecipeService } from '../../../providers';
   templateUrl: 'recipe-list.html'
 })
 export class RecipeList implements OnInit {
-  public allUsersRecipes: Observable<Recipe[]>;
+  public allRecipes: Observable<Recipe[]>;
   public myRecipes: FirebaseListObservable<Recipe[]>;
   public recipeOwner: string = "mine";
   public searchBy: string = "name";
@@ -25,9 +28,13 @@ export class RecipeList implements OnInit {
     this.searchQuery = "";
   }
 
+  public viewRecipe(recipe: Recipe) {
+    this.navCtrl.push(RecipeDetails, { recipe });
+  }
+
   ngOnInit(): void {
     this.myRecipes = this.recipeSvc.getMyRecipes();
-    this.allUsersRecipes = this.recipeSvc.getAllRecipes();
+    this.allRecipes = this.recipeSvc.getAllRecipes();
   }
 
 }

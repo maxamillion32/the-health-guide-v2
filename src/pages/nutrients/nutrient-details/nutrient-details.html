@@ -6,343 +6,369 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content class="nutrient-report" padding>
-  <h1>Description</h1>
-  <p [innerHtml]="nutrient.description"></p>
-  <div *ngIf="nutrient.classification">
-    <h1>Classification</h1>
-    <div *ngFor="let type of nutrient.classification">
-      <h2>{{ type.name }}</h2>
-      <p [innerHtml]="type.description"></p>
-      <h3 *ngIf="type.intake">Intakes</h3>
-      <ion-item-group *ngIf="type.intake">
-        <ion-item-divider>Male</ion-item-divider>
+<ion-content class="nutrient-report">
+  <ion-card>
+    <ion-card-header>Description</ion-card-header>
+    <ion-card-content [innerHtml]="nutrient.description"></ion-card-content>
+  </ion-card>
+  <ion-card *ngIf="nutrient.classification">
+    <ion-card-header>Classification</ion-card-header>
+    <ion-card-content>
+      <ion-list *ngFor="let type of nutrient.classification">
+        <ion-list-header>{{ type.name }}</ion-list-header>
+        <ion-item>
+          <p [innerHtml]="type.description"></p>
+          <br>
+          <h3 *ngIf="type.intake">Recommended intake</h3>
+          <ion-item-group *ngIf="type.intake">
+            <ion-item-divider>Male</ion-item-divider>
+            <ion-item>
+              0-6 month
+              <ion-note item-right>{{ type.intake.male['0-6 months'] }}{{ intakeUnit }}</ion-note>
+            </ion-item>
+            <ion-item>
+              7-12 months
+              <ion-note item-right>{{ type.intake.male['7-12 months'] }}{{ intakeUnit }}</ion-note>
+            </ion-item>
+            <ion-item>
+              1-3 years
+              <ion-note item-right>{{ type.intake.male['1-3 years'] }}{{ intakeUnit }}</ion-note>
+            </ion-item>
+            <ion-item>
+              4-8 years
+              <ion-note item-right>{{ type.intake.male['4-8 years'] }}{{ intakeUnit }}</ion-note>
+            </ion-item>
+            <ion-item>
+              9-13 years
+              <ion-note item-right>{{ type.intake.male['9-13 years'] }}{{ intakeUnit }}</ion-note>
+            </ion-item>
+            <ion-item>
+              14-18 years
+              <ion-note item-right>{{ type.intake.male['14-18 years'] }}{{ intakeUnit }}</ion-note>
+            </ion-item>
+            <ion-item>
+              19-50 years
+              <ion-note item-right>{{ type.intake.male['19-50 years'] }}{{ intakeUnit }}</ion-note>
+            </ion-item>
+            <ion-item>
+              50-70 years
+              <ion-note item-right>{{ type.intake.male['50-70 years'] }}{{ intakeUnit }}</ion-note>
+            </ion-item>
+            <ion-item>
+              70+ years
+              <ion-note item-right>{{ type.intake.male['70+ years'] }}{{ intakeUnit }}</ion-note>
+            </ion-item>
+          </ion-item-group>
+          <ion-item-group *ngIf="type.intake">
+            <ion-item-divider>Female</ion-item-divider>
+            <ion-item>
+              0-6 month
+              <ion-note item-right>{{ type.intake.female.normal['0-6 months'] }}{{ intakeUnit }}</ion-note>
+            </ion-item>
+            <ion-item>
+              7-12 months
+              <ion-note item-right>{{ type.intake.female.normal['7-12 months'] }}{{ intakeUnit }}</ion-note>
+            </ion-item>
+            <ion-item>
+              1-3 years
+              <ion-note item-right>{{ type.intake.female.normal['1-3 years'] }}{{ intakeUnit }}</ion-note>
+            </ion-item>
+            <ion-item>
+              4-8 years
+              <ion-note item-right>{{ type.intake.female.normal['4-8 years'] }}{{ intakeUnit }}</ion-note>
+            </ion-item>
+            <ion-item>
+              9-13 years
+              <ion-note item-right>{{ type.intake.female.normal['9-13 years'] }}{{ intakeUnit }}</ion-note>
+            </ion-item>
+            <ion-item>
+              14-18 years
+              <ion-note item-right>{{ type.intake.female.normal['14-18 years'] }}{{ intakeUnit }}</ion-note>
+            </ion-item>
+            <ion-item>
+              19-50 years
+              <ion-note item-right>{{ type.intake.female.normal['19-50 years'] }}{{ intakeUnit }}</ion-note>
+            </ion-item>
+            <ion-item>
+              50-70 years
+              <ion-note item-right>{{ type.intake.female.normal['50-70 years'] }}{{ intakeUnit }}</ion-note>
+            </ion-item>
+            <ion-item>
+              70+ years
+              <ion-note item-right>{{ type.intake.female.normal['70+ years'] }}{{ intakeUnit }}</ion-note>
+            </ion-item>
+          </ion-item-group>
+          <ion-item-group *ngIf="type.intake">
+            <ion-item-divider>Pregnancy</ion-item-divider>
+            <ion-item>
+              0-6 month
+              <ion-note item-right>{{ type.intake.female.pregnancy['0-6 months'] }}{{ intakeUnit }}</ion-note>
+            </ion-item>
+            <ion-item>
+              7-12 months
+              <ion-note item-right>{{ type.intake.female.pregnancy['7-12 months'] }}{{ intakeUnit }}</ion-note>
+            </ion-item>
+            <ion-item>
+              1-3 years
+              <ion-note item-right>{{ type.intake.female.pregnancy['1-3 years'] }}{{ intakeUnit }}</ion-note>
+            </ion-item>
+            <ion-item>
+              4-8 years
+              <ion-note item-right>{{ type.intake.female.pregnancy['4-8 years'] }}{{ intakeUnit }}</ion-note>
+            </ion-item>
+            <ion-item>
+              9-13 years
+              <ion-note item-right>{{ type.intake.female.pregnancy['9-13 years'] }}{{ intakeUnit }}</ion-note>
+            </ion-item>
+            <ion-item>
+              14-18 years
+              <ion-note item-right>{{ type.intake.female.pregnancy['14-18 years'] }}{{ intakeUnit }}</ion-note>
+            </ion-item>
+            <ion-item>
+              19-50 years
+              <ion-note item-right>{{ type.intake.female.pregnancy['19-50 years'] }}{{ intakeUnit }}</ion-note>
+            </ion-item>
+            <ion-item>
+              50-70 years
+              <ion-note item-right>{{ type.intake.female.pregnancy['50-70 years'] }}{{ intakeUnit }}</ion-note>
+            </ion-item>
+            <ion-item>
+              70+ years
+              <ion-note item-right>{{ type.intake.female.pregnancy['70+ years'] }}{{ intakeUnit }}</ion-note>
+            </ion-item>
+          </ion-item-group>
+          <ion-item-group *ngIf="type.intake">
+            <ion-item-divider>Lactation</ion-item-divider>
+            <ion-item>
+              0-6 month
+              <ion-note item-right>
+                {{ type.intake.female.lactation['0-6 months'] }}{{ intakeUnit }}</ion-note>
+            </ion-item>
+            <ion-item>
+              7-12 months
+              <ion-note item-right>{{ type.intake.female.lactation['7-12 months'] }}{{ intakeUnit }}</ion-note>
+            </ion-item>
+            <ion-item>
+              1-3 years
+              <ion-note item-right>{{ type.intake.female.lactation['1-3 years'] }}{{ intakeUnit }}</ion-note>
+            </ion-item>
+            <ion-item>
+              4-8 years
+              <ion-note item-right>{{ type.intake.female.lactation['4-8 years'] }}{{ intakeUnit }}</ion-note>
+            </ion-item>
+            <ion-item>
+              9-13 years
+              <ion-note item-right>{{ type.intake.female.lactation['9-13 years'] }}{{ intakeUnit }}</ion-note>
+            </ion-item>
+            <ion-item>
+              14-18 years
+              <ion-note item-right>{{ type.intake.female.lactation['14-18 years'] }}{{ intakeUnit }}</ion-note>
+            </ion-item>
+            <ion-item>
+              19-50 years
+              <ion-note item-right>{{ type.intake.female.lactation['19-50 years'] }}{{ intakeUnit }}</ion-note>
+            </ion-item>
+            <ion-item>
+              50-70 years
+              <ion-note item-right>{{ type.intake.female.lactation['50-70 years'] }}{{ intakeUnit }}</ion-note>
+            </ion-item>
+            <ion-item>
+              70+ years
+              <ion-note item-right>{{ type.intake.female.lactation['70+ years'] }}{{ intakeUnit }}</ion-note>
+            </ion-item>
+          </ion-item-group>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>Functions</ion-card-header>
+    <ion-card-content>
+      <ul>
+        <li *ngFor="let function of nutrient.functions">{{ function }}</li>
+      </ul>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>Disease prevention</ion-card-header>
+    <ion-card-content>
+      <ul>
+        <li *ngFor="let disease of nutrient.diseasePrev">{{ disease }}</li>
+      </ul>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>Deficiency</ion-card-header>
+    <ion-card-content>
+      <p [innerHtml]="nutrient.deficiency"></p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>Toxicity</ion-card-header>
+    <ion-card-content>
+      <p [innerHtml]="nutrient.toxicity"></p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>Nutrient relationships</ion-card-header>
+    <ion-card-content>
+      <p [innerHtml]="nutrient.nutrientRelationship"></p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card *ngIf="nutrient.intake">
+    <ion-card-header>Recommended intake</ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-list-header>Male</ion-list-header>
         <ion-item>
           0-6 month
-          <ion-note item-right>{{ type.intake.male['0-6 months'] }}{{ intakeUnit }}</ion-note>
+          <ion-note item-right>{{ nutrient.intake.male['0-6 months'] }}{{ intakeUnit }}</ion-note>
         </ion-item>
         <ion-item>
           7-12 months
-          <ion-note item-right>{{ type.intake.male['7-12 months'] }}{{ intakeUnit }}</ion-note>
+          <ion-note item-right>{{ nutrient.intake.male['7-12 months'] }}{{ intakeUnit }}</ion-note>
         </ion-item>
         <ion-item>
           1-3 years
-          <ion-note item-right>{{ type.intake.male['1-3 years'] }}{{ intakeUnit }}</ion-note>
+          <ion-note item-right>{{ nutrient.intake.male['1-3 years'] }}{{ intakeUnit }}</ion-note>
         </ion-item>
         <ion-item>
           4-8 years
-          <ion-note item-right>{{ type.intake.male['4-8 years'] }}{{ intakeUnit }}</ion-note>
+          <ion-note item-right>{{ nutrient.intake.male['4-8 years'] }}{{ intakeUnit }}</ion-note>
         </ion-item>
         <ion-item>
           9-13 years
-          <ion-note item-right>{{ type.intake.male['9-13 years'] }}{{ intakeUnit }}</ion-note>
+          <ion-note item-right>{{ nutrient.intake.male['9-13 years'] }}{{ intakeUnit }}</ion-note>
         </ion-item>
         <ion-item>
           14-18 years
-          <ion-note item-right>{{ type.intake.male['14-18 years'] }}{{ intakeUnit }}</ion-note>
+          <ion-note item-right>{{ nutrient.intake.male['14-18 years'] }}{{ intakeUnit }}</ion-note>
         </ion-item>
         <ion-item>
           19-50 years
-          <ion-note item-right>{{ type.intake.male['19-50 years'] }}{{ intakeUnit }}</ion-note>
+          <ion-note item-right>{{ nutrient.intake.male['19-50 years'] }}{{ intakeUnit }}</ion-note>
         </ion-item>
         <ion-item>
           50-70 years
-          <ion-note item-right>{{ type.intake.male['50-70 years'] }}{{ intakeUnit }}</ion-note>
+          <ion-note item-right>{{ nutrient.intake.male['50-70 years'] }}{{ intakeUnit }}</ion-note>
         </ion-item>
         <ion-item>
           70+ years
-          <ion-note item-right>{{ type.intake.male['70+ years'] }}{{ intakeUnit }}</ion-note>
+          <ion-note item-right>{{ nutrient.intake.male['70+ years'] }}{{ intakeUnit }}</ion-note>
         </ion-item>
-      </ion-item-group>
-      <ion-item-group *ngIf="type.intake">
-        <ion-item-divider>Female normal</ion-item-divider>
+        <ion-list-header>Female</ion-list-header>
         <ion-item>
           0-6 month
-          <ion-note item-right>{{ type.intake.female.normal['0-6 months'] }}{{ intakeUnit }}</ion-note>
+          <ion-note item-right>{{ nutrient.intake.female.normal['0-6 months'] }}{{ intakeUnit }}</ion-note>
         </ion-item>
         <ion-item>
           7-12 months
-          <ion-note item-right>{{ type.intake.female.normal['7-12 months'] }}{{ intakeUnit }}</ion-note>
+          <ion-note item-right>{{ nutrient.intake.female.normal['7-12 months'] }}{{ intakeUnit }}</ion-note>
         </ion-item>
         <ion-item>
           1-3 years
-          <ion-note item-right>{{ type.intake.female.normal['1-3 years'] }}{{ intakeUnit }}</ion-note>
+          <ion-note item-right>{{ nutrient.intake.female.normal['1-3 years'] }}{{ intakeUnit }}</ion-note>
         </ion-item>
         <ion-item>
           4-8 years
-          <ion-note item-right>{{ type.intake.female.normal['4-8 years'] }}{{ intakeUnit }}</ion-note>
+          <ion-note item-right>{{ nutrient.intake.female.normal['4-8 years'] }}{{ intakeUnit }}</ion-note>
         </ion-item>
         <ion-item>
           9-13 years
-          <ion-note item-right>{{ type.intake.female.normal['9-13 years'] }}{{ intakeUnit }}</ion-note>
+          <ion-note item-right>{{ nutrient.intake.female.normal['9-13 years'] }}{{ intakeUnit }}</ion-note>
         </ion-item>
         <ion-item>
           14-18 years
-          <ion-note item-right>{{ type.intake.female.normal['14-18 years'] }}{{ intakeUnit }}</ion-note>
+          <ion-note item-right>{{ nutrient.intake.female.normal['14-18 years'] }}{{ intakeUnit }}</ion-note>
         </ion-item>
         <ion-item>
           19-50 years
-          <ion-note item-right>{{ type.intake.female.normal['19-50 years'] }}{{ intakeUnit }}</ion-note>
+          <ion-note item-right>{{ nutrient.intake.female.normal['19-50 years'] }}{{ intakeUnit }}</ion-note>
         </ion-item>
         <ion-item>
           50-70 years
-          <ion-note item-right>{{ type.intake.female.normal['50-70 years'] }}{{ intakeUnit }}</ion-note>
+          <ion-note item-right>{{ nutrient.intake.female.normal['50-70 years'] }}{{ intakeUnit }}</ion-note>
         </ion-item>
         <ion-item>
           70+ years
-          <ion-note item-right>{{ type.intake.female.normal['70+ years'] }}{{ intakeUnit }}</ion-note>
+          <ion-note item-right>{{ nutrient.intake.female.normal['70+ years'] }}{{ intakeUnit }}</ion-note>
         </ion-item>
-      </ion-item-group>
-      <ion-item-group *ngIf="type.intake">
-        <ion-item-divider>Female pregnancy</ion-item-divider>
+        <ion-list-header>Pregnancy</ion-list-header>
         <ion-item>
           0-6 month
-          <ion-note item-right>{{ type.intake.female.pregnancy['0-6 months'] }}{{ intakeUnit }}</ion-note>
+          <ion-note item-right>{{ nutrient.intake.female.pregnancy['0-6 months'] }}{{ intakeUnit }}</ion-note>
         </ion-item>
         <ion-item>
           7-12 months
-          <ion-note item-right>{{ type.intake.female.pregnancy['7-12 months'] }}{{ intakeUnit }}</ion-note>
+          <ion-note item-right>{{ nutrient.intake.female.pregnancy['7-12 months'] }}{{ intakeUnit }}</ion-note>
         </ion-item>
         <ion-item>
           1-3 years
-          <ion-note item-right>{{ type.intake.female.pregnancy['1-3 years'] }}{{ intakeUnit }}</ion-note>
+          <ion-note item-right>{{ nutrient.intake.female.pregnancy['1-3 years'] }}{{ intakeUnit }}</ion-note>
         </ion-item>
         <ion-item>
           4-8 years
-          <ion-note item-right>{{ type.intake.female.pregnancy['4-8 years'] }}{{ intakeUnit }}</ion-note>
+          <ion-note item-right>{{ nutrient.intake.female.pregnancy['4-8 years'] }}{{ intakeUnit }}</ion-note>
         </ion-item>
         <ion-item>
           9-13 years
-          <ion-note item-right>{{ type.intake.female.pregnancy['9-13 years'] }}{{ intakeUnit }}</ion-note>
+          <ion-note item-right>{{ nutrient.intake.female.pregnancy['9-13 years'] }}{{ intakeUnit }}</ion-note>
         </ion-item>
         <ion-item>
           14-18 years
-          <ion-note item-right>{{ type.intake.female.pregnancy['14-18 years'] }}{{ intakeUnit }}</ion-note>
+          <ion-note item-right>{{ nutrient.intake.female.pregnancy['14-18 years'] }}{{ intakeUnit }}</ion-note>
         </ion-item>
         <ion-item>
           19-50 years
-          <ion-note item-right>{{ type.intake.female.pregnancy['19-50 years'] }}{{ intakeUnit }}</ion-note>
+          <ion-note item-right>{{ nutrient.intake.female.pregnancy['19-50 years'] }}{{ intakeUnit }}</ion-note>
         </ion-item>
         <ion-item>
           50-70 years
-          <ion-note item-right>{{ type.intake.female.pregnancy['50-70 years'] }}{{ intakeUnit }}</ion-note>
+          <ion-note item-right>{{ nutrient.intake.female.pregnancy['50-70 years'] }}{{ intakeUnit }}</ion-note>
         </ion-item>
         <ion-item>
           70+ years
-          <ion-note item-right>{{ type.intake.female.pregnancy['70+ years'] }}{{ intakeUnit }}</ion-note>
+          <ion-note item-right>{{ nutrient.intake.female.pregnancy['70+ years'] }}{{ intakeUnit }}</ion-note>
         </ion-item>
-      </ion-item-group>
-      <ion-item-group *ngIf="type.intake">
-        <ion-item-divider>Female lactation</ion-item-divider>
+        <ion-list-header>Lactation</ion-list-header>
         <ion-item>
           0-6 month
-          <ion-note item-right>
-            {{ type.intake.female.lactation['0-6 months'] }}{{ intakeUnit }}</ion-note>
+          <ion-note item-right>{{ nutrient.intake.female.lactation['0-6 months'] }}{{ intakeUnit }}</ion-note>
         </ion-item>
         <ion-item>
           7-12 months
-          <ion-note item-right>{{ type.intake.female.lactation['7-12 months'] }}{{ intakeUnit }}</ion-note>
+          <ion-note item-right>{{ nutrient.intake.female.lactation['7-12 months'] }}{{ intakeUnit }}</ion-note>
         </ion-item>
         <ion-item>
           1-3 years
-          <ion-note item-right>{{ type.intake.female.lactation['1-3 years'] }}{{ intakeUnit }}</ion-note>
+          <ion-note item-right>{{ nutrient.intake.female.lactation['1-3 years'] }}{{ intakeUnit }}</ion-note>
         </ion-item>
         <ion-item>
           4-8 years
-          <ion-note item-right>{{ type.intake.female.lactation['4-8 years'] }}{{ intakeUnit }}</ion-note>
+          <ion-note item-right>{{ nutrient.intake.female.lactation['4-8 years'] }}{{ intakeUnit }}</ion-note>
         </ion-item>
         <ion-item>
           9-13 years
-          <ion-note item-right>{{ type.intake.female.lactation['9-13 years'] }}{{ intakeUnit }}</ion-note>
+          <ion-note item-right>{{ nutrient.intake.female.lactation['9-13 years'] }}{{ intakeUnit }}</ion-note>
         </ion-item>
         <ion-item>
           14-18 years
-          <ion-note item-right>{{ type.intake.female.lactation['14-18 years'] }}{{ intakeUnit }}</ion-note>
+          <ion-note item-right>{{ nutrient.intake.female.lactation['14-18 years'] }}{{ intakeUnit }}</ion-note>
         </ion-item>
         <ion-item>
           19-50 years
-          <ion-note item-right>{{ type.intake.female.lactation['19-50 years'] }}{{ intakeUnit }}</ion-note>
+          <ion-note item-right>{{ nutrient.intake.female.lactation['19-50 years'] }}{{ intakeUnit }}</ion-note>
         </ion-item>
         <ion-item>
           50-70 years
-          <ion-note item-right>{{ type.intake.female.lactation['50-70 years'] }}{{ intakeUnit }}</ion-note>
+          <ion-note item-right>{{ nutrient.intake.female.lactation['50-70 years'] }}{{ intakeUnit }}</ion-note>
         </ion-item>
         <ion-item>
           70+ years
-          <ion-note item-right>{{ type.intake.female.lactation['70+ years'] }}{{ intakeUnit }}</ion-note>
+          <ion-note item-right>{{ nutrient.intake.female.lactation['70+ years'] }}{{ intakeUnit }}</ion-note>
         </ion-item>
-      </ion-item-group>
-    </div>
-  </div>
-  <h1>Functions</h1>
-  <ul>
-    <li *ngFor="let function of nutrient.functions">{{ function }}</li>
-  </ul>
-  <h1>Disease prevention</h1>
-  <ul>
-    <li *ngFor="let disease of nutrient.diseasePrev">{{ disease }}</li>
-  </ul>
-  <h1>Deficiency</h1>
-  <p [innerHtml]="nutrient.deficiency"></p>
-  <h1>Toxicity</h1>
-  <p [innerHtml]="nutrient.toxicity"></p>
-  <h1>Nutrient relationships</h1>
-  <p [innerHtml]="nutrient.nutrientRelationship"></p>
-  <h1>Intakes</h1>
-  <ion-item-group *ngIf="nutrient.intake">
-    <ion-item-divider>Male</ion-item-divider>
-    <ion-item>
-      0-6 month
-      <ion-note item-right>{{ nutrient.intake.male['0-6 months'] }}{{ intakeUnit }}</ion-note>
-    </ion-item>
-    <ion-item>
-      7-12 months
-      <ion-note item-right>{{ nutrient.intake.male['7-12 months'] }}{{ intakeUnit }}</ion-note>
-    </ion-item>
-    <ion-item>
-      1-3 years
-      <ion-note item-right>{{ nutrient.intake.male['1-3 years'] }}{{ intakeUnit }}</ion-note>
-    </ion-item>
-    <ion-item>
-      4-8 years
-      <ion-note item-right>{{ nutrient.intake.male['4-8 years'] }}{{ intakeUnit }}</ion-note>
-    </ion-item>
-    <ion-item>
-      9-13 years
-      <ion-note item-right>{{ nutrient.intake.male['9-13 years'] }}{{ intakeUnit }}</ion-note>
-    </ion-item>
-    <ion-item>
-      14-18 years
-      <ion-note item-right>{{ nutrient.intake.male['14-18 years'] }}{{ intakeUnit }}</ion-note>
-    </ion-item>
-    <ion-item>
-      19-50 years
-      <ion-note item-right>{{ nutrient.intake.male['19-50 years'] }}{{ intakeUnit }}</ion-note>
-    </ion-item>
-    <ion-item>
-      50-70 years
-      <ion-note item-right>{{ nutrient.intake.male['50-70 years'] }}{{ intakeUnit }}</ion-note>
-    </ion-item>
-    <ion-item>
-      70+ years
-      <ion-note item-right>{{ nutrient.intake.male['70+ years'] }}{{ intakeUnit }}</ion-note>
-    </ion-item>
-  </ion-item-group>
-  <ion-item-group *ngIf="nutrient.intake">
-    <ion-item-divider>Female normal</ion-item-divider>
-    <ion-item>
-      0-6 month
-      <ion-note item-right>{{ nutrient.intake.female.normal['0-6 months'] }}{{ intakeUnit }}</ion-note>
-    </ion-item>
-    <ion-item>
-      7-12 months
-      <ion-note item-right>{{ nutrient.intake.female.normal['7-12 months'] }}{{ intakeUnit }}</ion-note>
-    </ion-item>
-    <ion-item>
-      1-3 years
-      <ion-note item-right>{{ nutrient.intake.female.normal['1-3 years'] }}{{ intakeUnit }}</ion-note>
-    </ion-item>
-    <ion-item>
-      4-8 years
-      <ion-note item-right>{{ nutrient.intake.female.normal['4-8 years'] }}{{ intakeUnit }}</ion-note>
-    </ion-item>
-    <ion-item>
-      9-13 years
-      <ion-note item-right>{{ nutrient.intake.female.normal['9-13 years'] }}{{ intakeUnit }}</ion-note>
-    </ion-item>
-    <ion-item>
-      14-18 years
-      <ion-note item-right>{{ nutrient.intake.female.normal['14-18 years'] }}{{ intakeUnit }}</ion-note>
-    </ion-item>
-    <ion-item>
-      19-50 years
-      <ion-note item-right>{{ nutrient.intake.female.normal['19-50 years'] }}{{ intakeUnit }}</ion-note>
-    </ion-item>
-    <ion-item>
-      50-70 years
-      <ion-note item-right>{{ nutrient.intake.female.normal['50-70 years'] }}{{ intakeUnit }}</ion-note>
-    </ion-item>
-    <ion-item>
-      70+ years
-      <ion-note item-right>{{ nutrient.intake.female.normal['70+ years'] }}{{ intakeUnit }}</ion-note>
-    </ion-item>
-  </ion-item-group>
-  <ion-item-group *ngIf="nutrient.intake">
-    <ion-item-divider>Female pregnancy</ion-item-divider>
-    <ion-item>
-      0-6 month
-      <ion-note item-right>{{ nutrient.intake.female.pregnancy['0-6 months'] }}{{ intakeUnit }}</ion-note>
-    </ion-item>
-    <ion-item>
-      7-12 months
-      <ion-note item-right>{{ nutrient.intake.female.pregnancy['7-12 months'] }}{{ intakeUnit }}</ion-note>
-    </ion-item>
-    <ion-item>
-      1-3 years
-      <ion-note item-right>{{ nutrient.intake.female.pregnancy['1-3 years'] }}{{ intakeUnit }}</ion-note>
-    </ion-item>
-    <ion-item>
-      4-8 years
-      <ion-note item-right>{{ nutrient.intake.female.pregnancy['4-8 years'] }}{{ intakeUnit }}</ion-note>
-    </ion-item>
-    <ion-item>
-      9-13 years
-      <ion-note item-right>{{ nutrient.intake.female.pregnancy['9-13 years'] }}{{ intakeUnit }}</ion-note>
-    </ion-item>
-    <ion-item>
-      14-18 years
-      <ion-note item-right>{{ nutrient.intake.female.pregnancy['14-18 years'] }}{{ intakeUnit }}</ion-note>
-    </ion-item>
-    <ion-item>
-      19-50 years
-      <ion-note item-right>{{ nutrient.intake.female.pregnancy['19-50 years'] }}{{ intakeUnit }}</ion-note>
-    </ion-item>
-    <ion-item>
-      50-70 years
-      <ion-note item-right>{{ nutrient.intake.female.pregnancy['50-70 years'] }}{{ intakeUnit }}</ion-note>
-    </ion-item>
-    <ion-item>
-      70+ years
-      <ion-note item-right>{{ nutrient.intake.female.pregnancy['70+ years'] }}{{ intakeUnit }}</ion-note>
-    </ion-item>
-  </ion-item-group>
-  <ion-item-group *ngIf="nutrient.intake">
-    <ion-item-divider>Female lactation</ion-item-divider>
-    <ion-item>
-      0-6 month
-      <ion-note item-right>{{ nutrient.intake.female.lactation['0-6 months'] }}{{ intakeUnit }}</ion-note>
-    </ion-item>
-    <ion-item>
-      7-12 months
-      <ion-note item-right>{{ nutrient.intake.female.lactation['7-12 months'] }}{{ intakeUnit }}</ion-note>
-    </ion-item>
-    <ion-item>
-      1-3 years
-      <ion-note item-right>{{ nutrient.intake.female.lactation['1-3 years'] }}{{ intakeUnit }}</ion-note>
-    </ion-item>
-    <ion-item>
-      4-8 years
-      <ion-note item-right>{{ nutrient.intake.female.lactation['4-8 years'] }}{{ intakeUnit }}</ion-note>
-    </ion-item>
-    <ion-item>
-      9-13 years
-      <ion-note item-right>{{ nutrient.intake.female.lactation['9-13 years'] }}{{ intakeUnit }}</ion-note>
-    </ion-item>
-    <ion-item>
-      14-18 years
-      <ion-note item-right>{{ nutrient.intake.female.lactation['14-18 years'] }}{{ intakeUnit }}</ion-note>
-    </ion-item>
-    <ion-item>
-      19-50 years
-      <ion-note item-right>{{ nutrient.intake.female.lactation['19-50 years'] }}{{ intakeUnit }}</ion-note>
-    </ion-item>
-    <ion-item>
-      50-70 years
-      <ion-note item-right>{{ nutrient.intake.female.lactation['50-70 years'] }}{{ intakeUnit }}</ion-note>
-    </ion-item>
-    <ion-item>
-      70+ years
-      <ion-note item-right>{{ nutrient.intake.female.lactation['70+ years'] }}{{ intakeUnit }}</ion-note>
-    </ion-item>
-  </ion-item-group>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>

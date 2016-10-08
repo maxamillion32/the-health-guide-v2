@@ -30,15 +30,17 @@ export class RecipeService {
 
   public calcRecipeNutrition(recipe: Recipe): Nutrition {
     let rcpNutrition: Nutrition = new Nutrition();
+    // Set total recipe nutrition and quantity in grams
     recipe.ingredients.forEach(ingredient => {
+      // Check if the ingredient of the recipe is another recipe
       if (ingredient.hasOwnProperty('chef')) {
         for (let nutrientCategory in ingredient.nutrients) {
           let nutrients = ingredient.nutrients[nutrientCategory];
           if (nutrientCategory === 'energy') {
-            rcpNutrition[nutrientCategory] += +nutrients * +ingredient.amount;
+            rcpNutrition[nutrientCategory] += nutrients * ingredient.amount;
           } else if (typeof nutrients === 'object') {
             for (let nutrient in nutrients) {
-              rcpNutrition[nutrientCategory][nutrient] += +nutrients[nutrient] * +ingredient.amount;
+              rcpNutrition[nutrientCategory][nutrient] += nutrients[nutrient] * ingredient.amount;
             }
           }
         }
@@ -46,17 +48,19 @@ export class RecipeService {
         for (let nutrientCategory in ingredient) {
           let nutrients = ingredient[nutrientCategory];
           if (nutrientCategory === 'energy') {
-            rcpNutrition[nutrientCategory] += +nutrients * (+ingredient.quantity / 100);
+            rcpNutrition[nutrientCategory] += nutrients * (ingredient.quantity / 100);
           } else if (typeof nutrients === 'object') {
             for (let nutrient in nutrients) {
-              rcpNutrition[nutrientCategory][nutrient] += +nutrients[nutrient] * (+ingredient.quantity / 100);
+              rcpNutrition[nutrientCategory][nutrient] += nutrients[nutrient] * (ingredient.quantity / 100);
             }
           }
         }
       }
 
-      recipe.quantity += +ingredient.quantity;
+      recipe.quantity += ingredient.quantity;
     });
+
+    // Set nutrition and quantity per recipe serving
     for (let nutrientCategory in rcpNutrition) {
       let nutrients = rcpNutrition[nutrientCategory];
       if (nutrientCategory === 'energy') {
@@ -66,17 +70,24 @@ export class RecipeService {
         rcpNutrition[nutrientCategory][nutrient] /= +recipe.servings;
       }
     }
+
     recipe.quantity /= +recipe.servings;
     return rcpNutrition;
   }
 
   public getAllRecipes(): Observable<any> {
-    let allRecipes: Recipe[];
+    let allRecipes: Recipe[] = [];
     return new Observable(observer => {
       this.allUsersRecipes.subscribe(users => users.forEach(userRecipes => {
-        allRecipes = [...allRecipes, userRecipes];
-        console.log(allRecipes);
-        observer.next(allRecipes);
+        if (userRecipes) {
+          for (let recipeKey in userRecipes) {
+            let recipe = userRecipes[recipeKey];
+            if (recipe.ingredients) {
+              allRecipes.push(recipe);
+            }
+          }
+          observer.next(allRecipes);
+        }
       }));
     });
 
@@ -93,6 +104,7 @@ export class RecipeService {
   public updateRecipe(recipe: Recipe): void {
     this.userRecipes.update(recipe['$key'], {
       name: recipe.name,
+      category: recipe.category,
       dietary: recipe.dietary,
       chef: recipe.chef,
       ingredients: recipe.ingredients,

@@ -3,8 +3,8 @@ import { FormsModule }   from '@angular/forms';
 import { IonicApp, IonicModule } from 'ionic-angular';
 import { AngularFireModule, AuthProviders, AuthMethods } from 'angularfire2';
 
-// Root component
-import { MyApp } from './app.component';
+// Components
+import { NutritionTable } from '../components';
 
 // Pages
 import {
@@ -23,6 +23,9 @@ import { Limit, SearchFilter } from "../pipes";
 
 // Providers
 import { NutritionService, RecipeService } from "../providers";
+
+// Root component
+import { MyApp } from './app.component';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyBXdSjoVfk1KbbtmAUEq7ktnnI70ojg4y8",
@@ -47,6 +50,7 @@ const firebaseAuthConfig = {
     Limit,
     NutrientDetails,
     NutrientList,
+    NutritionTable,
     RecipeDetails,
     RecipeList,
     SearchFilter
@@ -65,6 +69,7 @@ const firebaseAuthConfig = {
     Home,
     NutrientDetails,
     NutrientList,
+    NutritionTable,
     RecipeDetails,
     RecipeList
   ],

@@ -9,7 +9,7 @@
 
 <ion-content [ngSwitch]="recipeOwner">
   <ion-list *ngSwitchCase="'mine'">
-    <button ion-item detail-push *ngFor="let recipe of myRecipes | async | searchFilter: searchQuery: searchBy" (click)="openRecipeDetails(recipe)">
+    <button ion-item detail-push *ngFor="let recipe of myRecipes | async | searchFilter: searchQuery: searchBy" (click)="viewRecipe(recipe)">
       <h1>{{ recipe.name }}</h1>
       <p>{{ recipe.dietary }}</p>
       <ion-note item-right>
@@ -18,7 +18,7 @@
     </button>
   </ion-list>
   <ion-list *ngSwitchCase="'all'">
-    <button ion-item detail-push *ngFor="let recipe of allRecipes | async | searchFilter: searchQuery: searchBy" (click)="openRecipeDetails(recipe)">
+    <button ion-item detail-push *ngFor="let recipe of allRecipes | async | searchFilter: searchQuery: searchBy" (click)="viewRecipe(recipe)">
       <h1>{{ recipe.name }}</h1>
       <p>{{ recipe.dietary }}</p>
       <ion-note item-right>

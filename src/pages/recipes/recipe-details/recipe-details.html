@@ -1,18 +1,92 @@
-<!--
-  Generated template for the RecipeDetails page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
   <ion-navbar>
-    <ion-title>RecipeDetails</ion-title>
+    <ion-title>{{ recipe.name }}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content class="recipe-page">
+  <ion-card>
+    <ion-card-header>
+      Details
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <h4>Chef</h4>
+          <ion-note item-right>
+            <p>{{recipe.chef}}</p>
+          </ion-note>
+        </ion-item>
+        <ion-item>
+          <h4>Category</h4>
+          <ion-note item-right>
+            <p>{{recipe.category}}</p>
+          </ion-note>
+        </ion-item>
+        <ion-item>
+          <h4>Dietary</h4>
+          <ion-note item-right>
+            <p>{{recipe.dietary}}</p>
+          </ion-note>
+        </ion-item>
+        <ion-item>
+          <h4>Cooking method</h4>
+          <ion-note item-right>
+            <p>{{recipe.cookMethod}}</p>
+          </ion-note>
+        </ion-item>
+        <ion-item>
+          <h4>Preparation time</h4>
+          <ion-note item-right>
+            <p>{{recipe.prepTime}}</p>
+          </ion-note>
+        </ion-item>
+        <ion-item>
+          <h4>Cooking time</h4>
+          <ion-note item-right>
+            <p>{{recipe.cookTime}}</p>
+          </ion-note>
+        </ion-item>
+        <ion-item>
+          <h4>Cooking temperature</h4>
+          <ion-note item-right>
+            <p>{{recipe.cookTemperature}}</p>
+          </ion-note>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      Ingredients
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item *ngFor="let ingredient of recipe.ingredients">
+          <h4>{{ ingredient.name }}</h4>
+          <ion-note item-right>
+            {{ ingredient.quantity }} g
+          </ion-note>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      Steps
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item *ngFor="let step of recipe.steps; let i = index">
+          <h4>Step {{ i + 1 }}: {{ step }}</h4>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <nutrition-table [nutritionData]="recipe.nutrients"></nutrition-table>
 
 </ion-content>
