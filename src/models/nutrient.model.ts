@@ -6,7 +6,7 @@ export class Nutrient {
     functions: any[];
     diseasePrev: string[];
     intake: any;
-    nutrientRel: string;
+    nutrientRelationship: string;
     deficiency: string;
     toxicity: string;
 }

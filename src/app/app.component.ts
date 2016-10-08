@@ -27,7 +27,7 @@ export class MyApp implements OnInit {
     { title: 'Fitness', icon: 'ios-speedometer-outline', index: 1, component: Fitness },
     { title: 'Food', icon: 'ios-cart-outline', index: 2, component: FoodList },
     { title: 'Nutrients', icon: 'ios-nutrition-outline', index: 3, component: NutrientList },
-    { title: 'Recipes', icon: 'ios-book-outline', index: 4, component: RecipeList }
+    { title: 'Recipes', icon: 'ios-restaurant-outline', index: 4, component: RecipeList }
   ];
   public rootPage = Auth;
   public username: string;
