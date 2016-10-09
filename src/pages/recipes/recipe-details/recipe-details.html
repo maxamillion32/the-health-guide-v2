@@ -9,51 +9,49 @@
 
 <ion-content class="recipe-page">
   <ion-card>
-    <ion-card-header>
-      Details
-    </ion-card-header>
+    <ion-card-header>Details</ion-card-header>
     <ion-card-content>
       <ion-list>
         <ion-item>
-          <h4>Chef</h4>
+          Chef
           <ion-note item-right>
-            <p>{{recipe.chef}}</p>
+            {{ recipe.chef }}
           </ion-note>
         </ion-item>
         <ion-item>
-          <h4>Category</h4>
+          Category
           <ion-note item-right>
-            <p>{{recipe.category}}</p>
+            {{ recipe.category }}
           </ion-note>
         </ion-item>
         <ion-item>
-          <h4>Dietary</h4>
+          Dietary
           <ion-note item-right>
-            <p>{{recipe.dietary}}</p>
+            {{ recipe.dietary }}
           </ion-note>
         </ion-item>
         <ion-item>
-          <h4>Cooking method</h4>
+          Cooking method
           <ion-note item-right>
-            <p>{{recipe.cookMethod}}</p>
+            {{ recipe.cookMethod }}
           </ion-note>
         </ion-item>
         <ion-item>
-          <h4>Preparation time</h4>
+          Preparation time
           <ion-note item-right>
-            <p>{{recipe.prepTime}}</p>
+            {{ recipe.prepTime }}
           </ion-note>
         </ion-item>
         <ion-item>
-          <h4>Cooking time</h4>
+          Cooking time
           <ion-note item-right>
-            <p>{{recipe.cookTime}}</p>
+            {{ recipe.cookTime }}
           </ion-note>
         </ion-item>
         <ion-item>
-          <h4>Cooking temperature</h4>
+          Cooking temperature
           <ion-note item-right>
-            <p>{{recipe.cookTemperature}}</p>
+            {{recipe.cookTemperature}}
           </ion-note>
         </ion-item>
       </ion-list>
@@ -61,13 +59,11 @@
   </ion-card>
 
   <ion-card>
-    <ion-card-header>
-      Ingredients
-    </ion-card-header>
+    <ion-card-header>Ingredients</ion-card-header>
     <ion-card-content>
       <ion-list>
         <ion-item *ngFor="let ingredient of recipe.ingredients">
-          <h4>{{ ingredient.name }}</h4>
+          {{ ingredient.name }}
           <ion-note item-right>
             {{ ingredient.quantity }} g
           </ion-note>
@@ -76,13 +72,11 @@
     </ion-card-content>
   </ion-card>
   <ion-card>
-    <ion-card-header>
-      Steps
-    </ion-card-header>
+    <ion-card-header>Steps</ion-card-header>
     <ion-card-content>
       <ion-list>
         <ion-item *ngFor="let step of recipe.steps; let i = index">
-          <h4>Step {{ i + 1 }}: {{ step }}</h4>
+          Step {{ i + 1 }}: {{ step }}
         </ion-item>
       </ion-list>
     </ion-card-content>

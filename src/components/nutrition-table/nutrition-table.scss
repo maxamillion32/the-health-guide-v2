@@ -1,7 +1,11 @@
 .bad {
-    color: red;
+    color: color($colors, danger);
 }
 
 .good {
-    color: #2FB16F;
+    color: color($colors, primary);
+}
+
+ion-item {
+    font-size: 14px;
 }

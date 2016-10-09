@@ -10,7 +10,7 @@
 // To view all the possible Ionic variables, see:
 // http://ionicframework.com/docs/v2/theming/overriding-ionic-variables/
 
-$text-color:        #000;
+$text-color:        #1E3548;
 $background-color:  #fff;
 
 
@@ -35,11 +35,42 @@ $colors: (
   aqua:       #91D2FA
 );
 
+// Card
+$card-wp-header-color: color($colors, royal);
+$card-md-header-color: color($colors, royal);
+$card-ios-header-color: color($colors, royal);
+$card-ios-header-font-size: 22px;
+$card-md-header-font-size: 22px;
+$card-wp-header-font-size: 22px;
 
-// App Material Design Variables
-// --------------------------------------------------
+// Item divider
+$item-wp-divider-color: color($colors, primary);
+$item-md-divider-color: color($colors, primary);
+$item-ios-divider-color: color($colors, primary);
+
+// Item note
+$item-wp-note-color: color($colors, secondary);
+$item-md-note-color: color($colors, secondary);
+$item-ios-note-color: color($colors, secondary);
+
+// List header
+$list-wp-header-color: color($colors, primary);
+$list-md-header-color: color($colors, primary);
+$list-ios-header-color: color($colors, primary);
+$list-md-header-font-size: 18px;
+$list-ios-header-font-size: 18px;
+$list-wp-header-font-size: 18px;
+
+// Menu
 $menu-md-background:  color($colors, royal);
-$toolbar-background:  color($colors, dark);
+$menu-ios-background:  color($colors, royal);
+$menu-wp-background:  color($colors, royal);
+
+// Toolbar
+$toolbar-background:  color($colors, royal);
+$toolbar-ios-background:  color($colors, royal);
+$toolbar-md-background:  color($colors, royal);
+$toolbar-wp-background:  color($colors, royal);
 
 // App Theme
 // --------------------------------------------------

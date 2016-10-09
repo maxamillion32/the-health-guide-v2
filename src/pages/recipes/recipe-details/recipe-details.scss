@@ -1,13 +1,11 @@
 .recipe-page {
-    ion-card-header {
-        font-size: 22px;
-    }
-    ion-list-header, ion-item-divider {
-        font-size: 16px;
-        font-weight: bold;
-    }
+    background-color: rgba(145,210,250,.25)!important;
+
     h3 {
-        font-size: 18px;
-        font-weight: bold;
+        font-size: 16px;
+    }
+
+    ion-item {
+        font-size: 14px;
     }
 }
