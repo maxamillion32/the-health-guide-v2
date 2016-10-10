@@ -23,8 +23,14 @@ const DIETARIES = [
 export class RecipeEdit implements OnInit {
   public checkedDietaries: string[];
   public recipe: Recipe;
+  public recipeSteps: string[] = [];
 
   constructor(private alertCtrl: AlertController, private modalCtrl: ModalController, private navCtrl: NavController, private params: NavParams) { }
+
+  public addStep(): void {
+        this.recipeSteps.push('');
+        this.recipe.steps.push('');
+    }
 
   public changeQuantity(ingredient: any): void {
     let quantityAlert = this.alertCtrl.create({

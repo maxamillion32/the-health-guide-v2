@@ -83,10 +83,14 @@
           <ion-option value="Steaming">Steaming</ion-option>
         </ion-select>
       </ion-item>
+      <ion-item>
+        <ion-label>Servings</ion-label>
+        <ion-input type="number" [(ngModel)]="recipe.servings" name="servings" required></ion-input>
+      </ion-item>
       <button outline ion-item type="button" (click)="searchIngredient()">
-      <ion-icon name="add"></ion-icon>
-      Add ingredient
-    </button>
+        <ion-icon name="add"></ion-icon>
+        Add ingredient
+      </button>
       <ion-item-sliding *ngFor="let ingredient of recipe.ingredients; let i = index">
         <ion-item>
           {{ ingredient.name }} {{ ingredient.chef ? ingredient.amount : ingredient.quantity + 'g' }}
@@ -100,14 +104,11 @@
         </button>
         </ion-item-options>
       </ion-item-sliding>
-      <ion-item>
-        <ion-label>Servings</ion-label>
-        <ion-input type="number" [(ngModel)]="recipe.servings" name="servings" required></ion-input>
-      </ion-item>
+      
       <button ion-item outline block type="button" (click)="addStep()">
-      <ion-icon name="add"></ion-icon>
-       Add step
-    </button>
+        <ion-icon name="add"></ion-icon>
+        Add step
+      </button>
       <ion-item *ngFor="let step of recipe.steps; let i = index">
         <button class="item-remove-button" clear item-left (click)="removeStep(i)">
         <ion-icon danger name="trash"></ion-icon>
