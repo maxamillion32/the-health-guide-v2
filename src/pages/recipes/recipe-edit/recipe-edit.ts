@@ -28,9 +28,9 @@ export class RecipeEdit implements OnInit {
   constructor(private alertCtrl: AlertController, private modalCtrl: ModalController, private navCtrl: NavController, private params: NavParams) { }
 
   public addStep(): void {
-        this.recipeSteps.push('');
-        this.recipe.steps.push('');
-    }
+    this.recipeSteps.push('');
+    this.recipe.steps.push('');
+  }
 
   public changeQuantity(ingredient: any): void {
     let quantityAlert = this.alertCtrl.create({
@@ -65,13 +65,23 @@ export class RecipeEdit implements OnInit {
     quantityAlert.present();
   }
 
+  public removeDietary(index: number): void {
+    this.checkedDietaries.splice(index, 1);
+  }
+
+  public removeStep(index: number): void {
+    this.recipeSteps.splice(index, 1);
+  }
+
   public searchIngredient(): void {
     let ingredientsModal = this.modalCtrl.create(IngredientSearch, {
       ingredients: this.recipe.ingredients,
       noQuantity: false
     });
     ingredientsModal.onDidDismiss(ingredients => {
-      this.recipe.ingredients = [...ingredients];
+      if (ingredients) {
+        this.recipe.ingredients = [...ingredients];
+      }
     });
     ingredientsModal.present()
   }
@@ -90,14 +100,12 @@ export class RecipeEdit implements OnInit {
     checkboxAlert.addButton({
       text: 'Okay',
       handler: data => {
-        this.checkedDietaries = [...data];
+        if (data) {
+          this.checkedDietaries = [...data];
+        }
       }
     });
     checkboxAlert.present();
-  }
-
-  public removeDietary(index: number): void {
-    this.checkedDietaries.splice(index, 1);
   }
 
   ngOnInit(): void {
