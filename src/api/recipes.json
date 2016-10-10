@@ -4,7 +4,7 @@
     "chef" : "Razvan Tomegea",
     "cookMethod" : "Baking",
     "cookTemperature" : "180",
-    "cookTime" : "45",
+    "duration" : "45",
     "dietary" : "Mediteranean",
     "ingredients" : [ {
       "amino acids" : {
@@ -889,7 +889,6 @@
         "beta-Cryptoxanthin" : 0.002625
       }
     },
-    "prepTime" : "60",
     "quantity" : 347.142857103616,
     "servings" : "8",
     "steps" : [ "Good!" ]
@@ -899,7 +898,7 @@
     "chef" : "Razvan Tomegea",
     "cookMethod" : "Baking",
     "cookTemperature" : "180",
-    "cookTime" : "45",
+    "duration" : "45",
     "dietary" : "Vegetarian",
     "ingredients" : [ {
       "amino acids" : {
@@ -1784,7 +1783,6 @@
         "beta-Cryptoxanthin" : 0.004375
       }
     },
-    "prepTime" : "75",
     "quantity" : 393.5241381065672,
     "servings" : "8",
     "steps" : [ "Bake" ]
@@ -1794,7 +1792,7 @@
     "chef" : "Razvan Tomegea",
     "cookMethod" : "Seasoning",
     "cookTemperature" : 0,
-    "cookTime" : 0,
+    "duration" : 0,
     "dietary" : "Mediteranean",
     "ingredients" : [ {
       "amino acids" : {
@@ -2349,7 +2347,6 @@
         "beta-Cryptoxanthin" : 0.1
       }
     },
-    "prepTime" : "30",
     "quantity" : 3608.727124927662,
     "servings" : "1",
     "steps" : [ "Wash, slice, and enjoy!" ]
@@ -2359,7 +2356,7 @@
     "chef" : "Razvan Tomegea",
     "cookMethod" : "Baking",
     "cookTemperature" : "170",
-    "cookTime" : "30",
+    "duration" : "30",
     "dietary" : "Gluten-free",
     "ingredients" : [ {
       "amino acids" : {
@@ -3354,7 +3351,6 @@
         "beta-Cryptoxanthin" : 0.0029999999999999996
       }
     },
-    "prepTime" : "30",
     "quantity" : 541.6666666666666,
     "servings" : "6",
     "steps" : [ "" ]
@@ -3364,7 +3360,7 @@
     "chef" : "Razvan Tomegea",
     "cookMethod" : "Baking",
     "cookTemperature" : "175",
-    "cookTime" : "45",
+    "duration" : "45",
     "dietary" : "Vegan",
     "ingredients" : [ {
       "amino acids" : {
@@ -4139,7 +4135,6 @@
         "beta-Cryptoxanthin" : 0.0038571428571428567
       }
     },
-    "prepTime" : "45",
     "quantity" : 540.4761904761905,
     "servings" : "7",
     "steps" : [ "Wash and peel the squash and eggplant!" ]
@@ -4149,7 +4144,7 @@
     "chef" : "Razvan Tomegea",
     "cookMethod" : "Baking",
     "cookTemperature" : "160",
-    "cookTime" : "30",
+    "duration" : "30",
     "dietary" : "Gluten-free",
     "ingredients" : [ {
       "amino acids" : {
@@ -5034,7 +5029,6 @@
         "beta-Cryptoxanthin" : 0.23133333333333336
       }
     },
-    "prepTime" : "15",
     "quantity" : 955.1101667834242,
     "servings" : "6",
     "steps" : [ "Blend everything and cook!" ]
@@ -5044,7 +5038,7 @@
     "chef" : "Razvan Tomegea",
     "cookMethod" : "Frying",
     "cookTemperature" : "120",
-    "cookTime" : "60",
+    "duration" : "60",
     "dietary" : "High-fiber",
     "ingredients" : [ {
       "amino acids" : {
@@ -5819,7 +5813,6 @@
         "beta-Cryptoxanthin" : 0.0014999999999999998
       }
     },
-    "prepTime" : "30",
     "quantity" : 168.4725067515432,
     "servings" : "9",
     "steps" : [ "Wash and clean everything!" ]
@@ -5829,7 +5822,7 @@
     "chef" : "Razvan Tomegea",
     "cookMethod" : "Casserole",
     "cookTemperature" : "170",
-    "cookTime" : "45",
+    "duration" : "45",
     "dietary" : "High-protein",
     "ingredients" : [ {
       "amino acids" : {
@@ -6604,7 +6597,6 @@
         "beta-Cryptoxanthin" : 0.002181818181818182
       }
     },
-    "prepTime" : "60",
     "quantity" : 235.71389449671642,
     "servings" : "11",
     "steps" : [ "Peel and wash the vegetables!" ]
@@ -6614,7 +6606,7 @@
     "chef" : "Razvan Tomegea",
     "cookMethod" : "Baking",
     "cookTemperature" : "160",
-    "cookTime" : "45",
+    "duration" : "45",
     "dietary" : "High-fiber",
     "ingredients" : [ {
       "amino acids" : {
@@ -7609,7 +7601,6 @@
         "beta-Cryptoxanthin" : 0.041166666666666664
       }
     },
-    "prepTime" : "45",
     "quantity" : 729.0696291931259,
     "servings" : "6",
     "steps" : [ "Wash the apples and shred them!", "Mix everything and put in a baking pan!", "Cook, let it chill and store it in the refrigerator!", "Eat cold!" ]
@@ -7619,7 +7610,7 @@
     "chef" : "Razvan Tomegea",
     "cookMethod" : "Seasoning",
     "cookTemperature" : 0,
-    "cookTime" : 0,
+    "duration" : 0,
     "dietary" : "Mediteranean",
     "ingredients" : [ {
       "amino acids" : {
@@ -8177,7 +8168,7 @@
       "chef" : "Razvan Tomegea",
       "cookMethod" : "Baking",
       "cookTemperature" : "175",
-      "cookTime" : "45",
+      "duration" : "45",
       "dietary" : "Vegan",
       "ingredients" : [ {
         "amino acids" : {
@@ -8952,7 +8943,6 @@
           "beta-Cryptoxanthin" : 0.0038571428571428567
         }
       },
-      "prepTime" : "45",
       "quantity" : 540.4761904761905,
       "servings" : "7",
       "steps" : [ "Wash and peel the squash and eggplant!" ]
@@ -9069,7 +9059,6 @@
         "beta-Cryptoxanthin" : 0.042571428571428566
       }
     },
-    "prepTime" : "30",
     "quantity" : 1032.4955908289242,
     "servings" : "3",
     "steps" : [ "Mix" ]
@@ -9079,7 +9068,7 @@
     "chef" : "Razvan Tomegea",
     "cookMethod" : "Frying",
     "cookTemperature" : "100",
-    "cookTime" : "15",
+    "duration" : "15",
     "dietary" : "High-protein",
     "ingredients" : [ {
       "amino acids" : {
@@ -9524,7 +9513,6 @@
         "beta-Cryptoxanthin" : 0.0075
       }
     },
-    "prepTime" : "15",
     "quantity" : 227.75752314814815,
     "servings" : "6",
     "steps" : [ "Blend the eggs" ]
@@ -9534,7 +9522,7 @@
     "chef" : "Razvan Tomegea",
     "cookMethod" : "Codling",
     "cookTemperature" : 0,
-    "cookTime" : 0,
+    "duration" : 0,
     "dietary" : "",
     "ingredients" : [ {
       "amino acids" : {
@@ -10315,7 +10303,6 @@
         "beta-Cryptoxanthin" : 0.033
       }
     },
-    "prepTime" : "30",
     "quantity" : 4190,
     "servings" : 1,
     "steps" : [ "Mix everything gently!" ]
@@ -10325,7 +10312,7 @@
     "chef" : "Razvan Tomegea",
     "cookMethod" : "Frying",
     "cookTemperature" : "100",
-    "cookTime" : "30",
+    "duration" : "30",
     "dietary" : "Low-carb",
     "ingredients" : [ {
       "amino acids" : {
@@ -10772,7 +10759,6 @@
         "beta-Cryptoxanthin" : 0.0075
       }
     },
-    "prepTime" : "5",
     "quantity" : 337.5,
     "servings" : "3",
     "steps" : [ "Blend everything and fry!" ]
@@ -10782,7 +10768,7 @@
     "chef" : "Razvan Tomegea",
     "cookMethod" : "Boiling",
     "cookTemperature" : "100",
-    "cookTime" : "45",
+    "duration" : "45",
     "dietary" : "High-fiber",
     "ingredients" : [ {
       "amino acids" : {
@@ -11672,7 +11658,6 @@
         "beta-Cryptoxanthin" : 0.00175
       }
     },
-    "prepTime" : "45",
     "quantity" : 283.2234908430965,
     "servings" : "8",
     "steps" : [ "Wash the vegetables" ]
@@ -11682,7 +11667,7 @@
     "chef" : "Razvan Tomegea",
     "cookMethod" : "Boiling",
     "cookTemperature" : "100",
-    "cookTime" : "45",
+    "duration" : "45",
     "dietary" : "Vegetarian",
     "ingredients" : [ {
       "amino acids" : {
@@ -12241,7 +12226,6 @@
         "beta-Cryptoxanthin" : 0
       }
     },
-    "prepTime" : "15",
     "quantity" : 537.1116402116403,
     "servings" : "6",
     "steps" : [ "Defrost the spinach", "Peal the onion and garlic", "Wash the garlic and onion" ]
@@ -12251,7 +12235,7 @@
     "chef" : "Razvan Tomegea",
     "cookMethod" : "Baking",
     "cookTemperature" : "160",
-    "cookTime" : "45",
+    "duration" : "45",
     "dietary" : "Gluten-free",
     "ingredients" : [ {
       "amino acids" : {
@@ -13251,7 +13235,6 @@
         "beta-Cryptoxanthin" : 0.04307142857142858
       }
     },
-    "prepTime" : "30",
     "quantity" : 396.6300154320988,
     "servings" : "7",
     "steps" : [ "Peal the onion and wash the vegetables", "Cut in pieces" ]
@@ -13261,7 +13244,7 @@
     "chef" : "Razvan Tomegea",
     "cookMethod" : "Baking",
     "cookTemperature" : "160",
-    "cookTime" : "45",
+    "duration" : "45",
     "dietary" : "Vegetarian",
     "ingredients" : [ {
       "amino acids" : {
@@ -14476,7 +14459,6 @@
         "beta-Cryptoxanthin" : 0.018928571428571427
       }
     },
-    "prepTime" : "30",
     "quantity" : 796.4508264243198,
     "servings" : "7",
     "steps" : [ "Wash, slice, mix, and bake!" ]
@@ -14486,7 +14468,7 @@
     "chef" : "Razvan Tomegea",
     "cookMethod" : "Baking",
     "cookTemperature" : "170",
-    "cookTime" : "45",
+    "duration" : "45",
     "dietary" : "High-fiber",
     "ingredients" : [ {
       "amino acids" : {
@@ -15481,7 +15463,6 @@
         "beta-Cryptoxanthin" : 0.15125
       }
     },
-    "prepTime" : "45",
     "quantity" : 408.2878051220703,
     "servings" : "8",
     "steps" : [ "Wash, slice, mix, and bake!" ]
@@ -15491,7 +15472,7 @@
     "chef" : "Razvan Tomegea",
     "cookMethod" : "Baking",
     "cookTemperature" : "170",
-    "cookTime" : "45",
+    "duration" : "45",
     "dietary" : "Vegetarian",
     "ingredients" : [ {
       "amino acids" : {
@@ -16376,7 +16357,6 @@
         "beta-Cryptoxanthin" : 0.005999999999999999
       }
     },
-    "prepTime" : "30",
     "quantity" : 570.6463003629004,
     "servings" : "9",
     "steps" : [ "Wash, slice, mix, and bake!" ]
@@ -16386,7 +16366,7 @@
     "chef" : "Razvan Tomegea",
     "cookMethod" : "Baking",
     "cookTemperature" : "120",
-    "cookTime" : "45",
+    "duration" : "45",
     "dietary" : "High-protein",
     "ingredients" : [ {
       "amino acids" : {
@@ -16941,7 +16921,6 @@
         "beta-Cryptoxanthin" : 0
       }
     },
-    "prepTime" : "30",
     "quantity" : 746.5946502057614,
     "servings" : "3",
     "steps" : [ "Wash, slice, mix, and cook!" ]
@@ -16951,7 +16930,7 @@
     "chef" : "Razvan Tomegea",
     "cookMethod" : "",
     "cookTemperature" : "160",
-    "cookTime" : "120",
+    "duration" : "120",
     "dietary" : "Vegetarian",
     "ingredients" : [ {
       "amino acids" : {
@@ -17836,7 +17815,6 @@
         "beta-Cryptoxanthin" : 0.005999999999999999
       }
     },
-    "prepTime" : "45",
     "quantity" : 614.2939814814814,
     "servings" : "6",
     "steps" : [ "Mix!" ]
@@ -17846,7 +17824,7 @@
     "chef" : "Razvan Tomegea",
     "cookMethod" : "Browning",
     "cookTemperature" : "120",
-    "cookTime" : "30",
+    "duration" : "30",
     "dietary" : "Vegetarian",
     "ingredients" : [ {
       "amino acids" : {
@@ -18841,7 +18819,6 @@
         "beta-Cryptoxanthin" : 0.018857142857142857
       }
     },
-    "prepTime" : "60",
     "quantity" : 595.285191773997,
     "servings" : "7",
     "steps" : [ "Cut, wash, slice, mix!" ]
@@ -18851,7 +18828,7 @@
     "chef" : "Razvan Tomegea",
     "cookMethod" : "Baking",
     "cookTemperature" : "170",
-    "cookTime" : "45",
+    "duration" : "45",
     "dietary" : "High-protein",
     "ingredients" : [ {
       "amino acids" : {
@@ -19406,7 +19383,6 @@
         "beta-Cryptoxanthin" : 0
       }
     },
-    "prepTime" : "30",
     "quantity" : 300,
     "servings" : "7",
     "steps" : [ "Mix everything and bake!" ]
@@ -19416,7 +19392,7 @@
     "chef" : "Razvan Tomegea",
     "cookMethod" : "Baking",
     "cookTemperature" : "170",
-    "cookTime" : "45",
+    "duration" : "45",
     "dietary" : "High-protein",
     "ingredients" : [ {
       "amino acids" : {
@@ -20081,7 +20057,6 @@
         "beta-Cryptoxanthin" : 0.005999999999999999
       }
     },
-    "prepTime" : "30",
     "quantity" : 286.8055555555556,
     "servings" : "12",
     "steps" : [ "Bake!" ]
@@ -20091,7 +20066,7 @@
     "chef" : "Razvan Tomegea",
     "cookMethod" : "Frying",
     "cookTemperature" : "30",
-    "cookTime" : "60",
+    "duration" : "60",
     "dietary" : "Vegetarian",
     "ingredients" : [ {
       "amino acids" : {
@@ -20756,7 +20731,6 @@
         "beta-Cryptoxanthin" : 0
       }
     },
-    "prepTime" : 0,
     "quantity" : 153.125,
     "servings" : "8",
     "steps" : [ "Mix and fry!" ]
@@ -20766,7 +20740,7 @@
     "chef" : "Razvan Tomegea",
     "cookMethod" : "Boiling",
     "cookTemperature" : "120",
-    "cookTime" : "60",
+    "duration" : "60",
     "dietary" : "Vegetarian",
     "ingredients" : [ {
       "amino acids" : {
@@ -21761,7 +21735,6 @@
         "beta-Cryptoxanthin" : 0
       }
     },
-    "prepTime" : "45",
     "quantity" : 937.2135416666666,
     "servings" : "6",
     "steps" : [ "Cut and boil!" ]
@@ -21771,7 +21744,7 @@
     "chef" : "Razvan Tomegea",
     "cookMethod" : "Baking",
     "cookTemperature" : "160",
-    "cookTime" : "45",
+    "duration" : "45",
     "dietary" : "High-protein",
     "ingredients" : [ {
       "amino acids" : {
@@ -22656,7 +22629,6 @@
         "beta-Cryptoxanthin" : 0.0025714285714285713
       }
     },
-    "prepTime" : "30",
     "quantity" : 682.9110567455665,
     "servings" : "7",
     "steps" : [ "Mix and bake" ]
@@ -22666,7 +22638,7 @@
     "chef" : "Razvan Tomegea",
     "cookMethod" : "Boiling",
     "cookTemperature" : "120",
-    "cookTime" : "30",
+    "duration" : "30",
     "dietary" : "High-protein",
     "ingredients" : [ {
       "amino acids" : {
@@ -22891,7 +22863,6 @@
         "beta-Cryptoxanthin" : 0
       }
     },
-    "prepTime" : 0,
     "quantity" : 143.21428571428572,
     "servings" : "2",
     "steps" : [ "Mix everything and boil!" ]
@@ -22901,7 +22872,7 @@
     "chef" : "Razvan Tomegea",
     "cookMethod" : "Grilling",
     "cookTemperature" : "160",
-    "cookTime" : "60",
+    "duration" : "60",
     "dietary" : "Vegetarian",
     "ingredients" : [ {
       "amino acids" : {
@@ -23456,7 +23427,6 @@
         "beta-Cryptoxanthin" : 0.00225
       }
     },
-    "prepTime" : "10",
     "quantity" : 525,
     "servings" : "4",
     "steps" : [ "Grill and peal!" ]
@@ -23466,7 +23436,7 @@
     "chef" : "Razvan Tomegea",
     "cookMethod" : "Baking",
     "cookTemperature" : "160",
-    "cookTime" : "45",
+    "duration" : "45",
     "dietary" : "Mediteranean",
     "ingredients" : [ {
       "amino acids" : {
@@ -23911,7 +23881,6 @@
         "beta-Cryptoxanthin" : 0
       }
     },
-    "prepTime" : "120",
     "quantity" : 139.1718106995885,
     "servings" : "9",
     "steps" : [ "Mix and bake!" ]
@@ -23921,7 +23890,7 @@
     "chef" : "Razvan Tomegea",
     "cookMethod" : "Baking",
     "cookTemperature" : "170",
-    "cookTime" : "45",
+    "duration" : "45",
     "dietary" : "High-protein",
     "ingredients" : [ {
       "amino acids" : {
@@ -24476,7 +24445,6 @@
         "beta-Cryptoxanthin" : 0.0028125
       }
     },
-    "prepTime" : "15",
     "quantity" : 130.263671875,
     "servings" : "8",
     "steps" : [ "Mix and bake" ]
@@ -24486,7 +24454,7 @@
     "chef" : "Razvan Tomegea",
     "cookMethod" : "Seasoning",
     "cookTemperature" : 0,
-    "cookTime" : 0,
+    "duration" : 0,
     "dietary" : "Mediteranean",
     "ingredients" : [ {
       "amino acids" : {
@@ -25151,7 +25119,6 @@
         "beta-Cryptoxanthin" : 0.066
       }
     },
-    "prepTime" : "15",
     "quantity" : 1690,
     "servings" : 1,
     "steps" : [ "Peal and wash the vegetables", "Slice and mix them together" ]
@@ -25161,7 +25128,7 @@
     "chef" : "Razvan Tomegea",
     "cookMethod" : "Baking",
     "cookTemperature" : "180",
-    "cookTime" : "45",
+    "duration" : "45",
     "dietary" : "High-protein",
     "ingredients" : [ {
       "amino acids" : {
@@ -25826,7 +25793,6 @@
         "beta-Cryptoxanthin" : 0.0028125
       }
     },
-    "prepTime" : "30",
     "quantity" : 475,
     "servings" : "8",
     "steps" : [ "Wash and mix!" ]
@@ -25836,7 +25802,7 @@
     "chef" : "Razvan Tomegea",
     "cookMethod" : "Boiling",
     "cookTemperature" : "120",
-    "cookTime" : "45",
+    "duration" : "45",
     "dietary" : "Vegetarian",
     "ingredients" : [ {
       "amino acids" : {
@@ -26831,7 +26797,6 @@
         "beta-Cryptoxanthin" : 0.00175
       }
     },
-    "prepTime" : "30",
     "quantity" : 565.15625,
     "servings" : "8",
     "steps" : [ "Wash, slice, and cook" ]
@@ -26841,7 +26806,7 @@
     "chef" : "Razvan Tomegea",
     "cookMethod" : "Baking",
     "cookTemperature" : "160",
-    "cookTime" : "45",
+    "duration" : "45",
     "dietary" : "High-fiber",
     "ingredients" : [ {
       "amino acids" : {
@@ -27726,7 +27691,6 @@
         "beta-Cryptoxanthin" : 0.0029999999999999996
       }
     },
-    "prepTime" : "15",
     "quantity" : 372.41299032545277,
     "servings" : "6",
     "steps" : [ "Mix and bake" ]
@@ -27736,7 +27700,7 @@
     "chef" : "Razvan Tomegea",
     "cookMethod" : "Baking",
     "cookTemperature" : "170",
-    "cookTime" : "45",
+    "duration" : "45",
     "dietary" : "Vegetarian",
     "ingredients" : [ {
       "amino acids" : {
@@ -28401,7 +28365,6 @@
         "beta-Cryptoxanthin" : 0.005294117647058823
       }
     },
-    "prepTime" : "15",
     "quantity" : 389.3882129919983,
     "servings" : "8.5",
     "steps" : [ "Mix and bake!" ]

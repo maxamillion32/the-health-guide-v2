@@ -12,9 +12,11 @@ import {
   Fitness,
   FoodList,
   Home,
+  IngredientSearch,
   NutrientDetails,
   NutrientList,
   RecipeDetails,
+  RecipeEdit,
   RecipeList
 } from '../pages';
 
@@ -27,7 +29,7 @@ import { NutritionService, RecipeService } from "../providers";
 // Root component
 import { MyApp } from './app.component';
 
-export const firebaseConfig = {
+const FIREBASE_CONFIG = {
   apiKey: "AIzaSyBXdSjoVfk1KbbtmAUEq7ktnnI70ojg4y8",
   authDomain: "the-health-guide.firebaseapp.com",
   databaseURL: "https://the-health-guide.firebaseio.com",
@@ -35,7 +37,7 @@ export const firebaseConfig = {
   messagingSenderId: "283336744173"
 };
 
-const firebaseAuthConfig = {
+const FIREBASE_AUTH_CONFIG = {
   provider: AuthProviders.Password,
   method: AuthMethods.Password
 }
@@ -47,16 +49,18 @@ const firebaseAuthConfig = {
     Fitness,
     FoodList,
     Home,
+    IngredientSearch,
     Limit,
     NutrientDetails,
     NutrientList,
     NutritionTable,
     RecipeDetails,
+    RecipeEdit,
     RecipeList,
     SearchFilter
   ],
   imports: [
-    AngularFireModule.initializeApp(firebaseConfig, firebaseAuthConfig),
+    AngularFireModule.initializeApp(FIREBASE_CONFIG, FIREBASE_AUTH_CONFIG),
     FormsModule,
     IonicModule.forRoot(MyApp)
   ],
@@ -67,10 +71,12 @@ const firebaseAuthConfig = {
     Fitness,
     FoodList,
     Home,
+    IngredientSearch,
     NutrientDetails,
     NutrientList,
     NutritionTable,
     RecipeDetails,
+    RecipeEdit,
     RecipeList
   ],
   providers: [NutritionService, RecipeService]

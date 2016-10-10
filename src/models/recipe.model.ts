@@ -4,14 +4,14 @@ export class Recipe {
     constructor (
         public name: string = "",
         public category: string = "",
-        public dietary: string = "",
+        public dietary: string[] = [],
         public chef: string = "",
         public ingredients: any[] = [],
-        public prepTime: number = 0,
+        public duration: number = 0,
+        public difficulty: string = "",
         public cookMethod: string = "",
-        public cookTime: number = 0,
         public cookTemperature: number = 0,
-        public nutrients: Nutrient[],
+        public nutrients: Nutrient = new Nutrient(),
         public servings: number = 1,
         public steps: string[] = [""],
         public quantity: number = 0

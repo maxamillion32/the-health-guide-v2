@@ -24,7 +24,16 @@ export class RecipeService {
     });
   }
 
+  private removeIngredientKeys(recipe: Recipe): void {
+    recipe.ingredients.forEach(ingredient => {
+      if (ingredient.hasOwnProperty('$key')) {
+        delete ingredient['$key'];
+      }
+    });
+  }
+
   public addRecipe(recipe: Recipe): void {
+    this.removeIngredientKeys(recipe);
     this.userRecipes.push(recipe);
   }
 
@@ -102,15 +111,16 @@ export class RecipeService {
   }
 
   public updateRecipe(recipe: Recipe): void {
+    this.removeIngredientKeys(recipe);
     this.userRecipes.update(recipe['$key'], {
       name: recipe.name,
       category: recipe.category,
       dietary: recipe.dietary,
       chef: recipe.chef,
       ingredients: recipe.ingredients,
-      prepTime: recipe.prepTime,
+      duration: recipe.duration,
+      difficulty: recipe.difficulty,
       cookMethod: recipe.cookMethod,
-      cookTime: recipe.cookTime,
       cookTemperature: recipe.cookTemperature,
       nutrients: recipe.nutrients,
       servings: recipe.servings,

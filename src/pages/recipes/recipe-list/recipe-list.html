@@ -8,14 +8,35 @@
 </ion-header>
 
 <ion-content [ngSwitch]="recipeOwner" class="recipe-list">
-  <ion-list *ngSwitchCase="'mine'">
-    <button ion-item detail-push *ngFor="let recipe of myRecipes | async | searchFilter: searchQuery: searchBy" (click)="viewRecipe(recipe)">
-      <h2>{{ recipe.name }}</h2>
-      <p>{{ recipe.dietary }}</p>
-      <ion-note item-right>
-        Details
-      </ion-note>
+  <ion-fab bottom right fixed>
+    <button ion-fab color="bayleaf" (click)="createRecipe()">
+      <ion-icon name="color-wand"></ion-icon>
     </button>
+  </ion-fab>
+  <ion-list *ngSwitchCase="'mine'">
+    <ion-item-sliding *ngFor="let recipe of myRecipes | async | searchFilter: searchQuery: searchBy">
+      <ion-item>
+        <h2>{{ recipe.name }}</h2>
+        <p>{{ recipe.dietary }}</p>
+        <ion-note item-right>
+          Swipe
+        </ion-note>
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="royal" (click)="viewRecipe(recipe)">
+          <ion-icon name="book"></ion-icon>
+          Details
+        </button>
+        <button ion-button color="primary" (click)="editRecipe(recipe)">
+          <ion-icon name="brush"></ion-icon>
+          Edit
+        </button>
+        <button ion-button color="light" (click)="removeRecipe(recipe)">
+          <ion-icon name="trash"></ion-icon>
+          Remove
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
   </ion-list>
   <ion-list *ngSwitchCase="'all'">
     <button ion-item detail-push *ngFor="let recipe of allRecipes | async | searchFilter: searchQuery: searchBy" (click)="viewRecipe(recipe)">
@@ -30,7 +51,7 @@
 
 <ion-footer>
   <ion-toolbar>
-    <ion-segment color="light" [(ngModel)]="recipeOwner" (ionChange)="resetSearch()">
+    <ion-segment [(ngModel)]="recipeOwner" (ionChange)="resetSearch()">
       <ion-segment-button value="mine">
         Mine
       </ion-segment-button>

@@ -1,18 +1,48 @@
-<!--
-  Generated template for the IngredientSearch page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
   <ion-navbar>
-    <ion-title>IngredientSearch</ion-title>
+    <ion-buttons start>
+      <button (click)="doneAdding()">
+        <ion-icon name="done-all"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-searchbar [(ngModel)]="searchQuery"></ion-searchbar>
+    <ion-buttons end>
+      <button (click)="cancelAdd()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content [ngSwitch]="ingredientType">
+  <ion-list *ngSwitchCase="'food'">
+    <ion-item *ngFor="let ingredient of food | async | itemSearch: searchQuery: 'name'">
+      <ion-label>{{ ingredient.name }}</ion-label>
+      <ion-checkbox #ingredientCheck [checked]="selectedIngredients.indexOf(ingredient) >= 0" (click)="setIngredient(ingredient, ingredientCheck)">
+      </ion-checkbox>
+    </ion-item>
+  </ion-list>
+  <ion-list *ngSwitchCase="'recipe'">
+    <ion-item *ngFor="let ingredient of recipes | async | itemSearch: searchQuery: 'name'">
+      <ion-label>{{ ingredient.name }}</ion-label>
+      <ion-checkbox #ingredientCheck [checked]="selectedIngredients.indexOf(ingredient) >= 0" (click)="setIngredient(ingredient, ingredientCheck)">
+      </ion-checkbox>
+    </ion-item>
+  </ion-list>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-segment [(ngModel)]="ingredientType" (ionChange)="resetSearch()">
+      <ion-segment-button value="food">
+        Food
+      </ion-segment-button>
+      <ion-segment-button value="recipe">
+        Recipes
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-footer>
