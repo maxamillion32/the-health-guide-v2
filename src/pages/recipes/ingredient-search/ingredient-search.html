@@ -2,14 +2,14 @@
 
   <ion-navbar>
     <ion-buttons start>
-      <button (click)="doneAdding()">
-        <ion-icon name="done-all"></ion-icon>
+      <button ion-button clear (click)="doneAdding()">
+        Done
       </button>
     </ion-buttons>
     <ion-searchbar [(ngModel)]="searchQuery"></ion-searchbar>
     <ion-buttons end>
-      <button (click)="cancelAdd()">
-        <ion-icon name="close"></ion-icon>
+      <button ion-button clear (click)="cancelAdd()">
+        Cancel
       </button>
     </ion-buttons>
   </ion-navbar>
@@ -19,14 +19,14 @@
 
 <ion-content [ngSwitch]="ingredientType">
   <ion-list *ngSwitchCase="'food'">
-    <ion-item *ngFor="let ingredient of food | async | itemSearch: searchQuery: 'name'">
+    <ion-item *ngFor="let ingredient of food | async | searchFilter: searchQuery: 'name'">
       <ion-label>{{ ingredient.name }}</ion-label>
       <ion-checkbox #ingredientCheck [checked]="selectedIngredients.indexOf(ingredient) >= 0" (click)="setIngredient(ingredient, ingredientCheck)">
       </ion-checkbox>
     </ion-item>
   </ion-list>
   <ion-list *ngSwitchCase="'recipe'">
-    <ion-item *ngFor="let ingredient of recipes | async | itemSearch: searchQuery: 'name'">
+    <ion-item *ngFor="let ingredient of recipes | async | searchFilter: searchQuery: 'name'">
       <ion-label>{{ ingredient.name }}</ion-label>
       <ion-checkbox #ingredientCheck [checked]="selectedIngredients.indexOf(ingredient) >= 0" (click)="setIngredient(ingredient, ingredientCheck)">
       </ion-checkbox>
@@ -36,7 +36,7 @@
 
 <ion-footer>
   <ion-toolbar>
-    <ion-segment [(ngModel)]="ingredientType" (ionChange)="resetSearch()">
+    <ion-segment color="light" [(ngModel)]="ingredientType" (ionChange)="resetSearch()">
       <ion-segment-button value="food">
         Food
       </ion-segment-button>

@@ -96,6 +96,7 @@ export class RecipeEdit implements OnInit {
 
   ngOnInit(): void {
     this.recipe = this.params.get("recipe");
+    console.log(this.recipe);
   }
 
 }
