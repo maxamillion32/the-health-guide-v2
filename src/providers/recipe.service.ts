@@ -43,8 +43,8 @@ export class RecipeService {
     recipe.ingredients.forEach(ingredient => {
       // Check if the ingredient of the recipe is another recipe
       if (ingredient.hasOwnProperty('chef')) {
-        for (let nutrientCategory in ingredient.nutrients) {
-          let nutrients = ingredient.nutrients[nutrientCategory];
+        for (let nutrientCategory in ingredient.nutrition) {
+          let nutrients = ingredient.nutrition[nutrientCategory];
           if (nutrientCategory === 'energy') {
             rcpNutrition[nutrientCategory] += nutrients * ingredient.amount;
           } else if (typeof nutrients === 'object') {
@@ -122,7 +122,7 @@ export class RecipeService {
       difficulty: recipe.difficulty,
       cookMethod: recipe.cookMethod,
       cookTemperature: recipe.cookTemperature,
-      nutrients: recipe.nutrients,
+      nutrition: recipe.nutrition,
       servings: recipe.servings,
       steps: recipe.steps,
       quantity: recipe.quantity

@@ -1,11 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { AlertController, ModalController, NavController, NavParams } from 'ionic-angular';
+import { AlertController, ModalController, NavController, NavParams, ToastController } from 'ionic-angular';
 
 // Models
 import { Recipe } from '../../../models';
 
 // Pages
 import { IngredientSearch } from '../ingredient-search/ingredient-search';
+
+// Providers
+import { RecipeService } from '../../../providers';
 
 const DIETARIES = [
   "Gluten-free",
@@ -23,13 +26,20 @@ const DIETARIES = [
 export class RecipeEdit implements OnInit {
   public checkedDietaries: string[];
   public recipe: Recipe;
-  public recipeSteps: string[] = [];
+  public recipeSteps: string[] = [];  // Required for a bug when trying to write in the input of a step
 
-  constructor(private alertCtrl: AlertController, private modalCtrl: ModalController, private navCtrl: NavController, private params: NavParams) { }
+  constructor(
+    private alertCtrl: AlertController,
+    private modalCtrl: ModalController,
+    private navCtrl: NavController,
+    private params: NavParams,
+    private recipeSvc: RecipeService,
+    private toastCtrl: ToastController
+  ) { }
 
   public addStep(): void {
-    this.recipeSteps.push('');
     this.recipe.steps.push('');
+    this.recipeSteps.push('');
   }
 
   public changeQuantity(ingredient: any): void {
@@ -39,7 +49,7 @@ export class RecipeEdit implements OnInit {
       inputs: [
         {
           name: 'quantity',
-          placeholder: ingredient.hasOwnProperty('chef') ? 'Units' : 'Grams',
+          placeholder: ingredient.hasOwnProperty('chef') ? 'Portions' : 'Grams',
           type: 'number'
         },
       ],
@@ -65,11 +75,38 @@ export class RecipeEdit implements OnInit {
     quantityAlert.present();
   }
 
+  public createRecipe(): void {
+    this.recipe.steps = [...this.recipeSteps];
+    let notifToast = this.toastCtrl.create({
+      message: 'Please complete the entire recipe!',
+      showCloseButton: true,
+      closeButtonText: 'Ok'
+    });
+    if (this.recipe.ingredients.length === 0) {
+      notifToast.present();
+    } else if (this.recipe.ingredients.length === 0) {
+      notifToast.present();
+    } else {
+      this.recipe.nutrition = this.recipeSvc.calcRecipeNutrition(this.recipe);
+      if(this.recipe.hasOwnProperty('$key')) {
+        this.recipeSvc.updateRecipe(this.recipe);
+      } else {
+        this.recipeSvc.addRecipe(this.recipe);
+      }
+      this.navCtrl.pop();
+    }
+  }
+
   public removeDietary(index: number): void {
     this.checkedDietaries.splice(index, 1);
   }
 
+  public removeIngredient(index: number): void {
+    this.recipe.ingredients.splice(index, 1);
+  }
+
   public removeStep(index: number): void {
+    this.recipe.steps.splice(index, 1);
     this.recipeSteps.splice(index, 1);
   }
 

@@ -62,7 +62,7 @@ export class Nutrition {
             "Retinol": 0,
             "Zeaxanthin": 0
         },
-        public aminoAcids: any = {
+        public aminoacids: any = {
             "Alanine": 0,
             "Arginine": 0,
             "Asparagine": 0,

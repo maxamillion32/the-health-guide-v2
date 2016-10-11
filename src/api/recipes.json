@@ -778,7 +778,7 @@
       }
     } ],
     "name" : "Fish pizza",
-    "nutrients" : {
+    "nutrition" : {
       "amino acids" : {
         "Alanine" : 1.986625,
         "Arginine" : 1.9947500000000002,
@@ -1672,7 +1672,7 @@
       }
     } ],
     "name" : "Cheese pizza",
-    "nutrients" : {
+    "nutrition" : {
       "amino acids" : {
         "Alanine" : 0.8125625000000001,
         "Arginine" : 0.8624375,
@@ -2236,7 +2236,7 @@
       }
     } ],
     "name" : "Sardine salad",
-    "nutrients" : {
+    "nutrition" : {
       "amino acids" : {
         "Alanine" : 2.5580000000000007,
         "Arginine" : 2.7455000000000003,
@@ -3240,7 +3240,7 @@
       }
     } ],
     "name" : "Cherry cheesecake",
-    "nutrients" : {
+    "nutrition" : {
       "amino acids" : {
         "Alanine" : 2.1455,
         "Arginine" : 2.8641666666666663,
@@ -4024,7 +4024,7 @@
       }
     } ],
     "name" : "Vegan lasagna",
-    "nutrients" : {
+    "nutrition" : {
       "amino acids" : {
         "Alanine" : 1.2087142857142859,
         "Arginine" : 1.0244285714285715,
@@ -4918,7 +4918,7 @@
       }
     } ],
     "name" : "Summer fruit cake",
-    "nutrients" : {
+    "nutrition" : {
       "amino acids" : {
         "Alanine" : 1.8074999999999999,
         "Arginine" : 1.7545,
@@ -5702,7 +5702,7 @@
       }
     } ],
     "name" : "Lentil burgers",
-    "nutrients" : {
+    "nutrition" : {
       "amino acids" : {
         "Alanine" : 1.144777777777778,
         "Arginine" : 2.1229444444444443,
@@ -6486,7 +6486,7 @@
       }
     } ],
     "name" : "Curry risotto",
-    "nutrients" : {
+    "nutrition" : {
       "amino acids" : {
         "Alanine" : 0.33436363636363636,
         "Arginine" : 0.4809090909090909,
@@ -7490,7 +7490,7 @@
       }
     } ],
     "name" : "Autumn cinnamon bar",
-    "nutrients" : {
+    "nutrition" : {
       "amino acids" : {
         "Alanine" : 1.256,
         "Arginine" : 2.53225,
@@ -8832,7 +8832,7 @@
         }
       } ],
       "name" : "Vegan lasagna",
-      "nutrients" : {
+      "nutrition" : {
         "amino acids" : {
           "Alanine" : 1.2087142857142859,
           "Arginine" : 1.0244285714285715,
@@ -8948,7 +8948,7 @@
       "steps" : [ "Wash and peel the squash and eggplant!" ]
     } ],
     "name" : "Tuna salad",
-    "nutrients" : {
+    "nutrition" : {
       "amino acids" : {
         "Alanine" : 2.4735095238095237,
         "Arginine" : 2.417152380952381,
@@ -9402,7 +9402,7 @@
       }
     } ],
     "name" : "Fish omelete",
-    "nutrients" : {
+    "nutrition" : {
       "amino acids" : {
         "Alanine" : 1.8125,
         "Arginine" : 1.8703333333333332,
@@ -10192,7 +10192,7 @@
       }
     } ],
     "name" : "Apple pudding",
-    "nutrients" : {
+    "nutrition" : {
       "amino acids" : {
         "Alanine" : 2.5939,
         "Arginine" : 3.4968999999999997,
@@ -10648,7 +10648,7 @@
       }
     } ],
     "name" : "Cheese omelette",
-    "nutrients" : {
+    "nutrition" : {
       "amino acids" : {
         "Alanine" : 1.2554999999999998,
         "Arginine" : 1.2483333333333333,
@@ -11547,7 +11547,7 @@
       }
     } ],
     "name" : "Chilli",
-    "nutrients" : {
+    "nutrition" : {
       "amino acids" : {
         "Alanine" : 1.099275,
         "Arginine" : 2.1418,
@@ -12115,7 +12115,7 @@
       }
     } ],
     "name" : "Spinach with garlic",
-    "nutrients" : {
+    "nutrition" : {
       "amino acids" : {
         "Alanine" : 0.9373333333333332,
         "Arginine" : 2.1445000000000003,
@@ -13124,7 +13124,7 @@
       }
     } ],
     "name" : "Mexican casserole",
-    "nutrients" : {
+    "nutrition" : {
       "amino acids" : {
         "Alanine" : 1.3853571428571427,
         "Arginine" : 1.5796428571428571,
@@ -14348,7 +14348,7 @@
       }
     } ],
     "name" : "Carrot cake",
-    "nutrients" : {
+    "nutrition" : {
       "amino acids" : {
         "Alanine" : 2.104357142857143,
         "Arginine" : 2.868142857142857,
@@ -15352,7 +15352,7 @@
       }
     } ],
     "name" : "Vegetable bean casserole",
-    "nutrients" : {
+    "nutrition" : {
       "amino acids" : {
         "Alanine" : 0.9205000000000001,
         "Arginine" : 1.608875,
@@ -16246,7 +16246,7 @@
       }
     } ],
     "name" : "Potato au gratin",
-    "nutrients" : {
+    "nutrition" : {
       "amino acids" : {
         "Alanine" : 1.6162222222222222,
         "Arginine" : 1.726,
@@ -16810,7 +16810,7 @@
       }
     } ],
     "name" : "Creamy baked potatoes",
-    "nutrients" : {
+    "nutrition" : {
       "amino acids" : {
         "Alanine" : 1.4559999999999997,
         "Arginine" : 1.5433333333333332,
@@ -17704,7 +17704,7 @@
       }
     } ],
     "name" : "Caramel cheesecake",
-    "nutrients" : {
+    "nutrition" : {
       "amino acids" : {
         "Alanine" : 1.960333333333333,
         "Arginine" : 2.67175,
@@ -18708,7 +18708,7 @@
       }
     } ],
     "name" : "Potato salad",
-    "nutrients" : {
+    "nutrition" : {
       "amino acids" : {
         "Alanine" : 0.9235714285714286,
         "Arginine" : 1.1128571428571428,
@@ -19272,7 +19272,7 @@
       }
     } ],
     "name" : "Macaroni and cheese",
-    "nutrients" : {
+    "nutrition" : {
       "amino acids" : {
         "Alanine" : 0.8181428571428572,
         "Arginine" : 0.8462857142857142,
@@ -19946,7 +19946,7 @@
       }
     } ],
     "name" : "Crusted cod baked",
-    "nutrients" : {
+    "nutrition" : {
       "amino acids" : {
         "Alanine" : 2.1845,
         "Arginine" : 2.058666666666667,
@@ -20620,7 +20620,7 @@
       }
     } ],
     "name" : "Falafel",
-    "nutrients" : {
+    "nutrition" : {
       "amino acids" : {
         "Alanine" : 0.7566875,
         "Arginine" : 1.715625,
@@ -21624,7 +21624,7 @@
       }
     } ],
     "name" : "Potato chowder",
-    "nutrients" : {
+    "nutrition" : {
       "amino acids" : {
         "Alanine" : 1.532,
         "Arginine" : 1.4208333333333332,
@@ -22518,7 +22518,7 @@
       }
     } ],
     "name" : "Chocolate banana walnut cake",
-    "nutrients" : {
+    "nutrition" : {
       "amino acids" : {
         "Alanine" : 2.1541428571428574,
         "Arginine" : 2.9852142857142856,
@@ -22752,7 +22752,7 @@
       }
     } ],
     "name" : "Soy porridge",
-    "nutrients" : {
+    "nutrition" : {
       "amino acids" : {
         "Alanine" : 0,
         "Arginine" : 0,
@@ -23316,7 +23316,7 @@
       }
     } ],
     "name" : "Eggplant salad",
-    "nutrients" : {
+    "nutrition" : {
       "amino acids" : {
         "Alanine" : 0.35775,
         "Arginine" : 0.48,
@@ -23770,7 +23770,7 @@
       }
     } ],
     "name" : "Pita bread",
-    "nutrients" : {
+    "nutrition" : {
       "amino acids" : {
         "Alanine" : 0.27166666666666667,
         "Arginine" : 0.36000000000000004,
@@ -24334,7 +24334,7 @@
       }
     } ],
     "name" : "Standard cereal bake",
-    "nutrients" : {
+    "nutrition" : {
       "amino acids" : {
         "Alanine" : 0.7886875,
         "Arginine" : 1.5090625,
@@ -25008,7 +25008,7 @@
       }
     } ],
     "name" : "Cheese salad",
-    "nutrients" : {
+    "nutrition" : {
       "amino acids" : {
         "Alanine" : 1.1655000000000002,
         "Arginine" : 1.0524999999999998,
@@ -25682,7 +25682,7 @@
       }
     } ],
     "name" : "Cheesy cauliflower bake",
-    "nutrients" : {
+    "nutrition" : {
       "amino acids" : {
         "Alanine" : 1.4441875000000002,
         "Arginine" : 1.2396249999999998,
@@ -26686,7 +26686,7 @@
       }
     } ],
     "name" : "Mushroom stew",
-    "nutrients" : {
+    "nutrition" : {
       "amino acids" : {
         "Alanine" : 1.2305,
         "Arginine" : 0.878125,
@@ -27580,7 +27580,7 @@
       }
     } ],
     "name" : "Strawberry protein bar",
-    "nutrients" : {
+    "nutrition" : {
       "amino acids" : {
         "Alanine" : 0.6003333333333333,
         "Arginine" : 0.8393333333333333,
@@ -28254,7 +28254,7 @@
       }
     } ],
     "name" : "Cornflakes cheese",
-    "nutrients" : {
+    "nutrition" : {
       "amino acids" : {
         "Alanine" : 1.5871764705882352,
         "Arginine" : 1.4025882352941175,

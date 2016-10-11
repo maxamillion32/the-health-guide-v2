@@ -1,4 +1,4 @@
-import { Nutrient } from './nutrient.model';
+import { Nutrition } from './nutrition.model';
 
 export class Recipe {
     constructor (
@@ -11,7 +11,7 @@ export class Recipe {
         public difficulty: string = "",
         public cookMethod: string = "",
         public cookTemperature: number = 0,
-        public nutrients: Nutrient = new Nutrient(),
+        public nutrition: Nutrition = new Nutrition(),
         public servings: number = 1,
         public steps: string[] = [""],
         public quantity: number = 0

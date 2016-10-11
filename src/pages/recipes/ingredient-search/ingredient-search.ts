@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { AlertController, NavController, NavParams, ViewController } from 'ionic-angular';
-import { AngularFire, FirebaseListObservable } from 'angularfire2';
+import { FirebaseListObservable } from 'angularfire2';
 
 // Models
 import { Food, Recipe } from '../../../models';
@@ -54,7 +54,7 @@ export class IngredientSearch implements OnInit {
         inputs: [
           {
             name: 'quantity',
-            placeholder: ingredient.hasOwnProperty('chef') ? 'Units' : 'Grams',
+            placeholder: ingredient.hasOwnProperty('chef') ? 'Portions' : 'Grams',
             type: 'number'
           },
         ],
