@@ -106,5 +106,9 @@ export class Nutrition {
             "Theobromine": 0
         },
         public quantity: number = 100
-    ) { }
+    ) {
+        this["amino acids"] = {};
+        Object.assign(this["amino acids"], aminoacids);
+        delete this.aminoacids;
+    }
 }

@@ -4,7 +4,7 @@ export class Recipe {
     constructor (
         public name: string = "",
         public category: string = "",
-        public dietary: string[] = [],
+        public dietaries: string[] = [],
         public chef: string = "",
         public ingredients: any[] = [],
         public duration: number = 0,

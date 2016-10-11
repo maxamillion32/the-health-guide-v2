@@ -57,8 +57,8 @@
         Select
       </ion-note>
     </button>
-    <div *ngIf="checkedDietaries && checkedDietaries.length > 0" padding>
-      <button ion-button *ngFor="let dietary of checkedDietaries; let i = index" type="button" icon-right (click)="removeDietary(i)">
+    <div *ngIf="recipe.dietaries.length > 0" padding>
+      <button ion-button *ngFor="let dietary of recipe.dietaries; let i = index" type="button" icon-right (click)="removeDietary(i)">
         {{ dietary }}
         <ion-icon name="close"></ion-icon>
       </button>
@@ -68,6 +68,7 @@
       <ion-select [(ngModel)]="recipe.cookMethod" name="cookMethod" required>
         <ion-option value="Baking">Baking</ion-option>
         <ion-option value="Boiling">Boiling</ion-option>
+        <ion-option value="Braising">Braising</ion-option>
         <ion-option value="Frying">Frying</ion-option>
         <ion-option value="Grilling">Grilling</ion-option>
         <ion-option value="'Microwave cooking'">Microwave cooking</ion-option>
@@ -77,6 +78,7 @@
         <ion-option value="Poaching">Poaching</ion-option>
         <ion-option value="Sauteing">Sauteing</ion-option>
         <ion-option value="Seasoning">Seasoning</ion-option>
+        <ion-option value="Simmering">Simmering</ion-option>
         <ion-option value="'Slow cooking'">Slow cooking</ion-option>
         <ion-option value="Smoking">Smoking</ion-option>
         <ion-option value="Steaming">Steaming</ion-option>

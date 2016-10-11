@@ -350,7 +350,7 @@
         ]
     },
     {
-        "name": "Aminoacids",
+        "name": "Amino acids",
         "category": "Protein",
         "description": "<p>Amino acids are characterized by inclusion of nitrogen and sometimes sulphur (these components are responsible for the distinctive smell of burning protein, such as the keratin in hair). The body requires amino acids to produce new proteins (protein retention) and to replace damaged proteins (maintenance). As there is no protein or amino acid storage provision, amino acids must be present in the diet. Excess amino acids are discarded, typically in the urine. For all animals, some amino acids are essential (an animal cannot produce them internally) and some are non-essential (the animal can produce them from other nitrogen-containing compounds). About twenty amino acids are found in the human body, and about ten of these are essential and, therefore, must be included in the diet. A diet that contains adequate amounts of amino acids (especially those that are essential) is particularly important in some situations: during early development and maturation, pregnancy, lactation, or injury (a burn, for instance).</p>",
         "classification": [

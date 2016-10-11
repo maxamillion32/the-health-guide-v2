@@ -29,6 +29,9 @@ export class RecipeService {
       if (ingredient.hasOwnProperty('$key')) {
         delete ingredient['$key'];
       }
+      if (ingredient.hasOwnProperty('$exists')) {
+        delete ingredient['$exists'];
+      }
     });
   }
 
@@ -115,7 +118,7 @@ export class RecipeService {
     this.userRecipes.update(recipe['$key'], {
       name: recipe.name,
       category: recipe.category,
-      dietary: recipe.dietary,
+      dietaries: recipe.dietaries,
       chef: recipe.chef,
       ingredients: recipe.ingredients,
       duration: recipe.duration,

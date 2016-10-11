@@ -5,7 +5,7 @@
     "cookMethod" : "Baking",
     "cookTemperature" : "180",
     "duration" : "45",
-    "dietary" : "Mediteranean",
+    "dietaries" : ["Vegetarian"],
     "ingredients" : [ {
       "amino acids" : {
         "Alanine" : 1.256,
@@ -899,7 +899,7 @@
     "cookMethod" : "Baking",
     "cookTemperature" : "180",
     "duration" : "45",
-    "dietary" : "Vegetarian",
+    "dietaries" : ["Vegetarian"],
     "ingredients" : [ {
       "amino acids" : {
         "Alanine" : 0.199,
@@ -1793,7 +1793,7 @@
     "cookMethod" : "Seasoning",
     "cookTemperature" : 0,
     "duration" : 0,
-    "dietary" : "Mediteranean",
+    "dietaries" : ["Vegetarian"],
     "ingredients" : [ {
       "amino acids" : {
         "Alanine" : 1.489,
@@ -2357,7 +2357,7 @@
     "cookMethod" : "Baking",
     "cookTemperature" : "170",
     "duration" : "30",
-    "dietary" : "Gluten-free",
+    "dietaries" : ["Vegetarian"],
     "ingredients" : [ {
       "amino acids" : {
         "Alanine" : 0.643,
@@ -3361,7 +3361,7 @@
     "cookMethod" : "Baking",
     "cookTemperature" : "175",
     "duration" : "45",
-    "dietary" : "Vegan",
+    "dietaries" : ["Vegetarian"],
     "ingredients" : [ {
       "amino acids" : {
         "Alanine" : 0.062,
@@ -4145,7 +4145,7 @@
     "cookMethod" : "Baking",
     "cookTemperature" : "160",
     "duration" : "30",
-    "dietary" : "Gluten-free",
+    "dietaries" : ["Vegetarian"],
     "ingredients" : [ {
       "amino acids" : {
         "Alanine" : 0.872,
@@ -5039,7 +5039,7 @@
     "cookMethod" : "Frying",
     "cookTemperature" : "120",
     "duration" : "60",
-    "dietary" : "High-fiber",
+    "dietaries" : ["Vegetarian"],
     "ingredients" : [ {
       "amino acids" : {
         "Alanine" : 1.029,
@@ -5823,7 +5823,7 @@
     "cookMethod" : "Casserole",
     "cookTemperature" : "170",
     "duration" : "45",
-    "dietary" : "High-protein",
+    "dietaries" : ["Vegetarian"],
     "ingredients" : [ {
       "amino acids" : {
         "Alanine" : 0.437,
@@ -6607,7 +6607,7 @@
     "cookMethod" : "Baking",
     "cookTemperature" : "160",
     "duration" : "45",
-    "dietary" : "High-fiber",
+    "dietaries" : ["Vegetarian"],
     "ingredients" : [ {
       "amino acids" : {
         "Alanine" : 0.011,
@@ -7611,7 +7611,7 @@
     "cookMethod" : "Seasoning",
     "cookTemperature" : 0,
     "duration" : 0,
-    "dietary" : "Mediteranean",
+    "dietaries" : ["Vegetarian"],
     "ingredients" : [ {
       "amino acids" : {
         "Alanine" : 1.428,
@@ -8169,7 +8169,7 @@
       "cookMethod" : "Baking",
       "cookTemperature" : "175",
       "duration" : "45",
-      "dietary" : "Vegan",
+      "dietaries" : ["Vegetarian"],
       "ingredients" : [ {
         "amino acids" : {
           "Alanine" : 0.062,
@@ -9069,7 +9069,7 @@
     "cookMethod" : "Frying",
     "cookTemperature" : "100",
     "duration" : "15",
-    "dietary" : "High-protein",
+    "dietaries" : ["Vegetarian"],
     "ingredients" : [ {
       "amino acids" : {
         "Alanine" : 0.735,
@@ -9523,7 +9523,7 @@
     "cookMethod" : "Codling",
     "cookTemperature" : 0,
     "duration" : 0,
-    "dietary" : "",
+    "dietaries" : ["Vegetarian"],
     "ingredients" : [ {
       "amino acids" : {
         "Alanine" : 0.011,
@@ -10313,7 +10313,7 @@
     "cookMethod" : "Frying",
     "cookTemperature" : "100",
     "duration" : "30",
-    "dietary" : "Low-carb",
+    "dietaries" : ["Vegetarian"],
     "ingredients" : [ {
       "amino acids" : {
         "Alanine" : 0.735,
@@ -10769,7 +10769,7 @@
     "cookMethod" : "Boiling",
     "cookTemperature" : "100",
     "duration" : "45",
-    "dietary" : "High-fiber",
+    "dietaries" : ["Vegetarian"],
     "ingredients" : [ {
       "amino acids" : {
         "Alanine" : 1.029,
@@ -11668,7 +11668,7 @@
     "cookMethod" : "Boiling",
     "cookTemperature" : "100",
     "duration" : "45",
-    "dietary" : "Vegetarian",
+    "dietaries" : ["Vegetarian"],
     "ingredients" : [ {
       "amino acids" : {
         "Alanine" : 0.218,
@@ -12236,7 +12236,7 @@
     "cookMethod" : "Baking",
     "cookTemperature" : "160",
     "duration" : "45",
-    "dietary" : "Gluten-free",
+    "dietaries" : ["Vegetarian"],
     "ingredients" : [ {
       "amino acids" : {
         "Alanine" : 0.295,
@@ -13245,7 +13245,7 @@
     "cookMethod" : "Baking",
     "cookTemperature" : "160",
     "duration" : "45",
-    "dietary" : "Vegetarian",
+    "dietaries" : ["Vegetarian"],
     "ingredients" : [ {
       "amino acids" : {
         "Alanine" : 0.113,
@@ -14469,7 +14469,7 @@
     "cookMethod" : "Baking",
     "cookTemperature" : "170",
     "duration" : "45",
-    "dietary" : "High-fiber",
+    "dietaries" : ["Vegetarian"],
     "ingredients" : [ {
       "amino acids" : {
         "Alanine" : 0.113,
@@ -15473,7 +15473,7 @@
     "cookMethod" : "Baking",
     "cookTemperature" : "170",
     "duration" : "45",
-    "dietary" : "Vegetarian",
+    "dietaries" : ["Vegetarian"],
     "ingredients" : [ {
       "amino acids" : {
         "Alanine" : 0.063,
@@ -16367,7 +16367,7 @@
     "cookMethod" : "Baking",
     "cookTemperature" : "120",
     "duration" : "45",
-    "dietary" : "High-protein",
+    "dietaries" : ["Vegetarian"],
     "ingredients" : [ {
       "amino acids" : {
         "Alanine" : 0,
@@ -16931,7 +16931,7 @@
     "cookMethod" : "",
     "cookTemperature" : "160",
     "duration" : "120",
-    "dietary" : "Vegetarian",
+    "dietaries" : ["Vegetarian"],
     "ingredients" : [ {
       "amino acids" : {
         "Alanine" : 0.735,
@@ -17825,7 +17825,7 @@
     "cookMethod" : "Browning",
     "cookTemperature" : "120",
     "duration" : "30",
-    "dietary" : "Vegetarian",
+    "dietaries" : ["Vegetarian"],
     "ingredients" : [ {
       "amino acids" : {
         "Alanine" : 0.735,
@@ -18829,7 +18829,7 @@
     "cookMethod" : "Baking",
     "cookTemperature" : "170",
     "duration" : "45",
-    "dietary" : "High-protein",
+    "dietaries" : ["Vegetarian"],
     "ingredients" : [ {
       "amino acids" : {
         "Alanine" : 0,
@@ -19393,7 +19393,7 @@
     "cookMethod" : "Baking",
     "cookTemperature" : "170",
     "duration" : "45",
-    "dietary" : "High-protein",
+    "dietaries" : ["Vegetarian"],
     "ingredients" : [ {
       "amino acids" : {
         "Alanine" : 1.077,
@@ -20067,7 +20067,7 @@
     "cookMethod" : "Frying",
     "cookTemperature" : "30",
     "duration" : "60",
-    "dietary" : "Vegetarian",
+    "dietaries" : ["Vegetarian"],
     "ingredients" : [ {
       "amino acids" : {
         "Alanine" : 0.882,
@@ -20741,7 +20741,7 @@
     "cookMethod" : "Boiling",
     "cookTemperature" : "120",
     "duration" : "60",
-    "dietary" : "Vegetarian",
+    "dietaries" : ["Vegetarian"],
     "ingredients" : [ {
       "amino acids" : {
         "Alanine" : 0.058,
@@ -21745,7 +21745,7 @@
     "cookMethod" : "Baking",
     "cookTemperature" : "160",
     "duration" : "45",
-    "dietary" : "High-protein",
+    "dietaries" : ["Vegetarian"],
     "ingredients" : [ {
       "amino acids" : {
         "Alanine" : 0.904,
@@ -22639,7 +22639,7 @@
     "cookMethod" : "Boiling",
     "cookTemperature" : "120",
     "duration" : "30",
-    "dietary" : "High-protein",
+    "dietaries" : ["Vegetarian"],
     "ingredients" : [ {
       "amino acids" : {
         "Alanine" : 0,
@@ -22873,7 +22873,7 @@
     "cookMethod" : "Grilling",
     "cookTemperature" : "160",
     "duration" : "60",
-    "dietary" : "Vegetarian",
+    "dietaries" : ["Vegetarian"],
     "ingredients" : [ {
       "amino acids" : {
         "Alanine" : 0.051,
@@ -23437,7 +23437,7 @@
     "cookMethod" : "Baking",
     "cookTemperature" : "160",
     "duration" : "45",
-    "dietary" : "Mediteranean",
+    "dietaries" : ["Vegetarian"],
     "ingredients" : [ {
       "amino acids" : {
         "Alanine" : 0,
@@ -23891,7 +23891,7 @@
     "cookMethod" : "Baking",
     "cookTemperature" : "170",
     "duration" : "45",
-    "dietary" : "High-protein",
+    "dietaries" : ["Vegetarian"],
     "ingredients" : [ {
       "amino acids" : {
         "Alanine" : 0,
@@ -24455,7 +24455,7 @@
     "cookMethod" : "Seasoning",
     "cookTemperature" : 0,
     "duration" : 0,
-    "dietary" : "Mediteranean",
+    "dietaries" : ["Vegetarian"],
     "ingredients" : [ {
       "amino acids" : {
         "Alanine" : 0.643,
@@ -25129,7 +25129,7 @@
     "cookMethod" : "Baking",
     "cookTemperature" : "180",
     "duration" : "45",
-    "dietary" : "High-protein",
+    "dietaries" : ["Vegetarian"],
     "ingredients" : [ {
       "amino acids" : {
         "Alanine" : 0.116,
@@ -25803,7 +25803,7 @@
     "cookMethod" : "Boiling",
     "cookTemperature" : "120",
     "duration" : "45",
-    "dietary" : "Vegetarian",
+    "dietaries" : ["Vegetarian"],
     "ingredients" : [ {
       "amino acids" : {
         "Alanine" : 0.199,
@@ -26807,7 +26807,7 @@
     "cookMethod" : "Baking",
     "cookTemperature" : "160",
     "duration" : "45",
-    "dietary" : "High-fiber",
+    "dietaries" : ["Vegetarian"],
     "ingredients" : [ {
       "amino acids" : {
         "Alanine" : 0,
@@ -27701,7 +27701,7 @@
     "cookMethod" : "Baking",
     "cookTemperature" : "170",
     "duration" : "45",
-    "dietary" : "Vegetarian",
+    "dietaries" : ["Vegetarian"],
     "ingredients" : [ {
       "amino acids" : {
         "Alanine" : 0.735,

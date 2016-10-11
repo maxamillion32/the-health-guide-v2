@@ -17,7 +17,7 @@
     <ion-item-sliding *ngFor="let recipe of myRecipes | async | searchFilter: searchQuery: searchBy">
       <ion-item>
         <h2>{{ recipe.name }}</h2>
-        <p>{{ recipe.dietary }}</p>
+        <ion-badge *ngFor="let dietary of recipe.dietaries">{{ dietary }}</ion-badge>
         <ion-note item-right>
           Swipe
         </ion-note>
@@ -41,7 +41,7 @@
   <ion-list *ngSwitchCase="'all'">
     <button ion-item detail-push *ngFor="let recipe of allRecipes | async | searchFilter: searchQuery: searchBy" (click)="viewRecipe(recipe)">
       <h2>{{ recipe.name }}</h2>
-      <p>{{ recipe.dietary }}</p>
+      <p *ngFor="let dietary of recipe.dietaries">{{ dietary }}</p>
       <ion-note item-right>
         Details
       </ion-note>

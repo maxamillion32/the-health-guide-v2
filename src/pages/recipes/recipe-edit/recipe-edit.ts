@@ -24,9 +24,8 @@ const DIETARIES = [
   templateUrl: 'recipe-edit.html'
 })
 export class RecipeEdit implements OnInit {
-  public checkedDietaries: string[];
   public recipe: Recipe;
-  public recipeSteps: string[] = [];  // Required for a bug when trying to write in the input of a step
+  public recipeSteps: string[];  // Required for a bug when trying to write in the input of a step
 
   constructor(
     private alertCtrl: AlertController,
@@ -82,7 +81,7 @@ export class RecipeEdit implements OnInit {
       showCloseButton: true,
       closeButtonText: 'Ok'
     });
-    if (this.recipe.ingredients.length === 0) {
+    if (this.recipe.steps.length === 0) {
       notifToast.present();
     } else if (this.recipe.ingredients.length === 0) {
       notifToast.present();
@@ -98,7 +97,7 @@ export class RecipeEdit implements OnInit {
   }
 
   public removeDietary(index: number): void {
-    this.checkedDietaries.splice(index, 1);
+    this.recipe.dietaries.splice(index, 1);
   }
 
   public removeIngredient(index: number): void {
@@ -127,10 +126,12 @@ export class RecipeEdit implements OnInit {
     let checkboxAlert = this.alertCtrl.create();
     checkboxAlert.setTitle('Which planets have you visited?')
     DIETARIES.forEach(item => {
+      let checked: boolean = !!this.recipe.dietaries.filter(dietary => dietary === item)[0];
       checkboxAlert.addInput({
         type: 'checkbox',
         label: `${item}`,
-        value: `${item}`
+        value: `${item}`,
+        checked: checked
       });
     })
     checkboxAlert.addButton('Cancel');
@@ -138,7 +139,7 @@ export class RecipeEdit implements OnInit {
       text: 'Okay',
       handler: data => {
         if (data) {
-          this.checkedDietaries = [...data];
+          this.recipe.dietaries = [...data];
         }
       }
     });
@@ -147,6 +148,7 @@ export class RecipeEdit implements OnInit {
 
   ngOnInit(): void {
     this.recipe = this.params.get("recipe");
+    this.recipeSteps = [...this.recipe.steps];
     console.log(this.recipe);
   }
 
