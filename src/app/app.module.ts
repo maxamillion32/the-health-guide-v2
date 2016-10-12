@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule }   from '@angular/forms';
 import { IonicApp, IonicModule } from 'ionic-angular';
 import { AngularFireModule, AuthProviders, AuthMethods } from 'angularfire2';
-import { ChartModule } from "ng2-chartjs2";
+import { ChartsModule } from "ng2-charts/ng2-charts";
 
 // Components
 import { NutritionTable } from '../components';
@@ -61,7 +61,7 @@ const FIREBASE_AUTH_CONFIG = {
   ],
   imports: [
     AngularFireModule.initializeApp(FIREBASE_CONFIG, FIREBASE_AUTH_CONFIG),
-    ChartModule,
+    ChartsModule,
     FitnessModule,
     FormsModule,
     IonicModule.forRoot(MyApp)

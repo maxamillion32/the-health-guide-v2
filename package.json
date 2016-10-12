@@ -25,7 +25,6 @@
   "devDependencies": {
     "@ionic/app-scripts": "latest",
     "@types/request": "0.0.30",
-    "ng2-chartjs2": "^1.1.2",
     "typescript": "^2.0.3"
   },
   "description": "Wellness Web/Mobile Application implemented with Ionic 2",
