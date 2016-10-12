@@ -107,8 +107,7 @@ export class Nutrition {
         },
         public quantity: number = 100
     ) {
-        this["amino acids"] = {};
-        Object.assign(this["amino acids"], aminoacids);
+        this["amino acids"] = aminoacids;
         delete this.aminoacids;
     }
 }

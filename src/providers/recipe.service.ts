@@ -16,11 +16,13 @@ export class RecipeService {
       }
     });
     this.auth.subscribe(authData => {
-      this.userRecipes = af.database.list(`/recipes/${authData.uid}`, {
-        query: {
-          orderByChild: 'name'
-        }
-      });
+      if (authData) {
+        this.userRecipes = af.database.list(`/recipes/${authData.uid}`, {
+          query: {
+            orderByChild: 'name'
+          }
+        });
+      }
     });
   }
 

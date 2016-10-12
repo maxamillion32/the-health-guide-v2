@@ -1,63 +1,75 @@
 <ion-header>
-  <ion-toolbar>
-    <button ion-button menuToggle>
+	<ion-toolbar>
+		<button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-searchbar [(ngModel)]="searchQuery"></ion-searchbar>
-  </ion-toolbar>
+		<ion-searchbar [(ngModel)]="searchQuery"></ion-searchbar>
+	</ion-toolbar>
 </ion-header>
 
 <ion-content [ngSwitch]="recipeOwner" class="recipe-list">
-  <ion-fab bottom right fixed>
-    <button ion-fab color="bayleaf" (click)="createRecipe()">
-      <ion-icon name="color-wand"></ion-icon>
+	<ion-fab bottom right fixed>
+		<button ion-fab color="primary" (click)="createRecipe()">
+      <ion-icon name="add"></ion-icon>
     </button>
-  </ion-fab>
-  <ion-list *ngSwitchCase="'mine'">
-    <ion-item-sliding *ngFor="let recipe of myRecipes | async | searchFilter: searchQuery: searchBy">
-      <ion-item>
-        <h2>{{ recipe.name }}</h2>
-        <ion-badge *ngFor="let dietary of recipe.dietaries">{{ dietary }}</ion-badge>
-        <ion-note item-right>
-          Swipe
-        </ion-note>
-      </ion-item>
-      <ion-item-options side="right">
-        <button ion-button color="royal" (click)="viewRecipe(recipe)">
+	</ion-fab>
+	<ion-list *ngSwitchCase="'mine'">
+		<ion-item-sliding *ngFor="let recipe of myRecipes | async | searchFilter: searchQuery: searchBy">
+			<ion-item text-justify>
+				<h2>{{ recipe.name }}</h2>
+				<ion-grid>
+					<ion-row>
+						<ion-col>{{ recipe.category }}</ion-col>
+						<ion-col text-center>{{ recipe.difficulty }}</ion-col>
+						<ion-col text-right>{{ recipe.duration }}</ion-col>
+					</ion-row>
+				</ion-grid>
+				<ion-note item-right>
+					Swipe
+				</ion-note>
+			</ion-item>
+			<ion-item-options side="right">
+				<button ion-button color="royal" (click)="viewRecipe(recipe)">
           <ion-icon name="book"></ion-icon>
           Details
         </button>
-        <button ion-button color="primary" (click)="editRecipe(recipe)">
+				<button ion-button color="primary" (click)="editRecipe(recipe)">
           <ion-icon name="brush"></ion-icon>
           Edit
         </button>
-        <button ion-button color="light" (click)="removeRecipe(recipe)">
+				<button ion-button color="light" (click)="removeRecipe(recipe)">
           <ion-icon name="trash"></ion-icon>
           Remove
         </button>
-      </ion-item-options>
-    </ion-item-sliding>
-  </ion-list>
-  <ion-list *ngSwitchCase="'all'">
-    <button ion-item detail-push *ngFor="let recipe of allRecipes | async | searchFilter: searchQuery: searchBy" (click)="viewRecipe(recipe)">
+			</ion-item-options>
+		</ion-item-sliding>
+	</ion-list>
+	<ion-list *ngSwitchCase="'all'">
+		<button ion-item detail-push *ngFor="let recipe of allRecipes | async | searchFilter: searchQuery: searchBy" (click)="viewRecipe(recipe)">
       <h2>{{ recipe.name }}</h2>
-      <p *ngFor="let dietary of recipe.dietaries">{{ dietary }}</p>
+      <ion-grid>
+        <ion-row>
+          <ion-col>{{ recipe.category }}</ion-col>
+          <ion-col text-center>{{ recipe.difficulty }}</ion-col>
+          <ion-col text-right>{{ recipe.duration }}</ion-col>
+        </ion-row>
+      </ion-grid>
       <ion-note item-right>
         Details
       </ion-note>
     </button>
-  </ion-list>
+	</ion-list>
 </ion-content>
 
 <ion-footer>
-  <ion-toolbar>
-    <ion-segment color="light" [(ngModel)]="recipeOwner" (ionChange)="resetSearch()">
-      <ion-segment-button value="mine">
-        Mine
-      </ion-segment-button>
-      <ion-segment-button value="all">
-        All
-      </ion-segment-button>
-    </ion-segment>
-  </ion-toolbar>
+	<ion-toolbar>
+		<ion-segment color="light" [(ngModel)]="recipeOwner" (ionChange)="resetSearch()">
+			<ion-segment-button value="mine">
+				Mine
+			</ion-segment-button>
+			<ion-segment-button value="all">
+				All
+			</ion-segment-button>
+		</ion-segment>
+	</ion-toolbar>
 </ion-footer>

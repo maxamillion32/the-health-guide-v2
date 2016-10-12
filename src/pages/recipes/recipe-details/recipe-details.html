@@ -7,7 +7,7 @@
 </ion-header>
 
 
-<ion-content class="recipe-page">
+<ion-content class="recipe-details">
 	<ion-card>
 		<ion-card-header>Details</ion-card-header>
 		<ion-card-content>
@@ -22,12 +22,6 @@
 					Category
 					<ion-note item-right>
 						{{ recipe.category }}
-					</ion-note>
-				</ion-item>
-				<ion-item>
-					Diateries
-					<ion-note item-right *ngFor="let dietary of recipe.dietaries">
-						{{ dietary }}
 					</ion-note>
 				</ion-item>
 				<ion-item>
@@ -49,6 +43,17 @@
 					</ion-note>
 				</ion-item>
 			</ion-list>
+		</ion-card-content>
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			Dietaries
+		</ion-card-header>
+		<ion-card-content>
+			<ion-badge color="bayleaf" margin-right *ngFor="let dietary of recipe.dietaries">
+				{{ dietary }}
+			</ion-badge>
 		</ion-card-content>
 	</ion-card>
 

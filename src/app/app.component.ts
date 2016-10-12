@@ -6,7 +6,7 @@ import { AngularFire } from "angularfire2";
 // Pages
 import {
   Auth,
-  Fitness,
+  FitnessComponent,
   FoodList,
   Home,
   NutrientList,
@@ -24,7 +24,7 @@ export class MyApp implements OnInit {
   public avatarUrl: string;
   public appPages: Page[] = [
     { title: 'Home', icon: 'ios-home-outline', index: 0, component: Home },
-    { title: 'Fitness', icon: 'ios-speedometer-outline', index: 1, component: Fitness },
+    { title: 'Fitness', icon: 'ios-speedometer-outline', index: 1, component: FitnessComponent },
     { title: 'Food', icon: 'ios-cart-outline', index: 2, component: FoodList },
     { title: 'Nutrients', icon: 'ios-nutrition-outline', index: 3, component: NutrientList },
     { title: 'Recipes', icon: 'ios-restaurant-outline', index: 4, component: RecipeList }

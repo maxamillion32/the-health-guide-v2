@@ -1,5 +1,6 @@
 export { Auth } from './auth/auth';
-export { Fitness } from './fitness/fitness';
+export { FitnessComponent } from './fitness/fitness.component';
+export { FitnessModule } from './fitness/fitness.module';
 export { FoodList } from './food/food-list/food-list';
 export { Home } from './home/home';
 export { IngredientSearch } from './recipes/ingredient-search/ingredient-search';

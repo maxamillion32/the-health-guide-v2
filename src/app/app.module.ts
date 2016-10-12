@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule }   from '@angular/forms';
 import { IonicApp, IonicModule } from 'ionic-angular';
 import { AngularFireModule, AuthProviders, AuthMethods } from 'angularfire2';
+import { ChartModule } from "ng2-chartjs2";
 
 // Components
 import { NutritionTable } from '../components';
@@ -9,7 +10,7 @@ import { NutritionTable } from '../components';
 // Pages
 import {
   Auth,
-  Fitness,
+  FitnessModule,
   FoodList,
   Home,
   IngredientSearch,
@@ -46,7 +47,6 @@ const FIREBASE_AUTH_CONFIG = {
   declarations: [
     Auth,
     MyApp,
-    Fitness,
     FoodList,
     Home,
     IngredientSearch,
@@ -61,6 +61,8 @@ const FIREBASE_AUTH_CONFIG = {
   ],
   imports: [
     AngularFireModule.initializeApp(FIREBASE_CONFIG, FIREBASE_AUTH_CONFIG),
+    ChartModule,
+    FitnessModule,
     FormsModule,
     IonicModule.forRoot(MyApp)
   ],
@@ -68,7 +70,6 @@ const FIREBASE_AUTH_CONFIG = {
   entryComponents: [
     Auth,
     MyApp,
-    Fitness,
     FoodList,
     Home,
     IngredientSearch,

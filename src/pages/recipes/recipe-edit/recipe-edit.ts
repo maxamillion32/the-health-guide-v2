@@ -25,7 +25,6 @@ const DIETARIES = [
 })
 export class RecipeEdit implements OnInit {
   public recipe: Recipe;
-  public recipeSteps: string[];  // Required for a bug when trying to write in the input of a step
 
   constructor(
     private alertCtrl: AlertController,
@@ -37,8 +36,60 @@ export class RecipeEdit implements OnInit {
   ) { }
 
   public addStep(): void {
+    let prompt = this.alertCtrl.create({
+      title: "Instruction",
+      message: "Add a new recipe step",
+      inputs: [
+        {
+          name: 'instruction',
+          placeholder: 'Instruction'
+        },
+      ],
+      buttons: [
+        {
+          text: 'Cancel',
+          handler: data => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Save',
+          handler: data => {
+            this.recipe.steps.push(data);
+          }
+        }
+      ]
+    });
+    prompt.present();
     this.recipe.steps.push('');
-    this.recipeSteps.push('');
+  }
+
+  public changeInstruction(index: number): void {
+    let prompt = this.alertCtrl.create({
+      title: "Instruction",
+      message: `Change step ${index} of the recipe`,
+      inputs: [
+        {
+          name: 'instruction',
+          placeholder: 'Instruction'
+        },
+      ],
+      buttons: [
+        {
+          text: 'Cancel',
+          handler: data => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Save',
+          handler: data => {
+            this.recipe.steps[index] = data;
+          }
+        }
+      ]
+    });
+    prompt.present();
   }
 
   public changeQuantity(ingredient: any): void {
@@ -75,7 +126,6 @@ export class RecipeEdit implements OnInit {
   }
 
   public createRecipe(): void {
-    this.recipe.steps = [...this.recipeSteps];
     let notifToast = this.toastCtrl.create({
       message: 'Please complete the entire recipe!',
       showCloseButton: true,
@@ -87,7 +137,7 @@ export class RecipeEdit implements OnInit {
       notifToast.present();
     } else {
       this.recipe.nutrition = this.recipeSvc.calcRecipeNutrition(this.recipe);
-      if(this.recipe.hasOwnProperty('$key')) {
+      if (this.recipe.hasOwnProperty('$key')) {
         this.recipeSvc.updateRecipe(this.recipe);
       } else {
         this.recipeSvc.addRecipe(this.recipe);
@@ -106,7 +156,6 @@ export class RecipeEdit implements OnInit {
 
   public removeStep(index: number): void {
     this.recipe.steps.splice(index, 1);
-    this.recipeSteps.splice(index, 1);
   }
 
   public searchIngredient(): void {
@@ -148,7 +197,6 @@ export class RecipeEdit implements OnInit {
 
   ngOnInit(): void {
     this.recipe = this.params.get("recipe");
-    this.recipeSteps = [...this.recipe.steps];
     console.log(this.recipe);
   }
 
