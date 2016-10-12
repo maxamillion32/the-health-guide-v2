@@ -14,6 +14,14 @@ export class Home implements OnInit {
 
   constructor(private navCtrl: NavController, public af: AngularFire) { }
 
+  public chartClicked(e: any): void {
+    console.log(e);
+  }
+
+  public chartHovered(e: any): void {
+    console.log(e);
+  }
+
   ngOnInit(): void {
     console.log("Welcome home");
   }
