@@ -4,16 +4,22 @@ import { IonicApp, IonicModule } from 'ionic-angular';
 import { AngularFireModule, AuthProviders, AuthMethods } from 'angularfire2';
 import { ChartsModule } from "ng2-charts/ng2-charts";
 
+// App
+import { HealthGuideApp } from './app.component';
+
 // Components
 import { NutritionTable } from '../components';
 
 // Pages
 import {
+  ActivityJournal,
   Auth,
-  FitnessModule,
   FoodList,
+  Fitness,
   Home,
   IngredientSearch,
+  Journal,
+  MealJournal,
   NutrientDetails,
   NutrientList,
   RecipeDetails,
@@ -26,9 +32,6 @@ import { Limit, SearchFilter } from "../pipes";
 
 // Providers
 import { NutritionService, RecipeService } from "../providers";
-
-// Root component
-import { MyApp } from './app.component';
 
 const FIREBASE_CONFIG = {
   apiKey: "AIzaSyBXdSjoVfk1KbbtmAUEq7ktnnI70ojg4y8",
@@ -45,12 +48,16 @@ const FIREBASE_AUTH_CONFIG = {
 
 @NgModule({
   declarations: [
+    ActivityJournal,
     Auth,
-    MyApp,
+    Fitness,
     FoodList,
+    HealthGuideApp,
     Home,
     IngredientSearch,
+    Journal,
     Limit,
+    MealJournal,
     NutrientDetails,
     NutrientList,
     NutritionTable,
@@ -62,17 +69,20 @@ const FIREBASE_AUTH_CONFIG = {
   imports: [
     AngularFireModule.initializeApp(FIREBASE_CONFIG, FIREBASE_AUTH_CONFIG),
     ChartsModule,
-    FitnessModule,
     FormsModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(HealthGuideApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
+    ActivityJournal,
     Auth,
-    MyApp,
+    Fitness,
     FoodList,
+    HealthGuideApp,
     Home,
     IngredientSearch,
+    Journal,
+    MealJournal,
     NutrientDetails,
     NutrientList,
     NutritionTable,

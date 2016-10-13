@@ -6,9 +6,10 @@ import { AngularFire } from "angularfire2";
 // Pages
 import {
   Auth,
-  FitnessComponent,
+  Fitness,
   FoodList,
   Home,
+  Journal,
   NutrientList,
   RecipeList
 } from '../pages';
@@ -19,15 +20,16 @@ import { Page } from '../models';
 @Component({
   templateUrl: 'app.component.html',
 })
-export class MyApp implements OnInit {
+export class HealthGuideApp implements OnInit {
   @ViewChild(Nav) nav: Nav;
   public avatarUrl: string;
   public appPages: Page[] = [
     { title: 'Home', icon: 'ios-home-outline', index: 0, component: Home },
-    { title: 'Fitness', icon: 'ios-speedometer-outline', index: 1, component: FitnessComponent },
+    { title: 'Fitness', icon: 'ios-speedometer-outline', index: 1, component: Fitness },
     { title: 'Food', icon: 'ios-cart-outline', index: 2, component: FoodList },
     { title: 'Nutrients', icon: 'ios-nutrition-outline', index: 3, component: NutrientList },
-    { title: 'Recipes', icon: 'ios-restaurant-outline', index: 4, component: RecipeList }
+    { title: 'Recipes', icon: 'ios-restaurant-outline', index: 4, component: RecipeList },
+    { title: 'Journal', icon: 'ios-book-outline', index: 5, component: Journal }
   ];
   public rootPage = Auth;
   public username: string;

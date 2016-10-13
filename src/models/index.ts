@@ -1,7 +1,7 @@
 export { Activity } from './activity.model';
-export { ActivityPlan } from './activity-plan.model';
+export { ActivityJournal } from './activity-journal.model';
 export { Food } from './food.model';
-export { MealPlan } from './meal-plan.model';
+export { MealJournal } from './meal-journal.model';
 export { Nutrient } from './nutrient.model';
 export { Nutrition } from './nutrition.model';
 export { Page } from './page.model';
