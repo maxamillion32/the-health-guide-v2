@@ -4,7 +4,7 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/Rx';
 
 // Models
-import { ActivityJournal } from '../models';
+import { Activity, ActivityGroup, ActivityJournal } from '../models';
 
 @Injectable()
 export class ActivityService {
@@ -29,6 +29,10 @@ export class ActivityService {
       res.totalEnergy = aj.totalEnergy;
       this.updateActivityJournal(res);
     }).catch(err => this.activityJournals.push(aj));
+  }
+
+  public convertEnergyToDuration(activity: Activity, energy: number = 70): number {
+    return Math.floor((energy * activity.time) / activity.energy);
   }
 
   public getActivityJournals(): Observable<ActivityJournal[]> {

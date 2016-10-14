@@ -1,4 +1,4 @@
-export { Activity } from './activity.model';
+export { Activity, ActivityGroup } from './activity.model';
 export { ActivityJournal } from './activity-journal.model';
 export { Food } from './food.model';
 export { MealJournal } from './meal-journal.model';
