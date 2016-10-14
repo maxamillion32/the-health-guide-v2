@@ -31,8 +31,8 @@ export class ActivityService {
     }).catch(err => this.activityJournals.push(aj));
   }
 
-  public convertEnergyToDuration(activity: Activity, energy: number = 70): number {
-    return Math.floor((energy * activity.time) / activity.energy);
+  public getActivityEnergy(activity: Activity, weight: number = 70): number {
+    return Math.floor(0.0175 * activity.met * weight * activity.time);
   }
 
   public getActivityJournals(): Observable<ActivityJournal[]> {
@@ -52,6 +52,18 @@ export class ActivityService {
           }
         }
       });
+    });
+  }
+
+  public removeActivityJournal(aj: ActivityJournal): void {
+    this.activityJournals.remove(aj['$key']);
+  }
+
+  public setupActivityJournal(aj: ActivityJournal, weight: number = 70): void {
+    aj.totalDuration = 0, aj.totalEnergy = 0;
+    aj.activities.forEach(act => {
+      aj.totalEnergy += this.getActivityEnergy(act, weight);
+      aj.totalDuration += act.time;
     });
   }
 
