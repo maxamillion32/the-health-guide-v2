@@ -4,15 +4,15 @@ import { AlertController, NavController, NavParams, ViewController } from 'ionic
 import { FirebaseListObservable } from 'angularfire2';
 
 // Models
-import { Food, Recipe } from '../../../models';
+import { Food, Recipe } from '../../models';
 
 // Providers
-import { NutritionService, RecipeService } from '../../../providers';
+import { NutritionService, RecipeService } from '../../providers';
 
 @Component({
   templateUrl: 'ingredient-search.html'
 })
-export class IngredientSearch implements OnInit {
+export class IngredientSearchPage implements OnInit {
   public food: FirebaseListObservable<Food[]>;
   public ingredientType: string = 'food';
   public noQuantity: boolean = false;

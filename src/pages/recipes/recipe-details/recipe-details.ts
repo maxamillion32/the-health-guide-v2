@@ -8,7 +8,7 @@ import { Recipe } from '../../../models';
   selector: 'page-recipe-details',
   templateUrl: 'recipe-details.html'
 })
-export class RecipeDetails implements OnInit {
+export class RecipeDetailsPage implements OnInit {
   public recipe: Recipe;
 
   constructor(private navCtrl: NavController, private params: NavParams) {}

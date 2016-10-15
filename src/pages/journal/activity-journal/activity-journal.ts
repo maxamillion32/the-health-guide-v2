@@ -11,7 +11,7 @@ import { NavController } from 'ionic-angular';
   selector: 'page-activity-journal',
   templateUrl: 'activity-journal.html'
 })
-export class ActivityJournal {
+export class ActivityJournalPage {
 
   constructor(public navCtrl: NavController) {}
 

@@ -4,7 +4,7 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/Rx';
 
 // Models
-import { Activity, ActivityGroup, ActivityJournal } from '../models';
+import { Activity, ActivityJournal } from '../models';
 
 @Injectable()
 export class ActivityService {
@@ -12,7 +12,7 @@ export class ActivityService {
 
   constructor(private af: AngularFire, private auth: FirebaseAuth) {
     this.auth.subscribe(authData => {
-      if (authData) {
+      if (!!authData) {
         this.activityJournals = af.database.list(`/meal-journals/${authData.uid}`, {
           query: {
             orderByChild: 'date'
@@ -43,9 +43,9 @@ export class ActivityService {
     return new Promise((resolve, reject) => {
       let journal: ActivityJournal = new ActivityJournal();
       this.getActivityJournals().subscribe(actJournals => {
-        if (actJournals) {
+        if (!!actJournals) {
           journal = actJournals.filter(aj => aj.date === date)[0];
-          if (journal) {
+          if (!!journal) {
             resolve(journal);
           } else {
             reject("No activity journal on this date");

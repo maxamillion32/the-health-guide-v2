@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { AngularFire, FirebaseListObservable } from 'angularfire2';
+//import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
 import { Bio } from "../models";
 
@@ -25,7 +25,7 @@ export class FitnessService {
     }
   }
 
-  private setBodyFatFemale(userBio: bio): void {
+  private setBodyFatFemale(userBio: Bio): void {
     let bodyFatWeight: number = 0, leanBodyMass: number = 0;
     leanBodyMass = ((userBio.weight * 2.205) * 0.732) + 8.987 +
       (userBio.wrist * 0.394 / 3.14) -

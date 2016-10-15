@@ -5,13 +5,13 @@ import { AngularFire } from "angularfire2";
 
 // Pages
 import {
-  Auth,
-  Fitness,
-  FoodList,
-  Home,
-  Journal,
-  NutrientList,
-  RecipeList
+  AuthPage,
+  FitnessPage,
+  FoodListPage,
+  HomePage,
+  JournalPage,
+  NutrientListPage,
+  RecipeListPage
 } from '../pages';
 
 // Models
@@ -24,14 +24,14 @@ export class HealthGuideApp implements OnInit {
   @ViewChild(Nav) nav: Nav;
   public avatarUrl: string;
   public appPages: Page[] = [
-    { title: 'Home', icon: 'ios-home-outline', index: 0, component: Home },
-    { title: 'Fitness', icon: 'ios-speedometer-outline', index: 1, component: Fitness },
-    { title: 'Food', icon: 'ios-cart-outline', index: 2, component: FoodList },
-    { title: 'Nutrients', icon: 'ios-nutrition-outline', index: 3, component: NutrientList },
-    { title: 'Recipes', icon: 'ios-restaurant-outline', index: 4, component: RecipeList },
-    { title: 'Journal', icon: 'ios-book-outline', index: 5, component: Journal }
+    { title: 'Home', icon: 'ios-home-outline', index: 0, component: HomePage },
+    { title: 'Fitness', icon: 'ios-speedometer-outline', index: 1, component: FitnessPage },
+    { title: 'Food', icon: 'ios-cart-outline', index: 2, component: FoodListPage },
+    { title: 'Nutrients', icon: 'ios-nutrition-outline', index: 3, component: NutrientListPage },
+    { title: 'Recipes', icon: 'ios-restaurant-outline', index: 4, component: RecipeListPage },
+    { title: 'Journal', icon: 'ios-book-outline', index: 5, component: JournalPage }
   ];
-  public rootPage = Auth;
+  public rootPage = AuthPage;
   public username: string;
 
   constructor(private af: AngularFire, private platform: Platform) {
@@ -43,7 +43,7 @@ export class HealthGuideApp implements OnInit {
   }
 
   public logout(): void {
-    this.nav.setRoot(Auth, {
+    this.nav.setRoot(AuthPage, {
       logout: true
     });
     this.af.auth.logout();

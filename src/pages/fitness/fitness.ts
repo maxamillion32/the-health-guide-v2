@@ -11,7 +11,7 @@ import { NavController } from 'ionic-angular';
   selector: 'page-fitness',
   templateUrl: 'fitness.html'
 })
-export class Fitness {
+export class FitnessPage {
 
   constructor(public navCtrl: NavController) {}
 

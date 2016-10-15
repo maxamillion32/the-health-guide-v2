@@ -3,12 +3,12 @@ import { AlertController, NavController, NavParams } from 'ionic-angular';
 import { AngularFire, AuthProviders, AuthMethods } from 'angularfire2';
 
 // Pages
-import { Home } from "../home/home";
+import { HomePage } from "../home/home";
 
 @Component({
   templateUrl: 'auth.html'
 })
-export class Auth implements AfterViewInit {
+export class AuthPage implements AfterViewInit {
   public usrEmail: string;
   public usrPassword: string;
 
@@ -32,7 +32,7 @@ export class Auth implements AfterViewInit {
       provider: AuthProviders.Facebook,
       method: AuthMethods.Redirect
     }).then(authData => {
-      setTimeout(() => this.navCtrl.setRoot(Home), 1000);
+      setTimeout(() => this.navCtrl.setRoot(HomePage), 1000);
     }).catch(error => {
       this.showError(error);
     });
@@ -43,7 +43,7 @@ export class Auth implements AfterViewInit {
       provider: AuthProviders.Github,
       method: AuthMethods.Redirect
     }).then(authData => {
-      setTimeout(() => this.navCtrl.setRoot(Home), 1000);
+      setTimeout(() => this.navCtrl.setRoot(HomePage), 1000);
     }).catch(error => {
       this.showError(error);
     });
@@ -54,7 +54,7 @@ export class Auth implements AfterViewInit {
       provider: AuthProviders.Google,
       method: AuthMethods.Redirect
     }).then(authData => {
-      setTimeout(() => this.navCtrl.setRoot(Home), 1000);
+      setTimeout(() => this.navCtrl.setRoot(HomePage), 1000);
     }).catch(error => {
       this.showError(error);
     });
@@ -62,7 +62,7 @@ export class Auth implements AfterViewInit {
 
   public passLogin(usrCredentials: any): void {
     this.af.auth.login(usrCredentials).then(authData => {
-      setTimeout(() => this.navCtrl.setRoot(Home), 1000);
+      setTimeout(() => this.navCtrl.setRoot(HomePage), 1000);
     }).catch(error => {
       this.showError(error);
     });
@@ -73,7 +73,7 @@ export class Auth implements AfterViewInit {
       provider: AuthProviders.Twitter,
       method: AuthMethods.Redirect
     }).then(authData => {
-      setTimeout(() => this.navCtrl.setRoot(Home), 1000);
+      setTimeout(() => this.navCtrl.setRoot(HomePage), 1000);
     }).catch(error => {
       this.showError(error);
     });
@@ -82,8 +82,8 @@ export class Auth implements AfterViewInit {
   ngAfterViewInit() {
     if (!this.params.get('logout')) {
       this.af.auth.subscribe(auth => {
-        if (auth && auth.uid) {
-          setTimeout(() => this.navCtrl.setRoot(Home), 1000);
+        if (!!auth && auth.hasOwnProperty('uid')) {
+          setTimeout(() => this.navCtrl.setRoot(HomePage), 1000);
         }
       });
     }

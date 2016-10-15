@@ -5,7 +5,7 @@ import { AlertController, ModalController, NavController, NavParams, ToastContro
 import { Recipe } from '../../../models';
 
 // Pages
-import { IngredientSearch } from '../ingredient-search/ingredient-search';
+import { IngredientSearchPage } from '../../ingredient-search/ingredient-search';
 
 // Providers
 import { RecipeService } from '../../../providers';
@@ -23,7 +23,7 @@ const DIETARIES = [
 @Component({
   templateUrl: 'recipe-edit.html'
 })
-export class RecipeEdit implements OnInit {
+export class RecipeEditPage implements OnInit {
   public recipe: Recipe;
 
   constructor(
@@ -136,7 +136,7 @@ export class RecipeEdit implements OnInit {
     } else if (this.recipe.ingredients.length === 0) {
       notifToast.present();
     } else {
-      this.recipe.nutrition = this.recipeSvc.calcRecipeNutrition(this.recipe);
+      this.recipeSvc.setRecipeNutrition(this.recipe);
       if (this.recipe.hasOwnProperty('$key')) {
         this.recipeSvc.updateRecipe(this.recipe);
       } else {
@@ -159,7 +159,7 @@ export class RecipeEdit implements OnInit {
   }
 
   public searchIngredient(): void {
-    let ingredientsModal = this.modalCtrl.create(IngredientSearch, {
+    let ingredientsModal = this.modalCtrl.create(IngredientSearchPage, {
       ingredients: this.recipe.ingredients,
       noQuantity: false
     });

@@ -4,7 +4,7 @@
       ".read": true,
       ".write": false
     },
-    "activity-plans": {
+    "activity-journals": {
       ".read": true,
       "$userId": {
         ".read": true,
@@ -26,7 +26,7 @@
       ".read": true,
       ".write": false
     },
-    "meal-plans": {
+    "meal-journals": {
       ".read": true,
       "$userId": {
         ".read": true,
@@ -37,7 +37,7 @@
       ".read": true,
       ".write": false
     },
-    "profiles": {
+    "bio": {
       ".read": true,
       "$userId": {
         ".read": true,

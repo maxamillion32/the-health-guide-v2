@@ -43,7 +43,7 @@ export class NutritionService {
   };
 
   private setMacronutrientIntake(nutrient: Nutrient, usrBio: Bio, requirements: Nutrition): Nutrition {
-    let nutrientName = nutrient.name.toLowerCase(), ageLabel: string = this.setAgeLabel(usrBio);
+    let ageLabel: string = this.setAgeLabel(usrBio);
     if (requirements.macronutrients.hasOwnProperty(nutrient.name)) {
       // The macronutrient matches to the one we have in the macronutrients group
       requirements.macronutrients[nutrient.name] = (usrBio.gender === 'female')
@@ -78,8 +78,7 @@ export class NutritionService {
 
         if (requirements.macronutrients.hasOwnProperty(nutrientType.name)) {
           requirements.macronutrients[nutrientType.name] = (usrBio.gender === 'female') ? pregnancyIntake : normalIntake;
-        } else if (requirements.hasOwnProperty(nutrientName)
-          && requirements[nutrientName].hasOwnProperty(nutrientType.name)) {
+        } else if (requirements.hasOwnProperty(nutrientName) && requirements[nutrientName].hasOwnProperty(nutrientType.name)) {
           if (nutrientName === 'amino acids') {
             requirements[nutrientName][nutrientType.name] = (usrBio.gender === 'female') ? pregnancyIntake * usrBio.weight : normalIntake * usrBio.weight;
           } else {

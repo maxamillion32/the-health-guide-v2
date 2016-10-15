@@ -6,7 +6,7 @@ import { Nutrient } from '../../../models';
 @Component({
   templateUrl: 'nutrient-details.html'
 })
-export class NutrientDetails implements OnInit {
+export class NutrientDetailsPage implements OnInit {
   public nutrient: Nutrient;
   public intakeUnit: string;
 

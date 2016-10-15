@@ -12,26 +12,31 @@ import { NutritionTable } from '../components';
 
 // Pages
 import {
-  ActivityJournal,
-  Auth,
-  FoodList,
-  Fitness,
-  Home,
-  IngredientSearch,
-  Journal,
-  MealJournal,
-  NutrientDetails,
-  NutrientList,
-  RecipeDetails,
-  RecipeEdit,
-  RecipeList
+  ActivityJournalPage,
+  AuthPage,
+  FoodListPage,
+  FitnessPage,
+  HomePage,
+  IngredientSearchPage,
+  JournalPage,
+  MealJournalPage,
+  NutrientDetailsPage,
+  NutrientListPage,
+  RecipeDetailsPage,
+  RecipeEditPage,
+  RecipeListPage
 } from '../pages';
 
 // Pipes
 import { Limit, SearchFilter } from "../pipes";
 
 // Providers
-import { NutritionService, RecipeService } from "../providers";
+import {
+  ActivityService,
+  MealService,
+  NutritionService,
+  RecipeService
+} from "../providers";
 
 const FIREBASE_CONFIG = {
   apiKey: "AIzaSyBXdSjoVfk1KbbtmAUEq7ktnnI70ojg4y8",
@@ -48,22 +53,22 @@ const FIREBASE_AUTH_CONFIG = {
 
 @NgModule({
   declarations: [
-    ActivityJournal,
-    Auth,
-    Fitness,
-    FoodList,
+    ActivityJournalPage,
+    AuthPage,
+    FitnessPage,
+    FoodListPage,
     HealthGuideApp,
-    Home,
-    IngredientSearch,
-    Journal,
+    HomePage,
+    IngredientSearchPage,
+    JournalPage,
     Limit,
-    MealJournal,
-    NutrientDetails,
-    NutrientList,
+    MealJournalPage,
+    NutrientDetailsPage,
+    NutrientListPage,
     NutritionTable,
-    RecipeDetails,
-    RecipeEdit,
-    RecipeList,
+    RecipeDetailsPage,
+    RecipeEditPage,
+    RecipeListPage,
     SearchFilter
   ],
   imports: [
@@ -74,22 +79,27 @@ const FIREBASE_AUTH_CONFIG = {
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    ActivityJournal,
-    Auth,
-    Fitness,
-    FoodList,
+    ActivityJournalPage,
+    AuthPage,
+    FitnessPage,
+    FoodListPage,
     HealthGuideApp,
-    Home,
-    IngredientSearch,
-    Journal,
-    MealJournal,
-    NutrientDetails,
-    NutrientList,
+    HomePage,
+    IngredientSearchPage,
+    JournalPage,
+    MealJournalPage,
+    NutrientDetailsPage,
+    NutrientListPage,
     NutritionTable,
-    RecipeDetails,
-    RecipeEdit,
-    RecipeList
+    RecipeDetailsPage,
+    RecipeEditPage,
+    RecipeListPage
   ],
-  providers: [NutritionService, RecipeService]
+  providers: [
+    ActivityService,
+    MealService,
+    NutritionService,
+    RecipeService
+  ]
 })
 export class AppModule { }

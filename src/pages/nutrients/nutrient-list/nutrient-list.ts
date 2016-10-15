@@ -6,7 +6,7 @@ import { FirebaseListObservable } from 'angularfire2';
 import { Nutrient } from "../../../models";
 
 // Pages
-import { NutrientDetails } from "../nutrient-details/nutrient-details";
+import { NutrientDetailsPage } from "../nutrient-details/nutrient-details";
 
 // Providers
 import { NutritionService } from "../../../providers"
@@ -14,7 +14,7 @@ import { NutritionService } from "../../../providers"
 @Component({
   templateUrl: 'nutrient-list.html'
 })
-export class NutrientList implements OnInit {
+export class NutrientListPage implements OnInit {
   public micronutrients: FirebaseListObservable<Nutrient[]>;
   public macronutrients: FirebaseListObservable<Nutrient[]>;
   public nutrientGroup: string = "macronutrients";
@@ -24,7 +24,7 @@ export class NutrientList implements OnInit {
   constructor(private alertCtrl: AlertController, private navCtrl: NavController, private nutritionSvc: NutritionService) { }
 
   public openNutrientDetails(nutrient: Nutrient): void {
-    this.navCtrl.push(NutrientDetails, { nutrient });
+    this.navCtrl.push(NutrientDetailsPage, { nutrient });
   }
 
   public resetSearch(): void {

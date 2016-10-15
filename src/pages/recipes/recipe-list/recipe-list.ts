@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { AlertController, NavController } from 'ionic-angular';
-import { AngularFire, FirebaseListObservable } from 'angularfire2';
+import { FirebaseListObservable } from 'angularfire2';
 
 // Models
 import { Recipe } from '../../../models';
 
 // Pages
-import { RecipeDetails } from '../recipe-details/recipe-details';
-import { RecipeEdit } from '../recipe-edit/recipe-edit';
+import { RecipeDetailsPage } from '../recipe-details/recipe-details';
+import { RecipeEditPage } from '../recipe-edit/recipe-edit';
 
 // Providers
 import { RecipeService } from '../../../providers';
@@ -16,22 +16,22 @@ import { RecipeService } from '../../../providers';
 @Component({
   templateUrl: 'recipe-list.html'
 })
-export class RecipeList implements OnInit {
+export class RecipeListPage implements OnInit {
   public allRecipes: Observable<Recipe[]>;
   public myRecipes: FirebaseListObservable<Recipe[]>;
   public recipeOwner: string = "mine";
   public searchBy: string = "name";
   public searchQuery: string = "";
 
-  constructor(private af: AngularFire, private alertCtrl: AlertController, private navCtrl: NavController, private recipeSvc: RecipeService) {}
+  constructor(private alertCtrl: AlertController, private navCtrl: NavController, private recipeSvc: RecipeService) {}
 
   public createRecipe(): void {
     let recipe: Recipe = new Recipe();
-    this.navCtrl.push(RecipeEdit, { recipe });
+    this.navCtrl.push(RecipeEditPage, { recipe });
   }
 
   public editRecipe(recipe: Recipe): void {
-    this.navCtrl.push(RecipeEdit, { recipe });
+    this.navCtrl.push(RecipeEditPage, { recipe });
   }
 
   public removeRecipe(recipe: Recipe): void {
@@ -61,7 +61,7 @@ export class RecipeList implements OnInit {
   }
 
   public viewRecipe(recipe: Recipe) {
-    this.navCtrl.push(RecipeDetails, { recipe });
+    this.navCtrl.push(RecipeDetailsPage, { recipe });
   }
 
   ngOnInit(): void {

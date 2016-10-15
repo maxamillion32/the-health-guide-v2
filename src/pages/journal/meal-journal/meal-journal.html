@@ -1,12 +1,16 @@
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>MealJournal</ion-title>
-  </ion-navbar>
+	<ion-navbar>
+		<ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="currentDate" (ionChange)="syncMj()"></ion-datetime>
+	</ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  <ion-list *ngFor="let plan of plan"></ion-list>
+	<ion-list>
+		<ion-item>
+			<pre>{{ mealJournal | json }}</pre>
+		</ion-item>
+	</ion-list>
 </ion-content>

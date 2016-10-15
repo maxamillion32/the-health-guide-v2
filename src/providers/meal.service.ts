@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AngularFire, FirebaseAuth, FirebaseListObservable } from 'angularfire2';
 import { Observable } from 'rxjs/Observable';
-import 'rxjs/Rx';
 // import { Immutable } from 'immutable/dist';
 
 // Models
@@ -10,10 +9,9 @@ import { MealJournal, Nutrition } from '../models';
 @Injectable()
 export class MealService {
     private mealJournals: FirebaseListObservable<MealJournal[]>;
-
     constructor(private af: AngularFire, private auth: FirebaseAuth) {
         this.auth.subscribe(authData => {
-            if (authData) {
+            if (!!authData) {
                 this.mealJournals = af.database.list(`/meal-journals/${authData.uid}`, {
                     query: {
                         orderByChild: 'date'
@@ -46,9 +44,9 @@ export class MealService {
         return new Promise((resolve, reject) => {
             let journal: MealJournal = new MealJournal();
             this.getMealJournals().subscribe(mealJournals => {
-                if (mealJournals) {
+                if (!!mealJournals) {
                     journal = mealJournals.filter(mj => mj.date === date)[0];
-                    if (journal) {
+                    if (!!journal) {
                         resolve(journal);
                     } else {
                         reject("No meal journal on this date");
@@ -65,26 +63,26 @@ export class MealService {
                 mealTime.total = new Nutrition();
                 mealTime.meals.forEach(meal => {
                     if (meal.hasOwnProperty("chef")) {
-                        // it's a recipe
+                        // The meal is a recipe
                         for (let nutrientGroup in meal.nutrients) {
                             let nutrients = meal.nutrients[nutrientGroup];
                             if (nutrientGroup === 'energy') {
-                                mealTime.total[nutrientGroup] += +nutrients * +meal.amount;
+                                mealTime.total[nutrientGroup] += nutrients * meal.amount;
                             } else if (typeof nutrients === 'object') {
                                 for (let nutrient in nutrients) {
-                                    mealTime.total[nutrientGroup][nutrient] += +nutrients[nutrient] * +meal.amount;
+                                    mealTime.total[nutrientGroup][nutrient] += nutrients[nutrient] * meal.amount;
                                 }
                             }
                         }
                     } else {
-                        // it's a common food
+                        // The meal is a basic food
                         for (let nutrientGroup in meal) {
                             let nutrients = meal[nutrientGroup];
                             if (nutrientGroup === 'energy') {
-                                mealTime.total[nutrientGroup] += +nutrients * (+meal.amount / 100);
+                                mealTime.total[nutrientGroup] += nutrients * (meal.amount / 100);
                             } else if (typeof nutrients === 'object') {
                                 for (let nutrient in nutrients) {
-                                    mealTime.total[nutrientGroup][nutrient] += +nutrients[nutrient] * (+meal.amount / 100);
+                                    mealTime.total[nutrientGroup][nutrient] += nutrients[nutrient] * (meal.amount / 100);
                                 }
                             }
                         }
