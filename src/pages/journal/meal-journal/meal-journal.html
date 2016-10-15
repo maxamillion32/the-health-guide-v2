@@ -1,7 +1,9 @@
 <ion-header>
 
 	<ion-navbar>
-		<ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="currentDate" (ionChange)="syncMj()"></ion-datetime>
+		<ion-title>
+			<ion-datetime color="light" displayFormat="MM/DD/YYYY" [(ngModel)]="currentDate" (ionChange)="syncMj()"></ion-datetime>
+		</ion-title>
 	</ion-navbar>
 
 </ion-header>

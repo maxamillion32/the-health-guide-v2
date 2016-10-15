@@ -18,7 +18,7 @@ export class MealJournalPage implements OnInit {
 
   public syncMj(): void {
     this.mealJournal = new MealJournal();
-    this.mealSvc.getMjByDate(this.currentDate).then(mj => this.mealJournal = mj);
+    this.mealSvc.getMjByDate(this.currentDate).subscribe(mj => this.mealJournal = mj);
   }
 
   ngOnInit(): void {

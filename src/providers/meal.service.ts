@@ -40,16 +40,14 @@ export class MealService {
         return this.mealJournals.map(mj => mj.reverse());
     }
 
-    public getMjByDate(date: string): Promise<MealJournal> {
-        return new Promise((resolve, reject) => {
+    public getMjByDate(date: string): Observable<any> {
+        return new Observable(observer => {
             let journal: MealJournal = new MealJournal();
             this.getMealJournals().subscribe(mealJournals => {
                 if (!!mealJournals) {
                     journal = mealJournals.filter(mj => mj.date === date)[0];
                     if (!!journal) {
-                        resolve(journal);
-                    } else {
-                        reject("No meal journal on this date");
+                        observer.next(journal);
                     }
                 }
             });
