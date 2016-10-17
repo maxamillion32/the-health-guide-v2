@@ -64,7 +64,6 @@ export class RecipeEditPage implements OnInit {
       ]
     });
     prompt.present();
-    this.recipe.steps.push('');
   }
 
   public changeInstruction(index: number): void {
