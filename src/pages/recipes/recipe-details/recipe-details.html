@@ -7,58 +7,58 @@
 </ion-header>
 
 
-<ion-content class="recipe-details">
-	<ion-card>
-		<ion-card-header>Details</ion-card-header>
-		<ion-card-content>
-			<ion-list>
-				<ion-item>
-					Chef
-					<ion-note item-right>
-						{{ recipe.chef }}
-					</ion-note>
-				</ion-item>
-				<ion-item>
-					Category
-					<ion-note item-right>
-						{{ recipe.category }}
-					</ion-note>
-				</ion-item>
-				<ion-item>
-					Cooking method
-					<ion-note item-right>
-						{{ recipe.cookMethod }}
-					</ion-note>
-				</ion-item>
-				<ion-item>
-					Duration
-					<ion-note item-right>
-						{{ recipe.duration }}
-					</ion-note>
-				</ion-item>
-				<ion-item>
-					Cooking temperature
-					<ion-note item-right>
-						{{recipe.cookTemperature}}
-					</ion-note>
-				</ion-item>
-			</ion-list>
-		</ion-card-content>
-	</ion-card>
+<ion-content [ngSwitch]="recipeDetails" class="recipe-details">
+	<div *ngSwitchCase="'summary'">
+		<ion-card>
+			<ion-card-content>
+				<ion-list>
+					<ion-item>
+						Chef
+						<ion-note item-right>
+							{{ recipe.chef }}
+						</ion-note>
+					</ion-item>
+					<ion-item>
+						Category
+						<ion-note item-right>
+							{{ recipe.category }}
+						</ion-note>
+					</ion-item>
+					<ion-item>
+						Cooking method
+						<ion-note item-right>
+							{{ recipe.cookMethod }}
+						</ion-note>
+					</ion-item>
+					<ion-item>
+						Duration
+						<ion-note item-right>
+							{{ recipe.duration }}
+						</ion-note>
+					</ion-item>
+					<ion-item>
+						Cooking temperature
+						<ion-note item-right>
+							{{recipe.cookTemperature}}
+						</ion-note>
+					</ion-item>
+				</ion-list>
+			</ion-card-content>
+		</ion-card>
 
-	<ion-card>
-		<ion-card-header>
-			Dietaries
-		</ion-card-header>
-		<ion-card-content>
-			<ion-badge color="bayleaf" margin-right *ngFor="let dietary of recipe.dietaries">
-				{{ dietary }}
-			</ion-badge>
-		</ion-card-content>
-	</ion-card>
+		<ion-card>
+			<ion-card-header>
+				Dietaries
+			</ion-card-header>
+			<ion-card-content>
+				<ion-badge color="bayleaf" margin-right *ngFor="let dietary of recipe.dietaries">
+					{{ dietary }}
+				</ion-badge>
+			</ion-card-content>
+		</ion-card>
+	</div>
 
-	<ion-card>
-		<ion-card-header>Ingredients</ion-card-header>
+	<ion-card *ngSwitchCase="'ingredients'">
 		<ion-card-content>
 			<ion-list>
 				<ion-item *ngFor="let ingredient of recipe.ingredients">
@@ -70,8 +70,7 @@
 			</ion-list>
 		</ion-card-content>
 	</ion-card>
-	<ion-card>
-		<ion-card-header>Steps</ion-card-header>
+	<ion-card *ngSwitchCase="'instructions'">
 		<ion-card-content>
 			<ion-list>
 				<ion-item *ngFor="let step of recipe.steps; let i = index">
@@ -83,3 +82,19 @@
 	<nutrition-table [nutritionData]="recipe.nutrition"></nutrition-table>
 
 </ion-content>
+
+<ion-footer>
+	<ion-toolbar>
+		<ion-segment color="light" [(ngModel)]="recipeDetails">
+			<ion-segment-button value="summary">
+				Summary
+			</ion-segment-button>
+			<ion-segment-button value="ingredients">
+				Ingredients
+			</ion-segment-button>
+			<ion-segment-button value="instructions">
+				Instructions
+			</ion-segment-button>
+		</ion-segment>
+	</ion-toolbar>
+</ion-footer>

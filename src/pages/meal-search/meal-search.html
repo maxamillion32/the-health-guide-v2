@@ -21,14 +21,14 @@
   <ion-list *ngSwitchCase="'food'">
     <ion-item *ngFor="let meal of food | async | searchFilter: searchQuery: 'name'">
       <ion-label>{{ meal.name }}</ion-label>
-      <ion-checkbox #mealCheck [checked]="selectedMeals.indexOf(meal) >= 0" (click)="setmeal(meal, mealCheck)">
+      <ion-checkbox #mealCheck [checked]="selectedMeals.indexOf(meal) >= 0" (click)="setMeal(meal, mealCheck)">
       </ion-checkbox>
     </ion-item>
   </ion-list>
   <ion-list *ngSwitchCase="'recipe'">
     <ion-item *ngFor="let meal of recipes | async | searchFilter: searchQuery: 'name'">
       <ion-label>{{ meal.name }}</ion-label>
-      <ion-checkbox #mealCheck [checked]="selectedMeals.indexOf(meal) >= 0" (click)="setmeal(meal, mealCheck)">
+      <ion-checkbox #mealCheck [checked]="selectedMeals.indexOf(meal) >= 0" (click)="setMeal(meal, mealCheck)">
       </ion-checkbox>
     </ion-item>
   </ion-list>

@@ -10,6 +10,7 @@ import { Recipe } from '../../../models';
 })
 export class RecipeDetailsPage implements OnInit {
   public recipe: Recipe;
+  public recipeDetails: string = "summary";
 
   constructor(private navCtrl: NavController, private params: NavParams) {}
 

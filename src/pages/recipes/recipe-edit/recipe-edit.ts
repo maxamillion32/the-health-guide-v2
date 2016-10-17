@@ -25,6 +25,7 @@ const DIETARIES = [
 })
 export class RecipeEditPage implements OnInit {
   public recipe: Recipe;
+  public recipeDetails: string = "summary";
 
   constructor(
     private alertCtrl: AlertController,
@@ -55,7 +56,9 @@ export class RecipeEditPage implements OnInit {
         {
           text: 'Save',
           handler: data => {
-            this.recipe.steps.push(data);
+            if (!!data && data.instruction !== "") {
+              this.recipe.steps.push(data.instruction);
+            }
           }
         }
       ]
@@ -67,7 +70,7 @@ export class RecipeEditPage implements OnInit {
   public changeInstruction(index: number): void {
     let prompt = this.alertCtrl.create({
       title: "Instruction",
-      message: `Change step ${index} of the recipe`,
+      message: `Change step ${index + 1} of the recipe`,
       inputs: [
         {
           name: 'instruction',
@@ -84,7 +87,9 @@ export class RecipeEditPage implements OnInit {
         {
           text: 'Save',
           handler: data => {
-            this.recipe.steps[index] = data;
+            if (!!data && data.instruction !== "") {
+              this.recipe.steps[index] = data.instruction;
+            }
           }
         }
       ]
