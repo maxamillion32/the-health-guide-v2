@@ -5,7 +5,7 @@ import { AlertController, ModalController, NavController, NavParams, ToastContro
 import { Recipe } from '../../../models';
 
 // Pages
-import { IngredientSearchPage } from '../../ingredient-search/ingredient-search';
+import { MealSearchPage } from '../../meal-search/meal-search';
 
 // Providers
 import { RecipeService } from '../../../providers';
@@ -159,12 +159,12 @@ export class RecipeEditPage implements OnInit {
   }
 
   public searchIngredient(): void {
-    let ingredientsModal = this.modalCtrl.create(IngredientSearchPage, {
-      ingredients: this.recipe.ingredients,
+    let ingredientsModal = this.modalCtrl.create(MealSearchPage, {
+      meals: this.recipe.ingredients,
       noQuantity: false
     });
     ingredientsModal.onDidDismiss(ingredients => {
-      if (ingredients) {
+      if (!!ingredients) {
         this.recipe.ingredients = [...ingredients];
       }
     });

@@ -9,6 +9,7 @@ import { Nutrient } from '../../../models';
 export class NutrientDetailsPage implements OnInit {
   public nutrient: Nutrient;
   public intakeUnit: string;
+  public nutrientDetails: string = "summary";
 
   constructor(private params: NavParams) {}
 

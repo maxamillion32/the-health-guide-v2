@@ -93,124 +93,62 @@
 				</ion-item>
 			</ion-card-content>
 		</ion-card>
-		<ion-grid hideWhen="android,ios,windows">
-			<ion-row>
-				<ion-col width>
-					<button ion-button block (click)="searchIngredient()">
-						<ion-icon name="add"></ion-icon>
-						Add ingredient
-					</button>
-					<ion-card>
-						<ion-card-header>
-							Ingredients
-						</ion-card-header>
-						<ion-card-content>
-							<ion-list>
-								<ion-item-sliding *ngFor="let ingredient of recipe.ingredients; let i = index">
-									<ion-item>
-										{{ ingredient.name }} {{ ingredient.chef ? ingredient.amount : ingredient.quantity + 'g' }}
-									</ion-item>
-									<ion-item-options side="right">
-										<button ion-button type="button" (click)="changeQuantity(ingredient)">
-											Change quantity
-										</button>
-										<button ion-button type="button" (click)="removeIngredient(i)">
-											Remove
-										</button>
-									</ion-item-options>
-								</ion-item-sliding>
-							</ion-list>
-						</ion-card-content>
-					</ion-card>
-				</ion-col>
-				<ion-col width>
-					<button ion-button block (click)="addStep()">
-						<ion-icon name="add"></ion-icon>
-						Add instruction
-					</button>
-					<ion-card>
-						<ion-card-header>
-							Instructions
-						</ion-card-header>
-						<ion-card-content>
-							<ion-list>
-								<ion-item-sliding *ngFor="let step of recipe.steps; let i = index">
-									<ion-item>
-										{{ i }}: {{ step }}
-									</ion-item>
-									<ion-item-options side="right">
-										<button ion-button type="button" (click)="changeInstruction(step,i)">
-											Change instruction
-										</button>
-										<button ion-button type="button" (click)="removeStep(i)">
-											Remove
-										</button>
-									</ion-item-options>
-								</ion-item-sliding>
-							</ion-list>
-						</ion-card-content>
-					</ion-card>
-				</ion-col>
-			</ion-row>
-		</ion-grid>
-		<div showWhen="android,ios,windows">
-			<div padding>
-				<button ion-button block (click)="searchIngredient()">
-					<ion-icon name="add"></ion-icon>
-					Add ingredient
-				</button>
-			</div>
-			<ion-card>
-				<ion-card-header>
-					Ingredients
-				</ion-card-header>
-				<ion-card-content>
-					<ion-list>
-						<ion-item-sliding *ngFor="let ingredient of recipe.ingredients; let i = index">
-							<ion-item>
-								{{ ingredient.name }} {{ ingredient.chef ? ingredient.amount : ingredient.quantity + 'g' }}
-							</ion-item>
-							<ion-item-options side="right">
-								<button ion-button type="button" (click)="changeQuantity(ingredient)">
-									Change quantity
-								</button>
-								<button ion-button type="button" (click)="removeIngredient(i)">
-									Remove
-								</button>
-							</ion-item-options>
-						</ion-item-sliding>
-					</ion-list>
-				</ion-card-content>
-			</ion-card>
-			<div padding>
-				<button ion-button block (click)="addStep()">
-					<ion-icon name="add"></ion-icon>
-					Add instruction
-				</button>
-			</div>
-			<ion-card>
-				<ion-card-header>
-					Instructions
-				</ion-card-header>
-				<ion-card-content>
-					<ion-list>
-						<ion-item-sliding *ngFor="let step of recipe.steps; let i = index">
-							<ion-item>
-								{{ i }}: {{ step }}
-							</ion-item>
-							<ion-item-options side="right">
-								<button ion-button type="button" (click)="changeInstruction(i)">
-									Change instruction
-								</button>
-								<button ion-button type="button" (click)="removeStep(i)">
-									Remove
-								</button>
-							</ion-item-options>
-						</ion-item-sliding>
-					</ion-list>
-				</ion-card-content>
-			</ion-card>
+		<div padding>
+			<button ion-button block (click)="searchIngredient()">
+				<ion-icon name="add"></ion-icon>
+				Add ingredient
+			</button>
 		</div>
+		<ion-card>
+			<ion-card-header>
+				Ingredients
+			</ion-card-header>
+			<ion-card-content>
+				<ion-list>
+					<ion-item-sliding *ngFor="let ingredient of recipe.ingredients; let i = index">
+						<ion-item>
+							{{ ingredient.name }} {{ ingredient.chef ? ingredient.amount : ingredient.quantity + 'g' }}
+						</ion-item>
+						<ion-item-options side="right">
+							<button ion-button type="button" (click)="changeQuantity(ingredient)">
+								Change quantity
+							</button>
+							<button ion-button type="button" (click)="removeIngredient(i)">
+								Remove
+							</button>
+						</ion-item-options>
+					</ion-item-sliding>
+				</ion-list>
+			</ion-card-content>
+		</ion-card>
+		<div padding>
+			<button ion-button block (click)="addStep()">
+				<ion-icon name="add"></ion-icon>
+				Add instruction
+			</button>
+		</div>
+		<ion-card>
+			<ion-card-header>
+				Instructions
+			</ion-card-header>
+			<ion-card-content>
+				<ion-list>
+					<ion-item-sliding *ngFor="let step of recipe.steps; let i = index">
+						<ion-item>
+							{{ i }}: {{ step }}
+						</ion-item>
+						<ion-item-options side="right">
+							<button ion-button type="button" (click)="changeInstruction(i)">
+								Change instruction
+							</button>
+							<button ion-button type="button" (click)="removeStep(i)">
+								Remove
+							</button>
+						</ion-item-options>
+					</ion-item-sliding>
+				</ion-list>
+			</ion-card-content>
+		</ion-card>
 		<div padding>
 			<button color="secondary" ion-button block type="submit" [disabled]="recipeForm.form.invalid">Cook it!</button>
 		</div>

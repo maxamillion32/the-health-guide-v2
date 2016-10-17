@@ -3,7 +3,7 @@ export { AuthPage } from './auth/auth';
 export { FitnessPage } from './fitness/fitness';
 export { FoodListPage } from './food/food-list/food-list';
 export { HomePage } from './home/home';
-export { IngredientSearchPage } from './ingredient-search/ingredient-search';
+export { MealSearchPage } from './meal-search/meal-search';
 export { JournalPage } from './journal/journal';
 export { MealJournalPage } from './journal/meal-journal/meal-journal';
 export { NutrientDetailsPage } from './nutrients/nutrient-details/nutrient-details';

@@ -10,14 +10,14 @@ import { Food, Recipe } from '../../models';
 import { NutritionService, RecipeService } from '../../providers';
 
 @Component({
-  templateUrl: 'ingredient-search.html'
+  templateUrl: 'meal-search.html'
 })
-export class IngredientSearchPage implements OnInit {
+export class MealSearchPage implements OnInit {
   public food: FirebaseListObservable<Food[]>;
-  public ingredientType: string = 'food';
+  public mealType: string = 'food';
   public noQuantity: boolean = false;
   public recipes: Observable<Recipe[]>;
-  public selectedIngredients: any[] = [];
+  public selectedMeals: any[] = [];
   public searchQuery: string = '';
 
   constructor(
@@ -34,27 +34,27 @@ export class IngredientSearchPage implements OnInit {
   }
 
   public doneAdding(): void {
-    this.viewCtrl.dismiss(this.selectedIngredients);
+    this.viewCtrl.dismiss(this.selectedMeals);
   }
 
   public resetSearch(): void {
     this.searchQuery = "";
   }
 
-  public setIngredient(ingredient: any, checkEl: any): void {
-    let idx: number = this.selectedIngredients.indexOf(ingredient);
+  public setMeal(meal: any, checkEl: any): void {
+    let idx: number = this.selectedMeals.indexOf(meal);
     if (idx >= 0) {
-      this.selectedIngredients.splice(idx, 1);
+      this.selectedMeals.splice(idx, 1);
     } else if (!this.noQuantity) {
-      ingredient.quantity = 100 || ingredient.quantity;
-      ingredient.amount = 1 || ingredient.amount;
+      meal.quantity = 100 || meal.quantity;
+      meal.amount = 1 || meal.amount;
       let quantityAlert = this.alertCtrl.create({
-        title: `${ingredient.name}`,
+        title: `${meal.name}`,
         message: "Enter quantity",
         inputs: [
           {
             name: 'quantity',
-            placeholder: ingredient.hasOwnProperty('chef') ? 'Portions' : 'Grams',
+            placeholder: meal.hasOwnProperty('chef') ? 'Portions' : 'Grams',
             type: 'number'
           },
         ],
@@ -69,12 +69,12 @@ export class IngredientSearchPage implements OnInit {
             text: 'Save',
             handler: data => {
               if (!!data.quantity) {
-                if (ingredient.hasOwnProperty('chef')) {
-                  ingredient.amount = +data.quantity;
+                if (meal.hasOwnProperty('chef')) {
+                  meal.amount = +data.quantity;
                 } else {
-                  ingredient.quantity = +data.quantity;
+                  meal.quantity = +data.quantity;
                 }
-                this.selectedIngredients.push(ingredient);
+                this.selectedMeals.push(meal);
               } else {
                 checkEl.checked = false;
               }
@@ -84,16 +84,16 @@ export class IngredientSearchPage implements OnInit {
       });
       quantityAlert.present();
     } else {
-      this.selectedIngredients.push(ingredient);
+      this.selectedMeals.push(meal);
     }
   }
 
   ngOnInit(): void {
     this.food = this.nutritionSvc.getFood();
     this.recipes = this.recipeSvc.getAllRecipes();
-    this.selectedIngredients = [...this.params.get('ingredients')];
-    // This flag is used to enabled/disable the quantity alert when checking an ingredient
-    // For instance, it is set to true when we are filtering recipes by ingredients
+    this.selectedMeals = [...this.params.get('meals')];
+    // This flag is used to enabled/disable the quantity alert when checking an meal
+    // For instance, it is set to true when we are filtering recipes by meals
     this.noQuantity = this.params.get("noQuantity");
   }
 

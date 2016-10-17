@@ -1,18 +1,96 @@
 <ion-header>
-
 	<ion-navbar>
+		<button ion-button menuToggle>
+      		<ion-icon name="menu"></ion-icon>
+    	</button>
 		<ion-title>
 			<ion-datetime color="light" displayFormat="MM/DD/YYYY" [(ngModel)]="currentDate" (ionChange)="syncMj()"></ion-datetime>
 		</ion-title>
 	</ion-navbar>
-
 </ion-header>
 
 
 <ion-content padding>
 	<ion-list>
-		<ion-item>
-			<pre>{{ mealJournal | json }}</pre>
+		<ion-list-header>
+			<h1>Breakfast</h1>
+		</ion-list-header>
+		<button ion-button type="button" (click)="searchMeal('breakfast')">
+            <ion-icon name="add"></ion-icon>
+            Add meal
+        </button>
+		<ion-item *ngFor="let meal of mealJournal.breakfast.meals; let i = index">
+			<button ion-button type="button" item-left (click)="removeMeal('breakfast', i)">
+                <ion-icon danger name="trash"></ion-icon>
+            </button>
+			{{ meal.name }} {{ meal.chef ? meal.amount : meal.amount + 'g' }}
+			<button ion-button type="button" item-right (click)="changeQuantity(meal)">
+                <ion-icon primary name="create"></ion-icon>
+            </button>
+		</ion-item>
+		<ion-list-header>
+			<h1>Brunch</h1>
+		</ion-list-header>
+		<button ion-button type="button" (click)="searchMeal('brunch')">
+            <ion-icon name="add"></ion-icon>
+            Add meal
+        </button>
+		<ion-item *ngFor="let meal of mealJournal.brunch.meals; let i = index">
+			<button ion-button type="button" item-left (click)="removeMeal('brunch', i)">
+            	<ion-icon danger name="trash"></ion-icon>
+            </button>
+			{{ meal.name }} {{ meal.chef ? meal.amount : meal.amount + 'g' }}
+			<button ion-button type="button" item-right (click)="changeQuantity(meal)">
+                <ion-icon primary name="create"></ion-icon>
+            </button>
+		</ion-item>
+		<ion-list-header>
+			Lunch
+		</ion-list-header>
+		<button ion-button type="button" (click)="searchMeal('lunch')">
+            <ion-icon name="add"></ion-icon>
+            Add meal
+        </button>
+		<ion-item *ngFor="let meal of mealJournal.lunch.meals; let i = index">
+			<button ion-button type="button" item-left (click)="removeMeal('lunch', i)">
+                <ion-icon danger name="trash"></ion-icon>
+            </button>
+			{{ meal.name }} {{ meal.chef ? meal.amount : meal.amount + 'g' }}
+			<button ion-button type="button" item-right (click)="changeQuantity(meal)">
+                <ion-icon primary name="create"></ion-icon>
+            </button>
+		</ion-item>
+		<ion-list-header>
+			<h1>Snack</h1>
+		</ion-list-header>
+		<button ion-button type="button" (click)="searchMeal('snack')">
+            <ion-icon name="add"></ion-icon>
+            Add meal
+        </button>
+		<ion-item *ngFor="let meal of mealJournal.snack.meals; let i = index">
+			<button ion-button type="button" item-left (click)="removeMeal('snack', i)">
+                <ion-icon danger name="trash"></ion-icon>
+            </button>
+			{{ meal.name }} {{ meal.chef ? meal.amount : meal.amount + 'g' }}
+			<button ion-button type="button" item-right (click)="changeQuantity(meal)">
+            	<ion-icon primary name="create"></ion-icon>
+        </button>
+		</ion-item>
+		<ion-list-header>
+			<h1>Dinner</h1>
+		</ion-list-header>
+		<button ion-button type="button" (click)="searchMeal('dinner')">
+            <ion-icon name="add"></ion-icon>
+            Add meal
+        </button>
+		<ion-item *ngFor="let meal of mealJournal.dinner.meals; let i = index">
+			<button ion-button type="button" item-left (click)="removeMeal('dinner', i)">
+                <ion-icon danger name="trash"></ion-icon>
+            </button>
+			{{ meal.name }} {{ meal.chef ? meal.amount : meal.amount + 'g' }}
+			<button ion-button type="button" item-right (click)="changeQuantity(meal)">
+                <ion-icon primary name="create"></ion-icon>
+            </button>
 		</ion-item>
 	</ion-list>
 </ion-content>
