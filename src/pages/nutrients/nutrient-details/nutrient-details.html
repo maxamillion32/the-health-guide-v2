@@ -383,7 +383,7 @@
 			<ion-segment-button value="summary">
 				Summary
 			</ion-segment-button>
-			<ion-segment-button value="classification">
+			<ion-segment-button *ngIf="nutrient.classification" value="classification">
 				Classification
 			</ion-segment-button>
 			<ion-segment-button value="rdi">

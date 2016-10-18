@@ -1,22 +1,42 @@
-import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/observable/combineLatest';
+import 'rxjs/add/operator/filter';
 
-/*
-  Generated class for the Fitness page.
+//Model
+import { Bio } from '../../models';
 
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
+// Providers
+import { FitnessService } from '../../providers';
+
 @Component({
-  selector: 'page-fitness',
   templateUrl: 'fitness.html'
 })
-export class FitnessPage {
+export class FitnessPage implements OnInit, AfterViewInit {
+  @ViewChild('fitnessForm') fitnessForm;
+  public userBio: Bio = new Bio();
+  constructor(private fitnessSvc: FitnessService) { }
 
-  constructor(public navCtrl: NavController) {}
+  public updateBio(): void {
+    this.fitnessSvc.updateBio(this.userBio);
+  }
 
-  ionViewDidLoad() {
-    console.log('Hello Fitness Page');
+  ngOnInit(): void {
+    this.fitnessSvc.getBio().subscribe(bio => {
+      if (!!bio) {
+        this.userBio = bio;
+      }
+    });
+  }
+
+  ngAfterViewInit(): void {
+    Observable.combineLatest(
+      this.fitnessForm.statusChanges,
+      this.fitnessForm.valueChanges,
+      (status, value) => ({ status, value })
+    ).filter(({status}) => status === 'VALID').subscribe(({value}) => {
+      this.updateBio();
+    });
   }
 
 }

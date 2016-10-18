@@ -63,36 +63,34 @@ export class FitnessService {
     }
   };
 
-  public addBio(profile: Profile): void {
-    this._profile.set(profile);
-  }
-
-  public updateBio(profile: Profile): void {
-    if (profile.hasOwnProperty('$key')) {
-      delete profile['$key'];
-    }
-    this._profile.update(profile);
-  }
-
-  public getBio(): Observable<any> {
-    return new Observable(observer => {
-      this._profile.subscribe(data => {
-        if (!data.hasOwnProperty('$value')) {
-          observer.next(data);
-        } else {
-          observer.error("No profile found!");
-        }
-      });
-    });
-  }
-
-  public setFitness(userBio: Bio): void {
+  private setFitness(userBio: Bio): void {
     this.setBMR(userBio);
     this.setBMI(userBio);
     if (userBio.gender === 'male') {
       this.setBodyFatFemale(userBio);
     } else {
       this.setBodyFatMale(userBio);
+    }
+  }
+
+  public getBio(): Observable<any> {
+    return new Observable(observer => {
+      this.userBio.subscribe(bio => {
+        console.log(bio);
+        if (!bio.hasOwnProperty('$value')) {
+          observer.next(bio);
+        }
+      });
+    });
+  }
+
+  public updateBio(usrBio: Bio): void {
+    this.setFitness(usrBio);
+    if (usrBio.hasOwnProperty('$key')) {
+      delete usrBio['$key'];
+      this.userBio.update(usrBio);
+    } else {
+      this.userBio.set(usrBio);
     }
   }
 

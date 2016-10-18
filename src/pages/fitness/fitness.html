@@ -1,18 +1,165 @@
-<!--
-  Generated template for the Fitness page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>Fitness</ion-title>
-  </ion-navbar>
-
+	<ion-toolbar>
+		<button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+		<ion-title>{{ fitnessForm.dirty ? '*Fitness' : 'Fitness' }}</ion-title>
+		</ion-buttons>
+	</ion-toolbar>
 </ion-header>
 
 
 <ion-content padding>
-
+	<form #fitnessForm="ngForm">
+		<ion-list>
+			<ion-item>
+				BMR
+				<ion-note item-right>
+					{{ userBio.bmr }}
+				</ion-note>
+			</ion-item>
+			<ion-item>
+				<ion-icon *ngIf="userBio.bmi.normal" secondary item-left name="thumbs-up"></ion-icon>
+				<ion-icon *ngIf="!userBio.bmi.normal" danger item-left name="thumbs-down"></ion-icon>
+				BMI
+				<ion-note item-right>
+					{{ userBio.bmi.data }}
+				</ion-note>
+			</ion-item>
+			<ion-item>
+				<ion-icon *ngIf="userBio.fatPercentage.normal" secondary item-left name="thumbs-up"></ion-icon>
+				<ion-icon *ngIf="!userBio.fatPercentage.normal" danger item-left name="thumbs-down"></ion-icon>
+				Body fat
+				<ion-note item-right>
+					{{ userBio.fatPercentage.data }}%
+				</ion-note>
+			</ion-item>
+			<ion-list-header>
+				Fitness data
+			</ion-list-header>
+			<div *ngIf="editing">
+				<ion-item>
+					<ion-label>Infancy</ion-label>
+					<ion-select [(ngModel)]="userBio.infancy" name="infancy" required>
+						<ion-option value="yes">Yes</ion-option>
+						<ion-option value="no">No</ion-option>
+					</ion-select>
+				</ion-item>
+				<ion-item>
+					<ion-label>Age ({{userBio.infancy == 'yes' ? 'months' : 'years'}})</ion-label>
+					<ion-input type="number" [(ngModel)]="userBio.age" name="age" required></ion-input>
+				</ion-item>
+				<ion-item>
+					<ion-label>Gender</ion-label>
+					<ion-select [(ngModel)]="userBio.gender" name="gender" required>
+						<ion-option value="male">Male</ion-option>
+						<ion-option value="female">Female</ion-option>
+					</ion-select>
+				</ion-item>
+				<ion-item *ngIf="userBio.gender === 'female'">
+					<ion-label>Pregnancy status</ion-label>
+					<ion-select [(ngModel)]="userBio.pregnancy" name="pregnancy" required>
+						<ion-option value="normal">None</ion-option>
+						<ion-option value="pregnancy">Pregnant</ion-option>
+						<ion-option value="lactation">Lactating</ion-option>
+					</ion-select>
+				</ion-item>
+				<ion-item>
+					<ion-label>Height (cm)</ion-label>
+					<ion-input type="number" [(ngModel)]="userBio.height" name="height" required></ion-input>
+				</ion-item>
+				<ion-item>
+					<ion-label>Waistline (cm)</ion-label>
+					<ion-input type="number" [(ngModel)]="userBio.waist" name="waist" required></ion-input>
+				</ion-item>
+				<ion-item>
+					<ion-label>Weight (kg)</ion-label>
+					<ion-input type="number" [(ngModel)]="userBio.weight" name="weight" required></ion-input>
+				</ion-item>
+				<ion-item *ngIf="userBio.gender  === 'female'">
+					<ion-label>Forearm (cm)</ion-label>
+					<ion-input type="number" [(ngModel)]="userBio.forearm" name="forearm" required></ion-input>
+				</ion-item>
+				<ion-item *ngIf="userBio.gender  === 'female'">
+					<ion-label>Hips (cm)</ion-label>
+					<ion-input type="number" [(ngModel)]="userBio.hips" name="hips" required></ion-input>
+				</ion-item>
+				<ion-item *ngIf="userBio.gender  === 'female'">
+					<ion-label>Wrist (cmkg)</ion-label>
+					<ion-input type="number" [(ngModel)]="userBio.wrist" name="wrist" required></ion-input>
+				</ion-item>
+				<ion-item>
+					<ion-label>Goal</ion-label>
+					<ion-select [(ngModel)]="userBio.goal" name="goal" required>
+						<ion-option value="lose weight">Lose weight</ion-option>
+						<ion-option value="maintain weight">Maintain weight</ion-option>
+						<ion-option value="gain weight">Gain weight</ion-option>
+					</ion-select>
+				</ion-item>
+				<ion-list-header>
+					Energy balance
+				</ion-list-header>
+				<ion-item>
+					<ion-label>Protein</ion-label>
+					<ion-select [(ngModel)]="userBio.energyBalance.protein" name="energyBalance.carbohydrates" required>
+						<ion-option value="0.1">10%</ion-option>
+						<ion-option value="0.15">15%</ion-option>
+						<ion-option value="0.2">20%</ion-option>
+						<ion-option value="0.25">25%</ion-option>
+						<ion-option value="0.3">30%</ion-option>
+						<ion-option value="0.35">35%</ion-option>
+						<ion-option value="0.4">40%</ion-option>
+						<ion-option value="0.45">45%</ion-option>
+						<ion-option value="0.5">50%</ion-option>
+						<ion-option value="0.55">55%</ion-option>
+						<ion-option value="0.6">60%</ion-option>
+						<ion-option value="0.65">65%</ion-option>
+						<ion-option value="0.7">70%</ion-option>
+						<ion-option value="0.75">75%</ion-option>
+						<ion-option value="0.8">80%</ion-option>
+					</ion-select>
+				</ion-item>
+				<ion-item>
+					<ion-label>Carbohydrates</ion-label>
+					<ion-select [(ngModel)]="userBio.energyBalance.carbohydrates" name="energyBalance.carbohydrates" required>
+						<ion-option value="0.1">10%</ion-option>
+						<ion-option value="0.15">15%</ion-option>
+						<ion-option value="0.2">20%</ion-option>
+						<ion-option value="0.25">25%</ion-option>
+						<ion-option value="0.3">30%</ion-option>
+						<ion-option value="0.35">35%</ion-option>
+						<ion-option value="0.4">40%</ion-option>
+						<ion-option value="0.45">45%</ion-option>
+						<ion-option value="0.5">50%</ion-option>
+						<ion-option value="0.55">55%</ion-option>
+						<ion-option value="0.6">60%</ion-option>
+						<ion-option value="0.65">65%</ion-option>
+						<ion-option value="0.7">70%</ion-option>
+						<ion-option value="0.75">75%</ion-option>
+						<ion-option value="0.8">80%</ion-option>
+					</ion-select>
+				</ion-item>
+				<ion-item>
+					<ion-label>Fats</ion-label>
+					<ion-select [(ngModel)]="userBio.energyBalance.fats" name="energyBalance.fats" required>
+						<ion-option value="0.1">10%</ion-option>
+						<ion-option value="0.15">15%</ion-option>
+						<ion-option value="0.2">20%</ion-option>
+						<ion-option value="0.25">25%</ion-option>
+						<ion-option value="0.3">30%</ion-option>
+						<ion-option value="0.35">35%</ion-option>
+						<ion-option value="0.4">40%</ion-option>
+						<ion-option value="0.45">45%</ion-option>
+						<ion-option value="0.5">50%</ion-option>
+						<ion-option value="0.55">55%</ion-option>
+						<ion-option value="0.6">60%</ion-option>
+						<ion-option value="0.65">65%</ion-option>
+						<ion-option value="0.7">70%</ion-option>
+						<ion-option value="0.75">75%</ion-option>
+						<ion-option value="0.8">80%</ion-option>
+					</ion-select>
+				</ion-item>
+			</div>
+		</ion-list>
+	</form>
 </ion-content>

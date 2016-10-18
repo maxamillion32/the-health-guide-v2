@@ -33,6 +33,7 @@ import { Limit, SearchFilter } from "../pipes";
 // Providers
 import {
   ActivityService,
+  FitnessService,
   MealService,
   NutritionService,
   RecipeService
@@ -97,6 +98,7 @@ const FIREBASE_AUTH_CONFIG = {
   ],
   providers: [
     ActivityService,
+    FitnessService,
     MealService,
     NutritionService,
     RecipeService
