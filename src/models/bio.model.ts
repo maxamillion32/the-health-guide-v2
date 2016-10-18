@@ -2,7 +2,7 @@ import { Nutrition } from './nutrition.model';
 
 export class Bio {
     constructor(
-        public age: number = 0,
+        public age: number = 18,
         public bmi: any = {
             data: 0,
             normal: true
@@ -18,15 +18,15 @@ export class Bio {
             data: 0,
             normal: true
         },
-        public forearm: number = 0,
+        public forearm: number = 26,
         public gender: string = 'male',
         public goal: string = 'maintain weight',
-        public height: number = 0,
-        public hips: number = 0,
+        public height: number = 180,
+        public hips: number = 80,
         public infancy: string = 'no',
         public pregnancyStage: string = '',
-        public waist: number = 0,
-        public weight: number = 0,
-        public wrist: number = 0
+        public waist: number = 75,
+        public weight: number = 75,
+        public wrist: number = 20
     ) {}
 }

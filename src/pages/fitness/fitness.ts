@@ -35,7 +35,9 @@ export class FitnessPage implements OnInit, AfterViewInit {
       this.fitnessForm.valueChanges,
       (status, value) => ({ status, value })
     ).filter(({status}) => status === 'VALID').subscribe(({value}) => {
-      this.updateBio();
+      if (this.fitnessForm.dirty) {
+        this.updateBio();
+      }
     });
   }
 

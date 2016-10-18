@@ -76,7 +76,6 @@ export class FitnessService {
   public getBio(): Observable<any> {
     return new Observable(observer => {
       this.userBio.subscribe(bio => {
-        console.log(bio);
         if (!bio.hasOwnProperty('$value')) {
           observer.next(bio);
         }
@@ -87,7 +86,6 @@ export class FitnessService {
   public updateBio(usrBio: Bio): void {
     this.setFitness(usrBio);
     if (usrBio.hasOwnProperty('$key')) {
-      delete usrBio['$key'];
       this.userBio.update(usrBio);
     } else {
       this.userBio.set(usrBio);

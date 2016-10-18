@@ -4,12 +4,12 @@
       <ion-icon name="menu"></ion-icon>
     </button>
 		<ion-title>{{ fitnessForm.dirty ? '*Fitness' : 'Fitness' }}</ion-title>
-		</ion-buttons>
 	</ion-toolbar>
 </ion-header>
 
 
 <ion-content padding>
+  <pre>{{ userBio | json }}</pre>
 	<form #fitnessForm="ngForm">
 		<ion-list>
 			<ion-item>
@@ -19,16 +19,16 @@
 				</ion-note>
 			</ion-item>
 			<ion-item>
-				<ion-icon *ngIf="userBio.bmi.normal" secondary item-left name="thumbs-up"></ion-icon>
-				<ion-icon *ngIf="!userBio.bmi.normal" danger item-left name="thumbs-down"></ion-icon>
+				<ion-icon *ngIf="userBio.bmi.normal" color="summerSky" item-left name="thumbs-up"></ion-icon>
+				<ion-icon *ngIf="!userBio.bmi.normal" color="danger" item-left name="thumbs-down"></ion-icon>
 				BMI
 				<ion-note item-right>
 					{{ userBio.bmi.data }}
 				</ion-note>
 			</ion-item>
 			<ion-item>
-				<ion-icon *ngIf="userBio.fatPercentage.normal" secondary item-left name="thumbs-up"></ion-icon>
-				<ion-icon *ngIf="!userBio.fatPercentage.normal" danger item-left name="thumbs-down"></ion-icon>
+				<ion-icon *ngIf="userBio.fatPercentage.normal" color="summerSky" item-left name="thumbs-up"></ion-icon>
+				<ion-icon *ngIf="!userBio.fatPercentage.normal" color="danger" item-left name="thumbs-down"></ion-icon>
 				Body fat
 				<ion-note item-right>
 					{{ userBio.fatPercentage.data }}%
@@ -37,7 +37,7 @@
 			<ion-list-header>
 				Fitness data
 			</ion-list-header>
-			<div *ngIf="editing">
+			<div>
 				<ion-item>
 					<ion-label>Infancy</ion-label>
 					<ion-select [(ngModel)]="userBio.infancy" name="infancy" required>
