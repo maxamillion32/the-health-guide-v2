@@ -1,12 +1,19 @@
 import { Injectable } from '@angular/core';
-//import { AngularFire, FirebaseListObservable } from 'angularfire2';
+import { Observable } from 'rxjs/Observable';
+import { AngularFire, FirebaseAuth, FirebaseObjectObservable } from 'angularfire2';
 
 import { Bio } from "../models";
 
 @Injectable()
 export class FitnessService {
-
-  constructor() {}
+  public userBio: FirebaseObjectObservable<Bio>;
+  constructor(private af: AngularFire, private auth: FirebaseAuth) {
+    this.auth.subscribe(authData => {
+      if (!!authData) {
+        this.userBio = af.database.object(`/bio/${authData.uid}`);
+      }
+    });
+  }
 
   private setBMR(userBio: Bio): void {
     if (userBio.gender === 'male') {
@@ -55,6 +62,29 @@ export class FitnessService {
       userBio.fatPercentage.normal = true;
     }
   };
+
+  public addBio(profile: Profile): void {
+    this._profile.set(profile);
+  }
+
+  public updateBio(profile: Profile): void {
+    if (profile.hasOwnProperty('$key')) {
+      delete profile['$key'];
+    }
+    this._profile.update(profile);
+  }
+
+  public getBio(): Observable<any> {
+    return new Observable(observer => {
+      this._profile.subscribe(data => {
+        if (!data.hasOwnProperty('$value')) {
+          observer.next(data);
+        } else {
+          observer.error("No profile found!");
+        }
+      });
+    });
+  }
 
   public setFitness(userBio: Bio): void {
     this.setBMR(userBio);

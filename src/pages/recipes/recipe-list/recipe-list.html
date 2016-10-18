@@ -15,7 +15,7 @@
 	</ion-fab>
 	<ion-list *ngSwitchCase="'mine'">
 		<ion-item-sliding *ngFor="let recipe of myRecipes | async | searchFilter: searchQuery: searchBy">
-			<ion-item text-justify>
+			<ion-item>
 				<h2>{{ recipe.name }}</h2>
 				<ion-grid>
 					<ion-row>
@@ -30,16 +30,13 @@
 			</ion-item>
 			<ion-item-options side="right">
 				<button ion-button color="royal" (click)="viewRecipe(recipe)">
-          <ion-icon name="book"></ion-icon>
-          Details
+          <ion-icon name="open"></ion-icon>
         </button>
 				<button ion-button color="primary" (click)="editRecipe(recipe)">
-          <ion-icon name="brush"></ion-icon>
-          Edit
+          <ion-icon name="create"></ion-icon>
         </button>
 				<button ion-button color="light" (click)="removeRecipe(recipe)">
           <ion-icon name="trash"></ion-icon>
-          Remove
         </button>
 			</ion-item-options>
 		</ion-item-sliding>

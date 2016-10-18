@@ -92,30 +92,38 @@ export class NutritionService {
   }
 
   private setMacronutrientRequirements(usrBio: Bio, requirements: Nutrition): Nutrition {
-    this.macronutrients.subscribe(macronutrients => macronutrients.forEach(nutrient => {
-      if (nutrient.hasOwnProperty('intake')) {
-        this.setMacronutrientIntake(nutrient, usrBio, requirements);
-      } else if (nutrient.hasOwnProperty('classification')) {
-        this.setMacronutrientSubIntake(nutrient, usrBio, requirements);
+    this.macronutrients.subscribe(macronutrients => {
+      if (!!macronutrients) {
+        macronutrients.forEach(nutrient => {
+          if (nutrient.hasOwnProperty('intake')) {
+            this.setMacronutrientIntake(nutrient, usrBio, requirements);
+          } else if (nutrient.hasOwnProperty('classification')) {
+            this.setMacronutrientSubIntake(nutrient, usrBio, requirements);
+          }
+        })
       }
-    }));
+    });
     return requirements;
   };
 
   private setMicronutrientRequirements(usrBio: Bio, requirements: Nutrition): Nutrition {
     let ageLabel: string = this.setAgeLabel(usrBio);
-    this.micronutrients.subscribe(micronutrients => micronutrients.forEach(nutrient => {
-      let normalIntake = nutrient.intake[usrBio.gender][ageLabel],
-        pregnancyIntake = nutrient.intake[usrBio.gender][usrBio.pregnancyStage][ageLabel];
-      if (requirements.vitamins.hasOwnProperty(nutrient.name)) {
-        requirements.vitamins[nutrient.name] = (usrBio.gender === 'female') ? pregnancyIntake : normalIntake;
-        if (nutrient.name === "Vitamin D") {
-          requirements.vitamins['Vitamin D3'] = requirements.vitamins['Vitamin D2'] = (usrBio.gender === 'female') ? pregnancyIntake / 2 : normalIntake / 2;
-        }
-      } else if (requirements.minerals.hasOwnProperty(nutrient.name)) {
-        requirements.minerals[nutrient.name] = (usrBio.gender === 'female') ? pregnancyIntake : normalIntake;
+    this.micronutrients.subscribe(micronutrients => {
+      if (!!micronutrients) {
+        micronutrients.forEach(nutrient => {
+          let normalIntake = nutrient.intake[usrBio.gender][ageLabel],
+            pregnancyIntake = nutrient.intake[usrBio.gender][usrBio.pregnancyStage][ageLabel];
+          if (requirements.vitamins.hasOwnProperty(nutrient.name)) {
+            requirements.vitamins[nutrient.name] = (usrBio.gender === 'female') ? pregnancyIntake : normalIntake;
+            if (nutrient.name === "Vitamin D") {
+              requirements.vitamins['Vitamin D3'] = requirements.vitamins['Vitamin D2'] = (usrBio.gender === 'female') ? pregnancyIntake / 2 : normalIntake / 2;
+            }
+          } else if (requirements.minerals.hasOwnProperty(nutrient.name)) {
+            requirements.minerals[nutrient.name] = (usrBio.gender === 'female') ? pregnancyIntake : normalIntake;
+          }
+        })
       }
-    }));
+    });
     return requirements;
   };
 

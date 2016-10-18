@@ -25,7 +25,6 @@ const DIETARIES = [
 })
 export class RecipeEditPage implements OnInit {
   public recipe: Recipe;
-  public recipeDetails: string = "summary";
 
   constructor(
     private alertCtrl: AlertController,

@@ -56,21 +56,82 @@ export class MealJournalPage implements OnInit {
   }
 
   public searchMeal(mealTime: string): void {
-    let mealsModal = this.modalCtrl.create(MealSearchPage, {
-      meals: this.mealJournal[mealTime].meals,
-      noQuantity: false
+    let mealTimeAlert = this.alertCtrl.create({
+      title: "Add meal",
+      message: "Please select a meal time",
+      inputs: [
+        {
+          value: 'breakfast',
+          label: 'Breakfast',
+          type: 'radio'
+        },
+        {
+          value: 'brunch',
+          label: 'Brunch',
+          type: 'radio'
+        },
+        {
+          value: 'lunch',
+          label: 'Lunch',
+          type: 'radio'
+        },
+        {
+          value: 'snack',
+          label: 'Snack',
+          type: 'radio'
+        },
+        {
+          value: 'dinner',
+          label: 'Dinner',
+          type: 'radio'
+        }
+
+      ],
+      buttons: [
+        {
+          text: 'Cancel',
+          handler: () => {
+            console.log('Canceled');
+          }
+        },
+        {
+          text: 'Save',
+          handler: data => {
+            console.log(data);
+            let mealSearchModal = this.modalCtrl.create(MealSearchPage, {
+              meals: this.mealJournal[data].meals,
+              noQuantity: false
+            });
+            mealSearchModal.onDidDismiss(meals => {
+              if (!!meals) {
+                this.mealJournal[data].meals = [...meals];
+              }
+            });
+            mealSearchModal.present();
+          }
+        }
+      ]
     });
-    mealsModal.onDidDismiss(meals => {
-      if (!!meals) {
-        this.mealJournal[mealTime].meals = [...meals];
-      }
-    });
-    mealsModal.present()
+    mealTimeAlert.present();
   }
 
   public syncMj(): void {
     this.mealJournal = new MealJournal();
-    this.mealSvc.getMjByDate(this.currentDate).subscribe(mj => this.mealJournal = mj);
+    this.mealSvc.getMjByDate(this.currentDate).subscribe(mj => {
+      if (!!mj) {
+        this.mealJournal = mj;
+      }
+    });
+  }
+
+  public updateMj(): void {
+    this.mealJournal.date = this.currentDate;
+    this.mealSvc.setMjNutrition(this.mealJournal);
+    if (this.mealJournal.hasOwnProperty('$key')) {
+      this.mealSvc.updateMealJournal(this.mealJournal);
+    } else {
+      this.mealSvc.addMealJournal(this.mealJournal);
+    }
   }
 
   ngOnInit(): void {

@@ -7,7 +7,7 @@
 </ion-header>
 
 
-<ion-content [ngSwitch]="recipeDetails" class="recipe-edit">
+<ion-content class="recipe-edit">
 	<ion-fab bottom right>
 		<button ion-fab><ion-icon name="add"></ion-icon></button>
 		<ion-fab-list side="top">
@@ -15,7 +15,7 @@
 			<button ion-fab (click)="addStep()"><ion-icon name="list"></ion-icon></button>
 		</ion-fab-list>
 	</ion-fab>
-	<form #recipeForm="ngForm" (ngSubmit)="createRecipe()" *ngSwitchCase="'summary'">
+	<form #recipeForm="ngForm" (ngSubmit)="createRecipe()">
 		<ion-card>
 			<ion-card-header>Recipe details</ion-card-header>
 			<ion-card-content>
@@ -100,70 +100,57 @@
 				</ion-item>
 			</ion-card-content>
 		</ion-card>
+
+		<ion-card>
+			<ion-card-header>
+				Ingredients
+			</ion-card-header>
+			<ion-card-content>
+				<ion-list>
+					<ion-item-sliding *ngFor="let ingredient of recipe.ingredients; let i = index">
+						<ion-item>
+							{{ ingredient.name }} {{ ingredient.chef ? ingredient.amount : ingredient.quantity + 'g' }}
+							<ion-note item-right>Swipe</ion-note>
+						</ion-item>
+						<ion-item-options side="right">
+							<button ion-button type="button" color="primary" (click)="changeQuantity(ingredient)">
+								<ion-icon name="create"></ion-icon>
+							</button>
+							<button ion-button type="button" color="light" (click)="removeIngredient(i)">
+								<ion-icon name="trash"></ion-icon>
+							</button>
+						</ion-item-options>
+					</ion-item-sliding>
+				</ion-list>
+			</ion-card-content>
+		</ion-card>
+
+		<ion-card>
+			<ion-card-header>
+				Instructions
+			</ion-card-header>
+			<ion-card-content>
+				<ion-list>
+					<ion-item-sliding *ngFor="let step of recipe.steps; let i = index">
+						<ion-item>
+							{{ i + 1 }}: {{ step }}
+							<ion-note item-right>Swipe</ion-note>
+						</ion-item>
+						<ion-item-options side="right">
+							<button ion-button type="button" color="primary" (click)="changeInstruction(i)">
+								<ion-icon name="create"></ion-icon>
+							</button>
+							<button ion-button type="button" color="light" (click)="removeStep(i)">
+								<ion-icon name="trash"></ion-icon>
+							</button>
+						</ion-item-options>
+					</ion-item-sliding>
+				</ion-list>
+			</ion-card-content>
+		</ion-card>
 		<div padding>
-			<button color="secondary" ion-button block type="submit" [disabled]="recipeForm.form.invalid">Cook it!</button>
+			<button color="bayleaf" ion-button block type="submit" [disabled]="recipeForm.form.invalid">Cook it!</button>
 		</div>
 	</form>
 
-	<ion-card *ngSwitchCase="'ingredients'">
-		<ion-card-header>
-			Ingredients
-		</ion-card-header>
-		<ion-card-content>
-			<ion-list>
-				<ion-item-sliding *ngFor="let ingredient of recipe.ingredients; let i = index">
-					<ion-item>
-						{{ ingredient.name }} {{ ingredient.chef ? ingredient.amount : ingredient.quantity + 'g' }}
-					</ion-item>
-					<ion-item-options side="right">
-						<button ion-button type="button" (click)="changeQuantity(ingredient)">
-								Change quantity
-							</button>
-						<button ion-button type="button" (click)="removeIngredient(i)">
-								Remove
-							</button>
-					</ion-item-options>
-				</ion-item-sliding>
-			</ion-list>
-		</ion-card-content>
-	</ion-card>
-
-	<ion-card *ngSwitchCase="'instructions'">
-		<ion-card-header>
-			Instructions
-		</ion-card-header>
-		<ion-card-content>
-			<ion-list>
-				<ion-item-sliding *ngFor="let step of recipe.steps; let i = index">
-					<ion-item>
-						{{ i + 1 }}: {{ step }}
-					</ion-item>
-					<ion-item-options side="right">
-						<button ion-button type="button" (click)="changeInstruction(i)">
-								Change instruction
-							</button>
-						<button ion-button type="button" (click)="removeStep(i)">
-								Remove
-							</button>
-					</ion-item-options>
-				</ion-item-sliding>
-			</ion-list>
-		</ion-card-content>
-	</ion-card>
 </ion-content>
-
-<ion-footer>
-	<ion-toolbar>
-		<ion-segment color="light" [(ngModel)]="recipeDetails">
-			<ion-segment-button value="summary">
-				Summary
-			</ion-segment-button>
-			<ion-segment-button value="ingredients">
-				Ingredients
-			</ion-segment-button>
-			<ion-segment-button value="instructions">
-				Instructions
-			</ion-segment-button>
-		</ion-segment>
-	</ion-toolbar>
-</ion-footer>

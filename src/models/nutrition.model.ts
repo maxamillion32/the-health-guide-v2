@@ -104,8 +104,7 @@ export class Nutrition {
             "Caffeine": 0,
             "Melatonin": 0,
             "Theobromine": 0
-        },
-        public quantity: number = 100
+        }
     ) {
         this["amino acids"] = aminoacids;
         delete this.aminoacids;
