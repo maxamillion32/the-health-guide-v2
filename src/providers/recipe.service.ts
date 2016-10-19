@@ -39,7 +39,7 @@ export class RecipeService {
     }
   }
 
-  private removeIngredientKeys(recipe: Recipe): void {
+  private removeHashkeys(recipe: Recipe): void {
     recipe.ingredients.forEach(ingredient => {
       if (ingredient.hasOwnProperty('$key')) {
         delete ingredient['$key'];
@@ -51,7 +51,7 @@ export class RecipeService {
   }
 
   public addRecipe(recipe: Recipe): void {
-    this.removeIngredientKeys(recipe);
+    this.removeHashkeys(recipe);
     this.userRecipes.push(recipe);
   }
 
@@ -117,7 +117,7 @@ export class RecipeService {
   }
 
   public updateRecipe(recipe: Recipe): void {
-    this.removeIngredientKeys(recipe);
+    this.removeHashkeys(recipe);
     this.userRecipes.update(recipe['$key'], {
       name: recipe.name,
       category: recipe.category,

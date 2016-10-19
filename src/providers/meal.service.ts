@@ -95,14 +95,32 @@ export class MealService {
         return nutrition;
     }
 
+    private removeHashkeys(mj: MealJournal): void {
+        for (let prop in mj) {
+            if (mj[prop].hasOwnProperty('meals')) {
+                mj[prop].meals.forEach(meal => {
+                    if (meal.hasOwnProperty('$key')) {
+                        delete meal['$key'];
+                    }
+                    if (meal.hasOwnProperty('$exists')) {
+                        delete meal['$exists'];
+                    }
+                });
+            }
+        }
+    }
+
     private setMealTimeNutrition(mj: MealJournal): void {
-        for (let key in mj) {
-            let mealTime = mj[key];
+        for (let prop in mj) {
+            let mealTime = mj[prop];
             if (mealTime.hasOwnProperty('meals') && mealTime.meals.length > 0) {
                 mealTime.total = new Nutrition();
                 mealTime.meals.forEach(meal => {
                     if (meal.hasOwnProperty['$key']) {
                         delete meal['$key'];
+                    }
+                    if (meal.hasOwnProperty['$exists']) {
+                        delete meal['$exists'];
                     }
                     if (meal.hasOwnProperty("chef")) {
                         // The meal is a recipe
@@ -135,6 +153,8 @@ export class MealService {
     }
 
     public addMealJournal(mj: MealJournal): void {
+        console.log(mj);
+        this.removeHashkeys(mj);
         this.mealJournals.push(mj)
     }
 
@@ -169,6 +189,7 @@ export class MealService {
 
     public updateMealJournal(mj: MealJournal): void {
         console.log(mj);
+        this.removeHashkeys(mj);
         this.mealJournals.update(mj['$key'], {
             date: mj.date,
             breakfast: mj.breakfast,

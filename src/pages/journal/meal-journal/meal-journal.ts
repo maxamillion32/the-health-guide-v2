@@ -97,9 +97,8 @@ export class MealJournalPage implements OnInit {
         {
           text: 'Save',
           handler: data => {
-            console.log(data);
             let mealSearchModal = this.modalCtrl.create(MealSearchPage, {
-              meals: this.mealJournal[data].meals,
+              meals: [] || this.mealJournal[data].meals,
               noQuantity: false
             });
             mealSearchModal.onDidDismiss(meals => {
