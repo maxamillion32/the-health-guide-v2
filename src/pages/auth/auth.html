@@ -29,14 +29,14 @@
   <form #loginForm="ngForm" (ngSubmit)="passLogin(loginForm.value)">
     <ion-item>
       <ion-label floating>Email</ion-label>
-      <ion-input type="email" [(ngModel)]="usrEmail" required name="email" #email="ngModel"></ion-input>
+      <ion-input type="email" [(ngModel)]="userEmail" required name="email" #email="ngModel"></ion-input>
     </ion-item>
     <div [hidden]="email.valid || email.pristine">
       Email is required
     </div>
     <ion-item>
       <ion-label floating>Password</ion-label>
-      <ion-input type="Password" [(ngModel)]="usrPassword" required name="password" #password="ngModel"></ion-input>
+      <ion-input type="Password" [(ngModel)]="userPassword" required name="password" #password="ngModel"></ion-input>
     </ion-item>
     <div [hidden]="password.valid || password.pristine">
       Password is required

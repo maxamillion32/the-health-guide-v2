@@ -1,22 +1,33 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { FirebaseListObservable } from 'angularfire2';
 
-/*
-  Generated class for the ActivityJournal page.
+// Models
+import { ActivityJournal } from '../../../models'
 
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
+// Providers
+import { ActivityService } from '../../../providers'
+
 @Component({
   selector: 'page-activity-journal',
   templateUrl: 'activity-journal.html'
 })
 export class ActivityJournalPage {
+  public activityJournal: FirebaseListObservable<ActivityJournal[]>;
+  public currentDate: string;
 
-  constructor(public navCtrl: NavController) {}
+  constructor(private activitySvc: ActivityService) {}
 
-  ionViewDidLoad() {
-    console.log('Hello ActivityJournal Page');
+  ngOnInit(): void {
+    let myDate = new Date(),
+      currentDay = myDate.getDate(),
+      currentMonth = myDate.getMonth() + 1,
+      currentYear = myDate.getFullYear();
+    this.currentDate = currentYear + '-' + ((currentMonth < 10) ? '0' + currentMonth : currentMonth) + '-' +
+      ((currentDay < 10) ? '0' + currentDay : currentDay);
+
+    this.activitySvc.changeDate(this.currentDate);
+    this.activityJournal = this.activitySvc.getActivityJournals();
+    this.activityJournal.subscribe(aj => console.log(aj));
   }
 
 }

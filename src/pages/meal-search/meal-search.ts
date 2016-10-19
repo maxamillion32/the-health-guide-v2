@@ -91,7 +91,9 @@ export class MealSearchPage implements OnInit {
   ngOnInit(): void {
     this.food = this.nutritionSvc.getFood();
     this.recipes = this.recipeSvc.getAllRecipes();
-    this.selectedMeals = [...this.params.get('meals')];
+    if (this.params.data.hasOwnProperty('meals')) {
+      this.selectedMeals = [...this.params.get('meals')];
+    }
     // This flag is used to enabled/disable the quantity alert when checking an meal
     // For instance, it is set to true when we are filtering recipes by meals
     this.noQuantity = this.params.get("noQuantity");

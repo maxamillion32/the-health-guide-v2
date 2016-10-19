@@ -4,22 +4,46 @@ import { Observable } from 'rxjs/Observable';
 // import { Immutable } from 'immutable/dist';
 
 // Models
-import { MealJournal, Nutrition } from '../models';
+import { Fitness, MealJournal, Nutrition } from '../models';
 
 // Providers
+import { ActivityService } from './activity.service';
+import { FitnessService } from './fitness.service';
 import { NutritionService } from './nutrition.service';
+
 
 @Injectable()
 export class MealService {
+    private energyConsum: number = 0;
     private mealJournals: FirebaseListObservable<MealJournal[]>;
-    constructor(private af: AngularFire, private auth: FirebaseAuth, private nutritionSvc: NutritionService) {
-        this.auth.subscribe(authData => {
+    private userFitness: Fitness = new Fitness();
+
+    constructor(
+        private activitySvc: ActivityService,
+        private af: AngularFire,
+        private auth: FirebaseAuth,
+        private fitnessSvc: FitnessService,
+        private nutritionSvc: NutritionService
+    ) {
+        auth.subscribe(authData => {
             if (!!authData) {
                 this.mealJournals = af.database.list(`/meal-journals/${authData.uid}`, {
                     query: {
                         orderByChild: 'date'
                     }
                 });
+            }
+        });
+
+        activitySvc.getAjByDate().subscribe(aj => {
+            if(!!aj) {
+                this.energyConsum = aj.totalEnergy;
+            }
+        });
+
+        fitnessSvc.getFitness().subscribe(fitness => {
+            if (!!fitness) {
+                this.userFitness = fitness;
             }
         });
     }
@@ -77,6 +101,9 @@ export class MealService {
             if (mealTime.hasOwnProperty('meals') && mealTime.meals.length > 0) {
                 mealTime.total = new Nutrition();
                 mealTime.meals.forEach(meal => {
+                    if (meal.hasOwnProperty['$key']) {
+                        delete meal['$key'];
+                    }
                     if (meal.hasOwnProperty("chef")) {
                         // The meal is a recipe
                         for (let nutrientGroup in meal.nutrients) {
@@ -134,12 +161,14 @@ export class MealService {
     }
 
     public setMjNutrition(mj: MealJournal): void {
+        mj.requiredNutrition = this.nutritionSvc.getNutritionRequirements(this.energyConsum, this.userFitness);
         this.setMealTimeNutrition(mj);
         mj.totalNutrition = this.getMjTotalNutrition(mj);
         mj.remainingNutrition = this.getMjRemainingNutrition(mj);
     }
 
     public updateMealJournal(mj: MealJournal): void {
+        console.log(mj);
         this.mealJournals.update(mj['$key'], {
             date: mj.date,
             breakfast: mj.breakfast,
@@ -149,8 +178,7 @@ export class MealService {
             dinner: mj.dinner,
             remainingNutrition: mj.remainingNutrition,
             requiredNutrition: mj.requiredNutrition,
-            totalNutrition: mj.totalNutrition,
-            notes: mj.notes
+            totalNutrition: mj.totalNutrition
         });
     }
 }

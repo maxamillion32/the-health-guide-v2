@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { AngularFire, FirebaseAuth, FirebaseListObservable } from 'angularfire2';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/Rx';
+import { Subject } from 'rxjs/Subject';
 
 // Models
 import { Activity, ActivityJournal } from '../models';
@@ -9,13 +10,17 @@ import { Activity, ActivityJournal } from '../models';
 @Injectable()
 export class ActivityService {
   private activityJournals: FirebaseListObservable<ActivityJournal[]>;
+  private dateSubject: Subject<any>;
 
   constructor(private af: AngularFire, private auth: FirebaseAuth) {
-    this.auth.subscribe(authData => {
+    this.dateSubject = new Subject();
+    auth.subscribe(authData => {
       if (!!authData) {
         this.activityJournals = af.database.list(`/meal-journals/${authData.uid}`, {
           query: {
-            orderByChild: 'date'
+            orderByChild: 'date',
+            equalTo: this.dateSubject,
+            orderByKey: true
           }
         });
       }
@@ -23,32 +28,37 @@ export class ActivityService {
   }
 
   public addActivityJournal(aj: ActivityJournal): void {
-    this.getAjByDate(aj.date).then(res => {
-      res.activities = [...aj.activities];
-      res.totalDuration = aj.totalDuration;
-      res.totalEnergy = aj.totalEnergy;
-      this.updateActivityJournal(res);
-    }).catch(err => this.activityJournals.push(aj));
+    this.activityJournals.push(aj)
+  }
+
+  public changeDate(date: string) {
+    this.dateSubject.next(date); 
   }
 
   public getActivityEnergy(activity: Activity, weight: number = 70): number {
     return Math.floor(0.0175 * activity.met * weight * activity.time);
   }
 
-  public getActivityJournals(): Observable<ActivityJournal[]> {
-    return this.activityJournals.map(aj => aj.reverse());
+  public getActivityJournals(): FirebaseListObservable<ActivityJournal[]> {
+    return this.activityJournals;
   }
 
-  public getAjByDate(date: string): Promise<ActivityJournal> {
-    return new Promise((resolve, reject) => {
+  public getAjByDate(date?: string): Observable<any> {
+    let tempDate = new Date(),
+      currentDay = tempDate.getDate(),
+      currentMonth = tempDate.getMonth() + 1,
+      currentYear = tempDate.getFullYear(),
+      currentDate = currentYear + '-' + ((currentMonth < 10) ? '0' + currentMonth : currentMonth) + '-' +
+        ((currentDay < 10) ? '0' + currentDay : currentDay);
+
+    date = currentDate || date;
+    return new Observable(observer => {
       let journal: ActivityJournal = new ActivityJournal();
       this.getActivityJournals().subscribe(actJournals => {
         if (!!actJournals) {
           journal = actJournals.filter(aj => aj.date === date)[0];
           if (!!journal) {
-            resolve(journal);
-          } else {
-            reject("No activity journal on this date");
+            observer.next(journal);
           }
         }
       });

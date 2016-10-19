@@ -9,29 +9,29 @@
 
 
 <ion-content padding>
-  <pre>{{ userBio | json }}</pre>
+  <pre>{{ userFitness | json }}</pre>
 	<form #fitnessForm="ngForm">
 		<ion-list>
 			<ion-item>
 				BMR
 				<ion-note item-right>
-					{{ userBio.bmr }}
+					{{ userFitness.bmr }}
 				</ion-note>
 			</ion-item>
 			<ion-item>
-				<ion-icon *ngIf="userBio.bmi.normal" color="summerSky" item-left name="thumbs-up"></ion-icon>
-				<ion-icon *ngIf="!userBio.bmi.normal" color="danger" item-left name="thumbs-down"></ion-icon>
+				<ion-icon *ngIf="userFitness.bmi.normal" color="summerSky" item-left name="thumbs-up"></ion-icon>
+				<ion-icon *ngIf="!userFitness.bmi.normal" color="danger" item-left name="thumbs-down"></ion-icon>
 				BMI
 				<ion-note item-right>
-					{{ userBio.bmi.data }}
+					{{ userFitness.bmi.data }}
 				</ion-note>
 			</ion-item>
 			<ion-item>
-				<ion-icon *ngIf="userBio.fatPercentage.normal" color="summerSky" item-left name="thumbs-up"></ion-icon>
-				<ion-icon *ngIf="!userBio.fatPercentage.normal" color="danger" item-left name="thumbs-down"></ion-icon>
+				<ion-icon *ngIf="userFitness.fatPercentage.normal" color="summerSky" item-left name="thumbs-up"></ion-icon>
+				<ion-icon *ngIf="!userFitness.fatPercentage.normal" color="danger" item-left name="thumbs-down"></ion-icon>
 				Body fat
 				<ion-note item-right>
-					{{ userBio.fatPercentage.data }}%
+					{{ userFitness.fatPercentage.data }}%
 				</ion-note>
 			</ion-item>
 			<ion-list-header>
@@ -40,25 +40,25 @@
 			<div>
 				<ion-item>
 					<ion-label>Infancy</ion-label>
-					<ion-select [(ngModel)]="userBio.infancy" name="infancy" required>
+					<ion-select [(ngModel)]="userFitness.infancy" name="infancy" required>
 						<ion-option value="yes">Yes</ion-option>
 						<ion-option value="no">No</ion-option>
 					</ion-select>
 				</ion-item>
 				<ion-item>
-					<ion-label>Age ({{userBio.infancy == 'yes' ? 'months' : 'years'}})</ion-label>
-					<ion-input type="number" [(ngModel)]="userBio.age" name="age" required></ion-input>
+					<ion-label>Age ({{userFitness.infancy == 'yes' ? 'months' : 'years'}})</ion-label>
+					<ion-input type="number" [(ngModel)]="userFitness.age" name="age" required></ion-input>
 				</ion-item>
 				<ion-item>
 					<ion-label>Gender</ion-label>
-					<ion-select [(ngModel)]="userBio.gender" name="gender" required>
+					<ion-select [(ngModel)]="userFitness.gender" name="gender" required>
 						<ion-option value="male">Male</ion-option>
 						<ion-option value="female">Female</ion-option>
 					</ion-select>
 				</ion-item>
-				<ion-item *ngIf="userBio.gender === 'female'">
+				<ion-item *ngIf="userFitness.gender === 'female'">
 					<ion-label>Pregnancy status</ion-label>
-					<ion-select [(ngModel)]="userBio.pregnancy" name="pregnancy" required>
+					<ion-select [(ngModel)]="userFitness.pregnancy" name="pregnancy" required>
 						<ion-option value="normal">None</ion-option>
 						<ion-option value="pregnancy">Pregnant</ion-option>
 						<ion-option value="lactation">Lactating</ion-option>
@@ -66,31 +66,31 @@
 				</ion-item>
 				<ion-item>
 					<ion-label>Height (cm)</ion-label>
-					<ion-input type="number" [(ngModel)]="userBio.height" name="height" required></ion-input>
+					<ion-input type="number" [(ngModel)]="userFitness.height" name="height" required></ion-input>
 				</ion-item>
 				<ion-item>
 					<ion-label>Waistline (cm)</ion-label>
-					<ion-input type="number" [(ngModel)]="userBio.waist" name="waist" required></ion-input>
+					<ion-input type="number" [(ngModel)]="userFitness.waist" name="waist" required></ion-input>
 				</ion-item>
 				<ion-item>
 					<ion-label>Weight (kg)</ion-label>
-					<ion-input type="number" [(ngModel)]="userBio.weight" name="weight" required></ion-input>
+					<ion-input type="number" [(ngModel)]="userFitness.weight" name="weight" required></ion-input>
 				</ion-item>
-				<ion-item *ngIf="userBio.gender  === 'female'">
+				<ion-item *ngIf="userFitness.gender  === 'female'">
 					<ion-label>Forearm (cm)</ion-label>
-					<ion-input type="number" [(ngModel)]="userBio.forearm" name="forearm" required></ion-input>
+					<ion-input type="number" [(ngModel)]="userFitness.forearm" name="forearm" required></ion-input>
 				</ion-item>
-				<ion-item *ngIf="userBio.gender  === 'female'">
+				<ion-item *ngIf="userFitness.gender  === 'female'">
 					<ion-label>Hips (cm)</ion-label>
-					<ion-input type="number" [(ngModel)]="userBio.hips" name="hips" required></ion-input>
+					<ion-input type="number" [(ngModel)]="userFitness.hips" name="hips" required></ion-input>
 				</ion-item>
-				<ion-item *ngIf="userBio.gender  === 'female'">
+				<ion-item *ngIf="userFitness.gender  === 'female'">
 					<ion-label>Wrist (cmkg)</ion-label>
-					<ion-input type="number" [(ngModel)]="userBio.wrist" name="wrist" required></ion-input>
+					<ion-input type="number" [(ngModel)]="userFitness.wrist" name="wrist" required></ion-input>
 				</ion-item>
 				<ion-item>
 					<ion-label>Goal</ion-label>
-					<ion-select [(ngModel)]="userBio.goal" name="goal" required>
+					<ion-select [(ngModel)]="userFitness.goal" name="goal" required>
 						<ion-option value="lose weight">Lose weight</ion-option>
 						<ion-option value="maintain weight">Maintain weight</ion-option>
 						<ion-option value="gain weight">Gain weight</ion-option>
@@ -101,7 +101,7 @@
 				</ion-list-header>
 				<ion-item>
 					<ion-label>Protein</ion-label>
-					<ion-select [(ngModel)]="userBio.energyBalance.protein" name="energyBalance.carbohydrates" required>
+					<ion-select [(ngModel)]="userFitness.energyBalance.protein" name="energyBalance.carbohydrates" required>
 						<ion-option value="0.1">10%</ion-option>
 						<ion-option value="0.15">15%</ion-option>
 						<ion-option value="0.2">20%</ion-option>
@@ -121,7 +121,7 @@
 				</ion-item>
 				<ion-item>
 					<ion-label>Carbohydrates</ion-label>
-					<ion-select [(ngModel)]="userBio.energyBalance.carbohydrates" name="energyBalance.carbohydrates" required>
+					<ion-select [(ngModel)]="userFitness.energyBalance.carbohydrates" name="energyBalance.carbohydrates" required>
 						<ion-option value="0.1">10%</ion-option>
 						<ion-option value="0.15">15%</ion-option>
 						<ion-option value="0.2">20%</ion-option>
@@ -141,7 +141,7 @@
 				</ion-item>
 				<ion-item>
 					<ion-label>Fats</ion-label>
-					<ion-select [(ngModel)]="userBio.energyBalance.fats" name="energyBalance.fats" required>
+					<ion-select [(ngModel)]="userFitness.energyBalance.fats" name="energyBalance.fats" required>
 						<ion-option value="0.1">10%</ion-option>
 						<ion-option value="0.15">15%</ion-option>
 						<ion-option value="0.2">20%</ion-option>

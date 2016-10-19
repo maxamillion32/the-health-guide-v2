@@ -2,93 +2,95 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { AngularFire, FirebaseAuth, FirebaseObjectObservable } from 'angularfire2';
 
-import { Bio } from "../models";
+import { Fitness } from "../models";
 
 @Injectable()
 export class FitnessService {
-  public userBio: FirebaseObjectObservable<Bio>;
+  public userFitness: FirebaseObjectObservable<Fitness>;
   constructor(private af: AngularFire, private auth: FirebaseAuth) {
-    this.auth.subscribe(authData => {
+    auth.subscribe(authData => {
       if (!!authData) {
-        this.userBio = af.database.object(`/bio/${authData.uid}`);
+        this.userFitness = af.database.object(`/fitness/${authData.uid}`);
       }
     });
   }
 
-  private setBMR(userBio: Bio): void {
-    if (userBio.gender === 'male') {
-      userBio.bmr = Math.floor(13.397 * userBio.weight + 4.799 * userBio.height - 5.677 * userBio.age + 88.362);
+  private setBMR(userFitness: Fitness): void {
+    if (userFitness.gender === 'male') {
+      userFitness.bmr = Math.floor(13.397 * userFitness.weight + 4.799 * userFitness.height - 5.677 * userFitness.age + 88.362);
     } else {
-      userBio.bmr = Math.floor(9.247 * userBio.weight + 3.098 * userBio.height - 4.33 * userBio.age + 447.593);
+      userFitness.bmr = Math.floor(9.247 * userFitness.weight + 3.098 * userFitness.height - 4.33 * userFitness.age + 447.593);
     }
   };
 
-  private setBMI(userBio: Bio): void {
-    userBio.bmi.data = +(10000 * userBio.weight / Math.pow(userBio.height, 2)).toFixed(2);
-    if (userBio.bmi.data > 25 || userBio.bmi.data < 18) {
-      userBio.bmi.normal = false;
+  private setBMI(userFitness: Fitness): void {
+    userFitness.bmi.data = +(10000 * userFitness.weight / Math.pow(userFitness.height, 2)).toFixed(2);
+    if (userFitness.bmi.data > 25 || userFitness.bmi.data < 18) {
+      userFitness.bmi.normal = false;
     } else {
-      userBio.bmi.normal = true;
+      userFitness.bmi.normal = true;
     }
   }
 
-  private setBodyFatFemale(userBio: Bio): void {
+  private setBodyFatFemale(userFitness: Fitness): void {
     let bodyFatWeight: number = 0, leanBodyMass: number = 0;
-    leanBodyMass = ((userBio.weight * 2.205) * 0.732) + 8.987 +
-      (userBio.wrist * 0.394 / 3.14) -
-      (userBio.waist * 0.394 * 0.157) -
-      (userBio.hips * 0.394 * 0.249) +
-      (userBio.forearm * 0.434);
-    bodyFatWeight = (userBio.weight * 2.205) - leanBodyMass;
-    userBio.fatPercentage.data = +((bodyFatWeight * 100) / (userBio.weight * 2.205)).toFixed(2);
-    if (userBio.fatPercentage.data < 0) {
-      userBio.fatPercentage.data = 0
+    leanBodyMass = ((userFitness.weight * 2.205) * 0.732) + 8.987 +
+      (userFitness.wrist * 0.394 / 3.14) -
+      (userFitness.waist * 0.394 * 0.157) -
+      (userFitness.hips * 0.394 * 0.249) +
+      (userFitness.forearm * 0.434);
+    bodyFatWeight = (userFitness.weight * 2.205) - leanBodyMass;
+    userFitness.fatPercentage.data = +((bodyFatWeight * 100) / (userFitness.weight * 2.205)).toFixed(2);
+    if (userFitness.fatPercentage.data < 0) {
+      userFitness.fatPercentage.data = 0
     }
-    if (userBio.fatPercentage.data > 25 || userBio.fatPercentage.data < 10) {
-      userBio.fatPercentage.normal = false;
+    if (userFitness.fatPercentage.data > 25 || userFitness.fatPercentage.data < 10) {
+      userFitness.fatPercentage.normal = false;
     } else {
-      userBio.fatPercentage.normal = true;
+      userFitness.fatPercentage.normal = true;
     }
   }
 
-  private setBodyFatMale(userBio: Bio): void {
+  private setBodyFatMale(userFitness: Fitness): void {
     let bodyFatWeight: number = 0, leanBodyMass: number = 0;
-    leanBodyMass = (userBio.weight * 2.205 * 1.082) + 94.42 - (userBio.waist * 0.394 * 4.15);
-    bodyFatWeight = (userBio.weight * 2.205) - leanBodyMass;
-    userBio.fatPercentage.data = +((bodyFatWeight * 100) / (userBio.weight * 2.205)).toFixed(2);
-    if (userBio.fatPercentage.data > 20 || userBio.fatPercentage.data < 2) {
-      userBio.fatPercentage.normal = false;
+    leanBodyMass = (userFitness.weight * 2.205 * 1.082) + 94.42 - (userFitness.waist * 0.394 * 4.15);
+    bodyFatWeight = (userFitness.weight * 2.205) - leanBodyMass;
+    userFitness.fatPercentage.data = +((bodyFatWeight * 100) / (userFitness.weight * 2.205)).toFixed(2);
+    if (userFitness.fatPercentage.data > 20 || userFitness.fatPercentage.data < 2) {
+      userFitness.fatPercentage.normal = false;
     } else {
-      userBio.fatPercentage.normal = true;
+      userFitness.fatPercentage.normal = true;
     }
   };
 
-  private setFitness(userBio: Bio): void {
-    this.setBMR(userBio);
-    this.setBMI(userBio);
-    if (userBio.gender === 'male') {
-      this.setBodyFatFemale(userBio);
+  private setFitness(userFitness: Fitness): void {
+    this.setBMR(userFitness);
+    this.setBMI(userFitness);
+    if (userFitness.gender === 'male') {
+      this.setBodyFatFemale(userFitness);
     } else {
-      this.setBodyFatMale(userBio);
+      this.setBodyFatMale(userFitness);
     }
   }
 
-  public getBio(): Observable<any> {
+  public getFitness(): Observable<any> {
     return new Observable(observer => {
-      this.userBio.subscribe(bio => {
-        if (!bio.hasOwnProperty('$value')) {
-          observer.next(bio);
+      this.userFitness.subscribe(fitness => {
+        if (!fitness.hasOwnProperty('$value')) {
+          observer.next(fitness);
         }
       });
     });
   }
 
-  public updateBio(usrBio: Bio): void {
-    this.setFitness(usrBio);
-    if (usrBio.hasOwnProperty('$key')) {
-      this.userBio.update(usrBio);
+  public updateFitness(userFitness: Fitness): void {
+    console.log(userFitness);
+    this.setFitness(userFitness);
+    if (userFitness.hasOwnProperty('$key')) {
+      delete userFitness['$key'];
+      this.userFitness.update(userFitness);
     } else {
-      this.userBio.set(usrBio);
+      this.userFitness.set(userFitness);
     }
   }
 

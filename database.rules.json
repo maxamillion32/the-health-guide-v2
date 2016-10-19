@@ -30,7 +30,7 @@
       ".read": true,
       ".write": false
     },
-    "bio": {
+    "fitness": {
       ".read": true,
       "$userId": {
         ".read": true,

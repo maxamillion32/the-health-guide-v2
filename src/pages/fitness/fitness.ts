@@ -4,7 +4,7 @@ import 'rxjs/add/observable/combineLatest';
 import 'rxjs/add/operator/filter';
 
 //Model
-import { Bio } from '../../models';
+import { Fitness } from '../../models';
 
 // Providers
 import { FitnessService } from '../../providers';
@@ -14,17 +14,17 @@ import { FitnessService } from '../../providers';
 })
 export class FitnessPage implements OnInit, AfterViewInit {
   @ViewChild('fitnessForm') fitnessForm;
-  public userBio: Bio = new Bio();
+  public userFitness: Fitness = new Fitness();
   constructor(private fitnessSvc: FitnessService) { }
 
-  public updateBio(): void {
-    this.fitnessSvc.updateBio(this.userBio);
+  public updateFitness(): void {
+    this.fitnessSvc.updateFitness(this.userFitness);
   }
 
   ngOnInit(): void {
-    this.fitnessSvc.getBio().subscribe(bio => {
-      if (!!bio) {
-        this.userBio = bio;
+    this.fitnessSvc.getFitness().subscribe(fitness => {
+      if (!!fitness) {
+        this.userFitness = fitness;
       }
     });
   }
@@ -36,7 +36,7 @@ export class FitnessPage implements OnInit, AfterViewInit {
       (status, value) => ({ status, value })
     ).filter(({status}) => status === 'VALID').subscribe(({value}) => {
       if (this.fitnessForm.dirty) {
-        this.updateBio();
+        this.updateFitness();
       }
     });
   }

@@ -25,7 +25,6 @@ export class MealJournal {
         },
         public remainingNutrition: Nutrition = new Nutrition(),
         public requiredNutrition: Nutrition = new Nutrition(),
-        public totalNutrition: Nutrition = new Nutrition(),
-        public notes: string[] = []
+        public totalNutrition: Nutrition = new Nutrition()
     ) { }
 }

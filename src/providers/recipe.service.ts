@@ -15,7 +15,7 @@ export class RecipeService {
         orderByChild: 'name'
       }
     });
-    this.auth.subscribe(authData => {
+    auth.subscribe(authData => {
       if (!!authData) {
         this.userRecipes = af.database.list(`/recipes/${authData.uid}`, {
           query: {

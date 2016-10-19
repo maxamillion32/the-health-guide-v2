@@ -1,6 +1,6 @@
 import { Nutrition } from './nutrition.model';
 
-export class Bio {
+export class Fitness {
     constructor(
         public age: number = 18,
         public bmi: any = {

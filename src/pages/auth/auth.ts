@@ -9,8 +9,8 @@ import { HomePage } from "../home/home";
   templateUrl: 'auth.html'
 })
 export class AuthPage implements AfterViewInit {
-  public usrEmail: string;
-  public usrPassword: string;
+  public userEmail: string;
+  public userPassword: string;
 
   constructor(
     private alertCtrl: AlertController,
@@ -60,8 +60,8 @@ export class AuthPage implements AfterViewInit {
     });
   }
 
-  public passLogin(usrCredentials: any): void {
-    this.af.auth.login(usrCredentials).then(authData => {
+  public passLogin(userCredentials: any): void {
+    this.af.auth.login(userCredentials).then(authData => {
       setTimeout(() => this.navCtrl.setRoot(HomePage), 1000);
     }).catch(error => {
       this.showError(error);
