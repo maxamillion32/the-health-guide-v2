@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { FirebaseListObservable } from 'angularfire2';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/Rx';
 
 // Models
 import { ActivityJournal } from '../../../models'
@@ -12,7 +13,7 @@ import { ActivityService } from '../../../providers'
   templateUrl: 'activity-journal.html'
 })
 export class ActivityJournalPage {
-  public activityJournal: FirebaseListObservable<ActivityJournal[]>;
+  public activityJournal: Observable<ActivityJournal[]>;
   public currentDate: string;
 
   constructor(private activitySvc: ActivityService) {}
@@ -25,9 +26,7 @@ export class ActivityJournalPage {
     this.currentDate = currentYear + '-' + ((currentMonth < 10) ? '0' + currentMonth : currentMonth) + '-' +
       ((currentDay < 10) ? '0' + currentDay : currentDay);
 
-    this.activitySvc.changeDate(this.currentDate);
-    this.activityJournal = this.activitySvc.getActivityJournals();
-    this.activityJournal.subscribe(aj => console.log(aj));
+    this.activityJournal = this.activitySvc.getAjByDate(this.currentDate);
   }
 
 }

@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { AngularFire, FirebaseAuth, FirebaseListObservable } from 'angularfire2';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/Rx';
-import { Subject } from 'rxjs/Subject';
 
 // Models
 import { Activity, ActivityJournal } from '../models';
@@ -10,17 +9,13 @@ import { Activity, ActivityJournal } from '../models';
 @Injectable()
 export class ActivityService {
   private activityJournals: FirebaseListObservable<ActivityJournal[]>;
-  private dateSubject: Subject<any>;
 
   constructor(private af: AngularFire, private auth: FirebaseAuth) {
-    this.dateSubject = new Subject();
     auth.subscribe(authData => {
       if (!!authData) {
         this.activityJournals = af.database.list(`/meal-journals/${authData.uid}`, {
           query: {
-            orderByChild: 'date',
-            equalTo: this.dateSubject,
-            orderByKey: true
+            orderByChild: 'date'
           }
         });
       }
@@ -29,10 +24,6 @@ export class ActivityService {
 
   public addActivityJournal(aj: ActivityJournal): void {
     this.activityJournals.push(aj)
-  }
-
-  public changeDate(date: string) {
-    this.dateSubject.next(date); 
   }
 
   public getActivityEnergy(activity: Activity, weight: number = 70): number {

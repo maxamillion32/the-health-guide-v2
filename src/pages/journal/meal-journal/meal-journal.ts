@@ -5,6 +5,7 @@ import { AlertController, NavController, ModalController } from 'ionic-angular';
 import { MealJournal } from '../../../models';
 
 // Pages
+import { MjDetailsPage } from './mj-details/mj-details';
 import { MealSearchPage } from '../../meal-search/meal-search';
 
 // Providers
@@ -49,6 +50,10 @@ export class MealJournalPage implements OnInit {
       ]
     });
     quantityAlert.present();
+  }
+
+  public openMjDetails(): void {
+    this.navCtrl.push(MjDetailsPage, { mealJournal: this.mealJournal });
   }
 
   public removeMeal(mealTime: string, index: number): void {

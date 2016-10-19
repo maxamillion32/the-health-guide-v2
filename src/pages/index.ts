@@ -6,6 +6,7 @@ export { HomePage } from './home/home';
 export { MealSearchPage } from './meal-search/meal-search';
 export { JournalPage } from './journal/journal';
 export { MealJournalPage } from './journal/meal-journal/meal-journal';
+export { MjDetailsPage } from './journal/meal-journal/mj-details/mj-details';
 export { NutrientDetailsPage } from './nutrients/nutrient-details/nutrient-details';
 export { NutrientListPage } from './nutrients/nutrient-list/nutrient-list';
 export { RecipeEditPage } from './recipes/recipe-edit/recipe-edit';
